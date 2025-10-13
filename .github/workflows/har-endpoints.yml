@@ -1,0 +1,65 @@
+name: Build HAR endpoints
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-endpoints:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure kb/ exists
+        run: mkdir -p kb
+
+      - name: Find HAR files
+        id: list
+        run: |
+          echo "har_files<<EOF" >> $GITHUB_OUTPUT
+          git ls-files | grep -i '\.har$' || true
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Build endpoints table
+        if: steps.list.outputs.har_files != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="kb/endpoints.md"
+          echo "# API endpoints (из HAR)" > "$OUT"
+          echo "" >> "$OUT"
+          echo "| Метод | Хост | Путь | Пример файла |" >> "$OUT"
+          echo "|------:|------|------|--------------|" >> "$OUT"
+
+          # соберём уникальные (method, host, path)
+          tmp=$(mktemp)
+          while read -r har; do
+            jq -r '
+              .log.entries[]
+              | .request as $r
+              | [
+                  ($r.method // ""),
+                  ($r.url | (try capture("^(?<scheme>https?)://(?<host>[^/]+)(?<path>/.*)?$") | .host catch "")),
+                  ($r.url | (try capture("^(?<scheme>https?)://(?<host>[^/]+)(?<path>/.*)?$") | .path catch "/"))
+                ]
+              | @tsv
+            ' "$har" 2>/dev/null | sed "s|\t$|\t/|g" | awk -v H="$har" '{print $0 "\t" H}' >> "$tmp" || true
+          done < <(echo "${{ steps.list.outputs.har_files }}")
+
+          # уникализируем
+          sort -u "$tmp" | while IFS=$'\t' read -r method host path file; do
+            printf "| `%s` | `%s` | `%s` | `%s` |\n" "$method" "$host" "$path" "${file}" >> "$OUT"
+          done
+          rm -f "$tmp"
+
+      - name: Commit endpoints
+        run: |
+          git config user.name "kb-bot"
+          git config user.email "kb-bot@users.noreply.github.com"
+          git add kb/endpoints.md || true
+          git commit -m "chore(kb): update endpoints from HAR" || echo "nothing to commit"
+          git push || true
