@@ -1,0 +1,7 @@
+### kb/previews_full/kb__previews_full__pages__new-move-record__new-move-record_future-date.har.part028.md.part001.md (part 002)
+
+```md
+this.pending=!1,this.isReady=!1,this.geoContext=null}return c.prototype.init=function(u){return r(this,voi
+```
+
+```

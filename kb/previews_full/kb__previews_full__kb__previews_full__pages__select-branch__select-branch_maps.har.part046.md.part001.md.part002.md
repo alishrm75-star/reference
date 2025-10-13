@@ -1,0 +1,7 @@
+### kb/previews_full/kb__previews_full__pages__select-branch__select-branch_maps.har.part046.md.part001.md (part 002)
+
+```md
+modalService\",w(ce));a(this,\"isMobileDevice\",Z().phone);a(this,\"imagesGap\",S(()=>{switch(t
+```
+
+```

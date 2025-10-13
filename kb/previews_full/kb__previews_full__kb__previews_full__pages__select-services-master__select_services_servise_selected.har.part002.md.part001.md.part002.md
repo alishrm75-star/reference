@@ -1,0 +1,7 @@
+### kb/previews_full/kb__previews_full__pages__select-services-master__select_services_servise_selected.har.part002.md.part001.md (part 002)
+
+```md
+ent-%COMP%]   .content-container[_ngcontent-%COMP%]{flex:1 1 auto;overflow:auto}.modal.full-height[_ngcontent-%COMP%]{
+```
+
+```

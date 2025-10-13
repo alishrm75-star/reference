@@ -1,0 +1,7 @@
+### kb/previews_full/kb__previews_full__pages__select-services__start-service-first__select-services__start_servise_bottom_menu.har.part006.md.part001.md (part 002)
+
+```md
+color:var(--y-core-color-calm-icon-red)}.notification[_ngcontent-%COMP%]   .notification-message[_ngcontent-%COMP%]{flex:1;font-style:normal;f
+```
+
+```
