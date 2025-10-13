@@ -1,0 +1,7 @@
+### kb/previews_full/pages__select-time__select-time_calendar-collapsed.har.part005.md (part 002)
+
+```md
+[_-])?|wow|win)64)[;\\)]/i],[[y,\"amd64\"]],[/(ia32(?=;))/i],[[y,D.lowerize]
+```
+
+```

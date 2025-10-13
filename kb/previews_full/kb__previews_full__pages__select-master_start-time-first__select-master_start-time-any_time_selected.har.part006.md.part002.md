@@ -1,0 +1,7 @@
+### kb/previews_full/pages__select-master_start-time-first__select-master_start-time-any_time_selected.har.part006.md (part 002)
+
+```md
+e-secondary-fill);border:1px solid var(--y-core-color-stroke-primary);border-radius:16px;left:50%;width:361
+```
+
+```
