@@ -1,0 +1,48 @@
+name: Build KB index
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Ensure kb/ exists
+        run: mkdir -p kb
+
+      - name: Generate full file list
+        run: |
+          git ls-files > kb/paths.md
+          echo "" >> kb/paths.md
+          echo "---" >> kb/paths.md
+          echo "Total files: $(wc -l < kb/paths.md)" >> kb/paths.md
+
+      - name: Split into parts if too big
+        run: |
+          LINES=$(wc -l < kb/paths.md || echo 0)
+          if [ "$LINES" -gt 5000 ]; then
+            echo "File too large ($LINES lines) → splitting..."
+            split -l 5000 kb/paths.md kb/paths-part-
+            for f in kb/paths-part-*; do mv "$f" "$f.md"; done
+          else
+            echo "No split needed."
+          fi
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kb/paths.md kb/paths-part-*.md || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(kb): update paths index"
+            git push
+          else
+            echo "No changes to commit"
+          fi
