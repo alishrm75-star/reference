@@ -4478,8 +4478,8 @@
     },
     {
       "path": "kb/api-contracts.md",
-      "size": 2460,
-      "sha256": "38daa166f6c30e3ec6c51466e341000744ae068ef13e10438e77cf711b0869c0",
+      "size": 2941,
+      "sha256": "42bb8cca13052108f6cfebab43fe4cf85cbfca691e905c44dda83980f5a7cb05",
       "parts": [
         {
           "file": "previews_full/kb__api-contracts.md/.md"
