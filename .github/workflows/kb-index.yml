@@ -1,4 +1,4 @@
-name: Build KB index
+name: Build full KB previews
 
 on:
   push:
@@ -11,38 +11,97 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Ensure kb/ exists
-        run: mkdir -p kb
-
-      - name: Generate full file list
+      - name: Prepare folders
         run: |
-          git ls-files > kb/paths.md
-          echo "" >> kb/paths.md
-          echo "---" >> kb/paths.md
-          echo "Total files: $(wc -l < kb/paths.md)" >> kb/paths.md
+          mkdir -p kb/previews_full
+          echo '{"files":[]}' > kb/manifest.json
 
-      - name: Split into parts if too big
+      - name: Generate full previews (+split big)
+        shell: bash
         run: |
-          LINES=$(wc -l < kb/paths.md || echo 0)
-          if [ "$LINES" -gt 5000 ]; then
-            echo "File too large ($LINES lines) → splitting..."
-            split -l 5000 kb/paths.md kb/paths-part-
-            for f in kb/paths-part-*; do mv "$f" "$f.md"; done
-          else
-            echo "No split needed."
-          fi
+          set -euo pipefail
 
-      - name: Commit & push if changed
+          is_text () {
+            case "${1,,}" in
+              *.html|*.har|*.json|*.md|*.css|*.js|*.ts|*.tsx|*.svg|*.txt) return 0 ;;
+              *) return 1 ;;
+            esac
+          }
+
+          sanitize () {
+            # заменяем / на __ чтобы получилось имя файла
+            echo "${1//\//__}"
+          }
+
+          add_manifest () {
+            local path="$1" size="$2" sha="$3" parts_json="$4"
+            # аккуратно добавляем объект в массив files
+            jq --arg p "$path" --arg s "$size" --arg h "$sha" \
+               --argjson parts "$parts_json" \
+               '.files += [{"path":$p,"size":($s|tonumber),"sha256":$h,"parts":$parts}]' \
+               kb/manifest.json > kb/.manifest.tmp && mv kb/.manifest.tmp kb/manifest.json
+          }
+
+          # размер части ~400KB (можно увеличить до 800000 при необходимости)
+          PART_SIZE=400000
+
+          while IFS= read -r path; do
+            if ! is_text "$path"; then
+              continue
+            fi
+
+            size=$(wc -c < "$path" | tr -d ' ')
+            sha=$(sha256sum "$path" | awk '{print $1}')
+            base="kb/previews_full/$(sanitize "$path")"
+
+            if [ "$size" -le "$PART_SIZE" ]; then
+              # пишем одним markdown-файлом
+              lang="${path##*.}"
+              {
+                echo "### $path"
+                echo
+                echo '```'"$lang"
+                cat "$path"
+                echo
+                echo '```'
+              } > "${base}.md"
+              parts='[{"file":"'"${base##kb/}/"'.md'\"'}]'
+            else
+              # режем на части по размеру
+              tmpdir=$(mktemp -d)
+              split -b "$PART_SIZE" --numeric-suffixes=1 --suffix-length=3 "$path" "$tmpdir/part_"
+              parts="["
+              n=0
+              for p in "$tmpdir"/part_*; do
+                n=$((n+1))
+                idx=$(printf "%03d" "$n")
+                out="${base}.part${idx}.md"
+                lang="${path##*.}"
+                {
+                  echo "### $path (part ${idx})"
+                  echo
+                  echo '```'"$lang"
+                  cat "$p"
+                  echo
+                  echo '```'
+                } > "$out"
+                rel="${out#kb/}"
+                parts="${parts}{\"file\":\"$rel\"},"
+              done
+              parts="${parts%,}]"
+              rm -rf "$tmpdir"
+            fi
+
+            add_manifest "$path" "$size" "$sha" "$parts"
+          done < <(git ls-files)
+
+      - name: Commit previews & manifest
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add kb/paths.md kb/paths-part-*.md || true
-          if ! git diff --cached --quiet; then
-            git commit -m "chore(kb): update paths index"
-            git push
-          else
-            echo "No changes to commit"
-          fi
+          git config user.name "kb-bot"
+          git config user.email "kb-bot@users.noreply.github.com"
+          git add kb/manifest.json kb/previews_full/ || true
+          git commit -m "chore(kb): update full previews & manifest" || echo "nothing to commit"
+          git push || true
