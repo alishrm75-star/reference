@@ -1,0 +1,2745 @@
+### kb/previews_full/kb__previews_full__kb__previews_full__flows__time-first__any_time_selected@guest.har.part042.md.part001.md.part001.md (part 001)
+
+```md
+### kb/previews_full/kb__previews_full__flows__time-first__any_time_selected@guest.har.part042.md.part001.md (part 001)
+
+```md
+### kb/previews_full/flows__time-first__any_time_selected@guest.har.part042.md (part 001)
+
+```md
+### flows/time-first__any_time_selected@guest.har (part 042)
+
+```har
+rackingService.track({type:b.Action.click,page:{name:F.datetimeList},name:Ie.clickButtonNextStep,element:{type:Ie.button,name:Ie.buttonNextStep}}),this.trackingService.trackBenchmark(ke.end(\"booking_datetime_selected\"))}trackCheckoutEditNavigation(e=!1){this.isFromCheckout&&(e?this.trackingService.track({type:b.Action.click,page:{name:\"checkout_edit_datetime\"},element:{type:\"button\",name:\"button_edit_datetime_select_master\"},tab:{name:\"datetime_list_all_masters\"}}):this.trackingService.track({type:b.Action.click,page:{name:\"checkout_edit_datetime\"},element:{type:\"button\",name:\"button_edit_datetime_confirm\"},tab:{name:\"edit_current_datetime\"}}))}trackAnyMasterTabClick(){this.trackingService.track({type:b.Action.click,page:{name:F.datetimeList},element:{type:\"button\",name:\"button_all_masters_tab\"}}),this.isFromCheckout&&this.trackingService.track({type:b.Action.click,page:{name:\"checkout_edit_datetime\"},element:{type:\"button\",name:\"button_all_masters_tab\"}})}trackAnyMasterTabView(){this.trackingService.track({type:\"tab_view\",tab:{name:\"datetime_list_all_masters\"}})}trackBackButton(){this.isFromCheckout&&this.trackingService.track({type:b.Action.click,page:{name:\"checkout_edit_datetime\"},element:{type:\"button\",name:\"button_edit_datetime_back\"}})}};t(o,\"\\u0275fac\",function(n){return new(n||o)}),t(o,\"\\u0275cmp\",E({type:o,selectors:[[\"app-select-date-time-page\"]],viewQuery:function(n,a){if(n&1&&se(li,5,ae),n&2){let s;le(s=ce())&&(a.headerEl=s.first)}},hostBindings:function(n,a){n&1&&y(\"click\",function(){return a.componentClick()})(\"popstate\",function(){return a.processPop()},!1,We)},features:[Ge([{directive:Y,inputs:[\"appLoadingBenchmarks\",\"appLoadingBenchmarks\",\"dataSource\",\"dataSource\"]}])],decls:22,vars:43,consts:[[\"header\",\"\"],[\"templateType\",\"small\",\"theme\",\"primary\",3,\"backClick\",\"profileClick\",\"contentType\",\"title\"],[\"zIndex\",\"1\",1,\"header-addition-sticky\",3,\"roundedBottom\",\"shadowBottom\",\"isSticky\"],[1,\"header-addition-sticky-inner-container\"],[\"class\",\"loyalty-block\",4,\"ngIf\"],[\"class\",\"master-tabs\",4,\"ngIf\"],[3,\"periodChange\",\"selectedDateChange\",\"calendarMonthChange\",\"calendarModeChange\",\"calendarMode\",\"calendarTransactionType\",\"activeDates\",\"weekNames\",\"monthNames\",\"selectedDate\",\"disabledBefore\",\"disableLeft\",\"startWeekOnSunday\"],[1,\"container\"],[4,\"ngIf\"],[\"class\",\"fixed-button\",3,\"title\",\"click\",4,\"ngIf\"],[1,\"loyalty-block\"],[\"role\",\"button\",1,\"loyalty-button\",3,\"click\",\"description\",\"clickable\"],[\"bannerIcon\",\"\",3,\"name\"],[1,\"master-tabs\"],[3,\"tabClick\",\"tabTitle\"],[3,\"tabClick\",\"tooltipText\",\"tabTitle\"],[1,\"brand-link\"],[1,\"no-dates-block\",3,\"title\",\"subtitle\"],[1,\"no-dates-block\",3,\"goToAvailableDate\",\"title\",\"subtitle\",\"availableDate\"],[1,\"no-dates-block\",3,\"goToAvailableDate\",\"title\"],[3,\"bookTimes\"],[1,\"fixed-button\",3,\"click\",\"title\"],[3,\"routerLink\",\"skipNavigation\"]],template:function(n,a){if(n&1){let s=x();g(0,\"app-header\",1,0),y(\"backClick\",function(){return k(s),C(a.navigateBack())})(\"profileClick\",function(){return k(s),C(a.onProfileClick())}),_(),g(2,\"app-header-addition\",2)(3,\"div\",3),f(4,ci,4,5,\"div\",4),c(5,\"async\"),f(6,pi,5,7,\"ui-kit-tabs\",5),c(7,\"async\"),g(8,\"ui-kit-calendar\",6),c(9,\"async\"),c(10,\"async\"),c(11,\"async\"),c(12,\"async\"),c(13,\"async\"),c(14,\"async\"),y(\"periodChange\",function(S){return k(s),C(a.handlePeriodChange(S))})(\"selectedDateChange\",function(S){return k(s),C(a.handleDateChange(S))})(\"calendarMonthChange\",function(S){return k(s),C(a.handleMonthChange(S))})(\"calendarModeChange\",function(S){return k(s),C(a.handleCalendarModeChange(S))}),_()()(),g(15,\"div\",7),f(16,mi,2,0,\"ng-container\",8),c(17,\"async\"),f(18,fi,10,12,\"ng-container\",8),c(19,\"async\"),_(),f(20,_i,4,8,\"ui-kit-button\",9),c(21,\"async\")}n&2&&(ze(a.isRepeatRecord||a.isMoveRecord?\"date-time-page-context\":\"\"),l(\"contentType\",a.isRepeatRecord||a.isMoveRecord?\"titleInfo\":\"companyInfo\")(\"title\",a.headerTitle),m(2),l(\"roundedBottom\",!0)(\"shadowBottom\",!0)(\"isSticky\",!0),m(2),l(\"ngIf\",a.isOrderFirstStep&&p(5,21,a.loyaltyLink$)),m(2),l(\"ngIf\",p(7,23,a.tabMasters$)),m(2),l(\"calendarMode\",p(9,25,a.calendarMode$))(\"calendarTransactionType\",a.calendarTransactionType)(\"activeDates\",p(10,27,a.activeDates$))(\"weekNames\",p(11,29,a.calendarI18nService.getWeekNames$()))(\"monthNames\",p(12,31,a.calendarI18nService.getMonthNames$()))(\"selectedDate\",p(13,33,a.getSelectedDate$))(\"disabledBefore\",a.today)(\"disableLeft\",p(14,35,a.disableGoLeftCalendar$))(\"startWeekOnSunday\",a.startWeekOnSunday),m(8),l(\"ngIf\",p(17,37,a.isDatesOrTimesLoading$)),m(2),l(\"ngIf\",!p(19,39,a.isDatesOrTimesLoading$)),m(2),l(\"ngIf\",p(21,41,a.selectedBookTime$)))},dependencies:[Tt,xt,z,Xe,Rt,mt,At,Lt,Te,fe,tt,gt,ht,Ce,Ft,Kt,de,L],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:flex;background-color:var(--y-core-color-surface-primary);min-height:100%;flex-direction:column}[_nghost-%COMP%]   .container[_ngcontent-%COMP%]{z-index:0;padding:16px 0 90px;margin-bottom:70px;position:relative;flex-grow:1;height:max-content;background-color:var(--y-core-color-surface-primary)}[_nghost-%COMP%]   .no-dates-block[_ngcontent-%COMP%]{margin:36px 24px}[_nghost-%COMP%]   ui-kit-calendar[_ngcontent-%COMP%]{width:100%;max-width:600px}[_nghost-%COMP%]   .brand-link[_ngcontent-%COMP%]{padding:40px 0 24px;position:absolute;left:0;right:0;bottom:0}[_nghost-%COMP%]   .fixed-button[_ngcontent-%COMP%]{z-index:1000}[_nghost-%COMP%]   .header-addition-sticky[_ngcontent-%COMP%]{flex-shrink:0;background-color:var(--y-core-color-surface-primary);display:flex;flex-direction:column}[_nghost-%COMP%]   .header-addition-sticky.removed-header[_ngcontent-%COMP%]{padding-top:12px}[_nghost-%COMP%]   .header-addition-sticky-inner-container[_ngcontent-%COMP%]{display:flex;flex-direction:column;width:100%}[_nghost-%COMP%]   ui-kit-datetime-block-skeleton[_ngcontent-%COMP%]{margin-top:16px}.loyalty-block[_ngcontent-%COMP%]{width:100%;max-width:600px;background-color:var(--y-core-color-surface-primary);padding:8px 8px 16px}.master-tabs[_ngcontent-%COMP%]{min-height:0;padding-bottom:12px}'],changeDetection:0}));let i=o;return i})();var vi=[{path:\"\",canActivate:[Dt],component:Gt}],zt=(()=>{let o=class o{};t(o,\"\\u0275fac\",function(n){return new(n||o)}),t(o,\"\\u0275mod\",W({type:o})),t(o,\"\\u0275inj\",K({imports:[Be.forChild(vi),Be]}));let i=o;return i})();var Qt=(()=>{let o=class o{};t(o,\"\\u0275fac\",function(n){return new(n||o)}),t(o,\"\\u0275mod\",W({type:o})),t(o,\"\\u0275inj\",K({imports:[Me,Se,he,be,_e]}));let i=o;return i})();var la=(()=>{let o=class o{};t(o,\"\\u0275fac\",function(n){return new(n||o)}),t(o,\"\\u0275mod\",W({type:o})),t(o,\"\\u0275inj\",K({imports:[Mt,he,et,be,Se,zt,Qt,Me,dt,Te,xe,_e,it,ut,Ce]}));let i=o;return i})();export{la as DateTimeModule,zt as DateTimeRoute,vi as dateTimeRoute};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 10231,
+          "_transferSize": 10891,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.447Z",
+        "time": 57.89199995342642,
+        "timings": {
+          "blocked": 8.138999911777674,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.5120000000000005,
+          "wait": 47.47900001267344,
+          "receive": 1.762000028975308,
+          "_blocked_queueing": 2.296999911777675,
+          "_blocked_proxy": 4.9559999999999995,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "446174",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "loadChildren",
+                "scriptId": "20509",
+                "url": "https://n958200.alteg.io/booking-flow-EPOA4CQ4.js",
+                "lineNumber": 0,
+                "columnNumber": 2074
+              },
+              {
+                "functionName": "B7",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 560635
+              },
+              {
+                "functionName": "loadChildren",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 560308
+              },
+              {
+                "functionName": "",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 584092
+              },
+              {
+                "functionName": "preload",
+                "scriptId": "20288",
+                "url": "https://n958200.alteg.io/chunk-6Q3T6TH3.js",
+                "lineNumber": 0,
+                "columnNumber": 4342
+              },
+              {
+                "functionName": "preloadConfig",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 584022
+              },
+              {
+                "functionName": "processRoutes",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 583828
+              },
+              {
+                "functionName": "processRoutes",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 583891
+              },
+              {
+                "functionName": "processRoutes",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 583891
+              },
+              {
+                "functionName": "processRoutes",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 583891
+              },
+              {
+                "functionName": "preload",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 583405
+              },
+              {
+                "functionName": "",
+                "scriptId": "20288",
+                "url": "https://n958200.alteg.io/chunk-6Q3T6TH3.js",
+                "lineNumber": 0,
+                "columnNumber": 1979
+              }
+            ],
+            "parent": {
+              "description": "requestIdleCallback",
+              "callFrames": [
+                {
+                  "functionName": "",
+                  "scriptId": "20288",
+                  "url": "https://n958200.alteg.io/chunk-6Q3T6TH3.js",
+                  "lineNumber": 0,
+                  "columnNumber": 1960
+                },
+                {
+                  "functionName": "observer",
+                  "scriptId": "20288",
+                  "url": "https://n958200.alteg.io/chunk-6Q3T6TH3.js",
+                  "lineNumber": 0,
+                  "columnNumber": 1790
+                },
+                {
+                  "functionName": "invoke",
+                  "scriptId": "20270",
+                  "url": "https://n958200.alteg.io/polyfills-QTIMGMLN.js",
+                  "lineNumber": 0,
+                  "columnNumber": 6464
+                },
+                {
+                  "functionName": "onInvoke",
+                  "scriptId": "20294",
+                  "url": "https://n958200.alteg.io/chunk-KO722YSM.js",
+                  "lineNumber": 0,
+                  "columnNumber": 74795
+                },
+                {
+                  "functionName": "invoke",
+                  "scriptId": "20270",
+                  "url": "https://n958200.alteg.io/polyfills-QTIMGMLN.js",
+                  "lineNumber": 0,
+                  "columnNumber": 6404
+                },
+                {
+                  "functionName": "runGuarded",
+                  "scriptId": "20270",
+                  "url": "https://n958200.alteg.io/polyfills-QTIMGMLN.js",
+                  "lineNumber": 0,
+                  "columnNumber": 1837
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "20270",
+                  "url": "https://n958200.alteg.io/polyfills-QTIMGMLN.js",
+                  "lineNumber": 0,
+                  "columnNumber": 1616
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/master-step.module-B73WYMR6.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/booking-flow-EPOA4CQ4.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1533,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6049"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb0a831bcb1-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-76c4\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "9d8b3872b7451265e6fe8e424c64be19"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 30404,
+            "mimeType": "application/javascript",
+            "compression": 21097,
+            "text": "import{a as Oe,b as Le}from\"./chunk-WIWEQICE.js\";import{b as oi}from\"./chunk-X2IVCNZ3.js\";import{a as ni,b as ai,c as Ne}from\"./chunk-5TNNUQPF.js\";import{a as si,b as ci}from\"./chunk-FVSTWCGN.js\";import\"./chunk-ZCWD3LHB.js\";import{a as ri}from\"./chunk-CBNID4LV.js\";import\"./chunk-7HQ4EX32.js\";import{a as ii}from\"./chunk-SW5ZB23E.js\";import{a as ei,b as $e}from\"./chunk-7UC6X27C.js\";import{a as V,c as ti}from\"./chunk-P3W6H44H.js\";import\"./chunk-2HW2JYAQ.js\";import\"./chunk-J5MXNZWD.js\";import{a as Qt,c as Xt,d as De}from\"./chunk-65BCRKHI.js\";import\"./chunk-XSCHNAPS.js\";import{a as H}from\"./chunk-3XC4XRL4.js\";import{a as Zt}from\"./chunk-T7DRINFC.js\";import{E as zt,F as Re,i as Et,u as Ht,v as xe,w as Vt,y as Be}from\"./chunk-IGSDBEZN.js\";import{e as Lt}from\"./chunk-TX67VJHB.js\";import{b as Yt}from\"./chunk-NZOI5B53.js\";import\"./chunk-5GELTLFF.js\";import\"./chunk-TXASR5LU.js\";import\"./chunk-4LVJC2QZ.js\";import{c as Jt,d as Ae,e as Pe}from\"./chunk-HNFBT5P4.js\";import\"./chunk-OT2UNM7Q.js\";import{a as Ut,c as Wt,d as jt}from\"./chunk-6Q3T6TH3.js\";import\"./chunk-5HKI7HVK.js\";import\"./chunk-UTVABLOL.js\";import\"./chunk-2AY43R2Q.js\";import{C as Q,D as Gt,G as we,H as X,g as Nt,i as be,t as Ft,u as P,w as Kt,y as qt}from\"./chunk-IV3KQJLV.js\";import{Aa as ye,Ab as F,Ba as ie,Bb as ut,Ca as ft,Cg as se,Dc as A,De as re,Ee as oe,Ef as vt,Eh as Bt,Fc as St,Ff as Ct,Hc as ht,Hg as xt,Ih as ce,J as ke,Jf as ne,Jh as qe,Ji as pe,Kf as kt,Kh as wt,Ki as Ie,Lf as ae,Lh as Rt,Mh as Dt,N as G,Nh as At,Oh as Ge,P as Me,Ph as Pt,Q as pt,Rh as $t,S as Ue,Te as Y,Yd as gt,Z as lt,ch as J,da as We,ga as mt,ge as _t,hg as Mt,j as E,jg as T,kg as yt,la as R,lg as Tt,og as bt,p as ct,qg as It,si as Ot,te as Ke,ue as Te,ui as c,xa as z,ya as dt,za as je}from\"./chunk-6FGVQ7PR.js\";import{Aa as Se,Bb as te,D as Je,Fa as s,Fb as h,G as Qe,J as D,Ka as L,Kc as ot,L as j,La as he,N as Xe,Nc as Ve,Pc as p,Qb as ge,Qc as m,Rc as nt,T as de,Ub as M,Uc as at,Va as x,Wa as B,Xb as g,Zb as Fe,aa as y,ab as q,ac as w,bc as _e,cb as Ee,cc as ve,dc as Ce,eb as et,ec as _,fc as k,gc as b,i as me,id as st,jc as tt,ka as fe,kc as N,oa as O,oc as I,pc as f,qc as it,r as Ye,rc as He,sa as Ze,ua as K,x as S,xc as rt,y as W,za as ue}from\"./chunk-KO722YSM.js\";import\"./chunk-H3NWS7CE.js\";import\"./chunk-POJFEGQU.js\";import{a as v,b as C,g as i,i as $}from\"./chunk-JV5WWF5Q.js\";var ze=\"was_master_date_time_tooltip_shown\";var _i=[[[\"headerAdditionContent\"]],\"*\"],vi=[\"headerAdditionContent\",\"*\"],Ci=o=>({containerType:o}),ki=o=>({promoPlace:o});function Mi(o,n){if(o&1&&b(0,\"app-header-addition\",2),o&2){let a=f();g(\"title\",a.headerTitle)}}function yi(o,n){o&1&&(_(0,\"div\",3),b(1,\"ui-kit-promo-skeleton\"),k())}function Ti(o,n){if(o&1&&(b(0,\"app-banner-blocks\",9),p(1,\"async\")),o&2){let a=f();Fe(\"banner-blocks-mt\",m(1,3,a.isHeaderHided$)),g(\"bannerBlocksSettings\",Ve(5,ki,a.PromoSettingsPlaceEnum.mastersSelect))}}function bi(o,n){if(o&1&&(b(0,\"app-service-button-basket\",8),p(1,\"async\")),o&2){let a,e=f(),t=rt(12);g(\"services\",e.selectedServices)(\"currencyShortTitle\",(a=m(1,4,e.currentCompany$))==null?null:a.currency_short_title)(\"continueButtonTemplateRef\",t)(\"@slideInUpAnimation\",void 0)}}function Ii(o,n){if(o&1){let a=N();_(0,\"div\",10),p(1,\"async\"),_(2,\"app-continue-button\",11),I(\"activeButtonClick\",function(){x(a);let t=f();return B(t.goToNextStep.emit())}),k()()}if(o&2){let a,e=f();g(\"routerLink\",(a=m(1,4,e.nextStepUrl))==null?null:a.url)(\"skipNavigation\",!0),h(2),g(\"title\",e.nextStepLabel)(\"fixed\",e.selectedServices.length===0)}}var Z=(()=>{let n=class n{constructor(){i(this,\"backClick\",new Ee);i(this,\"goToNextStep\",new Ee);i(this,\"headerTitle\",\"\");i(this,\"isMastersSelected\",!1);i(this,\"nextStepLabel\",\"\");i(this,\"selectedServices\",[]);i(this,\"store\",s(z));i(this,\"navigationService\",s(Q));i(this,\"activatedRoute\",s(G));i(this,\"destroyRef\",s(q));i(this,\"EWApiSlotContainerType\",Et);i(this,\"isHeaderHided$\",this.store.select(c.widgetSettings.getWidgetHideHeader));i(this,\"isOrderFirstStep\",!1);i(this,\"isPromoBlocksLoading$\",this.store.select(c.loader.getLoadingActions).pipe(S(e=>e.includes(Bt))));i(this,\"currentCompany$\",this.store.select(c.currentCompany.getCurrentCompany).pipe(y(e=>!!e),R(this.destroyRef)));i(this,\"PromoSettingsPlaceEnum\",Qt);i(this,\"nextStepUrl\",Qe(0).pipe(O(()=>this.navigationService.generateNextStepLink())));i(this,\"transition\",We)}ngOnInit(){this.isOrderFirstStep=this.navigationService.isOnOrderFirstStep(this.activatedRoute.snapshot)}};i(n,\"\\u0275fac\",function(t){return new(t||n)}),i(n,\"\\u0275cmp\",L({type:n,selectors:[[\"app-base-master-selector\"]],inputs:{headerTitle:\"headerTitle\",isMastersSelected:\"isMastersSelected\",nextStepLabel:\"nextStepLabel\",selectedServices:\"selectedServices\"},outputs:{backClick:\"backClick\",goToNextStep:\"goToNextStep\"},standalone:!0,features:[ot],ngContentSelectors:vi,decls:13,vars:10,consts:[[\"continueButtonTemplateRef\",\"\"],[\"theme\",\"primary\",3,\"backClick\"],[\"theme\",\"primary\",\"zIndex\",\"99\",1,\"title-wrapper\",3,\"title\"],[1,\"promo-skeleton-container\"],[1,\"banner-blocks\",3,\"bannerBlocksSettings\",\"banner-blocks-mt\"],[1,\"container\"],[\"componentClasses\",\"p-default\",3,\"wApiSlot\"],[1,\"brand-link\"],[3,\"services\",\"currencyShortTitle\",\"continueButtonTemplateRef\"],[1,\"banner-blocks\",3,\"bannerBlocksSettings\"],[3,\"routerLink\",\"skipNavigation\"],[3,\"activeButtonClick\",\"title\",\"fixed\"]],template:function(t,r){if(t&1){let l=N();it(_i),_(0,\"app-header\",1),I(\"backClick\",function(){return x(l),B(r.backClick.emit())}),k(),M(1,Mi,1,1,\"app-header-addition\",2),He(2),M(3,yi,2,0,\"div\",3),p(4,\"async\"),M(5,Ti,2,7,\"app-banner-blocks\",4),_(6,\"div\",5),tt(7,6),He(8,1),b(9,\"ui-kit-brand-link\",7),k(),M(10,bi,2,6,\"app-service-button-basket\",8)(11,Ii,3,6,\"ng-template\",null,0,at)}t&2&&(h(),w(r.isOrderFirstStep?-1:1),h(2),w(m(4,6,r.isPromoBlocksLoading$)?3:5),h(3),Fe(\"low-header\",!r.isOrderFirstStep),h(),g(\"wApiSlot\",Ve(8,Ci,r.EWApiSlotContainerType.masterSelectPrepend)),h(3),w(r.isMastersSelected?10:-1))},dependencies:[Pe,Jt,Ae,E,De,Xt,$e,ei,be,Le,Be,Ht,Re,Ne,ai,pt,jt,Wt,Ut,Lt,zt],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:flex;flex-direction:column;flex:1;background:var(--y-core-color-surface-primary)}[_nghost-%COMP%]   .title-wrapper[_ngcontent-%COMP%]{padding:16px}[_nghost-%COMP%]   .promo-skeleton-container[_ngcontent-%COMP%]{padding:0 16px}.banner-blocks[_ngcontent-%COMP%]  .banner-wrapper{padding:8px 16px}.banner-blocks-mt[_ngcontent-%COMP%]{margin-top:10px}.container[_ngcontent-%COMP%]{padding:0 0 150px}'],data:{animation:[lt(\"slideInUpAnimation\",[We(\":enter\",[mt(ni,{params:{translateY:\"130px\",maxWidth:\"600px\",timeParams:\"0.25s ease-out\"}})])])]},changeDetection:0}));let o=n;return o})();function Ri(o,n){if(o&1){let a=N();_(0,\"ui-kit-tabs\",5)(1,\"ui-kit-tab\",6),p(2,\"yDate\"),I(\"tabClick\",function(){let t=x(a),r=f(2);return B(r.onTabClick(t))}),k(),_(3,\"ui-kit-tab\",7),p(4,\"translate\"),p(5,\"translate\"),I(\"tabClick\",function(){x(a);let t=f(2);return B(t.onTabClick(null))}),k()()}if(o&2){let a=f(2);g(\"selectedTabId\",a.otherTimeTabClicked.toString()),h(),g(\"tabTitle\",nt(2,8,n,\"shortDateTime\"))(\"tabId\",\"false\")(\"dataLocator\",\"select_date_time\"),h(2),g(\"tooltipText\",a.tooltipWasShown?\"\":m(4,11,\"date.more_masters_other_time\"))(\"tabTitle\",m(5,13,\"date.other_date\"))(\"tabId\",\"true\")(\"dataLocator\",\"select_another_time\")}}function Di(o,n){if(o&1&&(_(0,\"app-header-addition\",2,0),M(2,Ri,6,15,\"ui-kit-tabs\",5),k()),o&2){let a,e=f();g(\"isSticky\",!0),h(2),w((a=e.initialIndividualRecordInfo.selectedDateTime)?2:-1,a)}}function Ai(o,n){if(o&1){let a=N();_(0,\"app-masters-list\",8),p(1,\"async\"),p(2,\"async\"),p(3,\"async\"),p(4,\"async\"),p(5,\"async\"),I(\"selectMaster\",function(t){x(a);let r=f();return B(r.selectMaster(t))})(\"showInfo\",function(t){x(a);let r=f();return B(r.openMasterInfo(t))})(\"selectSeance\",function(t){x(a);let r=f();return B(r.selectSeance(t))}),k()}if(o&2){let a=f();g(\"company\",m(1,7,a.currentCompany$))(\"masters\",m(2,9,a.masters$))(\"staffSeances\",m(3,11,a.allStaffSeances$))(\"selectedMasterId\",m(4,13,a.selectedMasterId$))(\"selectedSlotDateTime\",m(5,15,a.selectedSlotDateTime$))(\"pageName\",a.pageName)(\"isNewListItemVariant\",!0)}}function Pi(o,n){o&1&&(_(0,\"div\",9),b(1,\"ui-kit-master-skeleton\")(2,\"ui-kit-datetime-block-skeleton\",10),k()),o&2&&(h(2),g(\"timeSlotsCount\",4))}function $i(o,n){if(o&1&&(_(0,\"div\",4),ve(1,Pi,3,1,\"div\",9,_e),k()),o&2){let a=f();h(),Ce(a.skeletons)}}var mi=(()=>{let n=class n{constructor(){i(this,\"store\",s(J));i(this,\"navigationService\",s(Q));i(this,\"translatePipe\",s(F));i(this,\"destroyRef\",s(q));i(this,\"widgetApiHelperService\",s(Kt));i(this,\"pricePipe\",s(xt));i(this,\"paymentService\",s(Ft));i(this,\"appNavigationService\",s(X));i(this,\"router\",s(Me));i(this,\"activatedRoute\",s(G));i(this,\"trackingService\",s(St));i(this,\"orderManager\",s(we));i(this,\"metrika\",s(Yt));i(this,\"currentCompany\",s(qt));i(this,\"actions$\",s(ye));i(this,\"cd\",s(st));i(this,\"initialIndividualRecordInfo\",{});i(this,\"pageName\",V.mastersList);i(this,\"nextStepLabel$\",this.navigationService.nextStepLabelToken$.pipe(S(e=>this.translatePipe.transform(e))));i(this,\"currentCompany$\",this.store.select(c.currentCompany.getCurrentCompany).pipe(y(e=>!!e),R(this.destroyRef)));i(this,\"selectedServices$\",this.store.select(c.order.getSelectedServices));i(this,\"selectedMasterId$\",this.store.select(c.order.getSelectedMasterId));i(this,\"skeletons\",new Array(4).fill(0));i(this,\"masters$\",this.widgetApiHelperService.filteredByInjectionMasters.pipe(K(this.selectedMasterId$,this.currentCompany$,this.store.select(c.order.getSelectedServices).pipe(S(e=>!e.some(t=>this.paymentService.abonementRestrictionRequired(t))))),S(([e,t,r,l])=>bt.sortMasters(e,t).map(d=>{let u=l?this.pricePipe.transform({price_min:d.price_min,price_max:d.price_max},r.currency_short_title):null;return u===this.translatePipe.transform(\"service.price_not_available\")&&(u=null),C(v({},d),{priceRange:u})}))));i(this,\"headerTitle$\",this.store.select(c.bookform.getMasterStepTitle));i(this,\"preSelectedSeance$\",new me(void 0));i(this,\"selectedSlotDateTime$\",W([this.preSelectedSeance$,this.orderManager.getIndividualDateTimeRaw$()]).pipe(S(([e,t])=>t||(e==null?void 0:e.datetime)),fe(1)));i(this,\"allStaffSeances$\",this.store.select(c.staffSeances.getAllStaffSeances).pipe(K(this.selectedMasterId$,this.selectedSlotDateTime$,this.currentCompany$),S(([e,t,r,l])=>{let d=!r;if(t&&r){let u=$t(e,{companyId:l.id,staffId:t});u?d=u.seances.some(ee=>ee.datetime===r):d=!1}return d?e:void 0})));i(this,\"tooltipWasShown\",(()=>{let e=sessionStorage.getItem(ze);return e?JSON.parse(e):!1})());i(this,\"showOtherTimeTabs$\",new me(!1));i(this,\"isReady$\",new me(!1));i(this,\"otherTimeTabClicked\",!1);i(this,\"isFromCheckout\",!1);i(this,\"needCleanComponentData\",!1);i(this,\"loadingBenchmarksDirective\",s(H,{self:!0}));this.loadingBenchmarksDirective.appLoadingBenchmarks=[\"booking_masters_page_open_cold\",\"booking_masters_page_open\"],this.loadingBenchmarksDirective.dataSource=W([this.store.select(c.order.getIsOrderLoading),this.store.select(c.staffSeances.getAnyStaffSeancesLoading)]).pipe(D(([e,t])=>!e&&!t))}componentClick(){this.tooltipWasShown||this.setTooltipShown()}ngOnInit(){W([this.store.select(c.dateTime.isBookTimesLoading),this.store.select(c.dateTime.isBookDatesLoading),this.store.select(c.masters.getMastersLoading)]).pipe(j(0),D(e=>!e.some(Boolean)),de(1),O(()=>this.store.select(c.order.getSelectedIndividualRecordInfo).pipe(y())),R(this.destroyRef)).subscribe(e=>{var r;let t=this.appNavigationService.getRouteStorage(P.selectMasterPage);this.initialIndividualRecordInfo=t?C(v({},t.initialIndividualState),{selectedServicesInfo:e.selectedServicesInfo}):e,!this.isFromCheckout&&this.navigationService.menuMode&&((r=this.initialIndividualRecordInfo)!=null&&r.selectedDateTime)&&!this.store.selectSnapshot(c.order.getAreCompositeServicesEnabled)&&(this.showOtherTimeTabs$.next(!0),e!=null&&e.selectedDateTime||(this.otherTimeTabClicked=!0)),this.appNavigationService.setRouteStorage(P.selectMasterPage,C(v({},t),{initialIndividualState:this.initialIndividualRecordInfo,needCleanDateTime:!1})),this.navigationService.menuMode&&this.store.dispatch(ce()),this.isReady$.next(!0)}),this.store.select(c.loader.getLoadingActions).pipe(y(e=>!e.includes(vt)),K(this.store.select(c.order.getSelectedMasterId),this.store.select(c.currentCompany.getCurrentCompany)),R(this.destroyRef)).subscribe(([,e,t])=>{se.start(\"booking_master_selected\");let r=this.activatedRoute.snapshot.queryParamMap.get(Gt);r!=null&&r.includes(pe[\"create-record\"])&&(this.isFromCheckout=!0),r!=null&&r.includes(pe[\"create-record\"])&&e?(this.trackingService.pageView(\"checkout_edit_master\"),this.trackingService.track({type:A.Action.pageView,page:{name:\"checkout_edit_master\"},element:{id:e}})):this.trackingService.pageView(this.pageName),t&&this.metrika.reachGoal(\"screen_open_staff\",{companyId:t.id,companyName:t.title})}),se.start(\"booking_master_selected\"),this.router.events.pipe(D(e=>e instanceof ke),y()).subscribe(()=>{this.restoreOrderState()})}ngOnDestroy(){return $(this,null,function*(){this.trackingService.trackBenchmark(se.end(\"booking_page_pass_master\")),this.store.dispatch(At())})}processPop(){return $(this,null,function*(){this.needCleanComponentData=!0})}processBeforeUnload(){return $(this,null,function*(){this.appNavigationService.setRouteStorage(P.selectMasterPage,{initialIndividualState:this.initialIndividualRecordInfo,needCleanDateTime:!!this.preSelectedSeance$.value})})}restoreOrderState(){var e,t,r;this.needCleanComponentData&&(this.store.dispatch(new re((e=this.initialIndividualRecordInfo)==null?void 0:e.selectedBaseMasterId)),this.store.dispatch(new Ke((t=this.initialIndividualRecordInfo)==null?void 0:t.selectedDate)),this.store.dispatch(new Te((r=this.initialIndividualRecordInfo)==null?void 0:r.selectedDateTime)))}goToNextStep(){return $(this,null,function*(){var t;this.preSelectedSeance$.value&&(this.store.dispatch(new Ke(Ge(this.preSelectedSeance$.value))),this.store.dispatch(new Te(this.preSelectedSeance$.value.datetime)));let e=yield this.store.select(c.order.getSelectedDateTime).pipe(y(),R(this.destroyRef)).toPromise();if(this.otherTimeTabClicked&&e!==((t=this.initialIndividualRecordInfo)==null?void 0:t.selectedDateTime)?this.trackContinueButton(!1):this.trackContinueButton(),this.navigationService.serialMode&&this.isFromCheckout){this.navigationService.navigateToContact();return}this.navigationService.navigateToNextStep(void 0)})}navigateBack(){return this.trackBackButton(),this.needCleanComponentData=!0,this.navigationService.navigateBack()}selectMaster(e){this.preSelectedSeance$.value&&(this.preSelectedSeance$.next(void 0),this.store.dispatch(new oe(!0))),this.store.dispatch(new Y(C(v({},this.initialIndividualRecordInfo),{selectedBaseMasterId:e.id,selectedServicesInfo:this.initialIndividualRecordInfo.selectedServicesInfo.map(t=>ne(t)?C(v({},t),{subServicesInfo:t.subServicesInfo.map(r=>C(v({},r),{selectedMasterId:e.id}))}):C(v({},t),{selectedMasterId:e.id}))}),[T.servicesUpdate,T.dateTimeUpdate]))}selectSeance(e){if(!e){this.preSelectedSeance$.next(void 0),this.store.dispatch(new oe(!0));return}let{staff:t,seance:r,masterIndex:l}=e;this.preSelectedSeance$.next(r),this.store.dispatch(new Y(C(v({},this.initialIndividualRecordInfo),{selectedDateTime:this.preSelectedSeance$.value.datetime,selectedDate:this.preSelectedSeance$.value.datetime.split(\"T\")[0],selectedBaseMasterId:t.id,selectedServicesInfo:this.initialIndividualRecordInfo.selectedServicesInfo.map(d=>ne(d)?C(v({},d),{subServicesInfo:d.subServicesInfo.map(u=>C(v({},u),{selectedMasterId:t.id}))}):C(v({},d),{selectedMasterId:t.id}))}),[T.servicesUpdate,T.dateTimeUpdate])),this.trackSelectSeanceAndStaff(t,r,l)}openMasterInfo(e){this.currentCompany$.subscribe(t=>$(this,null,function*(){let r=\"./\".concat(Ie(t.id,e.id));yield this.router.navigate([r],{relativeTo:this.activatedRoute,queryParamsHandling:\"merge\",state:{canSelectMaster:!0}})}))}trackSelectSeanceAndStaff(e,t,r){this.trackingService.track({type:A.Action.select,name:V.selectMasterAndTime,part:{type:V.master,name:e.name,id:e.id,number:r},element:{type:V.datetime,name:t.datetime,number:t.seanceIndex}});let l=this.currentCompany.getCurrentCompany();this.metrika.reachGoal(\"master_selected\",{master:e.name,masterId:e.id,companyId:l.id,companyName:l.title}),this.metrika.reachGoal(\"master_seance_selected\",{date:Ge(t),time:t.time,master:e.name,masterId:e.id,companyId:l.id,companyName:l.title})}onTabClick(e){this.otherTimeTabClicked=!e,this.isFromCheckout&&!e&&(this.trackOtherTimeTabClick(),this.actions$.pipe(ie(Ct),y(),R(this.destroyRef)).subscribe(()=>{this.trackOtherTimeTabView()})),this.store.dispatch(new Te(e)),this.store.dispatch(new re(null)),this.store.dispatch(ce())}setTooltipShown(){this.tooltipWasShown=!0,sessionStorage.setItem(ze,JSON.stringify(!0)),this.cd.markForCheck()}trackOtherTimeTabClick(){this.trackingService.track({type:A.Action.click,page:{name:\"checkout_edit_master\"},element:{type:\"button\",name:\"button_all_datetimes_tab\"}})}trackOtherTimeTabView(){this.trackingService.track({type:\"tab_view\",tab:{name:\"master_list_all_datetimes\"}})}trackContinueButton(e=!0){this.navigationService.menuMode?this.navigationService.getNextStepTrackBtnName$().pipe(y(),R(this.destroyRef)).subscribe(t=>{this.trackingService.track({type:A.Action.click,page:{name:this.pageName},element:{type:\"button\",name:t}})}):this.trackingService.track({type:A.Action.click,page:{name:this.pageName},name:V.clickButtonNextStep,element:{type:V.button,name:V.buttonNextStep}}),this.isFromCheckout&&(e?this.trackingService.track({type:A.Action.click,page:{name:\"checkout_edit_master\"},element:{type:\"button\",name:\"button_edit_master_confirm\"},tab:{name:\"edit_current_master\"}}):this.trackingService.track({type:A.Action.click,page:{name:\"checkout_edit_master\"},element:{type:\"button\",name:\"button_edit_master_select_datetime\"},tab:{name:\"master_list_all_datetimes\"}})),this.trackingService.trackBenchmark(se.end(\"booking_master_selected\"))}trackBackButton(){this.isFromCheckout&&this.trackingService.track({type:A.Action.click,page:{name:\"checkout_edit_master\"},element:{type:\"button\",name:\"button_edit_master_back\"}})}};i(n,\"\\u0275fac\",function(t){return new(t||n)}),i(n,\"\\u0275cmp\",L({type:n,selectors:[[\"app-single-master-selector\"]],hostBindings:function(t,r){t&1&&I(\"click\",function(){return r.componentClick()})(\"popstate\",function(){return r.processPop()},!1,te)(\"beforeunload\",function(){return r.processBeforeUnload()},!1,te)},features:[ge([{directive:H,inputs:[\"appLoadingBenchmarks\",\"appLoadingBenchmarks\",\"dataSource\",\"dataSource\"]}])],decls:11,vars:20,consts:[[\"headerAdditionContent\",\"\"],[3,\"backClick\",\"goToNextStep\",\"headerTitle\",\"isMastersSelected\",\"selectedServices\",\"nextStepLabel\"],[\"theme\",\"primary\",\"zIndex\",\"99\",1,\"other-time-addition\",3,\"isSticky\"],[1,\"masters-list\",3,\"company\",\"masters\",\"staffSeances\",\"selectedMasterId\",\"selectedSlotDateTime\",\"pageName\",\"isNewListItemVariant\"],[1,\"skeletons-container\"],[1,\"other-time-tabs\",3,\"selectedTabId\"],[3,\"tabClick\",\"tabTitle\",\"tabId\",\"dataLocator\"],[3,\"tabClick\",\"tooltipText\",\"tabTitle\",\"tabId\",\"dataLocator\"],[1,\"masters-list\",3,\"selectMaster\",\"showInfo\",\"selectSeance\",\"company\",\"masters\",\"staffSeances\",\"selectedMasterId\",\"selectedSlotDateTime\",\"pageName\",\"isNewListItemVariant\"],[1,\"inner-container\"],[3,\"timeSlotsCount\"]],template:function(t,r){t&1&&(_(0,\"app-base-master-selector\",1),p(1,\"async\"),p(2,\"translate\"),p(3,\"async\"),p(4,\"async\"),p(5,\"async\"),I(\"backClick\",function(){return r.navigateBack()})(\"goToNextStep\",function(){return r.goToNextStep()}),M(6,Di,3,2,\"app-header-addition\",2),p(7,\"async\"),M(8,Ai,6,17,\"app-masters-list\",3),p(9,\"async\"),M(10,$i,3,0,\"div\",4),k()),t&2&&(g(\"headerTitle\",m(2,8,m(1,6,r.headerTitle$)))(\"isMastersSelected\",m(3,10,r.selectedMasterId$)!==null)(\"selectedServices\",m(4,12,r.selectedServices$))(\"nextStepLabel\",m(5,14,r.nextStepLabel$)),h(6),w(m(7,16,r.showOtherTimeTabs$)?6:-1),h(2),w(m(9,18,r.isReady$)?8:10))},dependencies:[Ae,ti,xe,Vt,Z,ci,si,E,F,Nt],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:flex;flex-direction:column;height:100vh}.other-time-tabs[_ngcontent-%COMP%]{min-height:0;width:100%}.masters-list[_ngcontent-%COMP%]{display:flex;flex-direction:column;gap:20px;padding-bottom:56px}.other-time-addition[_ngcontent-%COMP%]{margin-bottom:20px}.skeletons-container[_ngcontent-%COMP%]{display:flex;flex-direction:column;padding:16px;gap:20px}.skeletons-container[_ngcontent-%COMP%]   .inner-container[_ngcontent-%COMP%]{display:flex;flex-direction:column;gap:14px}'],changeDetection:0}));let o=n;return o})();function Li(o,n){o&1&&b(0,\"ui-kit-master-skeleton\")}function Ni(o,n){if(o&1&&(_(0,\"div\",1),ve(1,Li,1,0,\"ui-kit-master-skeleton\",null,_e),k()),o&2){let a=f();h(),Ce(a.skeletons)}}function Ei(o,n){if(o&1){let a=N();_(0,\"app-services-card-with-master-mock\",3),p(1,\"async\"),p(2,\"async\"),p(3,\"async\"),p(4,\"async\"),p(5,\"async\"),p(6,\"async\"),I(\"masterSelected\",function(t){x(a);let r=f();return B(r.selectMaster(t))})(\"openMasterInfo\",function(t){x(a);let r=f();return B(r.navigateToMasterPage(t))}),k()}if(o&2){let a=f();g(\"company\",m(1,7,a.company$))(\"selectedServices\",m(2,9,a.selectedServices$))(\"compositeMasters\",m(3,11,a.mastersForComposites$))(\"servicesInOrder\",m(4,13,a.servicesInOrder$))(\"selectedMaster\",m(5,15,a.selectedMaster$))(\"availableSingleMasters\",m(6,17,a.availableMasters$))(\"hiddenMasterId\",a.hiddenMasterId)}}var di=(()=>{let n=class n{constructor(){i(this,\"store\",s(J));i(this,\"navigationService\",s(Q));i(this,\"translatePipe\",s(F));i(this,\"router\",s(Me));i(this,\"appNavigationService\",s(X));i(this,\"activatedRoute\",s(G));i(this,\"complexTrackingService\",s(oi));i(this,\"orderManagerService\",s(we));i(this,\"mastersForComposites$\",this.store.select(c.masters.getExtendedMastersForComposites));i(this,\"isMastersForCompositesLoading$\",this.store.select(c.masters.getMastersForCompositesLoading()));i(this,\"company$\",this.store.select(c.currentCompany.getCurrentCompany));i(this,\"selectedServices$\",this.store.select(c.order.getSelectedServices));i(this,\"servicesInOrder$\",this.store.select(c.order.getSelectedIndividualRecordInfo).pipe(fe({refCount:!0,bufferSize:1})));i(this,\"nextStepLabel$\",this.navigationService.nextStepLabelToken$.pipe(S(e=>this.translatePipe.transform(e))));i(this,\"areAllMastersSelected$\",this.servicesInOrder$.pipe(S(e=>e.selectedServicesInfo.every(t=>ne(t)?t.subServicesInfo.every(r=>r.selectedMasterId!==null):t.selectedMasterId!==null))));i(this,\"availableMasters$\",this.store.select(c.masters.getMasters).pipe(S(e=>e.filter(t=>t.bookable))));i(this,\"selectedMaster$\",this.store.select(c.order.getSelectedMaster));i(this,\"hiddenMasterId\",this.navigationService.getHiddenMasterId());i(this,\"needCleanComponentData\",!1);i(this,\"initialIndividualRecordInfo\",{});i(this,\"destroyRef\",s(q));i(this,\"loadingBenchmarksDirective\",s(H,{self:!0}));i(this,\"skeletons\",new Array(3).fill(0));this.loadingBenchmarksDirective.appLoadingBenchmarks=[\"booking_multiple_masters_page_open\",\"booking_multiple_masters_page_open_cold\"],this.loadingBenchmarksDirective.dataSource=W([this.store.select(c.order.getIsOrderLoading),this.isMastersForCompositesLoading$]).pipe(D(([e,t])=>!e&&!t))}processPop(){return $(this,null,function*(){this.needCleanComponentData=!0})}ngOnInit(){this.store.select(c.masters.getMastersForCompositesLoading()).pipe(j(0),D(e=>!e),de(1),O(()=>this.store.select(c.order.getSelectedIndividualRecordInfo).pipe(y())),R(this.destroyRef)).subscribe(e=>{let t=this.appNavigationService.getRouteStorage(P.selectMasterPage);this.initialIndividualRecordInfo=t?t.initialIndividualState:e,this.appNavigationService.setRouteStorage(P.selectMasterPage,C(v({},t),{initialIndividualState:this.initialIndividualRecordInfo,needCleanDateTime:!1})),this.store.dispatch(new Y(this.orderManagerService.applyInitialMasterIfNeeded(e,this.store.selectSnapshot(c.masters.getExtendedMastersForComposites),this.store.selectSnapshot(c.masters.getMasters),this.hiddenMasterId),[T.mastersUpdate,T.dateTimeUpdate,T.servicesUpdate,T.compositeMastersUpdate]))}),this.router.events.pipe(D(e=>e instanceof ke),y()).subscribe(()=>{this.restoreOrderState()}),this.complexTrackingService.setServiceComplexPage(),this.complexTrackingService.trackOpenPageAction()}goToNextStep(){this.navigationService.navigateToNextStep(void 0)}selectMaster(e){this.store.dispatch(new re(e.masterId,e.compositeServiceId,e.serviceLinkId)),this.complexTrackingService.trackSelectMasterAction(e.masterId,e.serviceLinkId)}navigateBack(){return this.needCleanComponentData=!0,this.navigationService.navigateBack()}navigateToMasterPage({masterId:e,serviceId:t,serviceLinkId:r}){let l=this.store.selectSnapshot(c.currentCompany.getCurrentCompanyId);this.router.navigate([Ie(l,e)],{relativeTo:this.activatedRoute,queryParamsHandling:\"preserve\",state:{canSelectMaster:!0,serviceId:t,subServiceId:r}})}restoreOrderState(){this.needCleanComponentData&&this.store.dispatch(new Y(this.initialIndividualRecordInfo,[T.mastersUpdate,T.dateTimeUpdate,T.servicesUpdate,T.compositeMastersUpdate]))}};i(n,\"\\u0275fac\",function(t){return new(t||n)}),i(n,\"\\u0275cmp\",L({type:n,selectors:[[\"app-multiple-master-selector\"]],hostBindings:function(t,r){t&1&&I(\"popstate\",function(){return r.processPop()},!1,te)},features:[ge([{directive:H,inputs:[\"appLoadingBenchmarks\",\"appLoadingBenchmarks\",\"dataSource\",\"dataSource\"]}])],decls:8,vars:15,consts:[[3,\"backClick\",\"goToNextStep\",\"selectedServices\",\"headerTitle\",\"nextStepLabel\",\"isMastersSelected\"],[1,\"skeletons-container\"],[3,\"company\",\"selectedServices\",\"compositeMasters\",\"servicesInOrder\",\"selectedMaster\",\"availableSingleMasters\",\"hiddenMasterId\"],[3,\"masterSelected\",\"openMasterInfo\",\"company\",\"selectedServices\",\"compositeMasters\",\"servicesInOrder\",\"selectedMaster\",\"availableSingleMasters\",\"hiddenMasterId\"]],template:function(t,r){t&1&&(_(0,\"app-base-master-selector\",0),p(1,\"async\"),p(2,\"translate\"),p(3,\"async\"),p(4,\"async\"),I(\"backClick\",function(){return r.navigateBack()})(\"goToNextStep\",function(){return r.goToNextStep()}),M(5,Ni,3,0,\"div\",1),p(6,\"async\"),M(7,Ei,7,19,\"app-services-card-with-master-mock\",2),k()),t&2&&(g(\"selectedServices\",m(1,5,r.selectedServices$))(\"headerTitle\",m(2,7,\"steps.select_specialists\"))(\"nextStepLabel\",m(3,9,r.nextStepLabel$))(\"isMastersSelected\",m(4,11,r.areAllMastersSelected$)),h(5),w(m(6,13,r.isMastersForCompositesLoading$)?5:7))},dependencies:[xe,Oe,Z,E,F],styles:[\"[_nghost-%COMP%]{display:flex;flex-direction:column;height:100vh}.skeletons-container[_ngcontent-%COMP%]{display:flex;flex-direction:column;padding:16px;gap:20px}\"],changeDetection:0}));let o=n;return o})();function Hi(o,n){o&1&&b(0,\"app-multiple-master-selector\")}function Vi(o,n){o&1&&b(0,\"app-single-master-selector\")}var fi=(()=>{let n=class n{constructor(){i(this,\"store\",s(J));i(this,\"showMultipleMasterSelector$\",this.store.select(c.order.getAddExtraMasterStepForComposites))}};i(n,\"\\u0275fac\",function(t){return new(t||n)}),i(n,\"\\u0275cmp\",L({type:n,selectors:[[\"app-select-master-page\"]],decls:3,vars:3,template:function(t,r){t&1&&(M(0,Hi,1,0,\"app-multiple-master-selector\"),p(1,\"async\"),M(2,Vi,1,0,\"app-single-master-selector\")),t&2&&w(m(1,1,r.showMultipleMasterSelector$)?0:2)},dependencies:[mi,di,E],styles:[\"[_nghost-%COMP%]{min-height:100%}\"]}));let o=n;return o})();var ui=(()=>{let n=class n{constructor(){i(this,\"appNavigationService\",s(X));i(this,\"store\",s(z));i(this,\"orderRequestsManagerService\",s(Tt))}resolve(){this.orderRequestsManagerService.toggleEffects([yt.masters]);let e=this.appNavigationService.getRouteStorage(P.selectMasterPage);return e!=null&&e.needCleanDateTime&&this.store.dispatch(new oe),this.store.select(c.masters.getMastersLoading).pipe(j(0),D(t=>!t),y(),S(()=>{}))}};i(n,\"\\u0275fac\",function(t){return new(t||n)}),i(n,\"\\u0275prov\",ue({token:n,factory:n.\\u0275fac,providedIn:\"root\"}));let o=n;return o})();var Ui=[{path:\"\",canActivate:[Zt,ri],component:fi,data:{step:ht.master,benchmarks:[\"booking_masters_page_open\",\"booking_page_pass_master\",\"booking_multiple_masters_page_open\"]},resolve:[ii,ui]},{path:pe[\"master-info\"],loadChildren:()=>import(\"./master-info-27FIKMOB.js\").then(o=>o.MasterInfoModule)}],Si=(()=>{let n=class n{};i(n,\"\\u0275fac\",function(t){return new(t||n)}),i(n,\"\\u0275mod\",he({type:n})),i(n,\"\\u0275inj\",Se({imports:[Ue.forChild(Ui),Ue]}));let o=n;return o})();var hi=(()=>{let n=class n{constructor(){i(this,\"actions\",s(ye));i(this,\"store\",s(z));i(this,\"dateTimeService\",s(It));i(this,\"errorHandler\",s(et));i(this,\"widgetApiHelperService\",s(_t));i(this,\"loadMultipleStaffSeancesEffect$\",je(()=>this.actions.pipe(ie(qe),O(({companyId:e,staffIds:t,filterRecords:r})=>{let l=this.widgetApiHelperService.notWorkingDatesRanges,d=[];l.length!=0&&(d=l.reduce((ee,le)=>ee.concat(Mt(le.startDate,le.endDate)),[]));let u=t.map(ee=>this.loadStaffSeances$({companyId:e,filterRecords:r.map(le=>C(v({},le),{staff_id:ee}))},d));return Je([...u])}),S(()=>Dt())),{useEffectsErrorHandler:!1}));i(this,\"loadStaffSeancesAction$\",je(()=>this.actions.pipe(ie(ce),K(this.store.select(c.currentCompany.getCurrentCompanyId),this.store.select(c.order.getSelectedIndividualRecordInfo),this.store.select(c.masters.getMasters)),S(([,e,t,r])=>{let l=r.filter(d=>d.bookable&&d.id!==gt).map(d=>d.id);return qe({filterRecords:kt(t),staffIds:l,companyId:e})}))))}loadStaffSeances$({companyId:e,filterRecords:t},r){return this.dateTimeService.getBookTimes(e,null,t).pipe(S(l=>{let d=l.map(u=>u.datetime.split(\"T\")[0]).filter(u=>!r.includes(u))[0];return{seance_date:d,seances:l.filter(u=>u.datetime.split(\"T\")[0]===d).slice(0,5).map(u=>({time:u.datetime.split(\"T\")[1].slice(0,5),datetime:u.datetime}))}})).pipe(Ze(l=>{this.store.dispatch(wt(C(v({},l),{companyId:e,staffId:ae.getSingleStaffIdFromFilterRecordsAsNumber(t),serviceIds:ae.getAllServiceIdsFromFilterRecordsAsNumber(t)})))}),Xe(l=>(this.errorHandler.handleError(l),this.store.dispatch(Rt({companyId:e,staffId:ae.getSingleStaffIdFromFilterRecordsAsNumber(t),serviceIds:ae.getAllServiceIdsFromFilterRecordsAsNumber(t)})),Ye({}))))}};i(n,\"\\u0275fac\",function(t){return new(t||n)}),i(n,\"\\u0275prov\",ue({token:n,factory:n.\\u0275fac}));let o=n;return o})();var Zn=(()=>{let n=class n{};i(n,\"\\u0275fac\",function(t){return new(t||n)}),i(n,\"\\u0275mod\",he({type:n})),i(n,\"\\u0275inj\",Se({imports:[ct,Si,Re,Pe,ut,be,Le,$e,Ne,De,Be,Oe,Z,dt.forFeature(Ot.StaffSeances,Pt),ft.forFeature([hi])]}));let o=n;return o})();export{Zn as MasterStepModule};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 9307,
+          "_transferSize": 9967,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.449Z",
+        "time": 66.6179999243468,
+        "timings": {
+          "blocked": 10.964999959439039,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.6320000000000006,
+          "wait": 50.41000001190603,
+          "receive": 4.610999953001738,
+          "_blocked_queueing": 4.672999959439039,
+          "_blocked_proxy": 5.513999999999999,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "443857",
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "loadChildren",
+                "scriptId": "20271",
+                "url": "https://n958200.alteg.io/main-JGQFRULP.js",
+                "lineNumber": 0,
+                "columnNumber": 148845
+              },
+              {
+                "functionName": "B7",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 560635
+              },
+              {
+                "functionName": "loadChildren",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 560308
+              },
+              {
+                "functionName": "",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 584092
+              },
+              {
+                "functionName": "preload",
+                "scriptId": "20288",
+                "url": "https://n958200.alteg.io/chunk-6Q3T6TH3.js",
+                "lineNumber": 0,
+                "columnNumber": 4342
+              },
+              {
+                "functionName": "preloadConfig",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 584022
+              },
+              {
+                "functionName": "processRoutes",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 583828
+              },
+              {
+                "functionName": "preload",
+                "scriptId": "20293",
+                "url": "https://n958200.alteg.io/chunk-6FGVQ7PR.js",
+                "lineNumber": 0,
+                "columnNumber": 583405
+              },
+              {
+                "functionName": "",
+                "scriptId": "20288",
+                "url": "https://n958200.alteg.io/chunk-6Q3T6TH3.js",
+                "lineNumber": 0,
+                "columnNumber": 1979
+              }
+            ],
+            "parent": {
+              "description": "requestIdleCallback",
+              "callFrames": [
+                {
+                  "functionName": "",
+                  "scriptId": "20288",
+                  "url": "https://n958200.alteg.io/chunk-6Q3T6TH3.js",
+                  "lineNumber": 0,
+                  "columnNumber": 1960
+                },
+                {
+                  "functionName": "observer",
+                  "scriptId": "20288",
+                  "url": "https://n958200.alteg.io/chunk-6Q3T6TH3.js",
+                  "lineNumber": 0,
+                  "columnNumber": 1790
+                },
+                {
+                  "functionName": "invoke",
+                  "scriptId": "20270",
+                  "url": "https://n958200.alteg.io/polyfills-QTIMGMLN.js",
+                  "lineNumber": 0,
+                  "columnNumber": 6464
+                },
+                {
+                  "functionName": "onInvoke",
+                  "scriptId": "20294",
+                  "url": "https://n958200.alteg.io/chunk-KO722YSM.js",
+                  "lineNumber": 0,
+                  "columnNumber": 74795
+                },
+                {
+                  "functionName": "invoke",
+                  "scriptId": "20270",
+                  "url": "https://n958200.alteg.io/polyfills-QTIMGMLN.js",
+                  "lineNumber": 0,
+                  "columnNumber": 6404
+                },
+                {
+                  "functionName": "runGuarded",
+                  "scriptId": "20270",
+                  "url": "https://n958200.alteg.io/polyfills-QTIMGMLN.js",
+                  "lineNumber": 0,
+                  "columnNumber": 1837
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "20270",
+                  "url": "https://n958200.alteg.io/polyfills-QTIMGMLN.js",
+                  "lineNumber": 0,
+                  "columnNumber": 1616
+                }
+              ]
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/profile-UJ3PQK5W.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/main-JGQFRULP.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1514,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6055"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb0f985bcbd-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-bb67\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "fb75b924711437ae88e1189a176ed427"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 47975,
+            "mimeType": "application/javascript",
+            "compression": 34312,
+            "text": "import{a as wi}from\"./chunk-6OIMJOWG.js\";import{a as Ci,b as bi}from\"./chunk-FVSTWCGN.js\";import\"./chunk-ZCWD3LHB.js\";import{a as Ke,b as ki,c as Pi,d as Si,e as Ti}from\"./chunk-PGZ3SAL4.js\";import{a as yi,b as vi}from\"./chunk-7UC6X27C.js\";import{a as He}from\"./chunk-3XC4XRL4.js\";import{a as et}from\"./chunk-T7DRINFC.js\";import{a as fi}from\"./chunk-HHZQMLSJ.js\";import{a as di}from\"./chunk-CANKYAH7.js\";import{a as gi,b as xi}from\"./chunk-AN7K5KXY.js\";import{d as Re,f as ci,g as li}from\"./chunk-4E6OOWMO.js\";import{a as ge}from\"./chunk-CQE6HO76.js\";import{F as si,b as $e,d as Qt,l as qe}from\"./chunk-IGSDBEZN.js\";import{e as ce,f as Yt}from\"./chunk-TX67VJHB.js\";import{b as mi}from\"./chunk-NZOI5B53.js\";import\"./chunk-5GELTLFF.js\";import{b as Fe,g as Jt}from\"./chunk-TXASR5LU.js\";import{a as me}from\"./chunk-4LVJC2QZ.js\";import{c as fe,d as hi,e as _i}from\"./chunk-HNFBT5P4.js\";import\"./chunk-OT2UNM7Q.js\";import{a as ii,c as oi,d as ni}from\"./chunk-6Q3T6TH3.js\";import{a as ui}from\"./chunk-5HKI7HVK.js\";import\"./chunk-UTVABLOL.js\";import\"./chunk-2AY43R2Q.js\";import{E as ue,F as de,G as pi,H as F,c as Xt,e as Zt,i as ei,l as le,y as ri,z as ai}from\"./chunk-IV3KQJLV.js\";import{$b as ae,$d as Dt,Aa as bt,Ab as C,Ba as Ze,Bb as xe,Dc as M,Eb as ne,Fb as Me,Fc as U,Gb as kt,Hb as Pt,Ji as b,Kb as St,N as Y,Ni as je,Oc as De,P as J,Q as Ct,Qi as Ge,Ri as ti,S as Xe,Sc as se,Tb as W,Tc as $,Vb as re,Wb as Ae,Wc as Et,Xc as Ut,Zc as Ot,ac as Tt,af as Rt,bc as Ie,be as Vt,ch as ze,d as _t,dc as Be,de as zt,e as R,fc as Le,gc as wt,hc as xt,hf as $t,ic as Mt,j as A,kf as Ft,l as yt,lc as Ee,mc as At,mh as Wt,nc as It,nd as Ve,of as jt,p as vt,pf as Gt,qc as Ue,qf as qt,rc as Oe,sd as Nt,sf as Ht,tc as Ne,uc as pe,uf as Kt,ui as g,vc as Bt,xa as E,yc as Lt}from\"./chunk-6FGVQ7PR.js\";import{Aa as ke,Ac as K,Dc as dt,Ea as Q,Ec as gt,Fa as d,Fb as p,Fc as ft,Gb as B,J as ie,K as at,Ka as S,Kc as ht,La as Pe,Pb as mt,Pc as l,Qb as ut,Qc as m,T as be,Ub as T,Va as k,Wa as P,Wb as v,Xb as s,Y as pt,aa as Z,c as ve,cb as I,ec as c,fc as u,gc as _,h as ot,hc as Se,i as nt,ic as Te,id as we,j as z,kc as w,oa as st,oc as h,pc as f,qa as O,r as rt,ra as ct,ua as lt,x as Ce,y as te,yc as x,za as oe,zc as H}from\"./chunk-KO722YSM.js\";import\"./chunk-H3NWS7CE.js\";import\"./chunk-POJFEGQU.js\";import{g as e,i as N}from\"./chunk-JV5WWF5Q.js\";var he=function(t){return t.button=\"button\",t.logOutConfirm=\"log_out_confirm\",t}(he||{});var D=function(t){return t.button=\"button\",t.widgetSettingsAndLogIn=\"widget_settings_and_log_in\",t.openLogInPage=\"open_log_in_page\",t.openCreateRecordFlow=\"open_create_record_flow\",t.userProfile=\"user_profile\",t}(D||{});var V=function(t){return t.button=\"button\",t.openProfileEditor=\"open_profile_editor\",t.openUserRecords=\"open_user_records\",t.logOut=\"log_out\",t}(V||{});function Qi(t,o){if(t&1&&(c(0,\"div\",7),x(1),u()),t&2){let a=f();p(),H(a.email)}}function Yi(t,o){if(t&1&&(c(0,\"div\",7),x(1),u()),t&2){let a=f();p(),H(a.userPhone)}}var We=(()=>{let o=class o{constructor(){e(this,\"avatar\");e(this,\"name\");e(this,\"phone\");e(this,\"email\");e(this,\"clickInfo\",new I)}get userPhone(){return this.phone&&!this.phone.startsWith(\"+\")?\"+\".concat(this.phone):this.phone}};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-user-profile-info\"]],inputs:{avatar:\"avatar\",name:\"name\",phone:\"phone\",email:\"email\"},outputs:{clickInfo:\"clickInfo\"},standalone:!0,features:[ht],decls:10,vars:11,consts:[[1,\"content-wrapper\"],[\"size\",\"60\",3,\"text\",\"url\",\"round\"],[1,\"text-wrapper\"],[1,\"title\"],[\"class\",\"label\",4,\"ngIf\"],[1,\"forward-icon-wrapper\"],[3,\"name\",\"setSvgSize\"],[1,\"label\"]],template:function(i,r){i&1&&(c(0,\"div\",0),_(1,\"ui-kit-avatar\",1),c(2,\"div\",2)(3,\"div\",3),x(4),l(5,\"translate\"),u(),T(6,Qi,2,1,\"div\",4)(7,Yi,2,1,\"div\",4),u()(),c(8,\"div\",5),_(9,\"ui-kit-svg-icon\",6),u()),i&2&&(p(),s(\"text\",r.name)(\"url\",r.avatar)(\"round\",!0),p(),v(\"data-locator\",\"contacts\"),p(2),H(m(5,9,r.name||\"profile.name.not_specified\")),p(2),s(\"ngIf\",r.email),p(),s(\"ngIf\",r.phone),p(2),s(\"name\",\"profile/select-blue\")(\"setSvgSize\",!1))},dependencies:[R,Oe,ne,Fe,xe,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%], .content-wrapper[_ngcontent-%COMP%]{display:flex;align-items:flex-start;justify-content:space-between;overflow:hidden}.title[_ngcontent-%COMP%], .label[_ngcontent-%COMP%]{max-width:100%}.content-wrapper[_ngcontent-%COMP%]   .text-wrapper[_ngcontent-%COMP%]{margin-left:12px}.content-wrapper[_ngcontent-%COMP%]   .text-wrapper[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%]{padding-bottom:4px;font-weight:500;font-size:17px;line-height:24px;color:var(--y-core-color-text-primary)}.content-wrapper[_ngcontent-%COMP%]   .text-wrapper[_ngcontent-%COMP%]   .label[_ngcontent-%COMP%]{font-style:normal;font-weight:400;font-size:13px;line-height:16px;color:var(--y-core-color-text-secondary)}.forward-icon-wrapper[_ngcontent-%COMP%]{display:flex;align-items:center;justify-content:center;height:100%;position:relative;color:var(--y-core-color-icon-secondary)}.forward-icon-wrapper[_ngcontent-%COMP%]   *[_ngcontent-%COMP%]{z-index:99}'],changeDetection:0}));let t=o;return t})();var Qe=function(t){return t.language=\"language\",t.selectLanguage=\"select_language\",t}(Qe||{});function Zi(t,o){if(t&1&&(c(0,\"option\",7),x(1),u()),t&2){let a=o.$implicit;s(\"ngValue\",a),v(\"data-locator\",\"lang_\"+a.code),p(),K(\" \",a.title,\" \")}}function eo(t,o){if(t&1){let a=w();c(0,\"select\",5),ft(\"ngModelChange\",function(i){k(a);let r=f();return gt(r.currentLanguage,i)||(r.currentLanguage=i),P(i)}),h(\"change\",function(){k(a);let i=f();return P(i.setLanguage())}),T(1,Zi,2,3,\"option\",6),u()}if(t&2){let a=o.ngVar,n=f();dt(\"ngModel\",n.currentLanguage),v(\"data-locator\",\"language_select_\"+n.currentLanguage.code),p(),s(\"ngForOf\",a)}}var Bi=(()=>{let o=class o{constructor(){e(this,\"languageSelect\",new I);e(this,\"currentLanguage\");e(this,\"localizationService\",d(De));e(this,\"trackingService\",d(U));e(this,\"bookFormLanguage$\",this.localizationService.getBookFormLanguage());e(this,\"languages$\",this.localizationService.getLanguages());e(this,\"currentLanguageTitle$\",this.localizationService.getTitle());e(this,\"destroy$\",new z(1))}ngOnInit(){this.bookFormLanguage$.pipe(O(this.destroy$)).subscribe(n=>{this.currentLanguage=n})}ngOnDestroy(){this.destroy$.next(),this.destroy$.complete()}setLanguage(){this.localizationService.setLanguage(this.currentLanguage.code),this.trackingService.track({type:M.Action.select,name:Qe.selectLanguage,element:{type:Qe.language,name:this.currentLanguage.title}}),this.languageSelect.emit(this.currentLanguage)}};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-localization-menu-element\"]],outputs:{languageSelect:\"languageSelect\"},decls:9,vars:13,consts:[[1,\"selected-language-wrapper\"],[3,\"iconName\",\"title\",\"canSelect\"],[1,\"selected-language-title-wrapper\"],[1,\"forward-icon\",3,\"name\",\"setSvgSize\"],[\"class\",\"selector\",3,\"ngModel\",\"ngModelChange\",\"change\",4,\"ngVar\"],[1,\"selector\",3,\"ngModelChange\",\"change\",\"ngModel\"],[3,\"ngValue\",4,\"ngFor\",\"ngForOf\"],[3,\"ngValue\"]],template:function(i,r){i&1&&(c(0,\"div\",0),_(1,\"app-menu-element\",1),l(2,\"translate\"),c(3,\"div\",2),x(4),l(5,\"async\"),_(6,\"ui-kit-svg-icon\",3),u(),T(7,eo,2,3,\"select\",4),l(8,\"async\"),u()),i&2&&(p(),s(\"iconName\",\"profile/language\")(\"title\",m(2,7,\"menu.change_lang\"))(\"canSelect\",!1),p(3),K(\" \",m(5,9,r.currentLanguageTitle$),\" \"),p(2),s(\"name\",\"profile/select-blue\")(\"setSvgSize\",!1),p(),s(\"ngVar\",m(8,11,r.languages$)))},dependencies:[_t,$e,ne,xt,Mt,wt,re,Tt,me,A,C],styles:['@charset \"UTF-8\";.selected-language-wrapper[_ngcontent-%COMP%]{display:flex;align-items:center;position:relative;cursor:pointer}.selected-language-wrapper[_ngcontent-%COMP%]   .selected-language-title-wrapper[_ngcontent-%COMP%]{display:flex;align-items:center;justify-content:flex-end;white-space:nowrap;font-family:Inter;font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:var(--y-core-color-text-secondary)}.selected-language-wrapper[_ngcontent-%COMP%]   .selected-language-title-wrapper[_ngcontent-%COMP%]   .forward-icon[_ngcontent-%COMP%]{color:var(--y-core-color-icon-secondary);display:block}.selected-language-wrapper[_ngcontent-%COMP%]   .selector[_ngcontent-%COMP%]{position:absolute;width:100%;height:100%;left:0;opacity:0;cursor:pointer}'],changeDetection:0}));let t=o;return t})();function oo(t,o){if(t&1){let a=w();c(0,\"app-user-profile-info\",9),h(\"click\",function(){k(a);let i=f();return P(i.clickGoToProfileInfo())}),u()}if(t&2){let a=o.ngIf;s(\"avatar\",a.avatar)(\"name\",a.name)(\"phone\",a.phone)(\"email\",a.email),v(\"data-locator\",\"personal_information_btn\")}}function no(t,o){if(t&1){let a=w();Se(0),c(1,\"div\",10),h(\"click\",function(){k(a);let i=f();return P(i.goToMyRecords())}),_(2,\"span\",4)(3,\"app-menu-element\",11),l(4,\"translate\"),u(),Te()}if(t&2){let a=f();p(),v(\"data-locator\",\"my_bookings_btn\"),p(),s(\"routerLink\",a.buildAbsoluteRecordsPath())(\"skipNavigation\",!0),p(),s(\"iconName\",\"profile/records\")(\"title\",m(4,5,\"menu.myRecords\"))}}function ro(t,o){if(t&1){let a=w();c(0,\"app-menu-element\",12),l(1,\"translate\"),l(2,\"async\"),h(\"click\",function(){k(a);let i=f();return P(i.clickGoToNotices())}),u()}if(t&2){let a=f();s(\"iconName\",\"profile/bell\")(\"title\",m(1,6,\"header.notification\"))(\"canSelect\",!0)(\"count\",m(2,8,a.unreadCount))(\"iconWithBackground\",!0),v(\"data-locator\",\"notices-btn\")}}function ao(t,o){if(t&1){let a=w();c(0,\"app-localization-menu-element\",13),h(\"languageSelect\",function(i){let r=k(a).ngIf,y=f();return P(y.updateUser(r==null?null:r.name,i))}),u()}}var Ei=(()=>{let o=class o{constructor(){e(this,\"clickGoToMyRecords\",new I);e(this,\"clickLogout\",new I);e(this,\"languageSelect\",new I);e(this,\"goToProfileInfo\",new I);e(this,\"goToMemberships\",new I);e(this,\"goToCertificates\",new I);e(this,\"goToLoyaltyCard\",new I);e(this,\"goToNotices\",new I);e(this,\"store\",d(E));e(this,\"trackingService\",d(U));e(this,\"capacitorService\",d(le));e(this,\"buildAbsoluteRecordsPath\",je);e(this,\"AppRoutes\",b);e(this,\"page\",D.userProfile);e(this,\"canShowNoticeMenuElement\",this.capacitorService.isNativePlatform());e(this,\"unreadCount\",this.store.select(g.notifications.getUnreadCount));e(this,\"isSuperButton$\",this.store.select(g.superButton.isSuperButton));e(this,\"user$\",this.store.select(g.user.getUser));e(this,\"certificatesCount$\",this.store.select(g.user.getCertificatesCount));e(this,\"membershipsCount$\",this.store.select(g.user.getMembershipsCount));e(this,\"loyaltyCardsCount$\",this.store.select(g.user.getLoyaltyCardsCount));e(this,\"destroy$\",new ot)}ngOnDestroy(){this.destroy$.next(),this.destroy$.complete()}updateUser(n,i){this.store.dispatch(Gt({name:n,langId:i.id}))}goToMyRecords(){this.trackingService.track({type:M.Action.click,name:V.openUserRecords,element:{type:V.button,name:V.openUserRecords}}),this.clickGoToMyRecords.emit()}logout(){this.trackingService.track({type:M.Action.click,name:V.logOut,element:{type:V.button,name:V.logOut}}),this.clickLogout.emit()}clickGoToProfileInfo(){this.trackingService.track({type:M.Action.click,name:V.openProfileEditor,element:{type:V.button,name:V.openProfileEditor}}),this.goToProfileInfo.emit()}clickGoToMemberships(){this.trackLoyaltyClick(\"subscriptions\"),this.goToMemberships.emit()}clickGoToCertificates(){this.trackLoyaltyClick(\"certificates\"),this.goToCertificates.emit()}clickGoToLoyaltyCard(){this.trackLoyaltyClick(\"loyalty_cards\"),this.goToLoyaltyCard.emit()}clickGoToNotices(){this.goToNotices.emit()}trackLoyaltyClick(n){this.trackingService.track({type:M.Action.click,page:{name:\"user_profile\"},element:{type:\"button\",name:\"open_user_\".concat(n)}})}};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-authorized-user-profile\"]],outputs:{clickGoToMyRecords:\"clickGoToMyRecords\",clickLogout:\"clickLogout\",languageSelect:\"languageSelect\",goToProfileInfo:\"goToProfileInfo\",goToMemberships:\"goToMemberships\",goToCertificates:\"goToCertificates\",goToLoyaltyCard:\"goToLoyaltyCard\",goToNotices:\"goToNotices\"},decls:25,vars:50,consts:[[\"cutType\",\"cut-top\",1,\"substrate-user\",3,\"widthType\"],[\"class\",\"menu-element user-profile-info\",3,\"avatar\",\"name\",\"phone\",\"email\",\"click\",4,\"ngIf\"],[1,\"substrate\",3,\"widthType\"],[4,\"ngIf\"],[3,\"routerLink\",\"skipNavigation\"],[1,\"menu-element\",3,\"click\",\"iconName\",\"title\",\"count\"],[\"class\",\"menu-element\",3,\"iconName\",\"title\",\"canSelect\",\"count\",\"iconWithBackground\",\"click\",4,\"ngIf\"],[\"class\",\"menu-element localization-selector\",3,\"languageSelect\",4,\"ngIf\"],[1,\"menu-element\",\"logout-element\",3,\"click\",\"iconName\",\"title\",\"canSelect\"],[1,\"menu-element\",\"user-profile-info\",3,\"click\",\"avatar\",\"name\",\"phone\",\"email\"],[1,\"menu-element\",3,\"click\"],[3,\"iconName\",\"title\"],[1,\"menu-element\",3,\"click\",\"iconName\",\"title\",\"canSelect\",\"count\",\"iconWithBackground\"],[1,\"menu-element\",\"localization-selector\",3,\"languageSelect\"]],template:function(i,r){i&1&&(c(0,\"app-substrate\",0),T(1,oo,1,5,\"app-user-profile-info\",1),l(2,\"async\"),u(),c(3,\"app-substrate\",2),T(4,no,5,7,\"ng-container\",3),l(5,\"async\"),u(),c(6,\"app-substrate\",2),_(7,\"span\",4),c(8,\"app-menu-element\",5),l(9,\"translate\"),l(10,\"async\"),h(\"click\",function(){return r.clickGoToMemberships()}),u(),_(11,\"span\",4),c(12,\"app-menu-element\",5),l(13,\"translate\"),l(14,\"async\"),h(\"click\",function(){return r.clickGoToCertificates()}),u(),_(15,\"span\",4),c(16,\"app-menu-element\",5),l(17,\"translate\"),l(18,\"async\"),h(\"click\",function(){return r.clickGoToLoyaltyCard()}),u()(),c(19,\"app-substrate\",2),T(20,ro,3,10,\"app-menu-element\",6)(21,ao,1,0,\"app-localization-menu-element\",7),l(22,\"async\"),c(23,\"app-menu-element\",8),l(24,\"translate\"),h(\"click\",function(){return r.logout()}),u()()),i&2&&(s(\"widthType\",\"full-width-half-margin\"),p(),s(\"ngIf\",m(2,30,r.user$)),p(2),s(\"widthType\",\"full-width-half-margin\"),p(),s(\"ngIf\",m(5,32,r.isSuperButton$)===!1),p(2),s(\"widthType\",\"full-width-half-margin\"),p(),s(\"routerLink\",\"/\"+r.AppRoutes.memberships)(\"skipNavigation\",!0),p(),s(\"iconName\",\"profile/abonement\")(\"title\",m(9,34,\"menu.loyalty_subscriptions\"))(\"count\",m(10,36,r.membershipsCount$)),v(\"data-locator\",\"menu_abonement\"),p(3),s(\"routerLink\",\"/\"+r.AppRoutes.certificate)(\"skipNavigation\",!0),p(),s(\"iconName\",\"profile/certificate\")(\"title\",m(13,38,\"menu.loyalty_certificates\"))(\"count\",m(14,40,r.certificatesCount$)),v(\"data-locator\",\"menu_certificate\"),p(3),s(\"routerLink\",\"/\"+r.AppRoutes.loyalty)(\"skipNavigation\",!0),p(),s(\"iconName\",\"profile/loyalty_card\")(\"title\",m(17,42,\"header.loyalty_cards\"))(\"count\",m(18,44,r.loyaltyCardsCount$)),v(\"data-locator\",\"menu_loyalty_card\"),p(3),s(\"widthType\",\"full-width-half-margin\"),p(),s(\"ngIf\",r.canShowNoticeMenuElement),p(),s(\"ngIf\",m(22,46,r.user$)),p(2),s(\"iconName\",\"profile/logout\")(\"title\",m(24,48,\"menu.logout\"))(\"canSelect\",!1),v(\"data-locator\",\"logout-btn\"))},dependencies:[Ct,R,qe,$e,We,ni,ii,Bi,A,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:flex;flex-direction:column;background-color:var(--widget-ui-kit-color-grey-background)}.localization-selector[_ngcontent-%COMP%]{display:block}.personal-info[_ngcontent-%COMP%]{display:flex;width:100%;height:94px}.menu-element[_ngcontent-%COMP%]{cursor:pointer;padding:10px 0}.logout-element[_ngcontent-%COMP%]{color:var(--y-core-color-text-negative)}.logout-element[_ngcontent-%COMP%]     ui-kit-svg-icon{color:var(--y-core-color-icon-negative)}.user-profile-info[_ngcontent-%COMP%]{padding:4px 0;align-items:center}'],changeDetection:0}));let t=o;return t})();var Ui=(()=>{let o=class o{constructor(){e(this,\"clickGoToAuthorization\",new I);e(this,\"localizationService\",d(De));e(this,\"languages$\",this.localizationService.getLanguages());e(this,\"selectedLanguage$\",this.localizationService.getLanguage())}goToAuthorization(){this.clickGoToAuthorization.emit()}};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-unauthorized-user-profile\"]],outputs:{clickGoToAuthorization:\"clickGoToAuthorization\"},decls:6,vars:12,consts:[[1,\"substrate\",3,\"widthType\",\"cutType\"],[1,\"menu-element\",3,\"languages\",\"selectedLanguage\"],[1,\"login-button\",3,\"click\",\"title\"]],template:function(i,r){i&1&&(c(0,\"app-substrate\",0),_(1,\"app-localization-selector\",1),l(2,\"async\"),l(3,\"async\"),c(4,\"ui-kit-button\",2),l(5,\"translate\"),h(\"click\",function(){return r.goToAuthorization()}),u()()),i&2&&(s(\"widthType\",\"full-width\")(\"cutType\",\"cut-top\"),p(),s(\"languages\",m(2,6,r.languages$))(\"selectedLanguage\",m(3,8,r.selectedLanguage$)),p(3),s(\"title\",m(5,10,\"menu.login\")),v(\"data-locator\",\"login-btn\"))},dependencies:[qe,Zt,$,A,C],styles:[\"[_nghost-%COMP%]{display:block;position:relative}[_nghost-%COMP%]   .substrate[_ngcontent-%COMP%]{margin-bottom:8px;display:flex;flex-direction:column;gap:16px}[_nghost-%COMP%]   .menu-element[_ngcontent-%COMP%]{cursor:pointer}.login-button[_ngcontent-%COMP%]{display:block}\"],changeDetection:0}));let t=o;return t})();function lo(t,o){if(t&1){let a=w();c(0,\"app-header\",3),h(\"backClick\",function(){k(a);let i=f();return P(i.goToFirstStep())}),u()}if(t&2){let a=o.ngVar;s(\"isBackButton\",!a)(\"isTitleChevronArrow\",!0)}}function mo(t,o){if(t&1){let a=w();c(0,\"app-authorized-user-profile\",12),h(\"clickGoToMyRecords\",function(){k(a);let i=f(2);return P(i.goToMyRecords())})(\"clickLogout\",function(){k(a);let i=f(2);return P(i.showQuestionAndConfirmation())})(\"goToProfileInfo\",function(){k(a);let i=f(2);return P(i.goToProfileInfo())})(\"goToMemberships\",function(){k(a);let i=f(2);return P(i.goToMemberships())})(\"goToCertificates\",function(){k(a);let i=f(2);return P(i.goToCertificates())})(\"goToLoyaltyCard\",function(){k(a);let i=f(2);return P(i.goToLoyaltyCard())})(\"goToNotices\",function(){k(a);let i=f(2);return P(i.goToNotices())}),u()}}function uo(t,o){if(t&1){let a=w();c(0,\"app-unauthorized-user-profile\",13),h(\"clickGoToAuthorization\",function(){k(a);let i=f(2);return P(i.goToAuthorization())}),u()}}function go(t,o){if(t&1){let a=w();c(0,\"ui-kit-button\",14),h(\"click\",function(){k(a);let i=f(2);return P(i.openEnvironmentSettings())}),u()}if(t&2){let a=f(2);s(\"title\",\"\\u041D\\u0430\\u0441\\u0442\\u0440\\u043E\\u0439\\u043A\\u0438 \\u043E\\u043A\\u0440\\u0443\\u0436\\u0435\\u043D\\u0438\\u044F\")(\"type\",a.buttonType.tertiary)}}function fo(t,o){if(t&1){let a=w();c(0,\"div\",4)(1,\"div\",5),T(2,mo,1,0,\"app-authorized-user-profile\",6)(3,uo,1,0,\"app-unauthorized-user-profile\",7),u(),c(4,\"div\",8),T(5,go,1,2,\"ui-kit-button\",9),c(6,\"ui-kit-button\",10),h(\"click\",function(){k(a);let i=f();return P(i.newOrder())}),u()(),_(7,\"ui-kit-brand-link\",11),u()}if(t&2){let a=o.ngVar,n=f();p(2),s(\"ngIf\",a),p(),s(\"ngIf\",!a),p(2),s(\"ngIf\",n.isDebugMode),p(),s(\"title\",n.recordNewTitle),v(\"data-locator\",\"new_booking_btn\")}}var Ni=(()=>{let o=class o{constructor(){e(this,\"store\",d(ze));e(this,\"router\",d(J));e(this,\"route\",d(Y));e(this,\"orderManager\",d(pi));e(this,\"translatePipe\",d(C));e(this,\"trackingService\",d(U));e(this,\"metrika\",d(mi));e(this,\"capacitorService\",d(le));e(this,\"modalService\",d(pe));e(this,\"altegiomePromoService\",d(ui));e(this,\"appNavigationService\",d(F));e(this,\"buttonType\",se);e(this,\"leading\",Me);e(this,\"trailing\",kt);e(this,\"loggedIn$\",this.store.select(g.user.isLoggedIn).pipe(pt(),ct(n=>!n,!0)));e(this,\"isSuperButton$\",this.store.select(g.superButton.isSuperButton));e(this,\"isDebugMode\",Xt.debug);e(this,\"loadingBenchmarksDirective\",d(He,{self:!0}));e(this,\"isReady$\",new nt(!1));e(this,\"destroy$\",new z(1));this.loadingBenchmarksDirective.appLoadingBenchmarks=[\"booking_profile_page_open_cold\",\"booking_profile_page_open\"],this.loadingBenchmarksDirective.dataSource=this.isReady$.pipe(ie(Boolean))}get recordNewTitle(){return this.translatePipe.transform(\"record.new\")}ngOnInit(){this.loggedIn$.pipe(lt(this.store.select(g.user.getUserPhone),this.store.select(g.currentCompany.getCurrentCompany)),O(this.destroy$)).subscribe(([n,i,r])=>{if(this.isReady$.next(!0),n){this.store.dispatch(Ht({companyId:r.id})),this.store.dispatch(Kt({companyId:r.id})),this.store.dispatch(qt({groupId:r.main_group_id,companyId:r.id})),i&&this.capacitorService.isNativePlatform()&&this.store.dispatch(new Wt({showLoading:!1})),this.trackingService.pageView(D.userProfile);return}this.trackingService.pageView(D.widgetSettingsAndLogIn)}),this.store.select(g.currentCompany.getCurrentCompany).pipe(Z(),O(this.destroy$)).subscribe(n=>{this.metrika.reachGoal(\"lk_open\",{companyId:n==null?void 0:n.id,companyName:n==null?void 0:n.title})})}ngOnDestroy(){this.destroy$.next(),this.destroy$.complete()}goToLastSelectedCompanyOr(n){this.store.select(g.currentCompany.getCurrentCompanyId).pipe(Z(),O(this.destroy$)).subscribe(i=>{i?this.router.navigate([\"/company/\",\"\".concat(i)],{queryParamsHandling:\"merge\"}):n()})}close(){this.goToLastSelectedCompanyOr(()=>{this.router.navigate([\"/\"],{queryParamsHandling:\"merge\"})})}goToFirstStep(){this.appNavigationService.goBack({url:\"/\"})}goToAuthorization(){return N(this,null,function*(){this.trackingService.track({type:M.Action.click,name:D.openLogInPage,element:{type:D.button,name:D.openLogInPage}}),this.store.selectSnapshot(g.bookform.getIsAltegiomePromoFeatureEnabled)&&this.altegiomePromoService.openAuthPromo();let i=yield this.orderManager.getOrder();this.router.navigate([Ge()],{queryParams:{[Nt]:i.toString(),[de]:this.router.url},queryParamsHandling:\"merge\"})})}goToMyRecords(){this.router.navigate([je()],{queryParamsHandling:\"preserve\"})}newOrder(){this.trackingService.track({type:M.Action.click,name:D.openCreateRecordFlow,element:{type:D.button,name:D.openCreateRecordFlow}}),this.orderManager.newOrder()}goToProfileInfo(){this.router.navigate([b[\"personal-info\"]],{relativeTo:this.route,queryParamsHandling:\"preserve\"})}goToMemberships(){this.router.navigate([b.memberships],{relativeTo:this.route,queryParamsHandling:\"preserve\"})}goToCertificates(){this.router.navigate([b.certificate],{relativeTo:this.route,queryParamsHandling:\"preserve\"})}goToLoyaltyCard(){this.router.navigate([b.loyalty],{relativeTo:this.route,queryParamsHandling:\"preserve\"})}goToNotices(){this.router.navigate([b.notices],{relativeTo:this.route,queryParamsHandling:\"preserve\"})}showQuestionAndConfirmation(){return N(this,null,function*(){(yield this.modalService.openModal({component:Yt,componentData:{title:this.translatePipe.transform(\"menu.exit_personal_account\")+\"?\",confirmButtonText:this.translatePipe.transform(\"menu.logout\"),cancelButtonText:this.translatePipe.transform(\"button.canceling\"),titleDataLocator:\"logout_modal_window_text\",confirmDataLocator:\"logout_modal_window_exit_btn\",cancelDataLocator:\"logout_modal_window_cancel_btn\"},params:{modalType:Ne.default,dataLocator:\"logout_modal_window\"}}).instance.result.catch(ve))&&this.logout()})}openEnvironmentSettings(){this.router.navigate([Ot],{queryParamsHandling:\"preserve\"})}logout(){this.trackingService.track({type:M.Action.click,name:he.logOutConfirm,element:{type:he.button,name:he.logOutConfirm}}),this.store.dispatch(new Ft(!1)),this.appNavigationService.returnToMain()}};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-profile-page\"]],features:[ut([{directive:He,inputs:[\"appLoadingBenchmarks\",\"appLoadingBenchmarks\",\"dataSource\",\"dataSource\"]}])],decls:6,vars:10,consts:[[\"theme\",\"primary\",3,\"isBackButton\",\"isTitleChevronArrow\",\"backClick\",4,\"ngVar\"],[\"theme\",\"primary\",1,\"header-addition\",3,\"title\",\"zIndex\"],[\"class\",\"profile-content\",4,\"ngVar\"],[\"theme\",\"primary\",3,\"backClick\",\"isBackButton\",\"isTitleChevronArrow\"],[1,\"profile-content\"],[1,\"wrapper\"],[3,\"clickGoToMyRecords\",\"clickLogout\",\"goToProfileInfo\",\"goToMemberships\",\"goToCertificates\",\"goToLoyaltyCard\",\"goToNotices\",4,\"ngIf\"],[3,\"clickGoToAuthorization\",4,\"ngIf\"],[1,\"fixed-button\"],[\"class\",\"env-button\",3,\"title\",\"type\",\"click\",4,\"ngIf\"],[3,\"click\",\"title\"],[1,\"brand-link\"],[3,\"clickGoToMyRecords\",\"clickLogout\",\"goToProfileInfo\",\"goToMemberships\",\"goToCertificates\",\"goToLoyaltyCard\",\"goToNotices\"],[3,\"clickGoToAuthorization\"],[1,\"env-button\",3,\"click\",\"title\",\"type\"]],template:function(i,r){i&1&&(T(0,lo,1,2,\"app-header\",0),l(1,\"async\"),_(2,\"app-header-addition\",1),l(3,\"translate\"),T(4,fo,8,5,\"div\",2),l(5,\"async\")),i&2&&(s(\"ngVar\",m(1,4,r.isSuperButton$)),p(2),s(\"title\",m(3,6,\"header.profile\"))(\"zIndex\",99),p(2),s(\"ngVar\",m(5,8,r.loggedIn$)))},dependencies:[fe,hi,R,$,me,ce,Ei,Ui,A,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{height:100%}.profile-content[_ngcontent-%COMP%]{display:flex;flex-direction:column;flex:1;justify-content:space-between;padding-bottom:150px}.profile-content__title[_ngcontent-%COMP%]{background-color:#fff;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;color:var(--y-core-color-color_text_black);font-style:normal;font-weight:700;font-size:24px;line-height:28px;padding:16px 16px 4px}.profile-content[_ngcontent-%COMP%]   .wrapper[_ngcontent-%COMP%]{padding:0 0 16px}.profile-content[_ngcontent-%COMP%]   .brand-link[_ngcontent-%COMP%]{padding:40px 0;z-index:1}.env-button[_ngcontent-%COMP%]{display:block;margin-bottom:24px}.head-text[_ngcontent-%COMP%]{font-style:normal;font-weight:700;font-size:24px;line-height:28px}.header-addition[_ngcontent-%COMP%]{overflow:initial;padding:16px 16px 4px}.fixed-button[_ngcontent-%COMP%]{z-index:200}'],changeDetection:0}));let t=o;return t})();var X=(()=>{let o=class o{constructor(n,i){e(this,\"store\");e(this,\"actions$\");this.store=n,this.actions$=i}canActivate(){return te([this.store.select(g.bookform.getBookform),this.store.select(g.currentCompany.getCurrentCompany)]).pipe(ie(([n])=>!!n),be(1),st(([n,i])=>!i&&n.company_id?(this.store.dispatch(new zt(n.company_id)),at([this.actions$.pipe(Ze(Dt)),this.actions$.pipe(Ze(Vt))]).pipe(Z())):rt(!0)),Ce(()=>!0))}canActivateChild(){return this.canActivate()}};e(o,\"\\u0275fac\",function(i){return new(i||o)(Q(E),Q(bt))}),e(o,\"\\u0275prov\",oe({token:o,factory:o.\\u0275fac}));let t=o;return t})();var G=function(t){return t.button=\"button\",t.userProfileLogIn=\"user_profile_log_in\",t.superButtonLogIn=\"superbutton_log_in\",t.smsLogIn=\"sms_log_in\",t.smsAuthTab=\"sms_auth_tab\",t.buttonSmsAuthTab=\"button_sms_auth_tab\",t.passwordAuthTab=\"password_auth_tab\",t.buttonPasswordAuthTab=\"button_password_auth_tab\",t}(G||{}),Je=function(t){return t.password=\"password\",t.sms=\"sms\",t}(Je||{});var _e=function(t){return t.button=\"button\",t.receiveSmsCode=\"receive_sms_code\",t.buttonReceiveSmsCode=\"button_receive_sms_code\",t}(_e||{});var Di=(()=>{let o=class o{constructor(n,i,r,y,q,Hi,Ki){e(this,\"formBuilder\");e(this,\"store\");e(this,\"router\");e(this,\"route\");e(this,\"trackingService\");e(this,\"cdr\");e(this,\"countriesSelectorsService\");e(this,\"allowConfirmPhone\");e(this,\"showPersonalDataBlock\");e(this,\"form\");e(this,\"checkboxControl\",new ae(!1,W.requiredTrue));e(this,\"company$\");e(this,\"defaultCountryCode$\");e(this,\"destroy$\",new z(1));e(this,\"buildForm\",([n,i])=>{let r=i||\"\";r=!r&&n&&n.phone?n.phone:r,this.form=this.formBuilder.group({phone:[r,[W.required]]})});this.formBuilder=n,this.store=i,this.router=r,this.route=y,this.trackingService=q,this.cdr=Hi,this.countriesSelectorsService=Ki,this.company$=this.store.select(g.currentCompany.getCurrentCompany),this.defaultCountryCode$=this.countriesSelectorsService.getDefaultCountryCode$(this.company$.pipe(Ce(Wi=>Wi.country_id)))}ngOnInit(){te(this.store.select(g.user.getUser),this.store.select(g.user.getAuthPhone)).pipe(be(1),O(this.destroy$)).subscribe(this.buildForm)}ngOnDestroy(){this.destroy$.next(),this.destroy$.complete()}confirmPhone(){this.trackingService.track({type:M.Action.click,name:_e.receiveSmsCode,element:{type:_e.button,name:_e.buttonReceiveSmsCode}}),this.form.markAllAsTouched(),this.checkboxControl.updateValueAndValidity(),this.checkboxControl.markAsTouched(),this.checkboxControl.updateValueAndValidity(),this.cdr.detectChanges(),!(this.form.invalid||this.checkboxControl.invalid)&&(this.store.dispatch(new Rt(this.form.controls.phone.value)),this.router.navigate([ti()],{queryParams:this.route.queryParams.getValue(),queryParamsHandling:\"merge\"}))}};e(o,\"\\u0275fac\",function(i){return new(i||o)(B(Ee),B(E),B(J),B(Y),B(U),B(we),B(ki))}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-auth-by-sms\"]],inputs:{allowConfirmPhone:\"allowConfirmPhone\",showPersonalDataBlock:\"showPersonalDataBlock\"},decls:14,vars:22,consts:[[1,\"subtext\"],[3,\"keydown.enter\",\"paste\",\"formGroup\"],[\"appPhoneNumberValidator\",\"\",\"formControlName\",\"phone\",3,\"defaultCountryCode\",\"title\",\"errorMessage\",\"dataLocator\",\"dataLocatorError\"],[1,\"submit-button-wrapper\"],[\"topContent\",\"\",3,\"checkboxControl\"],[\"midContent\",\"\",3,\"click\",\"keydown.enter\",\"title\"]],template:function(i,r){i&1&&(c(0,\"p\",0),x(1),l(2,\"translate\"),u(),c(3,\"form\",1),h(\"keydown.enter\",function(){return r.confirmPhone()})(\"paste\",function(){return r.form.updateValueAndValidity()}),_(4,\"ui-kit-form-input\",2),l(5,\"async\"),l(6,\"translate\"),l(7,\"titlecase\"),l(8,\"translate\"),u(),c(9,\"div\",3)(10,\"app-record-page-footer\"),_(11,\"app-privacy-policy-checkbox\",4),c(12,\"ui-kit-button\",5),l(13,\"translate\"),h(\"click\",function(){return r.confirmPhone()})(\"keydown.enter\",function(){return r.confirmPhone()}),u()()()),i&2&&(p(),K(\" \",m(2,10,\"login.input_phone_num_1\"),\"\\n\"),p(2),s(\"formGroup\",r.form),p(),s(\"defaultCountryCode\",m(5,12,r.defaultCountryCode$))(\"title\",m(7,16,m(6,14,\"address.phone\")))(\"errorMessage\",m(8,18,\"confirm.errors.phone.incorrect\"))(\"dataLocator\",\"phone_input\")(\"dataLocatorError\",\"phone_validation_text\"),p(7),s(\"checkboxControl\",r.checkboxControl),p(),s(\"title\",m(13,20,\"login.get_code\")),v(\"data-locator\",\"receive_sms_btn\"))},dependencies:[Ke,Pi,Ue,Re,$,Ie,re,Ae,Be,Le,A,yt,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:24px 16px}[_nghost-%COMP%]     .record-page-footer{padding-left:0!important;padding-right:0!important}.subtext[_ngcontent-%COMP%]{color:var(--widget-ui-kit-color-grey-main)}h1[_ngcontent-%COMP%], p[_ngcontent-%COMP%]{margin-bottom:24px}.submit-button-wrapper[_ngcontent-%COMP%]{margin-top:12px}'],changeDetection:0}));let t=o;return t})();var ye=function(t){return t.button=\"button\",t.passwordLogIn=\"password_log_in\",t.buttonPasswordLogIn=\"button_password_log_in\",t}(ye||{});var Vi=(()=>{let o=class o{constructor(n,i,r,y){e(this,\"formBuilder\");e(this,\"store\");e(this,\"trackingService\");e(this,\"cdr\");e(this,\"allowLogin\");e(this,\"showPersonalDataBlock\");e(this,\"form\");e(this,\"checkboxControl\",new ae(!1,W.requiredTrue));e(this,\"destroy$\",new z(1));e(this,\"buildForm\",()=>{this.form=this.formBuilder.group({login:[\"\",[W.required]],password:[\"\",[W.required]]})});e(this,\"setFormData\",([n,i])=>{let r=i||\"\";r=!r&&n&&n.phone?n.phone:r,r=!r.length&&n&&n.email?n.email:r,this.form.patchValue({login:r})});this.formBuilder=n,this.store=i,this.trackingService=r,this.cdr=y}ngOnInit(){this.buildForm(),te(this.store.select(g.user.getUser),this.store.select(g.user.getAuthPhone)).pipe(O(this.destroy$)).subscribe(this.setFormData)}ngOnDestroy(){this.destroy$.next(),this.destroy$.complete()}auth(){this.trackingService.track({type:M.Action.click,name:ye.passwordLogIn,element:{type:ye.button,name:ye.buttonPasswordLogIn}}),this.form.markAllAsTouched(),this.checkboxControl.updateValueAndValidity(),this.checkboxControl.markAsTouched(),this.checkboxControl.updateValueAndValidity(),this.cdr.detectChanges(),!(this.form.invalid||this.checkboxControl.invalid)&&this.store.dispatch(new $t(this.form.controls.login.value,this.form.controls.password.value))}};e(o,\"\\u0275fac\",function(i){return new(i||o)(B(Ee),B(E),B(U),B(we))}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-auth-by-pass\"]],inputs:{allowLogin:\"allowLogin\",showPersonalDataBlock:\"showPersonalDataBlock\"},decls:13,vars:19,consts:[[1,\"subtext\"],[3,\"keydown.enter\",\"formGroup\"],[\"formControlName\",\"login\",3,\"title\",\"type\",\"dataLocator\"],[\"formControlName\",\"password\",3,\"title\",\"type\",\"dataLocator\"],[1,\"submit-button-wrapper\"],[\"topContent\",\"\",3,\"checkboxControl\"],[\"midContent\",\"\",3,\"click\",\"keydown.enter\",\"title\"]],template:function(i,r){i&1&&(c(0,\"p\",0),x(1),l(2,\"translate\"),u(),c(3,\"form\",1),h(\"keydown.enter\",function(){return r.auth()}),_(4,\"ui-kit-form-input\",2),l(5,\"translate\"),_(6,\"ui-kit-form-input\",3),l(7,\"translate\"),c(8,\"div\",4)(9,\"app-record-page-footer\"),_(10,\"app-privacy-policy-checkbox\",5),c(11,\"ui-kit-button\",6),l(12,\"translate\"),h(\"click\",function(){return r.auth()})(\"keydown.enter\",function(){return r.auth()}),u()()()()),i&2&&(p(),K(\" \",m(2,11,\"login.input_login_and_password\"),\"\\n\"),p(2),s(\"formGroup\",r.form),p(),s(\"title\",m(5,13,\"login.phone_or_email\"))(\"type\",\"text\")(\"dataLocator\",\"login_input\"),p(2),s(\"title\",m(7,15,\"login.pass\"))(\"type\",\"password\")(\"dataLocator\",\"password_input\"),p(4),s(\"checkboxControl\",r.checkboxControl),p(),s(\"title\",m(12,17,\"menu.login\")),v(\"data-locator\",\"login_btn\"))},dependencies:[Ke,Ue,Re,$,Ie,re,Ae,Be,Le,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:24px 16px}[_nghost-%COMP%]     .record-page-footer{padding-left:0!important;padding-right:0!important}.subtext[_ngcontent-%COMP%]{color:var(--widget-ui-kit-color-grey-main)}p[_ngcontent-%COMP%]{margin-bottom:24px}'],changeDetection:0}));let t=o;return t})();function ko(t,o){if(t&1){let a=w();c(0,\"ui-kit-tabs\",8),h(\"tabSelect\",function(i){k(a);let r=f(3);return P(r.selectTab(i))}),c(1,\"ui-kit-tab\",9),l(2,\"translate\"),_(3,\"app-auth-by-sms\",10),u(),c(4,\"ui-kit-tab\",9),l(5,\"translate\"),_(6,\"app-auth-by-pass\",11),u()()}if(t&2){let a=f(3);s(\"selectedTabId\",a.selectedTabId),p(),s(\"tabTitle\",m(2,13,\"login.code_auth\"))(\"tabId\",a.authPageEnum.sms)(\"dataLocator\",\"sms_authorization_tab\"),v(\"data-locator\",\"sms_authorization_tab_content\"),p(2),s(\"allowConfirmPhone\",a.checkboxControl.valid)(\"showPersonalDataBlock\",a.showPersonalDataBlock),p(),s(\"tabTitle\",m(5,15,\"login.pass_auth\"))(\"tabId\",a.authPageEnum.password)(\"dataLocator\",\"login_tab\"),v(\"data-locator\",\"login_tab_content\"),p(2),s(\"allowLogin\",a.checkboxControl.valid)(\"showPersonalDataBlock\",a.showPersonalDataBlock)}}function Po(t,o){if(t&1&&(_(0,\"app-company-fallback-tile\",12),l(1,\"translate\"),l(2,\"translate\"),l(3,\"async\"),l(4,\"async\")),t&2){let a=f(2).ngVar,n=f();s(\"iconName\",\"profile/lock\")(\"title\",m(1,7,\"login.errors.login_unavailable\"))(\"text\",m(2,9,\"login.errors.login_unavailable_message\"))(\"companyId\",a==null?null:a.id)(\"applications\",m(3,11,n.applications$))(\"altegiomeEnabled\",m(4,13,n.isAltegiomeEnabled$)),v(\"data-locator\",\"auth_unavailable_info\")}}function So(t,o){if(t&1&&(Se(0),T(1,ko,7,17,\"ui-kit-tabs\",6)(2,Po,5,15,\"app-company-fallback-tile\",7),Te()),t&2){let a=o.ngVar;p(),s(\"ngIf\",a),p(),s(\"ngIf\",!a)}}function To(t,o){if(t&1&&(c(0,\"div\")(1,\"div\",4),_(2,\"ui-kit-avatar\",5),c(3,\"h2\"),x(4),u()(),T(5,So,3,2,\"ng-container\",2),l(6,\"async\"),u()),t&2){let a=o.ngVar,n=f();p(2),s(\"url\",a==null?null:a.logo)(\"round\",!0),p(),v(\"data-locator\",\"salon_title\"),p(),H(a==null?null:a.title),p(),s(\"ngVar\",m(6,5,n.isSmsEnabled$))}}var zi=(()=>{let o=class o{constructor(){e(this,\"router\",d(J));e(this,\"store\",d(ze));e(this,\"activatedRoute\",d(Y));e(this,\"trackingService\",d(U));e(this,\"navigationStepUrlResolver\",d(ai));e(this,\"appNavigationService\",d(F));e(this,\"phone\",\"\");e(this,\"showPersonalDataBlock\",!this.store.selectSnapshot(g.widgetSettings.getWidgetHideAgreement));e(this,\"checkboxControl\",new ae(!this.showPersonalDataBlock,W.requiredTrue));e(this,\"authPageEnum\",Je);e(this,\"selectedTabId\");e(this,\"activeTab\");e(this,\"tabsIds\",[this.authPageEnum.password,this.authPageEnum.sms]);e(this,\"isSuperButton$\",this.store.select(g.superButton.isSuperButton));e(this,\"company$\",this.store.select(g.currentCompany.getCurrentCompany));e(this,\"isAltegiomeEnabled$\",this.store.select(g.bookform.getIsAltegiomeEnabled));e(this,\"isSmsEnabled$\",this.store.select(g.currentCompany.getSmsEnabled));e(this,\"applications$\",this.store.select(g.applications.getApplications));e(this,\"destroy$\",new z(1))}ngOnInit(){this.goToProfileWhenUserHasToken(),this.updateSelectedTab(),this.trackPageView()}ngOnDestroy(){this.destroy$.next(),this.destroy$.complete()}get continueButtonTitle(){return this.activeTab===Je.password?\"menu.login\":\"login.get_code\"}updateSelectedTab(){this.selectedTabId=this.tabsIds.find(n=>n===this.activatedRoute.snapshot.queryParams.tab)||this.authPageEnum.sms}selectTab(n){this.updateSelectedTab(),this.activeTab=this.tabsIds.find(i=>i===n)||this.authPageEnum.sms,this.trackTab(n)}navigateToParentPage(){return N(this,null,function*(){var i;let n=(i=this.activatedRoute)==null?void 0:i.snapshot.queryParamMap.get(ue);yield this.navigationStepUrlResolver.removeQueryParamFromCurrentState(ue),n?this.appNavigationService.goBack({url:n}):this.appNavigationService.goBack({url:\"profile\"})})}openLinkOnNewTab(n){return N(this,null,function*(){let i=yield Ve(n);window.open(i,\"_blank\").focus()})}trackPageView(){this.isSuperButton$.pipe(Z(),O(this.destroy$)).subscribe(n=>{if(n){this.trackingService.pageView(G.superButtonLogIn);return}else if(this.selectedTabId===this.authPageEnum.sms){this.trackingService.pageView(G.smsLogIn);return}this.trackingService.pageView(G.userProfileLogIn)})}trackTab(n){if(n===this.selectedTabId)return;let i,r;n===this.authPageEnum.sms&&(i=G.smsAuthTab,r=G.buttonSmsAuthTab),n===this.authPageEnum.password&&(i=G.passwordAuthTab,r=G.buttonPasswordAuthTab),this.trackingService.track({type:M.Action.click,name:i,element:{type:G.button,name:r}})}goToProfileWhenUserHasToken(){this.store.select(g.user.getUserToken).pipe(ie(n=>n!==null),O(this.destroy$)).subscribe(()=>{var r,y,q;let n=this.router.createUrlTree([\"profile\"],{queryParams:this.activatedRoute.snapshot.queryParams,queryParamsHandling:\"merge\"}).toString(),i=(y=(r=this.activatedRoute)==null?void 0:r.snapshot)==null?void 0:y.queryParamMap.get(de);this.appNavigationService.returnToMain({successUrl:i||n,backUrl:(q=this.activatedRoute)==null?void 0:q.snapshot.queryParamMap.get(ue)})})}};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-auth-page\"]],decls:5,vars:4,consts:[[\"theme\",\"primary\",1,\"auth_header\",3,\"backClick\",\"isContentHidden\"],[1,\"auth-page-wrapper\"],[4,\"ngVar\"],[1,\"brand-link\"],[1,\"container\"],[\"size\",\"big\",3,\"url\",\"round\"],[3,\"selectedTabId\",\"tabSelect\",4,\"ngIf\"],[\"trackEventName\",\"loginUnavailable\",3,\"iconName\",\"title\",\"text\",\"companyId\",\"applications\",\"altegiomeEnabled\",4,\"ngIf\"],[3,\"tabSelect\",\"selectedTabId\"],[3,\"tabTitle\",\"tabId\",\"dataLocator\"],[3,\"allowConfirmPhone\",\"showPersonalDataBlock\"],[3,\"allowLogin\",\"showPersonalDataBlock\"],[\"trackEventName\",\"loginUnavailable\",3,\"iconName\",\"title\",\"text\",\"companyId\",\"applications\",\"altegiomeEnabled\"]],template:function(i,r){i&1&&(c(0,\"app-header\",0),h(\"backClick\",function(){return r.navigateToParentPage()}),u(),c(1,\"div\",1),T(2,To,7,7,\"div\",2),l(3,\"async\"),_(4,\"ui-kit-brand-link\",3),u()),i&2&&(s(\"isContentHidden\",!0),p(2),s(\"ngVar\",m(3,2,r.company$)))},dependencies:[fe,R,di,Fe,bi,Ci,me,ce,Di,Vi,A,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{min-height:100%;background:var(--y-core-color-surface-primary);display:flex;flex-direction:column}.container[_ngcontent-%COMP%]{padding:12px 16px 0}h2[_ngcontent-%COMP%]{padding:16px 0}.auth-form[_ngcontent-%COMP%]{flex-basis:380px}.brand-link[_ngcontent-%COMP%]{padding:40px 0}.auth-page-wrapper[_ngcontent-%COMP%]{background:var(--y-core-color-surface-primary);height:calc(100% - 64px);flex:1;display:flex;flex-direction:column;justify-content:space-between}'],changeDetection:0}));let t=o;return t})();var it=function(t){return t.userProfileEditor=\"user_profile_editor\",t}(it||{});var Ri=(()=>{let o=class o extends Bt{constructor(i){super(i);e(this,\"modalService\");e(this,\"buttonType\",se);this.modalService=i}deleteAccount(){this.close(!0)}closeModal(){this.dismiss()}};e(o,\"\\u0275fac\",function(r){return new(r||o)(B(pe))}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-delete-account-modal\"]],features:[mt],decls:15,vars:16,consts:[[1,\"header\"],[1,\"title\"],[1,\"secondary-button\",3,\"click\",\"type\",\"title\"],[3,\"click\",\"title\"]],template:function(r,y){r&1&&(c(0,\"div\",0),x(1),l(2,\"translate\"),u(),c(3,\"div\",1)(4,\"div\"),x(5),l(6,\"translate\"),u(),_(7,\"br\"),c(8,\"div\"),x(9),l(10,\"translate\"),u()(),c(11,\"ui-kit-button\",2),l(12,\"translate\"),h(\"click\",function(){return y.deleteAccount()}),u(),c(13,\"ui-kit-button\",3),l(14,\"translate\"),h(\"click\",function(){return y.closeModal()}),u()),r&2&&(p(),K(\" \",m(2,6,\"profile.remove_process\"),\"\\n\"),p(4),H(m(6,8,\"profile.remove_text1\")),p(4),H(m(10,10,\"profile.remove_text4\")),p(2),s(\"type\",y.buttonType.tertiary)(\"title\",m(12,12,\"profile.accept_remove\")),p(2),s(\"title\",m(14,14,\"Close\")))},dependencies:[$,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:block;padding:16px}[_nghost-%COMP%]   .header[_ngcontent-%COMP%]{font-style:normal;font-weight:500;font-size:16px;line-height:24px;display:flex;flex-direction:column;align-items:center}[_nghost-%COMP%]   .title[_ngcontent-%COMP%]{margin-top:40px;margin-bottom:60px;text-align:center;color:var(--y-core-color-text-secondary);font-style:normal;font-weight:400;font-size:16px;line-height:24px}[_nghost-%COMP%]   .secondary-button[_ngcontent-%COMP%]{display:block;margin-bottom:8px}'],changeDetection:0}));let t=o;return t})();function wo(t,o){if(t&1){let a=w();c(0,\"app-continue-button\",5),l(1,\"translate\"),l(2,\"async\"),h(\"activeButtonClick\",function(){k(a);let i=f(2);return P(i.openDeletingAccountModal())}),u()}if(t&2){let a=f(2);s(\"title\",m(1,3,\"profile.remove\"))(\"type\",a.buttonType.secondary)(\"disabled\",m(2,5,a.userDeleted$))}}function xo(t,o){if(t&1&&(c(0,\"div\",2),_(1,\"app-personal-info\",3),T(2,wo,3,7,\"app-continue-button\",4),u()),t&2){let a=o.ngIf,n=f();p(),s(\"avatar\",a.avatar)(\"name\",a.name)(\"phone\",a.phone)(\"email\",a.email),p(),s(\"ngIf\",n.isNativePlatform)}}var $i=(()=>{let o=class o{constructor(){e(this,\"store\",d(E));e(this,\"trackingService\",d(U));e(this,\"notification\",d(St));e(this,\"capacitor\",d(le));e(this,\"translate\",d(C));e(this,\"modalService\",d(pe));e(this,\"appNavigationService\",d(F));e(this,\"buttonType\",se);e(this,\"leading\",Me);e(this,\"deleteAccountModalIsOpen\",!1);e(this,\"user$\",this.store.select(g.user.getUser));e(this,\"userDeleted$\",this.store.select(g.user.userIsDeleted))}get isNativePlatform(){return this.capacitor.isNativePlatform()}ngOnInit(){this.trackingService.pageView(it.userProfileEditor)}navigateToProfile(){this.appNavigationService.goBack({url:b.profile})}openDeletingAccountModal(){return N(this,null,function*(){(yield this.modalService.openModal({component:Ri,componentData:{},params:{modalType:Ne.default,isGrayBackground:!0}}).instance.result.catch(ve))&&this.sendRequestForDeletingAccount()})}sendRequestForDeletingAccount(){this.store.dispatch(jt()),this.notification.notifySuccess(this.translate.transform(\"profile.remove_request\"))}};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-personal-info-page\"]],decls:3,vars:3,consts:[[\"theme\",\"primary\",3,\"backClick\"],[\"class\",\"personal-info-container\",4,\"ngIf\"],[1,\"personal-info-container\"],[3,\"avatar\",\"name\",\"phone\",\"email\"],[3,\"title\",\"type\",\"disabled\",\"activeButtonClick\",4,\"ngIf\"],[3,\"activeButtonClick\",\"title\",\"type\",\"disabled\"]],template:function(i,r){i&1&&(c(0,\"app-header\",0),h(\"backClick\",function(){return r.navigateToProfile()}),u(),T(1,xo,3,5,\"div\",1),l(2,\"async\")),i&2&&(p(),s(\"ngIf\",m(2,1,r.user$)))},dependencies:[fe,R,Qt,yi,A,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:block;height:100%;background-color:var(--y-core-color-surface-primary)}.personal-info-container[_ngcontent-%COMP%]{padding:16px 16px 40px}']}));let t=o;return t})();var Fi=(()=>{let o=class o{constructor(n,i){e(this,\"store\");e(this,\"appNavigationService\");this.store=n,this.appNavigationService=i}canActivate(){return N(this,null,function*(){return(yield Ve(this.store.select(g.user.isLoggedIn)))?(this.appNavigationService.returnToMain(),!1):!0})}};e(o,\"\\u0275fac\",function(i){return new(i||o)(Q(E),Q(F))}),e(o,\"\\u0275prov\",oe({token:o,factory:o.\\u0275fac,providedIn:\"root\"}));let t=o;return t})();var ji=(()=>{let o=class o{constructor(){e(this,\"store\",d(E));e(this,\"currentCompany\",d(ri));e(this,\"activatedRoute\",d(Y));e(this,\"appNavigationService\",d(F));e(this,\"phone$\",this.store.select(g.user.getAuthPhone))}get currentCompanyId(){return this.currentCompany.getCurrentCompanyId()}codeConfirmed(){return N(this,null,function*(){var i,r,y,q;let n=(y=(r=(i=this.activatedRoute)==null?void 0:i.snapshot)==null?void 0:r.queryParamMap.get(de))!=null?y:\"profile\";this.appNavigationService.returnToMain({successUrl:n||\"profile\",backUrl:(q=this.activatedRoute)==null?void 0:q.snapshot.queryParamMap.get(ue)})})}changePhone(){this.appNavigationService.goBack()}};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275cmp\",S({type:o,selectors:[[\"app-auth-by-code-page\"]],decls:6,vars:11,consts:[[3,\"title\",\"titleDataLocator\",\"leadingDataLocator\",\"leading\"],[\"leading\",\"\",\"role\",\"button\",1,\"button-back\",3,\"click\",\"name\"],[1,\"verification-container\"],[3,\"codeConfirmed\",\"changePhoneRequested\",\"phone\",\"companyId\"]],template:function(i,r){i&1&&(c(0,\"ui-kit-header\",0),l(1,\"translate\"),c(2,\"ui-kit-svg-icon\",1),h(\"click\",function(){return r.changePhone()}),u()(),c(3,\"div\",2)(4,\"app-code-verification\",3),l(5,\"async\"),h(\"codeConfirmed\",function(){return r.codeConfirmed()})(\"changePhoneRequested\",function(){return r.changePhone()}),u()()),i&2&&(s(\"title\",m(1,7,\"header.login\"))(\"titleDataLocator\",\"page_title\")(\"leadingDataLocator\",\"pointer_back\")(\"leading\",null),p(2),s(\"name\",\"back\"),p(2),s(\"phone\",m(5,9,r.phone$))(\"companyId\",r.currentCompanyId))},dependencies:[gi,Pt,ne,A,C],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:block;height:100%;background:var(--y-core-color-surface-primary)}[_nghost-%COMP%]   .button-back[_ngcontent-%COMP%]{font-size:24px;color:var(--y-core-color-text-primary)}[_nghost-%COMP%]   .verification-container[_ngcontent-%COMP%]{padding:57px 16px 0}'],changeDetection:0}));let t=o;return t})();var Gi=(()=>{let o=class o{constructor(n){e(this,\"router\");this.router=n}canActivate(n){return this.router.navigated?!0:(this.router.navigateByUrl(this.router.createUrlTree([Ge()],{queryParams:n.queryParams,queryParamsHandling:\"merge\"}),{replaceUrl:!0}),!1)}};e(o,\"\\u0275fac\",function(i){return new(i||o)(Q(J))}),e(o,\"\\u0275prov\",oe({token:o,factory:o.\\u0275fac,providedIn:\"root\"}));let t=o;return t})();var Mo=[{canActivate:[X],canActivateChild:[X],path:\"\",data:{routeName:b.profile},children:[{path:b.auth,canActivate:[Fi],data:{routeName:\"\".concat(b.profile,\".\").concat(b.auth)},children:[{path:\"\",component:zi},{path:b[\"code-verification\"],component:ji,canActivate:[Gi],resolve:{authChannel:fi}}]},{path:\"\",component:Ni,pathMatch:\"full\"},{path:b.record,canActivate:[ge],data:{routeName:\"\".concat(b.profile,\".\").concat(b.records)},loadChildren:()=>import(\"./record.route-5EXYOL7Y.js\").then(t=>t.recordRoutes)},{path:b[\"personal-info\"],canActivate:[ge],children:[{path:\"\",component:$i,data:{routeName:\"\".concat(b.profile,\".\").concat(b[\"personal-info\"])}}]},{path:b.notices,canActivate:[ge],loadChildren:()=>import(\"./notices-CEA3SNDN.js\").then(t=>t.NoticesModule)}]},{path:b.loyalty,canActivate:[X],loadChildren:()=>import(\"./loyalty-CDDSAH3B.js\").then(t=>t.LoyaltyModule)},{path:b.certificate,canActivate:[ge,X,et],data:{benchmarks:[\"booking_certificates_page_open\"]},loadChildren:()=>import(\"./certificate-4MINBR2A.js\").then(t=>t.CertificateModule)},{path:b.memberships,canActivate:[ge,X,et],data:{benchmarks:[\"booking_memberships_page_open\"]},loadChildren:()=>import(\"./membership-6UG5DJAO.js\").then(t=>t.MembershipModule)}],qi=(()=>{let o=class o{};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275mod\",Pe({type:o})),e(o,\"\\u0275inj\",ke({imports:[Xe.forChild(Mo),Xe]}));let t=o;return t})();var is=(()=>{let o=class o{};e(o,\"\\u0275fac\",function(i){return new(i||o)}),e(o,\"\\u0275mod\",Pe({type:o})),e(o,\"\\u0275inj\",ke({providers:[X],imports:[qi,_i,vt,Jt,xe,si,ei,xi,vi,Si,Ti,wi,Lt,ci,li,We,Et,Ut,Oe,At,It,oi,ce]}));let t=o;return t})();export{is as ProfileModule,qi as ProfileRouteModule};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 13663,
+          "_transferSize": 14323,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.450Z",
+        "time": 104.1979999281466,
+        "timings": {
+          "blocked": 55.79299994836747,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.4520000000000053,
+          "wait": 46.12899994436651,
+          "receive": 1.8240000354126096,
+          "_blocked_queueing": 4.0599999483674765,
+          "_blocked_proxy": 5.749,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "446174",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/date-time-VOP4ANSD.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-FVSTWCGN.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/date-time-VOP4ANSD.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1517,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6055"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb10892bcb1-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-1163\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "d79e5c78c1383103d508a851cdda8ad6"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 4451,
+            "mimeType": "application/javascript",
+            "compression": 2532,
+            "text": "import{a as B,b as Q}from\"./chunk-ZCWD3LHB.js\";import{d as z,j as A}from\"./chunk-6FGVQ7PR.js\";import{Fb as d,Gb as k,Ka as l,Kc as m,Pc as U,Qc as $,Ua as _,Ub as D,Va as w,Wa as I,Wb as O,Xb as g,Zb as b,cb as p,ec as h,fc as x,i as v,id as R,kc as S,na as C,oa as M,oc as F,pc as P,qc as f,rc as u,tc as V,vc as E,wc as K,y,yc as j,zc as L}from\"./chunk-KO722YSM.js\";import{a as c,b as s,g as i}from\"./chunk-JV5WWF5Q.js\";var W=[\"*\"],H=(()=>{let o=class o{constructor(){i(this,\"tabTitle\");i(this,\"tabId\");i(this,\"dataLocator\");i(this,\"tooltipText\");i(this,\"tabClick\",new p);i(this,\"active\",!1);i(this,\"tabModel$\");i(this,\"tabModel\")}ngOnInit(){this.lazyModelInit(),this.tabModel$=this.tabModel.asObservable()}ngOnChanges(t){this.lazyModelInit(),t.tabTitle&&this.tabModel.next(s(c({},this.tabModel.getValue()),{tabTitle:this.tabTitle})),t.tooltipText&&t.tooltipText.previousValue&&t.tooltipText.previousValue!==t.tooltipText.currentValue&&this.tabModel.next(s(c({},this.tabModel.getValue()),{tooltipText:this.tooltipText}))}setActive(t){this.active=t,this.tabModel.next(s(c({},this.tabModel.getValue()),{active:t}))}lazyModelInit(){this.tabModel||(this.tabModel=new v({id:this.tabId,tabTitle:this.tabTitle,active:this.active,componentReference:this,dataLocator:this.dataLocator||\"\",tooltipText:this.tooltipText}))}};i(o,\"\\u0275fac\",function(e){return new(e||o)}),i(o,\"\\u0275cmp\",l({type:o,selectors:[[\"ui-kit-tab\"]],hostVars:2,hostBindings:function(e,a){e&2&&b(\"active\",a.active)},inputs:{tabTitle:\"tabTitle\",tabId:\"tabId\",dataLocator:\"dataLocator\",tooltipText:\"tooltipText\"},outputs:{tabClick:\"tabClick\"},standalone:!0,features:[_,m],ngContentSelectors:W,decls:1,vars:0,template:function(e,a){e&1&&(f(),u(0))},styles:[\"[_nghost-%COMP%]{display:none;width:100%}.active[_nghost-%COMP%]{display:flex;flex-direction:column}\"],changeDetection:0}));let n=o;return n})();var G=[\"*\"];function J(n,o){if(n&1){let r=S();h(0,\"p\",2),F(\"click\",function(){let e=w(r).$implicit,a=P();return I(a.selectTab(e.componentReference))}),h(1,\"span\",3),j(2),x()()}if(n&2){let r=o.$implicit;b(\"active\",r.active),O(\"data-locator\",r.dataLocator),d(),g(\"uiKitTooltip\",r.tooltipText),d(),L(r.tabTitle)}}var gt=(()=>{let o=class o{constructor(t){i(this,\"changeDetectionRef\");i(this,\"tabs\");i(this,\"selectedTabId\");i(this,\"tabSelect\",new p);i(this,\"tabs$\");this.changeDetectionRef=t}ngAfterContentInit(){this.tabs$=this.tabs.changes.pipe(C(this.tabs),M(e=>y(e.map(a=>a.tabModel$))));let t=this.tabs.find(e=>e.tabId===this.selectedTabId)||this.tabs.first;this.selectTab(t,!1)}selectTab(t,e=!0){t.active||(this.tabs.forEach(a=>a.setActive(!1)),t.setActive(!0),e&&t.tabClick.emit(),this.selectedTabId=t.tabId,this.tabSelect.next(t.tabId),t.tabId===\"cityList\"&&window.dispatchEvent(new CustomEvent(\"resize\")),this.changeDetectionRef.detectChanges())}};i(o,\"\\u0275fac\",function(e){return new(e||o)(k(R))}),i(o,\"\\u0275cmp\",l({type:o,selectors:[[\"ui-kit-tabs\"]],contentQueries:function(e,a,N){if(e&1&&V(N,H,4),e&2){let T;E(T=K())&&(a.tabs=T)}},inputs:{selectedTabId:\"selectedTabId\"},outputs:{tabSelect:\"tabSelect\"},standalone:!0,features:[m],ngContentSelectors:G,decls:4,vars:3,consts:[[1,\"tab-header\"],[\"class\",\"tab\",3,\"active\",\"click\",4,\"ngFor\",\"ngForOf\"],[1,\"tab\",3,\"click\"],[1,\"tab__label\",3,\"uiKitTooltip\"]],template:function(e,a){e&1&&(f(),h(0,\"div\",0),D(1,J,3,5,\"p\",1),U(2,\"async\"),x(),u(3)),e&2&&(d(),g(\"ngForOf\",$(2,1,a.tabs$)))},dependencies:[z,A,Q,B],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:flex;flex-direction:column;align-items:center;min-height:200px;-webkit-tap-highlight-color:transparent}.tab-header[_ngcontent-%COMP%]{display:flex;justify-content:space-between;width:100%;box-sizing:border-box}.tab[_ngcontent-%COMP%]{cursor:pointer;width:100%;flex:1;display:flex;justify-content:center;height:48px;word-break:break-word;color:var(--y-core-color-text-secondary);background-color:var(--y-core-color-surface-primary);border-bottom-color:var(--y-core-color-stroke-primary);border-bottom-width:1px;border-bottom-style:solid}.tab__label[_ngcontent-%COMP%]{font-style:normal;font-weight:500;font-size:16px;line-height:24px;display:-webkit-box;max-height:20px;overflow:hidden;-webkit-line-clamp:1;-webkit-box-orient:vertical;padding:0 12px;margin-top:16px;text-align:center}.tab.active[_ngcontent-%COMP%]{color:var(--y-core-color-text-primary);border-bottom-color:var(--y-core-color-stroke-accent)}'],changeDetection:0}));let n=o;return n})();export{H as a,gt as b};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 1919,
+          "_transferSize": 2579,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.509Z",
+        "time": 55.73200003709644,
+        "timings": {
+          "blocked": 8.6790000975132,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.4140000000000006,
+          "wait": 44.780999994523825,
+          "receive": 1.8579999450594187,
+          "_blocked_queueing": 3.254000097513199,
+          "_blocked_proxy": 4.577999999999999,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "445032",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/date-time-VOP4ANSD.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-ZCWD3LHB.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/date-time-VOP4ANSD.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1517,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6055"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb11d48bca6-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-17f7\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "6c00d62ae6313e9f941fdf4df52eb51a"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 6135,
+            "mimeType": "application/javascript",
+            "compression": 3818,
+            "text": "import{$a as F,Aa as M,E,Fb as L,Gb as p,Jb as _,Ka as D,La as j,Lb as W,Ma as I,R as x,Ua as B,Yb as K,Zb as U,dd as Y,ec as k,fc as N,hb as y,j as V,oc as $,qa as O,sa as w,yc as z,zc as A}from\"./chunk-KO722YSM.js\";import{a as H,b as P,g as e}from\"./chunk-JV5WWF5Q.js\";var c=function(o){return o[o.static=1]=\"static\",o[o.hover=2]=\"hover\",o}(c||{});var n=function(o){return o.top=\"top\",o.right=\"right\",o.bottom=\"bottom\",o.left=\"left\",o}(n||{});var G=(()=>{let r=class r{constructor(t,i){e(this,\"elementRef\");e(this,\"renderer\");e(this,\"hostStyleTop\");e(this,\"hostStyleLeft\");e(this,\"hostClassShow\");e(this,\"tooltipText\");e(this,\"triangleOffset\",5);e(this,\"subscription\");e(this,\"destroy$\",new V(1));this.elementRef=t,this.renderer=i}toggleDisplay(t){this.subscription&&this.subscription.unsubscribe(),t?(this.tooltipText=t==null?void 0:t.tooltipText,setTimeout(()=>{this.hostClassShow=this.trySetPosition(t)},0),this.subscription=E(window,\"resize\").pipe(w(()=>{this.hostClassShow=!1}),x(300),w(()=>{this.hostStyleLeft=\"0px\",this.hostStyleTop=\"0px\"}),x(0),O(this.destroy$)).subscribe(()=>{this.hostClassShow=this.trySetPosition(t)})):this.hostClassShow=!1}trySetPosition(t){if(this.setHostStyle(t))return this.setPlacementClass(t.placement),!0;{let i=[n.top,n.right,n.bottom,n.left],s=!1;for(let l of i)if(this.setHostStyle(P(H({},t),{placement:l}))){this.setPlacementClass(l),s=!0;break}return s}}setPlacementClass(t){let i=[n.top,n.right,n.bottom,n.left];for(let s of i)this.renderer.removeClass(this.elementRef.nativeElement,\"tooltip-\"+s);this.renderer.addClass(this.elementRef.nativeElement,\"tooltip-\"+t)}setHostStyle(t,i=!1){let s=t.elementRef.nativeElement,l=s.getBoundingClientRect(),h=this.elementRef.nativeElement,R=s.offsetHeight,C=s.offsetWidth,S=h.clientHeight,v=h.clientWidth,m=window.pageYOffset,b=parseInt(getComputedStyle(document.documentElement).getPropertyValue(\"--safe-area-top\")),f,a;if(t.placement===n.top&&(f=l.top+m-b-S-this.triangleOffset),t.placement===n.bottom&&(f=l.top+m-b+R+this.triangleOffset),[n.top,n.bottom].includes(t.placement)&&(a=l.left+C/2-v/2),t.placement===n.left&&(a=l.left-v-this.triangleOffset),t.placement===n.right&&(a=l.left+C+this.triangleOffset),[n.left,n.right].includes(t.placement)&&(f=l.top+m-b+R/2-h.clientHeight/2),t.autoPlacement&&!i){let J=f,Q=f+S,u=a,d=a+v,X=window.innerHeight+m,g=document.body.clientWidth;if(J<0||Q>X)return!1;if(u<0||d>g){let T=!1;if([n.top,n.bottom].includes(t.placement)&&d-u<g&&(T=!0,u<0?a=1:d>g&&(a=u-(d-g)-1)),!T)return!1}}return this.hostStyleTop=f+\"px\",this.hostStyleLeft=a+\"px\",!0}ngOnDestroy(){this.destroy$.next(),this.destroy$.complete()}};e(r,\"\\u0275fac\",function(i){return new(i||r)(p(y),p(W))}),e(r,\"\\u0275cmp\",D({type:r,selectors:[[\"ng-component\"]],hostVars:6,hostBindings:function(i,s){i&2&&(K(\"top\",s.hostStyleTop)(\"left\",s.hostStyleLeft),U(\"tooltip-show\",s.hostClassShow))},decls:2,vars:1,template:function(i,s){i&1&&(k(0,\"div\"),z(1),N()),i&2&&(L(),A(s.tooltipText))},styles:['@charset \"UTF-8\";[_nghost-%COMP%]{font-style:normal;font-weight:400;font-size:12px;line-height:16px;max-width:200px;background-color:var(--y-core-color-text-primary);color:var(--y-core-color-surface-primary);text-align:center;border-radius:12px;padding:12px;position:absolute;pointer-events:none;z-index:9999;display:block;opacity:0;transition:opacity .3s;top:0;left:0}.tooltip-show[_nghost-%COMP%]{opacity:1}[_nghost-%COMP%]:after{content:\"\";position:absolute;border-style:solid}.tooltip-top[_nghost-%COMP%]:after{top:100%;left:50%;margin-left:-5px;border-width:5px;border-color:var(--y-core-color-text-primary) transparent transparent transparent}.tooltip-bottom[_nghost-%COMP%]:after{bottom:100%;left:50%;margin-left:-5px;border-width:5px;border-color:transparent transparent var(--y-core-color-text-primary) transparent}.tooltip-left[_nghost-%COMP%]:after{top:50%;left:100%;margin-top:-5px;border-width:5px;border-color:transparent transparent transparent var(--y-core-color-text-primary)}.tooltip-right[_nghost-%COMP%]:after{top:50%;right:100%;margin-top:-5px;border-width:5px;border-color:transparent var(--y-core-color-text-primary) transparent transparent}']}));let o=r;return o})();var ft=(()=>{let r=class r{constructor(t,i,s,l){e(this,\"elementRef\");e(this,\"componentFactoryResolver\");e(this,\"appRef\");e(this,\"injector\");e(this,\"tooltipValue\");e(this,\"placement\",n.top);e(this,\"autoPlacement\",!0);e(this,\"triggerType\",c.static);e(this,\"componentRef\");this.elementRef=t,this.componentFactoryResolver=i,this.appRef=s,this.injector=l,this.componentRef=this.componentFactoryResolver.resolveComponentFactory(G).create(this.injector),this.appRef.attachView(this.componentRef.hostView);let h=this.componentRef.hostView.rootNodes[0];document.body.appendChild(h)}onMouseEnter(){this.triggerType===c.hover&&this.show()}onMouseLeave(){this.triggerType===c.hover&&this.hide()}ngOnChanges(t){this.triggerType===c.static&&t.tooltipValue&&t.tooltipValue.previousValue&&t.tooltipValue.previousValue!==t.tooltipText.currentValue&&!t.tooltipText.currentValue&&this.hide()}ngAfterViewInit(){this.triggerType===c.static&&this.show()}show(){this.tooltipValue&&this.componentRef.instance.toggleDisplay({tooltipText:this.tooltipValue,elementRef:this.elementRef,placement:this.placement,autoPlacement:this.autoPlacement})}hide(){this.componentRef.instance.toggleDisplay(void 0)}ngOnDestroy(){this.appRef.detachView(this.componentRef.hostView),this.componentRef.destroy()}};e(r,\"\\u0275fac\",function(i){return new(i||r)(p(y),p(_),p(Y),p(F))}),e(r,\"\\u0275dir\",I({type:r,selectors:[[\"\",\"uiKitTooltip\",\"\"]],hostBindings:function(i,s){i&1&&$(\"focusin\",function(){return s.onMouseEnter()})(\"mouseenter\",function(){return s.onMouseEnter()})(\"focusout\",function(){return s.onMouseLeave()})(\"mouseleave\",function(){return s.onMouseLeave()})},inputs:{tooltipValue:[0,\"uiKitTooltip\",\"tooltipValue\"],placement:\"placement\",autoPlacement:\"autoPlacement\",triggerType:\"triggerType\"},features:[B]}));let o=r;return o})();var yt=(()=>{let r=class r{};e(r,\"\\u0275fac\",function(i){return new(i||r)}),e(r,\"\\u0275mod\",j({type:r})),e(r,\"\\u0275inj\",M({}));let o=r;return o})();export{ft as a,yt as b};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 2317,
+          "_transferSize": 2977,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.510Z",
+        "time": 60.345000005327165,
+        "timings": {
+          "blocked": 21.394000088647008,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.6209999999999987,
+          "wait": 37.32000002586842,
+          "receive": 1.0099998908117414,
+          "_blocked_queueing": 4.109000088647008,
+          "_blocked_proxy": 4.998,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "443857",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/date-time-VOP4ANSD.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-BT2Q3CPI.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/date-time-VOP4ANSD.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1517,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6049"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb139c4bcbd-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "accept-encoding"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-164\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "d638221e8e598a119e2081212dc29ca3"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 356,
+            "mimeType": "application/javascript",
+            "compression": 119,
+            "text": "import{a as p}from\"./chunk-PX7RBKSN.js\";import{p as e,rc as n}from\"./chunk-6FGVQ7PR.js\";import{Aa as i,La as m}from\"./chunk-KO722YSM.js\";import{g as t}from\"./chunk-JV5WWF5Q.js\";var j=(()=>{let o=class o{};t(o,\"\\u0275fac\",function(f){return new(f||o)}),t(o,\"\\u0275mod\",m({type:o})),t(o,\"\\u0275inj\",i({imports:[e,n,p]}));let r=o;return r})();export{j as a};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 657,
+          "bodySize": 237,
+          "_transferSize": 894,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.510Z",
+        "time": 74.88800003193319,
+        "timings": {
+          "blocked": 45.6580000480637,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.38400000000000034,
+          "wait": 26.485000050425526,
+          "receive": 2.3609999334439635,
+          "_blocked_queueing": 4.333000048063695,
+          "_blocked_proxy": 4.781000000000001,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "446174",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/date-time-VOP4ANSD.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-SWTFDR2C.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/date-time-VOP4ANSD.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1517,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6049"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb148ccbcb1-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-1026\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "04067c711ac3bd404f0c46b1523b3a1e"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 4134,
+            "mimeType": "application/javascript",
+            "compression": 2310,
+            "text": "import{$ as v,Eb as K,Z as F,_ as f,ba as r,da as D,e as V,ha as b,rc as T}from\"./chunk-6FGVQ7PR.js\";import{Fb as a,Ka as C,Kc as S,Nc as B,Oc as A,Ub as M,Va as w,Wa as y,Wb as c,Xb as g,Zb as l,cb as u,ec as p,fc as m,gb as k,gc as E,kc as P,oc as h,od as U,pc as x,qc as L,rc as _,yc as O,zc as I}from\"./chunk-KO722YSM.js\";import{g as e}from\"./chunk-JV5WWF5Q.js\";var z=[[[\"\",\"sub-title\",\"\"]],[[\"\",\"expanded-content\",\"\"]]],j=[\"[sub-title]\",\"[expanded-content]\"],H=(n,i)=>({expandDuration:n,collapseDuration:i}),R=n=>({value:\"\",params:n});function q(n,i){if(n&1){let d=P();p(0,\"div\",4),h(\"@contentExpansion.done\",function(){w(d);let o=x();return y(o.contentExpanded())}),_(1,1),m()}if(n&2){let d=x();g(\"@contentExpansion\",B(4,R,A(1,H,d.animationDuration().expandDuration,d.animationDuration().collapseDuration)))}}var it=(()=>{let i=class i{constructor(){e(this,\"title\");e(this,\"expanded\",!1);e(this,\"disabled\",!1);e(this,\"mode\",\"light\");e(this,\"titleDataLocator\");e(this,\"iconDataLocator\",\"category_arrow\");e(this,\"itemsCount\",k(void 0));e(this,\"blockExpanded\",new u(!1));e(this,\"animationDone\",new u);e(this,\"animationDuration\",U(()=>{let t=this.itemsCount();return{expandDuration:t?Math.min(30*t,1e3):200,collapseDuration:t?Math.min(30*t,300):200}}))}get isLight(){return this.mode===\"light\"}get isRegular(){return this.mode===\"regular\"}toggleView(){this.expanded=!this.expanded,this.blockExpanded.emit(this.expanded)}contentExpanded(){this.animationDone.emit()}};e(i,\"\\u0275fac\",function(o){return new(o||i)}),e(i,\"\\u0275cmp\",C({type:i,selectors:[[\"ui-kit-expansion-block\"]],hostVars:7,hostBindings:function(o,t){o&2&&(c(\"data-locator-expand-title\",t.title)(\"data-locator-expand-expanded\",t.expanded)(\"data-locator-expand-disabled\",t.disabled),l(\"light\",t.isLight)(\"regular\",t.isRegular))},inputs:{title:\"title\",expanded:\"expanded\",disabled:\"disabled\",mode:\"mode\",titleDataLocator:\"titleDataLocator\",iconDataLocator:\"iconDataLocator\",itemsCount:[1,\"itemsCount\"]},outputs:{blockExpanded:\"blockExpanded\",animationDone:\"animationDone\"},standalone:!0,features:[S],ngContentSelectors:j,decls:6,vars:8,consts:[[1,\"header\",3,\"click\"],[1,\"header_title\"],[\"name\",\"arrow-down-light\",1,\"header_chevron\"],[\"class\",\"content-container\",4,\"ngIf\"],[1,\"content-container\"]],template:function(o,t){o&1&&(L(z),p(0,\"div\",0),h(\"click\",function(){return t.toggleView()}),p(1,\"div\",1),O(2),m(),_(3),E(4,\"ui-kit-svg-icon\",2),m(),M(5,q,2,6,\"div\",3)),o&2&&(a(),l(\"disabled\",t.disabled),c(\"data-locator\",t.titleDataLocator),a(),I(t.title),a(2),l(\"header_chevron__expanded\",t.expanded),c(\"data-locator\",t.iconDataLocator),a(),g(\"ngIf\",t.expanded))},dependencies:[V,T,K],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{cursor:pointer;position:relative;z-index:100;background:var(--widget-ui-kit-color-grey-background);-webkit-tap-highlight-color:transparent;padding:8px 16px;display:flex;flex-direction:column;overflow-y:hidden}.regular[_nghost-%COMP%]   .header_title[_ngcontent-%COMP%]{font-style:normal;font-weight:700;font-size:20px;line-height:24px;color:var(--y-core-color-text-primary)}[_nghost-%COMP%]   .header[_ngcontent-%COMP%]{display:flex;flex-direction:row;align-items:center;padding-top:8px;padding-bottom:8px}[_nghost-%COMP%]   .header_title[_ngcontent-%COMP%]{flex-basis:88%;max-width:88%;overflow-wrap:break-word;word-break:break-word;font-style:normal;font-weight:500;font-size:16px;line-height:24px;color:var(--y-core-color-text-secondary)}[_nghost-%COMP%]   .header_title.disabled[_ngcontent-%COMP%]{opacity:40%}[_nghost-%COMP%]   .header_chevron[_ngcontent-%COMP%]{font-size:16px;color:var(--y-core-color-icon-secondary);margin-right:0;margin-left:auto;width:auto;height:auto}[_nghost-%COMP%]   .header_chevron__expanded[_ngcontent-%COMP%]{transform:rotate(180deg)}[_nghost-%COMP%]   .content-container[_ngcontent-%COMP%]{overflow-x:visible}'],data:{animation:[F(\"contentExpansion\",[D(\":enter\",[r({height:0}),v([b(\":self\",f(\"{{ expandDuration }}ms ease-in\",r({height:\"*\"})))])]),D(\":leave\",[r({height:\"*\"}),v([b(\":self\",f(\"{{ collapseDuration }}ms ease-out\",r({height:0})))])])])]},changeDetection:0}));let n=i;return n})();export{it as a};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 1824,
+          "_transferSize": 2484,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.510Z",
+        "time": 80.09399997536093,
+        "timings": {
+          "blocked": 55.64099994876236,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.605000000000004,
+          "wait": 17.54800001840293,
+          "receive": 6.300000008195639,
+          "_blocked_queueing": 4.533999948762357,
+          "_blocked_proxy": 4.944,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "445032",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/master-step.module-B73WYMR6.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-WIWEQICE.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/master-step.module-B73WYMR6.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1526,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6049"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb15d89bca6-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-2ae8\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "bca60835d2e588d53139ebfe6fb8e368"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 10984,
+            "mimeType": "application/javascript",
+            "compression": 7528,
+            "text": "import{c as w}from\"./chunk-X2IVCNZ3.js\";import{b as le}from\"./chunk-P3W6H44H.js\";import{F as P,g as L,y as pe}from\"./chunk-IGSDBEZN.js\";import{Ab as ae,Bb as se,Eb as z,Gg as U,Hg as de,Jf as N,Ld as ce,Md as me,Z as re,_ as ne,ba as K,ca as j,da as oe,e as W,p as ie,rc as y}from\"./chunk-6FGVQ7PR.js\";import{Aa as G,Ac as b,Fb as c,Ka as S,Kc as x,La as H,Nc as Y,Oc as Z,Pc as I,Qc as ee,Rc as te,Sc as D,Ub as O,Va as f,Wa as u,Xb as l,ac as $,cb as g,cc as F,dc as V,ec as m,fc as s,gb as p,gc as k,hc as J,ic as Q,kc as C,oc as h,od as _,pc as d,qc as R,rc as X,yc as v,zc as T}from\"./chunk-KO722YSM.js\";import{a as E,b as A,g as o}from\"./chunk-JV5WWF5Q.js\";var ue=[\"*\"],B=(()=>{let i=class i{};o(i,\"\\u0275fac\",function(t){return new(t||i)}),o(i,\"\\u0275cmp\",S({type:i,selectors:[[\"app-service-card-pad\"]],standalone:!0,features:[x],ngContentSelectors:ue,decls:2,vars:0,consts:[[1,\"pad\"]],template:function(t,r){t&1&&(R(),m(0,\"div\",0),X(1),s())},styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:block}.pad[_ngcontent-%COMP%]{padding:12px 16px;border-radius:16px;background:var(--y-core-color-surface-secondary)}'],changeDetection:0}));let n=i;return n})();var Se=(n,i)=>i.id,ge=n=>[n],Ce=(n,i)=>({selectedServiceId:n,subServiceLinkId:i});function he(n,i){if(n&1){let a=C();m(0,\"app-services-card-with-master\",7),h(\"masterSelected\",function(t){let r=f(a).$implicit,M=d();return u(M.masterSelected.emit({masterId:t,compositeServiceId:M.service().id,serviceLinkId:r.id}))})(\"openMasterInfo\",function(t){f(a);let r=d();return u(r.openMasterInfo.emit(t))}),s()}if(n&2){let a,e=i.$implicit,t=i.$index,r=d();l(\"services\",Y(5,ge,e))(\"serviceStaff\",r.selectedMastersMap()[e.id])(\"availableMasters\",r.compositeMasters()[e.id])(\"mayChangeMaster\",t!==0||!r.hiddenMasterId()||r.hiddenMasterId()!==((a=r.selectedMastersMap()[e.id])==null?null:a.id))(\"tempSubInfo\",Z(7,Ce,r.service().id,e.id))}}function xe(n,i){if(n&1&&(J(0),m(1,\"div\",8),v(2,\"\\xB7\"),s(),m(3,\"div\",9),v(4),I(5,\"secondsToTime\"),s(),Q()),n&2){let a=d();c(4),T(D(5,1,a.service().seance_length,!1,!0))}}var ve=(()=>{let i=class i{constructor(){o(this,\"service\",p());o(this,\"compositeMasters\",p({},{transform:e=>e!=null?e:{}}));o(this,\"serviceInOrder\",p());o(this,\"hiddenMasterId\",p());o(this,\"company\");o(this,\"masterSelected\",new g);o(this,\"openMasterInfo\",new g);o(this,\"selectedMastersMap\",_(()=>this.serviceInOrder().subServicesInfo.reduce((e,t)=>{var r;return e[t.serviceLinkId]=(r=this.compositeMasters()[t.serviceLinkId])==null?void 0:r.find(M=>M.id===t.selectedMasterId),e},{})));o(this,\"selectedServicesParams\",_(()=>this.service().composite_details.links.map(e=>E({},U(e)))))}get currencyShortTitle(){var e;return(e=this.company)==null?void 0:e.currency_short_title}};o(i,\"\\u0275fac\",function(t){return new(t||i)}),o(i,\"\\u0275cmp\",S({type:i,selectors:[[\"app-composite-service-card\"]],inputs:{service:[1,\"service\"],compositeMasters:[1,\"compositeMasters\"],serviceInOrder:[1,\"serviceInOrder\"],hiddenMasterId:[1,\"hiddenMasterId\"],company:\"company\"},outputs:{masterSelected:\"masterSelected\",openMasterInfo:\"openMasterInfo\"},standalone:!0,features:[x],decls:11,vars:7,consts:[[1,\"pad-title\"],[\"name\",\"complex\",3,\"setSvgSize\"],[1,\"pad\"],[1,\"service-card\",3,\"services\",\"serviceStaff\",\"availableMasters\",\"mayChangeMaster\",\"tempSubInfo\"],[1,\"summary\"],[1,\"summary-price\"],[4,\"ngIf\"],[1,\"service-card\",3,\"masterSelected\",\"openMasterInfo\",\"services\",\"serviceStaff\",\"availableMasters\",\"mayChangeMaster\",\"tempSubInfo\"],[1,\"summary-divider\"],[1,\"summary-duration\"]],template:function(t,r){t&1&&(m(0,\"h4\",0),k(1,\"ui-kit-svg-icon\",1),v(2),s(),m(3,\"app-service-card-pad\",2),F(4,he,1,10,\"app-services-card-with-master\",3,Se),m(6,\"div\",4)(7,\"div\",5),v(8),I(9,\"price\"),s(),O(10,xe,6,5,\"ng-container\",6),s()()),t&2&&(c(),l(\"setSvgSize\",!1),c(),b(\" \",r.service().title,\"\\n\"),c(2),V(r.selectedServicesParams()),c(4),T(te(9,4,r.service(),r.currencyShortTitle)),c(2),l(\"ngIf\",r.service().seance_length))},dependencies:[W,P,L,de,B,w,y,z],styles:['@charset \"UTF-8\";.pad[_ngcontent-%COMP%]{margin:8px 16px 32px}.pad-title[_ngcontent-%COMP%]{color:var(--y-core-color-text-secondary);font-style:normal;font-weight:400;font-size:14px;line-height:20px;display:flex;gap:4px;align-items:center;margin:8px 16px}.complex-title[_ngcontent-%COMP%]{margin-bottom:16px;color:var(--y-core-color-text-secondary);font-style:normal;font-weight:400;font-size:14px;line-height:20px}.summary[_ngcontent-%COMP%]{display:flex;align-items:center;gap:8px}.summary-price[_ngcontent-%COMP%], .summary-divider[_ngcontent-%COMP%], .summary-duration[_ngcontent-%COMP%]{color:var(--y-core-color-text-primary);font-style:normal;font-weight:500;font-size:16px;line-height:24px}.service-card[_ngcontent-%COMP%]{display:block;margin-bottom:24px}'],changeDetection:0}));let n=i;return n})();var Ie=(n,i)=>i.id;function ye(n,i){if(n&1){let a=C();m(0,\"app-composite-service-card\",2),h(\"masterSelected\",function(t){f(a);let r=d();return u(r.selectMasterForCompositeService(t))})(\"openMasterInfo\",function(t){f(a);let r=d();return u(r.openMasterInfo.emit(t))}),s()}if(n&2){let a=i.$implicit,e=d();l(\"company\",e.company)(\"service\",a)(\"compositeMasters\",e.compositeMasters()[a.id])(\"serviceInOrder\",e.getServiceInOrder(a.id))(\"hiddenMasterId\",e.hiddenMasterId())}}function Pe(n,i){if(n&1&&(m(0,\"div\",9),v(1,\"\\xB7\"),s(),m(2,\"div\",10),v(3),I(4,\"secondsToTime\"),s()),n&2){let a=d(2);c(3),T(D(4,1,a.selectedServicesParamsLength(),!1,!0))}}function we(n,i){if(n&1){let a=C();m(0,\"h4\",3),k(1,\"ui-kit-svg-icon\",4),v(2),I(3,\"translate\"),s(),m(4,\"app-service-card-pad\",5)(5,\"app-services-card-with-master\",6),h(\"masterSelected\",function(t){f(a);let r=d();return u(r.masterSelected.emit({masterId:t}))})(\"openMasterInfo\",function(t){f(a);let r=d();return u(r.openMasterInfo.emit(t))}),s(),m(6,\"div\",7)(7,\"div\",8),v(8),s(),O(9,Pe,5,5),s()()}if(n&2){let a,e=d();c(),l(\"setSvgSize\",!1),c(),b(\" \",ee(3,9,\"record.services\"),\" \"),c(3),l(\"services\",e.selectedServicesParams())(\"titleMarginBottom\",8)(\"serviceStaff\",e.selectedMaster())(\"availableMasters\",e.availableSingleMasters())(\"mayChangeMaster\",!e.hiddenMasterId()||e.hiddenMasterId()!==((a=e.selectedMaster())==null?null:a.id)),c(3),b(\"\",e.selectedServicesParamsPrice(),\" $\"),c(),$(e.selectedServicesParamsLength()?9:-1)}}function Oe(n,i){if(n&1){let a=C();m(0,\"div\",11),h(\"click\",function(){f(a);let t=d();return u(t.useDice())}),k(1,\"ui-kit-svg-icon\",12),s()}if(n&2){let a=d();c(),l(\"name\",\"common/dice\")(\"@rotate\",a.rotationState)}}var fe=(()=>{let i=class i{constructor(){o(this,\"selectedServices\",p([]));o(this,\"selectedMaster\",p(null));o(this,\"availableSingleMasters\",p([]));o(this,\"compositeMasters\",p({},{transform:e=>e!=null?e:{}}));o(this,\"servicesInOrder\",p());o(this,\"hiddenMasterId\",p(null));o(this,\"company\");o(this,\"masterSelected\",new g);o(this,\"openMasterInfo\",new g);o(this,\"isDiceEnabled\",ce.isFeatureEnabled(me.composite_services_dice));o(this,\"rotationState\",\"normal\");o(this,\"selectedServicesParams\",_(()=>this.selectedServices().filter(e=>!e.is_composite).map(e=>A(E({},U(e)),{price_max:e.price_max}))));o(this,\"selectedServicesParamsPrice\",_(()=>this.selectedServicesParams().reduce((e,t)=>e+t.price_max,0)));o(this,\"selectedServicesParamsLength\",_(()=>this.selectedServicesParams().reduce((e,t)=>e+(t.seance_length||0),0)));o(this,\"selectedComplexServices\",_(()=>this.selectedServices().filter(e=>e.is_composite)))}getServiceInOrder(e){return this.servicesInOrder().selectedServicesInfo.find(t=>t.serviceId===e)}useDice(){this.rotationState=this.rotationState===\"normal\"?\"rotated\":\"normal\";let e=[];this.servicesInOrder().selectedServicesInfo.forEach(t=>{if(N(t))t.subServicesInfo.forEach(r=>{let M=this.compositeMasters()[t.serviceId][r.serviceLinkId];e.unshift({masterId:M[Math.floor(Math.random()*M.length)].id,compositeServiceId:t.serviceId,serviceLinkId:r.serviceLinkId})});else{let r=this.availableSingleMasters;e.push({masterId:r[Math.floor(Math.random()*r.length)].id})}});for(let t of e)this.masterSelected.emit(t)}selectMasterForCompositeService(e){let t=[e];this.servicesInOrder().selectedServicesInfo.forEach(r=>{if(!N(r)){if(r.selectedMasterId)return;t.push({masterId:e.masterId})}});for(let r of t)this.masterSelected.emit(r)}};o(i,\"\\u0275fac\",function(t){return new(t||i)}),o(i,\"\\u0275cmp\",S({type:i,selectors:[[\"app-services-card-with-master-mock\"]],inputs:{selectedServices:[1,\"selectedServices\"],selectedMaster:[1,\"selectedMaster\"],availableSingleMasters:[1,\"availableSingleMasters\"],compositeMasters:[1,\"compositeMasters\"],servicesInOrder:[1,\"servicesInOrder\"],hiddenMasterId:[1,\"hiddenMasterId\"],company:\"company\"},outputs:{masterSelected:\"masterSelected\",openMasterInfo:\"openMasterInfo\"},standalone:!0,features:[x],decls:4,vars:2,consts:[[3,\"company\",\"service\",\"compositeMasters\",\"serviceInOrder\",\"hiddenMasterId\"],[\"class\",\"dice-container\",3,\"click\",4,\"ngIf\"],[3,\"masterSelected\",\"openMasterInfo\",\"company\",\"service\",\"compositeMasters\",\"serviceInOrder\",\"hiddenMasterId\"],[1,\"pad-title\"],[\"name\",\"table-call-bell\",3,\"setSvgSize\"],[1,\"pad\"],[1,\"service-card\",3,\"masterSelected\",\"openMasterInfo\",\"services\",\"titleMarginBottom\",\"serviceStaff\",\"availableMasters\",\"mayChangeMaster\"],[1,\"summary\"],[1,\"summary-price\"],[1,\"summary-divider\"],[1,\"summary-duration\"],[1,\"dice-container\",3,\"click\"],[1,\"dice-icon\",3,\"name\"]],template:function(t,r){t&1&&(F(0,ye,1,5,\"app-composite-service-card\",0,Ie),O(2,we,10,11)(3,Oe,2,2,\"div\",1)),t&2&&(V(r.selectedComplexServices()),c(2),$(r.selectedServicesParams().length>0?2:-1),c(),l(\"ngIf\",r.isDiceEnabled))},dependencies:[w,B,y,z,P,L,ve,W,se,ae],styles:['@charset \"UTF-8\";.pad[_ngcontent-%COMP%]{margin:8px 16px 32px}.pad-title[_ngcontent-%COMP%]{color:var(--y-core-color-text-secondary);font-style:normal;font-weight:400;font-size:14px;line-height:20px;display:flex;gap:4px;align-items:center;margin:8px 16px}.complex-title[_ngcontent-%COMP%]{margin-bottom:16px;color:var(--y-core-color-text-secondary);font-style:normal;font-weight:400;font-size:14px;line-height:20px}.summary[_ngcontent-%COMP%]{display:flex;align-items:center;gap:8px}.summary-price[_ngcontent-%COMP%], .summary-divider[_ngcontent-%COMP%], .summary-duration[_ngcontent-%COMP%]{color:var(--y-core-color-text-primary);font-style:normal;font-weight:500;font-size:16px;line-height:24px}.service-card[_ngcontent-%COMP%]{display:block;margin-bottom:24px}.dice-container[_ngcontent-%COMP%]{position:-webkit-sticky;position:sticky;cursor:pointer}.dice-container[_ngcontent-%COMP%]   .dice-icon[_ngcontent-%COMP%]{position:absolute;width:25px;height:25px;left:min(500px,100vw - 120px);bottom:0}'],data:{animation:[re(\"rotate\",[j(\"normal\",K({transform:\"rotate(0deg)\"})),j(\"rotated\",K({transform:\"rotate(360deg)\"})),oe(\"normal <=> rotated\",ne(\"1000ms ease-in-out\"))])]},changeDetection:0}));let n=i;return n})();var ht=(()=>{let i=class i{};o(i,\"\\u0275fac\",function(t){return new(t||i)}),o(i,\"\\u0275mod\",H({type:i})),o(i,\"\\u0275inj\",G({imports:[ie,P,w,y,fe,pe,le]}));let n=i;return n})();export{fe as a,ht as b};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 3456,
+          "_transferSize": 4116,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.521Z",
+        "time": 86.97900001425296,
+        "timings": {
+          "blocked": 49.58099997284263,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.4059999999999988,
+          "wait": 33.24899994570017,
+          "receive": 3.7430000957101583,
+          "_blocked_queueing": 0.7149999728426337,
+          "_blocked_proxy": 0.8279999999999998,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "435174",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/master-step.module-B73WYMR6.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-5TNNUQPF.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/master-step.module-B73WYMR6.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1526,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6049"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb168e1bcb1-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-297c\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "7a52defb8d95598f829ebd3df6bab7bf"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 10620,
+            "mimeType": "application/javascript",
+            "compression": 6784,
+            "text": "import{a as Te,b as be}from\"./chunk-7HQ4EX32.js\";import{F as Ce,g as xe,j as Se,r as ke}from\"./chunk-IGSDBEZN.js\";import{m as F,t as V}from\"./chunk-IV3KQJLV.js\";import{Dc as R,Eb as me,Fc as N,Hg as D,Jf as he,Yd as ge,Zd as _e,_ as pe,ba as z,ch as ye,d as se,e as O,ea as le,i as E,j as ae,p as ce,rc as de,tc as ve,uc as $,ui as x,vc as fe,we as ue}from\"./chunk-6FGVQ7PR.js\";import{Aa as G,Ac as I,Bc as B,Fa as y,Fb as a,Gb as _,J as Q,Ka as b,La as H,Pb as X,Pc as d,Qc as v,Ua as J,Ub as u,Va as k,Wa as C,Wb as Z,Xb as m,Yb as ee,Zb as te,aa as Y,ec as p,fc as l,gc as w,hc as A,ic as U,j as W,jc as ie,kc as M,oc as T,pc as g,qa as j,ua as q,uc as ne,vc as re,wc as oe,x as S,y as K,yc as h,zc as P}from\"./chunk-KO722YSM.js\";import{g as t}from\"./chunk-JV5WWF5Q.js\";function Be(n,i){if(n&1&&(p(0,\"div\",9)(1,\"div\",10),w(2,\"app-staff-tile\",11),l()()),n&2){let o=i.ngIf;a(2),m(\"staff\",o)(\"infoVisible\",!1)(\"overrideShowRatingAndTag\",!0)}}function Oe(n,i){if(n&1){let o=M();p(0,\"app-service-item\",12),d(1,\"async\"),d(2,\"secondsToTime\"),T(\"iconClick\",function(){let e=k(o).$implicit,s=g();return C(s.removeServiceFromBasket(e))}),l()}if(n&2){let o=i.$implicit,c=g();m(\"service\",o)(\"currency\",v(1,7,c.company$).currency_short_title)(\"showServiceTags\",!1)(\"iconName\",c.allowEdit?\"cross\":void 0)(\"seanceLength\",v(2,9,o.seance_length))(\"overflowVisible\",!0),Z(\"data-locator\",\"service_item_\"+o.id)}}function Ee(n,i){}function $e(n,i){if(n&1&&(p(0,\"div\"),u(1,Ee,0,0,\"ng-template\",13),l()),n&2){let o=g();ee(\"height\",o.footerTemplateInfo.heightPx+\"px\"),a(),m(\"ngTemplateOutlet\",o.footerTemplateInfo.templateRef)}}var Me=(()=>{let i=class i extends fe{constructor(e){super(e);t(this,\"modalService\");t(this,\"store\",y(ye));t(this,\"pricePipe\",y(D));t(this,\"paymentService\",y(V));t(this,\"wordNumerals\",y(F));t(this,\"trackingService\",y(N));t(this,\"destroy$\",new W(1));t(this,\"selectedServices$\",this.store.select(x.order.getSelectedServices));t(this,\"selectedMasters$\",K([this.store.select(x.order.getIndividualSelectedServicesInfo),this.store.select(x.masters.getMastersDict)]).pipe(S(([e,s])=>{let r=[];if(e.forEach(f=>{he(f)?f.subServicesInfo.forEach(L=>{L.selectedMasterId&&r.push(L.selectedMasterId)}):f.selectedMasterId&&r.push(f.selectedMasterId)}),r.length!==0)return[...new Set(r)].map(f=>f===ge?_e:s[f])})));t(this,\"company$\",this.store.select(x.currentCompany.getCurrentCompany).pipe(Y(),j(this.destroy$)));t(this,\"servicesPriceTotal$\",this.selectedServices$.pipe(q(this.store.select(x.currentCompany.getCurrentCompany)),S(([e,s])=>this.pricePipe.transform(e.filter(r=>!this.paymentService.abonementRestrictionRequired(r)),s.currency_short_title,!0))));t(this,\"servicesText$\",this.selectedServices$.pipe(Q(e=>!!e.length),S(e=>this.wordNumerals.transform(\"service.more_plural\",e.length,{pluralGenitive:\".many\",nominative:\".singular\",genitive:\".few\"}))));t(this,\"servicesTotalTime$\",this.selectedServices$.pipe(S(e=>e.reduce((s,r)=>s+(r.seance_length||0),0))));t(this,\"footerTemplateInfo\",null);t(this,\"allowEdit\",!1);this.modalService=e}ngOnInit(){this.selectedServices$.pipe(j(this.destroy$)).subscribe(e=>{e.length||this.modalService.closeModal()})}ngOnDestroy(){this.destroy$.next(),this.destroy$.complete()}removeServiceFromBasket(e){this.store.dispatch(new ue(e.id)),this.trackRemoveService(e.id)}trackRemoveService(e){this.trackingService.track({type:R.Action.click,page:{name:\"services_list\"},element:{type:\"button\",name:\"button_edit_cart_delete_service\",id:e}})}};t(i,\"\\u0275fac\",function(s){return new(s||i)(_($))}),t(i,\"\\u0275cmp\",b({type:i,selectors:[[\"app-services-basket-modal\"]],features:[X],decls:19,vars:21,consts:[[1,\"services-basket\"],[\"class\",\"service-basket__additional\",4,\"ngIf\"],[1,\"service-basket__total\"],[1,\"service-basket-counter\"],[1,\"service-basket__additional__total-time\"],[\"data-locator\",\"service-price\",1,\"service-basket-price\"],[1,\"opened-basket\"],[\"class\",\"service-item\",3,\"service\",\"currency\",\"showServiceTags\",\"iconName\",\"seanceLength\",\"overflowVisible\",\"iconClick\",4,\"ngFor\",\"ngForOf\"],[3,\"height\",4,\"ngIf\"],[1,\"service-basket__additional\"],[1,\"service-basket__additional__master\"],[3,\"staff\",\"infoVisible\",\"overrideShowRatingAndTag\"],[1,\"service-item\",3,\"iconClick\",\"service\",\"currency\",\"showServiceTags\",\"iconName\",\"seanceLength\",\"overflowVisible\"],[3,\"ngTemplateOutlet\"]],template:function(s,r){s&1&&(p(0,\"div\",0),u(1,Be,3,3,\"div\",1),d(2,\"async\"),p(3,\"div\",2)(4,\"div\",3),h(5),d(6,\"async\"),d(7,\"async\"),p(8,\"span\",4),h(9),d(10,\"async\"),d(11,\"secondsToTime\"),l()(),p(12,\"div\",5),h(13),d(14,\"async\"),l()(),p(15,\"div\",6),u(16,Oe,3,11,\"app-service-item\",7),d(17,\"async\"),l(),u(18,$e,2,3,\"div\",8),l()),s&2&&(a(),m(\"ngIf\",v(2,7,r.selectedMasters$)),a(4),B(\" \",v(6,9,r.selectedServices$).length,\" \",v(7,11,r.servicesText$),\" \"),a(4),P(v(11,15,v(10,13,r.servicesTotalTime$))),a(4),I(\" \",v(14,17,r.servicesPriceTotal$),\" \"),a(3),m(\"ngForOf\",v(17,19,r.selectedServices$)),a(2),m(\"ngIf\",r.footerTemplateInfo))},dependencies:[se,O,E,Se,Te,ae,xe],styles:['@charset \"UTF-8\";.service-basket__additional[_ngcontent-%COMP%]{padding:8px 16px 0}.service-basket__additional__master[_ngcontent-%COMP%]{padding-bottom:8px}.service-basket__additional__total-time[_ngcontent-%COMP%]{font-style:normal;font-weight:400;font-size:16px;line-height:24px}.service-basket__total[_ngcontent-%COMP%]{display:flex;flex-direction:row;justify-content:space-between;font-style:normal;font-weight:700;font-size:20px;line-height:24px;padding:16px}.service-basket-price[_ngcontent-%COMP%]{overflow-wrap:anywhere}.opened-basket[_ngcontent-%COMP%]{display:flex;flex-direction:column;padding:0 16px 20px}.opened-basket[_ngcontent-%COMP%]   .service-item[_ngcontent-%COMP%]{padding:8px 0}'],changeDetection:0}));let n=i;return n})();var Re=[\"mainElement\"];function Ne(n,i){if(n&1){let o=M();A(0),p(1,\"div\",4)(2,\"div\",5),T(\"click\",function(){k(o);let e=g();return C(e.toggleBasket())}),h(3),p(4,\"span\",6),h(5),d(6,\"servicesLength\"),l()(),p(7,\"div\",7),T(\"click\",function(){k(o);let e=g();return C(e.toggleBasket())}),p(8,\"div\",8),h(9),l(),w(10,\"ui-kit-svg-icon\",9),l()(),U()}if(n&2){let o=g();a(3),B(\" \",o.services.length,\"\\xA0\",o.servicesText,\"\\xA0 \"),a(2),P(v(6,5,o.services)),a(4),I(\" \",o.servicesPriceTotal,\" \"),a(),m(\"name\",\"edit\")}}function De(n,i){n&1&&ie(0)}function Fe(n,i){if(n&1&&(A(0),u(1,De,1,0,\"ng-container\",10),U()),n&2){let o=g();a(),m(\"ngTemplateOutlet\",o.continueButtonTemplateRef)}}var dt=(()=>{let i=class i{constructor(c,e,s,r,f){t(this,\"modalService\");t(this,\"trackingService\");t(this,\"wordNumeralCasePipe\");t(this,\"pricePipe\");t(this,\"paymentService\");t(this,\"services\");t(this,\"currencyShortTitle\");t(this,\"continueButtonTemplateRef\");t(this,\"allowEdit\",!1);t(this,\"servicesText\");t(this,\"servicesPriceTotal\");t(this,\"mainElementRef\");this.modalService=c,this.trackingService=e,this.wordNumeralCasePipe=s,this.pricePipe=r,this.paymentService=f}ngOnChanges(c){c.services&&(this.servicesText=this.services.length?this.wordNumeralCasePipe.transform(\"service.more_plural\",this.services.length,{pluralGenitive:\".many\",nominative:\".singular\",genitive:\".few\"}):\"\"),(c.services||c.currencyShortTitle)&&(this.servicesPriceTotal=this.currencyShortTitle?this.pricePipe.transform(this.services.filter(e=>!this.paymentService.abonementRestrictionRequired(e)),this.currencyShortTitle,!0):\"\")}toggleBasket(){this.trackBasketModalOpened(),this.modalService.openModal({component:Me,componentData:{footerTemplateInfo:{templateRef:this.continueButtonTemplateRef,heightPx:this.mainElementRef.nativeElement.clientHeight},allowEdit:this.allowEdit},params:{modalType:ve.default}})}trackBasketModalOpened(){this.trackingService.track({type:R.Action.click,page:{name:\"services_list\"},element:{type:\"button\",name:\"button_edit_cart_services\"}})}ngOnDestroy(){this.modalService.closeModal()}};t(i,\"\\u0275fac\",function(e){return new(e||i)(_($),_(N),_(F),_(D),_(V))}),t(i,\"\\u0275cmp\",b({type:i,selectors:[[\"app-service-button-basket\"]],viewQuery:function(e,s){if(e&1&&ne(Re,7),e&2){let r;re(r=oe())&&(s.mainElementRef=r.first)}},inputs:{services:\"services\",currencyShortTitle:\"currencyShortTitle\",continueButtonTemplateRef:\"continueButtonTemplateRef\",allowEdit:\"allowEdit\"},features:[J],decls:5,vars:4,consts:[[\"mainElement\",\"\"],[1,\"service-basket\"],[1,\"service-basket-info\"],[4,\"ngIf\"],[1,\"service-basket-info__texts\"],[1,\"service-basket-counter\",3,\"click\"],[1,\"service-basket-total-time\"],[1,\"service-basket-right-part\",3,\"click\"],[\"data-locator\",\"service-price\",1,\"service-basket-price\"],[1,\"service-selection-icon\",3,\"name\"],[4,\"ngTemplateOutlet\"]],template:function(e,s){e&1&&(p(0,\"div\",1,0)(2,\"div\",2),u(3,Ne,11,7,\"ng-container\",3)(4,Fe,2,1,\"ng-container\",3),l()()),e&2&&(te(\"background\",s.services.length),a(3),m(\"ngIf\",s.services.length),a(),m(\"ngIf\",s.continueButtonTemplateRef))},dependencies:[O,E,me,ke],styles:['@charset \"UTF-8\";.background[_ngcontent-%COMP%]{position:fixed;max-width:600px;width:100%;min-height:130px;bottom:0;background-color:var(--y-core-color-surface-primary);border-top:1px solid var(--y-core-color-stroke-primary);box-shadow:0 12px 48px #0613333d}.service-basket[_ngcontent-%COMP%]{z-index:200}.service-basket-info[_ngcontent-%COMP%]{padding:8px 16px;margin-top:6px;cursor:pointer;font-style:normal;font-weight:400;font-size:16px;line-height:24px}.service-basket-info__texts[_ngcontent-%COMP%]{display:flex;flex-direction:row;gap:4px;align-items:center;justify-content:space-between;margin-bottom:18px}.service-basket-info[_ngcontent-%COMP%]   .service-selection-icon[_ngcontent-%COMP%]{width:24px;height:24px;color:var(--y-core-color-icon-secondary)}.service-basket-info[_ngcontent-%COMP%]   .service-basket-counter[_ngcontent-%COMP%]{width:max-content}.service-basket-info[_ngcontent-%COMP%]   .service-basket-price[_ngcontent-%COMP%]{overflow-wrap:anywhere}.service-basket-info[_ngcontent-%COMP%]   .service-basket-total-time[_ngcontent-%COMP%]{font-style:normal;font-weight:400;font-size:12px;line-height:16px;color:var(--y-core-color-text-secondary)}.service-basket-info[_ngcontent-%COMP%]   .service-basket-right-part[_ngcontent-%COMP%]{display:flex;gap:4px;align-items:center}'],changeDetection:0}));let n=i;return n})();var Ct=(()=>{let i=class i{};t(i,\"\\u0275fac\",function(e){return new(e||i)}),t(i,\"\\u0275mod\",H({type:i})),t(i,\"\\u0275inj\",G({imports:[ce,Ce,be,de]}));let n=i;return n})();var Mt=le([z({transform:\"translateY({{ translateY }})\",opacity:0,bottom:0,width:\"100%\",zIndex:200,maxWidth:\"{{ maxWidth }}\"}),pe(\"{{ timeParams }}\",z({transform:\"translateY(0)\",opacity:1,position:\"fixed\",bottom:0,width:\"100%\",zIndex:200,maxWidth:\"{{ maxWidth }}\"}))]);export{Mt as a,dt as b,Ct as c};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 3836,
+          "_transferSize": 4496,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.521Z",
+        "time": 111.11600010190159,
+        "timings": {
+          "blocked": 64.3130000309348,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.49500000000000455,
+          "wait": 41.86700001544505,
+          "receive": 4.441000055521727,
+          "_blocked_queueing": 1.1660000309348106,
+          "_blocked_proxy": 0.555,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "452138",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/services-step.module-Q7ZDKTVY.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-G6HNEAI4.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/services-step.module-Q7ZDKTVY.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1528,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6055"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb16f8bbca9-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-31a4\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "7e677c56114d1254309d31d7ab73daa8"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 12708,
+            "mimeType": "application/javascript",
+            "compression": 8515,
+            "text": "import{A as pe,z as W}from\"./chunk-IGSDBEZN.js\";import{g as me}from\"./chunk-TXASR5LU.js\";import{Ab as ne,Bb as oe,Dc as le,Eb as ae,Fc as de,G as Z,Z as ee,_ as te,ba as L,ca as H,da as ie,j as Y,p as J,rc as se,tc as re,uc as ce}from\"./chunk-6FGVQ7PR.js\";import{Aa as B,Cb as Q,Cc as X,Fa as w,Fb as d,Ka as R,La as q,Ob as M,Pc as F,Qc as E,Ub as y,Va as g,Wa as h,Wb as O,Xb as _,Yb as I,Zb as C,ac as v,bc as U,cc as b,dc as k,ec as m,fc as p,gb as z,gc as P,hb as j,i as A,kc as x,oc as u,od as S,pc as c,uc as K,vc as V,wc as $,yc as N,zb as G}from\"./chunk-KO722YSM.js\";import{g as a}from\"./chunk-JV5WWF5Q.js\";var ue=[\"imagesContainer\"],fe=[\"image\"];function _e(n,s){if(n&1){let o=x();m(0,\"div\",2)(1,\"div\",8),u(\"click\",function(e){g(o);let t=c();return h(t.moveToPhoto(t.activeImageIndex-1,e))}),P(2,\"ui-kit-svg-icon\",9),p()()}n&2&&(d(2),_(\"name\",\"arrow-down-light\")(\"setSvgSize\",!1))}function Ce(n,s){if(n&1){let o=x();m(0,\"div\",3)(1,\"div\",8),u(\"click\",function(e){g(o);let t=c();return h(t.moveToPhoto(t.activeImageIndex+1,e))}),P(2,\"ui-kit-svg-icon\",9),p()()}n&2&&(d(2),_(\"name\",\"arrow-down-light\")(\"setSvgSize\",!1))}function ve(n,s){if(n&1&&(m(0,\"div\",10),N(1),F(2,\"translate\"),p()),n&2){let o=c();C(\"hidden\",o.isUpperPanelHidden),d(),X(\" \",o.activeImageIndex+1,\" \",E(2,5,\"out-of\"),\" \",o.imagesInfo.length,\" \")}}function xe(n,s){if(n&1){let o=x();m(0,\"div\",13,1),u(\"click\",function(){g(o);let e=c(2);return h(e.hideHeaderPanel())}),P(2,\"img\",14),p()}if(n&2){let o=c(),i=o.$implicit,e=o.$index,t=c();I(\"width\",t.imageWidth())(\"aspect-ratio\",t.aspectRatio()),C(\"active\",t.activeImageIndex===e),O(\"data-locator\",\"salon_photo\"),d(2),_(\"src\",i,G)}}function Pe(n,s){if(n&1){let o=x();m(0,\"div\",13,1),u(\"click\",function(){g(o);let e=c().$index,t=c();return h(t.openPreview(e))}),p()}if(n&2){let o=c(),i=o.$implicit,e=o.$index,t=c();I(\"background-image\",\"url(\"+i+\")\")(\"width\",t.imageWidth())(\"aspect-ratio\",t.aspectRatio()),C(\"active\",t.activeImageIndex===e)(\"pointer\",t.withPreview()),O(\"data-locator\",\"salon_photo\")}}function we(n,s){if(n&1&&y(0,xe,3,8,\"div\",11)(1,Pe,2,11,\"div\",12),n&2){let o=c();v(o.isFullSize?0:1)}}function Me(n,s){if(n&1&&P(0,\"div\",15),n&2){let o=s.$index,i=c(2);_(\"@pointSelection\",i.activeImageIndex===o?\"active\":\"notActive\"),O(\"data-locator\",\"carousel_switch_point\")}}function ye(n,s){if(n&1&&(m(0,\"div\",6),b(1,Me,1,2,\"div\",15,U),p()),n&2){let o=c();d(),k(o.imagesInfo)}}function Oe(n,s){if(n&1){let o=x();m(0,\"div\",16),u(\"click\",function(){g(o);let e=c();return h(e.closePreview())}),P(1,\"ui-kit-svg-icon\",9),p()}if(n&2){let o=c();C(\"hidden\",o.isUpperPanelHidden),d(),_(\"name\",\"cross\")(\"setSvgSize\",!1)}}var l=function(n){return n.SquareMode=\"square\",n.LandscapeMode=\"landscape\",n.WideLandscapeMode=\"wide-landscape\",n.FullSizeMode=\"full-size\",n}(l||{}),D=150,ge=80,Re=(()=>{let s=class s{constructor(){a(this,\"pointsVisible\",M(!0));a(this,\"carouselLayoutMode\",M(l.SquareMode));a(this,\"isImagesRounded\",z(!0));a(this,\"showImagesCounter\",M(!1));a(this,\"withPreview\",z(!1));a(this,\"imagesContainer\");a(this,\"imagesInfo\",[]);a(this,\"activeImageIndex\",0);a(this,\"translateWidth\",ge);a(this,\"trackingService\",w(de));a(this,\"uiKitPhotoCarousel\",w(j));a(this,\"modalService\",w(ce));a(this,\"isMobileDevice\",Z().phone);a(this,\"imagesGap\",S(()=>{switch(this.carouselLayoutMode()){case l.SquareMode:return\"16px\";case l.FullSizeMode:return\"24px\";case l.LandscapeMode:case l.WideLandscapeMode:return\"8px\"}}));a(this,\"imageWidth\",S(()=>{switch(this.carouselLayoutMode()){case l.SquareMode:return\"60%\";case l.FullSizeMode:return\"100%\";case l.LandscapeMode:case l.WideLandscapeMode:return this.imagesInfo.length===1?\"calc(100% - 32px)\":\"80%\"}}));a(this,\"aspectRatio\",S(()=>{switch(this.carouselLayoutMode()){case l.SquareMode:case l.FullSizeMode:return\"1\";case l.LandscapeMode:return\"2.15\";case l.WideLandscapeMode:return\"2.43\"}}));a(this,\"isSwiping\",!1);a(this,\"isAnimatingToTarget$\",new A(!1));a(this,\"isUpperPanelHidden\",!1);a(this,\"image\")}set photoUrls(i){this.imagesInfo=i,this.activeImageIndex=0,this.imagesContainer&&this.moveToPhoto(this.activeImageIndex)}get isFullSize(){return this.carouselLayoutMode()===l.FullSizeMode}ngAfterViewInit(){this.moveToPhoto(this.activeImageIndex),setTimeout(()=>this.setTranslateWidth())}moveToPhoto(i,e,t=!0){this.trackingService.track({type:le.Action.view,element:{type:\"about_company_photo\",number:i.toString()}}),this.activeImageIndex=i;let r=this.getCurrentTranslate();this.imagesContainer.nativeElement.animate([{transform:\"translate(calc(\".concat(r,\"))\")}],{fill:\"forwards\",duration:t?D:0,iterations:1}),e==null||e.stopPropagation(),this.isSwiping=!1,this.isAnimatingToTarget$.next(!0),setTimeout(()=>{this.isAnimatingToTarget$.next(!1)},D)}swipeFinished(i){let e=i.eventType===W.swipeLeft&&this.activeImageIndex!==this.imagesInfo.length-1,t=i.eventType===W.swipeRight&&this.activeImageIndex!==0;if(e){this.moveToPhoto(this.activeImageIndex+1);return}if(t){this.moveToPhoto(this.activeImageIndex-1);return}this.moveToPhoto(this.activeImageIndex)}swipeExecuted(i){this.isSwiping||(this.isSwiping=!0);let e=i.x;this.imagesContainer.nativeElement.animate([{transform:\"translate(calc(\".concat(this.getCurrentTranslate(),\" - \").concat(e,\"px))\")}],{fill:\"forwards\",duration:1,iterations:1})}setTranslateWidth(){let i=this.image.nativeElement.offsetWidth,e=this.uiKitPhotoCarousel.nativeElement.offsetWidth;if(i>0&&e>0){this.translateWidth=i/e*100;return}this.translateWidth=ge}getCurrentTranslate(){if(this.imagesInfo.length===1)return\"0\";let i=this.isFullSize?\"0px\":\"16px\",e=i,t=r=>this.isFullSize?\"100% - \".concat(this.imagesGap()):r?\"\".concat(this.translateWidth-10,\"% - \").concat(i,\" - \").concat(this.imagesGap()):\"\".concat(this.translateWidth,\"% - \").concat(this.imagesGap());for(let r=1;r<=this.activeImageIndex;r++){let f=r+1===this.imagesInfo.length||r===1;e+=\" - \".concat(t(f))}return e}openPreview(i){if(!this.withPreview())return;let e=this.modalService.openModal({component:s,params:{modalType:re.fullScreen},componentData:{photoUrls:this.imagesInfo}});e.instance.carouselLayoutMode.set(l.FullSizeMode),e.instance.pointsVisible.set(!1),e.instance.moveToPhoto(i,void 0,!1),e.instance.showImagesCounter.set(!0)}hideHeaderPanel(){this.isMobileDevice&&(this.isUpperPanelHidden=!this.isUpperPanelHidden)}closePreview(){this.modalService.closeModal()}closeOutside(i){this.isFullSize&&(i instanceof MouseEvent&&i.target instanceof HTMLImageElement||i instanceof MouseEvent&&i.target instanceof SVGElement||i instanceof MouseEvent&&i.target instanceof HTMLDivElement&&i.target.classList.contains(\"control-arrow\")||this.closePreview())}};a(s,\"\\u0275fac\",function(e){return new(e||s)}),a(s,\"\\u0275cmp\",R({type:s,selectors:[[\"ui-kit-photo-carousel\"]],viewQuery:function(e,t){if(e&1&&(K(ue,5),K(fe,5)),e&2){let r;V(r=$())&&(t.imagesContainer=r.first),V(r=$())&&(t.image=r.first)}},hostVars:2,hostBindings:function(e,t){e&1&&u(\"keydown.escape\",function(f){return t.closeOutside(f)},!1,Q)(\"mousedown\",function(f){return t.closeOutside(f)}),e&2&&C(\"full-size\",t.isFullSize)},inputs:{photoUrls:\"photoUrls\",pointsVisible:[1,\"pointsVisible\"],carouselLayoutMode:[1,\"carouselLayoutMode\"],isImagesRounded:[1,\"isImagesRounded\"],showImagesCounter:[1,\"showImagesCounter\"],withPreview:[1,\"withPreview\"]},outputs:{pointsVisible:\"pointsVisibleChange\",carouselLayoutMode:\"carouselLayoutModeChange\",showImagesCounter:\"showImagesCounterChange\"},decls:10,vars:14,consts:[[\"imagesContainer\",\"\"],[\"image\",\"\"],[1,\"control\",\"left\"],[1,\"control\",\"right\"],[1,\"images-info\",3,\"hidden\"],[1,\"images\",3,\"uiKitSwipe\",\"uiKitOnSwipeHorizontal\",\"disableTimeout\"],[1,\"points\"],[1,\"cross-icon\",3,\"hidden\"],[1,\"control-arrow\",3,\"click\"],[3,\"name\",\"setSvgSize\"],[1,\"images-info\"],[1,\"image\",3,\"active\",\"width\",\"aspect-ratio\"],[1,\"image\",3,\"background-image\",\"active\",\"width\",\"aspect-ratio\",\"pointer\"],[1,\"image\",3,\"click\"],[\"alt\",\"\",3,\"src\"],[1,\"point\"],[1,\"cross-icon\",3,\"click\"]],template:function(e,t){if(e&1){let r=x();y(0,_e,3,2,\"div\",2)(1,Ce,3,2,\"div\",3)(2,ve,3,7,\"div\",4),m(3,\"div\",5,0),F(5,\"async\"),u(\"uiKitSwipe\",function(T){return g(r),h(t.swipeFinished(T))})(\"uiKitOnSwipeHorizontal\",function(T){return g(r),h(t.swipeExecuted(T))}),b(6,we,2,1,null,null,U),p(),y(8,ye,3,0,\"div\",6)(9,Oe,2,4,\"div\",7)}e&2&&(v(t.activeImageIndex>0?0:-1),d(),v(t.activeImageIndex+1<t.imagesInfo.length?1:-1),d(),v(t.showImagesCounter()?2:-1),d(),I(\"gap\",t.imagesGap()),C(\"is-swiping\",t.isMobileDevice&&t.isSwiping)(\"is-animating\",t.isMobileDevice&&E(5,12,t.isAnimatingToTarget$)),_(\"disableTimeout\",!0),d(3),k(t.imagesInfo),d(2),v(t.pointsVisible()&&t.imagesInfo.length>1?8:-1),d(),v(t.isFullSize?9:-1))},dependencies:[ae,pe,Y,ne],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{max-width:none;position:relative;left:50%;transform:translate(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;overflow:hidden}@media (width >= 600px){[_nghost-%COMP%]{width:600px}}@media (width < 600px){[_nghost-%COMP%]{width:100vw}}[_nghost-%COMP%]   .images-info[_ngcontent-%COMP%]{position:absolute;top:48px;font-style:normal;font-weight:400;font-size:16px;line-height:24px;color:#fff;z-index:10;opacity:1;transition:opacity .1s ease-in}@media (max-width: 648px){[_nghost-%COMP%]   .images-info[_ngcontent-%COMP%]{top:24px}}@media (max-width: 648px){[_nghost-%COMP%]   .images-info.hidden[_ngcontent-%COMP%]{opacity:0;transition:opacity .3s ease-out}}[_nghost-%COMP%]   .images[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100%;height:100%}[_nghost-%COMP%]   .images[_ngcontent-%COMP%]   .image[_ngcontent-%COMP%]{border-radius:16px;flex-shrink:0;background-size:cover}[_nghost-%COMP%]   .images[_ngcontent-%COMP%]   .image.pointer[_ngcontent-%COMP%]{cursor:pointer}[_nghost-%COMP%]   .images[_ngcontent-%COMP%]   .image[_ngcontent-%COMP%]:only-child{margin:auto}[_nghost-%COMP%]   .points[_ngcontent-%COMP%]{padding:8px 16px;display:flex;flex-direction:row;gap:4px}[_nghost-%COMP%]   .points[_ngcontent-%COMP%]   .point[_ngcontent-%COMP%]{height:5px}[_nghost-%COMP%]   .control[_ngcontent-%COMP%]{position:absolute;display:flex;justify-content:center;align-items:center;z-index:1;top:50%;transform:translateY(-50%)}[_nghost-%COMP%]   .control.left[_ngcontent-%COMP%]{left:16px}[_nghost-%COMP%]   .control.left[_ngcontent-%COMP%]   ui-kit-svg-icon[_ngcontent-%COMP%]{transform:rotate(90deg)}[_nghost-%COMP%]   .control.right[_ngcontent-%COMP%]{right:16px}[_nghost-%COMP%]   .control.right[_ngcontent-%COMP%]   ui-kit-svg-icon[_ngcontent-%COMP%]{transform:rotate(-90deg)}[_nghost-%COMP%]   .control[_ngcontent-%COMP%]   .control-arrow[_ngcontent-%COMP%]{width:48px;height:48px;border-radius:100px;background-color:var(--y-core-color-surface-secondary-fill);display:flex;justify-content:center;align-items:center;color:var(--y-core-color-icon-primary);cursor:pointer}.full-size[_nghost-%COMP%]{width:100vw;height:100vh;background-color:var(--y-core-color-other-overlay-60);position:relative}@media (max-width: 648px){.full-size[_nghost-%COMP%]{max-height:100dvh}}.full-size[_nghost-%COMP%]   .cross-icon[_ngcontent-%COMP%]{position:absolute;right:48px;top:48px;color:#fff;cursor:pointer;z-index:10}@media (max-width: 648px){.full-size[_nghost-%COMP%]   .cross-icon[_ngcontent-%COMP%]{right:20px;top:24px;opacity:1;transition:opacity .1s ease-in}}@media (max-width: 648px){.full-size[_nghost-%COMP%]   .cross-icon.hidden[_ngcontent-%COMP%]{opacity:0;transition:opacity .1s ease-out}}.full-size[_nghost-%COMP%]   .images[_ngcontent-%COMP%]   .image[_ngcontent-%COMP%]{display:flex;justify-content:center;align-items:center;border-radius:0;height:100%}.full-size[_nghost-%COMP%]   .images[_ngcontent-%COMP%]   .image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{max-width:70vw;max-height:70vh}@media (max-width: 648px){.full-size[_nghost-%COMP%]   .images[_ngcontent-%COMP%]   .image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{max-width:100vw;max-height:100dvh;width:100vw}}.full-size[_nghost-%COMP%]   .control.left[_ngcontent-%COMP%]{left:48px}.full-size[_nghost-%COMP%]   .control.right[_ngcontent-%COMP%]{right:48px}@media (hover: none){[_nghost-%COMP%]   .control[_ngcontent-%COMP%]{display:none}}'],data:{animation:[ee(\"pointSelection\",[H(\"active\",L({width:\"16px\",\"background-color\":\"var(--y-core-color-text-primary)\",height:\"5px\",\"border-radius\":\"24px\"})),H(\"notActive\",L({width:\"6px\",\"background-color\":\"var(--y-core-color-surface-tertiary-high)\",height:\"5px\",\"border-radius\":\"100px\"})),ie(\"active <=> notActive\",te(\"\".concat(D,\"ms ease-in-out\")))])]},changeDetection:0}));let n=s;return n})();var nt=(()=>{let s=class s{};a(s,\"\\u0275fac\",function(e){return new(e||s)}),a(s,\"\\u0275mod\",q({type:s})),a(s,\"\\u0275inj\",B({imports:[J,me,se,oe]}));let n=s;return n})();export{Re as a,nt as b};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 660,
+          "bodySize": 4193,
+          "_transferSize": 4853,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.535Z",
+        "time": 96.72599995974451,
+        "timings": {
+          "blocked": 51.44399999011308,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.4239999999999995,
+          "wait": 39.18599997030944,
+          "receive": 5.671999999321997,
+          "_blocked_queueing": 0.8089999901130795,
+          "_blocked_proxy": 1.6110000000000002,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "450154",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/services-step.module-Q7ZDKTVY.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-UZWB3P4V.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/services-step.module-Q7ZDKTVY.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1528,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6055"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb16a6bbcac-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-4fd\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "4316c4cf11cdcdab40d7b4930fc586be"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1277,
+            "mimeType": "application/javascript",
+            "compression": 617,
+            "text": "import{Gb as o,Ma as l,cb as u,db as c,hb as p}from\"./chunk-KO722YSM.js\";import{g as e}from\"./chunk-JV5WWF5Q.js\";var v=(()=>{let t=class t{constructor(r,i){e(this,\"elementRef\");e(this,\"ngZone\");e(this,\"uiKitInViewportAlwaysEmit\",!1);e(this,\"uiKitInViewportBehaviour\",\"full\");e(this,\"disableTrack\",!1);e(this,\"thresholdTop\",\"128px\");e(this,\"inViewport\",new u);e(this,\"observer\");this.elementRef=r,this.ngZone=i}ngAfterViewInit(){let r=(i,s)=>{i.forEach(a=>{this.disableTrack||(this.inViewport.emit(a),this.uiKitInViewportAlwaysEmit||(s.unobserve(a.target),s.disconnect()))})};this.ngZone.runOutsideAngular(()=>{this.observer=new IntersectionObserver(r,{rootMargin:\"-\".concat(this.thresholdTop,\" 0px 0px 0px\"),threshold:[0,.05,.1,.15,.2,.25,.3,.35,.4,.45,.5,.55,.6,.65,.7,.75,.8,.85,.9,.95,1]}),this.observer.observe(this.elementRef.nativeElement)})}ngOnDestroy(){this.observer.disconnect()}};e(t,\"\\u0275fac\",function(i){return new(i||t)(o(p),o(c))}),e(t,\"\\u0275dir\",l({type:t,selectors:[[\"\",\"uiKitInViewport\",\"\"]],inputs:{uiKitInViewportAlwaysEmit:\"uiKitInViewportAlwaysEmit\",uiKitInViewportBehaviour:\"uiKitInViewportBehaviour\",disableTrack:\"disableTrack\",thresholdTop:\"thresholdTop\"},outputs:{inViewport:\"uiKitInViewport\"},standalone:!0}));let n=t;return n})();export{v as a};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 659,
+          "bodySize": 660,
+          "_transferSize": 1319,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.535Z",
+        "time": 101.6409998992458,
+        "timings": {
+          "blocked": 51.95299991287291,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.357999999999997,
+          "wait": 46.68099995543063,
+          "receive": 2.649000030942261,
+          "_blocked_queueing": 1.5479999128729105,
+          "_blocked_proxy": 1.247,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "443857",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/profile-UJ3PQK5W.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-6OIMJOWG.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/profile-UJ3PQK5W.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1515,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6055"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb179fabcbd-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "br"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "Vary",
+              "value": "accept-encoding"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-16e\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "4f78ba060d2064b36f2b697e202b7e4a"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 366,
+            "mimeType": "application/javascript",
+            "compression": 116,
+            "text": "import{F as p}from\"./chunk-IGSDBEZN.js\";import{Bb as n,Wc as f,p as e}from\"./chunk-6FGVQ7PR.js\";import{Aa as i,La as m}from\"./chunk-KO722YSM.js\";import{g as t}from\"./chunk-JV5WWF5Q.js\";var K=(()=>{let o=class o{};t(o,\"\\u0275fac\",function(c){return new(c||o)}),t(o,\"\\u0275mod\",m({type:o})),t(o,\"\\u0275inj\",i({imports:[e,n,p,f]}));let r=o;return r})();export{K as a};\n"
+          },
+          "redirectURL": "",
+          "headersSize": 657,
+          "bodySize": 250,
+          "_transferSize": 907,
+          "_error": null,
+          "_fetchedViaServiceWorker": false
+        },
+        "serverIPAddress": "10.8.54.68",
+        "startedDateTime": "2025-10-08T06:12:31.558Z",
+        "time": 84.24999995622784,
+        "timings": {
+          "blocked": 33.64999991852045,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.49900000000000233,
+          "wait": 48.62799999742955,
+          "receive": 1.4730000402778387,
+          "_blocked_queueing": 0.6619999185204506,
+          "_blocked_proxy": 1.07,
+          "_workerStart": -1,
+          "_workerReady": -1,
+          "_workerFetchStart": -1,
+          "_workerRespondWithSettled": -1
+        }
+      },
+      {
+        "_connectionId": "446174",
+        "_initiator": {
+          "type": "script",
+          "url": "https://n958200.alteg.io/profile-UJ3PQK5W.js",
+          "lineNumber": 0
+        },
+        "_priority": "High",
+        "_resourceType": "script",
+        "cache": {},
+        "connection": "9090",
+        "pageref": "page_160",
+        "request": {
+          "method": "GET",
+          "url": "https://n958200.alteg.io/chunk-PGZ3SAL4.js",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept",
+              "value": "*/*"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br, zstd"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Host",
+              "value": "n958200.alteg.io"
+            },
+            {
+              "name": "Origin",
+              "value": "https://n958200.alteg.io"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://n958200.alteg.io/profile-UJ3PQK5W.js"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "script"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-origin"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 Edg/140.0.0.0"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Microsoft Edge\";v=\"140\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Android\""
+            }
+          ],
+          "queryString": [],
+          "cookies": [],
+          "headersSize": 1515,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Age",
+              "value": "6054"
+            },
+            {
+              "name": "CF-Cache-Status",
+              "value": "HIT"
+            },
+            {
+              "name": "CF-RAY",
+              "value": "98b37cb178ecbcb1-ALA"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "max-age=3600"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/javascript; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Wed, 08 Oct 2025 06:12:31 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"68e51480-2d2bc\""
+            },
+            {
+              "name": "last-modified",
+              "value": "Tue, 07 Oct 2025 13:24:16 GMT"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=15552000; includeSubDomains; preload"
+            },
+            {
+              "name": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "x-bounce-id",
+              "value": "blc03-htz"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "x-dns-prefetch-control",
+              "value": "on"
+            },
+            {
+              "name": "x-request-id",
+              "value": "76a649d84bdc4d90f75de9bcb4995486"
+            },
+            {
+              "name": "x-xss-protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 185020,
+            "mimeType": "application/javascript",
+            "compression": 131020,
+            "text": "import{e as mr,f as pr}from\"./chunk-4E6OOWMO.js\";import{Ab as M,Cf as $r,Sb as dr,Ub as lr,e as ar,mc as sr,nc as fr,p as Pt,ui as cr,xa as ur}from\"./chunk-6FGVQ7PR.js\";import{$a as Je,Aa as yt,Ac as ir,E as Vt,Fa as Ct,Fb as Xt,Gb as W,J as Wt,Jc as or,Ka as Ye,La as vt,Ma as Ze,T as He,Ub as qe,Xb as Qe,Zb as tr,b as ke,ec as bt,fc as At,hb as ze,j as je,na as Ve,pc as er,qa as Kt,qc as rr,rc as Nt,sa as We,x as Ge,y as Ue,ya as Ke,yc as nr,za as Xe}from\"./chunk-KO722YSM.js\";import{g as $}from\"./chunk-JV5WWF5Q.js\";var Vn=[[[\"\",\"topContent\",\"\"]],[[\"\",\"midContent\",\"\"]],[[\"\",\"bottomContent\",\"\"]]],Wn=[\"[topContent]\",\"[midContent]\",\"[bottomContent]\"];function Kn(e,t){if(e&1&&(bt(0,\"div\",3),nr(1),At()),e&2){let r=er();Xt(),ir(\" \",r.timeReminderText,\" \")}}var wa=(()=>{let t=class t{constructor(n){$(this,\"translatePipe\");$(this,\"timeReminderText\",\"\");$(this,\"openedViaAltegiome\",!!(localStorage.getItem(\"aunio_user_data\")||localStorage.getItem(\"yplaces_user_data\")));this.translatePipe=n}set paymentFullTimeInMinutes(n){n?this.timeReminderText=this.translatePipe.transform(\"user-data-form.payment-time-reminder-dynamic\",{minutes:n}):this.timeReminderText=\"\"}};$(t,\"\\u0275fac\",function(i){return new(i||t)(W(M))}),$(t,\"\\u0275cmp\",Ye({type:t,selectors:[[\"app-record-page-footer\"]],inputs:{paymentFullTimeInMinutes:\"paymentFullTimeInMinutes\"},ngContentSelectors:Wn,decls:6,vars:3,consts:[[1,\"record-page-footer\"],[1,\"button-wrapper\",\"with-privacy\"],[\"class\",\"time-reminder\",4,\"ngIf\"],[1,\"time-reminder\"]],template:function(i,o){i&1&&(rr(Vn),bt(0,\"div\",0),Nt(1),bt(2,\"div\",1),Nt(3,1),At(),qe(4,Kn,2,1,\"div\",2),Nt(5,2),At()),i&2&&(tr(\"yplaces-record-page-footer\",o.openedViaAltegiome),Xt(4),Qe(\"ngIf\",o.timeReminderText))},dependencies:[ar],styles:['@charset \"UTF-8\";[_nghost-%COMP%]{display:block}[_nghost-%COMP%]   .record-page-footer[_ngcontent-%COMP%]{padding:16px;background-color:var(--y-core-color-surface-primary)}[_nghost-%COMP%]   .record-page-footer.yplaces-record-page-footer[_ngcontent-%COMP%]{padding-bottom:calc(env(safe-area-inset-bottom,20px) + 16px)}[_nghost-%COMP%]   .record-page-footer[_ngcontent-%COMP%]   .button-wrapper.with-privacy[_ngcontent-%COMP%]{padding-top:12px}[_nghost-%COMP%]   .record-page-footer[_ngcontent-%COMP%]   .time-reminder[_ngcontent-%COMP%]{padding-top:16px;text-align:center;font-style:normal;font-weight:400;font-size:12px;line-height:16px;color:var(--y-core-color-text-secondary)}[_nghost-%COMP%]   .record-page-footer[_ngcontent-%COMP%]   .privacy-policy-block[_ngcontent-%COMP%]{margin-top:12px}[_nghost-%COMP%]   .personal[_ngcontent-%COMP%]{color:var(--y-core-color-text-secondary);margin-top:12px}'],changeDetection:0}));let e=t;return e})();var Ua=(()=>{let t=class t{};$(t,\"\\u0275fac\",function(i){return new(i||t)}),$(t,\"\\u0275mod\",vt({type:t})),$(t,\"\\u0275inj\",yt({imports:[pr,Pt,mr]}));let e=t;return e})();var Ft={version:4,country_calling_codes:{1:[\"US\",\"AG\",\"AI\",\"AS\",\"BB\",\"BM\",\"BS\",\"CA\",\"DM\",\"DO\",\"GD\",\"GU\",\"JM\",\"KN\",\"KY\",\"LC\",\"MP\",\"MS\",\"PR\",\"SX\",\"TC\",\"TT\",\"VC\",\"VG\",\"VI\"],7:[\"RU\",\"KZ\"],20:[\"EG\"],27:[\"ZA\"],30:[\"GR\"],31:[\"NL\"],32:[\"BE\"],33:[\"FR\"],34:[\"ES\"],36:[\"HU\"],39:[\"IT\",\"VA\"],40:[\"RO\"],41:[\"CH\"],43:[\"AT\"],44:[\"GB\",\"GG\",\"IM\",\"JE\"],45:[\"DK\"],46:[\"SE\"],47:[\"NO\",\"SJ\"],48:[\"PL\"],49:[\"DE\"],51:[\"PE\"],52:[\"MX\"],53:[\"CU\"],54:[\"AR\"],55:[\"BR\"],56:[\"CL\"],57:[\"CO\"],58:[\"VE\"],60:[\"MY\"],61:[\"AU\",\"CC\",\"CX\"],62:[\"ID\"],63:[\"PH\"],64:[\"NZ\"],65:[\"SG\"],66:[\"TH\"],81:[\"JP\"],82:[\"KR\"],84:[\"VN\"],86:[\"CN\"],90:[\"TR\"],91:[\"IN\"],92:[\"PK\"],93:[\"AF\"],94:[\"LK\"],95:[\"MM\"],98:[\"IR\"],211:[\"SS\"],212:[\"MA\",\"EH\"],213:[\"DZ\"],216:[\"TN\"],218:[\"LY\"],220:[\"GM\"],221:[\"SN\"],222:[\"MR\"],223:[\"ML\"],224:[\"GN\"],225:[\"CI\"],226:[\"BF\"],227:[\"NE\"],228:[\"TG\"],229:[\"BJ\"],230:[\"MU\"],231:[\"LR\"],232:[\"SL\"],233:[\"GH\"],234:[\"NG\"],235:[\"TD\"],236:[\"CF\"],237:[\"CM\"],238:[\"CV\"],239:[\"ST\"],240:[\"GQ\"],241:[\"GA\"],242:[\"CG\"],243:[\"CD\"],244:[\"AO\"],245:[\"GW\"],246:[\"IO\"],247:[\"AC\"],248:[\"SC\"],249:[\"SD\"],250:[\"RW\"],251:[\"ET\"],252:[\"SO\"],253:[\"DJ\"],254:[\"KE\"],255:[\"TZ\"],256:[\"UG\"],257:[\"BI\"],258:[\"MZ\"],260:[\"ZM\"],261:[\"MG\"],262:[\"RE\",\"YT\"],263:[\"ZW\"],264:[\"NA\"],265:[\"MW\"],266:[\"LS\"],267:[\"BW\"],268:[\"SZ\"],269:[\"KM\"],290:[\"SH\",\"TA\"],291:[\"ER\"],297:[\"AW\"],298:[\"FO\"],299:[\"GL\"],350:[\"GI\"],351:[\"PT\"],352:[\"LU\"],353:[\"IE\"],354:[\"IS\"],355:[\"AL\"],356:[\"MT\"],357:[\"CY\"],358:[\"FI\",\"AX\"],359:[\"BG\"],370:[\"LT\"],371:[\"LV\"],372:[\"EE\"],373:[\"MD\"],374:[\"AM\"],375:[\"BY\"],376:[\"AD\"],377:[\"MC\"],378:[\"SM\"],380:[\"UA\"],381:[\"RS\"],382:[\"ME\"],383:[\"XK\"],385:[\"HR\"],386:[\"SI\"],387:[\"BA\"],389:[\"MK\"],420:[\"CZ\"],421:[\"SK\"],423:[\"LI\"],500:[\"FK\"],501:[\"BZ\"],502:[\"GT\"],503:[\"SV\"],504:[\"HN\"],505:[\"NI\"],506:[\"CR\"],507:[\"PA\"],508:[\"PM\"],509:[\"HT\"],590:[\"GP\",\"BL\",\"MF\"],591:[\"BO\"],592:[\"GY\"],593:[\"EC\"],594:[\"GF\"],595:[\"PY\"],596:[\"MQ\"],597:[\"SR\"],598:[\"UY\"],599:[\"CW\",\"BQ\"],670:[\"TL\"],672:[\"NF\"],673:[\"BN\"],674:[\"NR\"],675:[\"PG\"],676:[\"TO\"],677:[\"SB\"],678:[\"VU\"],679:[\"FJ\"],680:[\"PW\"],681:[\"WF\"],682:[\"CK\"],683:[\"NU\"],685:[\"WS\"],686:[\"KI\"],687:[\"NC\"],688:[\"TV\"],689:[\"PF\"],690:[\"TK\"],691:[\"FM\"],692:[\"MH\"],850:[\"KP\"],852:[\"HK\"],853:[\"MO\"],855:[\"KH\"],856:[\"LA\"],880:[\"BD\"],886:[\"TW\"],960:[\"MV\"],961:[\"LB\"],962:[\"JO\"],963:[\"SY\"],964:[\"IQ\"],965:[\"KW\"],966:[\"SA\"],967:[\"YE\"],968:[\"OM\"],970:[\"PS\"],971:[\"AE\"],972:[\"IL\"],973:[\"BH\"],974:[\"QA\"],975:[\"BT\"],976:[\"MN\"],977:[\"NP\"],992:[\"TJ\"],993:[\"TM\"],994:[\"AZ\"],995:[\"GE\"],996:[\"KG\"],998:[\"UZ\"]},countries:{AC:[\"247\",\"00\",\"(?:[01589]\\\\d|[46])\\\\d{4}\",[5,6]],AD:[\"376\",\"00\",\"(?:1|6\\\\d)\\\\d{7}|[135-9]\\\\d{5}\",[6,8,9],[[\"(\\\\d{3})(\\\\d{3})\",\"$1 $2\",[\"[135-9]\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"1\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"6\"]]]],AE:[\"971\",\"00\",\"(?:[4-7]\\\\d|9[0-689])\\\\d{7}|800\\\\d{2,9}|[2-4679]\\\\d{7}\",[5,6,7,8,9,10,11,12],[[\"(\\\\d{3})(\\\\d{2,9})\",\"$1 $2\",[\"60|8\"]],[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[236]|[479][2-8]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d)(\\\\d{5})\",\"$1 $2 $3\",[\"[479]\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"5\"],\"0$1\"]],\"0\"],AF:[\"93\",\"00\",\"[2-7]\\\\d{8}\",[9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[2-7]\"],\"0$1\"]],\"0\"],AG:[\"1\",\"011\",\"(?:268|[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([457]\\\\d{6})$|1\",\"268$1\",0,\"268\"],AI:[\"1\",\"011\",\"(?:264|[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([2457]\\\\d{6})$|1\",\"264$1\",0,\"264\"],AL:[\"355\",\"00\",\"(?:700\\\\d\\\\d|900)\\\\d{3}|8\\\\d{5,7}|(?:[2-5]|6\\\\d)\\\\d{7}\",[6,7,8,9],[[\"(\\\\d{3})(\\\\d{3,4})\",\"$1 $2\",[\"80|9\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"4[2-6]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[2358][2-5]|4\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"[23578]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"6\"],\"0$1\"]],\"0\"],AM:[\"374\",\"00\",\"(?:[1-489]\\\\d|55|60|77)\\\\d{6}\",[8],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"[89]0\"],\"0 $1\"],[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"2|3[12]\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"1|47\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"[3-9]\"],\"0$1\"]],\"0\"],AO:[\"244\",\"00\",\"[29]\\\\d{8}\",[9],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[29]\"]]]],AR:[\"54\",\"00\",\"(?:11|[89]\\\\d\\\\d)\\\\d{8}|[2368]\\\\d{9}\",[10,11],[[\"(\\\\d{4})(\\\\d{2})(\\\\d{4})\",\"$1 $2-$3\",[\"2(?:2[024-9]|3[0-59]|47|6[245]|9[02-8])|3(?:3[28]|4[03-9]|5[2-46-8]|7[1-578]|8[2-9])\",\"2(?:[23]02|6(?:[25]|4[6-8])|9(?:[02356]|4[02568]|72|8[23]))|3(?:3[28]|4(?:[04679]|3[5-8]|5[4-68]|8[2379])|5(?:[2467]|3[237]|8[2-5])|7[1-578]|8(?:[2469]|3[2578]|5[4-8]|7[36-8]|8[5-8]))|2(?:2[24-9]|3[1-59]|47)\",\"2(?:[23]02|6(?:[25]|4(?:64|[78]))|9(?:[02356]|4(?:[0268]|5[2-6])|72|8[23]))|3(?:3[28]|4(?:[04679]|3[78]|5(?:4[46]|8)|8[2379])|5(?:[2467]|3[237]|8[23])|7[1-578]|8(?:[2469]|3[278]|5[56][46]|86[3-6]))|2(?:2[24-9]|3[1-59]|47)|38(?:[58][78]|7[378])|3(?:4[35][56]|58[45]|8(?:[38]5|54|76))[4-6]\",\"2(?:[23]02|6(?:[25]|4(?:64|[78]))|9(?:[02356]|4(?:[0268]|5[2-6])|72|8[23]))|3(?:3[28]|4(?:[04679]|3(?:5(?:4[0-25689]|[56])|[78])|58|8[2379])|5(?:[2467]|3[237]|8(?:[23]|4(?:[45]|60)|5(?:4[0-39]|5|64)))|7[1-578]|8(?:[2469]|3[278]|54(?:4|5[13-7]|6[89])|86[3-6]))|2(?:2[24-9]|3[1-59]|47)|38(?:[58][78]|7[378])|3(?:454|85[56])[46]|3(?:4(?:36|5[56])|8(?:[38]5|76))[4-6]\"],\"0$1\",1],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2-$3\",[\"1\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1-$2-$3\",[\"[68]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2-$3\",[\"[23]\"],\"0$1\",1],[\"(\\\\d)(\\\\d{4})(\\\\d{2})(\\\\d{4})\",\"$2 15-$3-$4\",[\"9(?:2[2-469]|3[3-578])\",\"9(?:2(?:2[024-9]|3[0-59]|47|6[245]|9[02-8])|3(?:3[28]|4[03-9]|5[2-46-8]|7[1-578]|8[2-9]))\",\"9(?:2(?:[23]02|6(?:[25]|4[6-8])|9(?:[02356]|4[02568]|72|8[23]))|3(?:3[28]|4(?:[04679]|3[5-8]|5[4-68]|8[2379])|5(?:[2467]|3[237]|8[2-5])|7[1-578]|8(?:[2469]|3[2578]|5[4-8]|7[36-8]|8[5-8])))|92(?:2[24-9]|3[1-59]|47)\",\"9(?:2(?:[23]02|6(?:[25]|4(?:64|[78]))|9(?:[02356]|4(?:[0268]|5[2-6])|72|8[23]))|3(?:3[28]|4(?:[04679]|3[78]|5(?:4[46]|8)|8[2379])|5(?:[2467]|3[237]|8[23])|7[1-578]|8(?:[2469]|3[278]|5(?:[56][46]|[78])|7[378]|8(?:6[3-6]|[78]))))|92(?:2[24-9]|3[1-59]|47)|93(?:4[35][56]|58[45]|8(?:[38]5|54|76))[4-6]\",\"9(?:2(?:[23]02|6(?:[25]|4(?:64|[78]))|9(?:[02356]|4(?:[0268]|5[2-6])|72|8[23]))|3(?:3[28]|4(?:[04679]|3(?:5(?:4[0-25689]|[56])|[78])|5(?:4[46]|8)|8[2379])|5(?:[2467]|3[237]|8(?:[23]|4(?:[45]|60)|5(?:4[0-39]|5|64)))|7[1-578]|8(?:[2469]|3[278]|5(?:4(?:4|5[13-7]|6[89])|[56][46]|[78])|7[378]|8(?:6[3-6]|[78]))))|92(?:2[24-9]|3[1-59]|47)|93(?:4(?:36|5[56])|8(?:[38]5|76))[4-6]\"],\"0$1\",0,\"$1 $2 $3-$4\"],[\"(\\\\d)(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$2 15-$3-$4\",[\"91\"],\"0$1\",0,\"$1 $2 $3-$4\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{5})\",\"$1-$2-$3\",[\"8\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$2 15-$3-$4\",[\"9\"],\"0$1\",0,\"$1 $2 $3-$4\"]],\"0\",0,\"0?(?:(11|2(?:2(?:02?|[13]|2[13-79]|4[1-6]|5[2457]|6[124-8]|7[1-4]|8[13-6]|9[1267])|3(?:02?|1[467]|2[03-6]|3[13-8]|[49][2-6]|5[2-8]|[67])|4(?:7[3-578]|9)|6(?:[0136]|2[24-6]|4[6-8]?|5[15-8])|80|9(?:0[1-3]|[19]|2\\\\d|3[1-6]|4[02568]?|5[2-4]|6[2-46]|72?|8[23]?))|3(?:3(?:2[79]|6|8[2578])|4(?:0[0-24-9]|[12]|3[5-8]?|4[24-7]|5[4-68]?|6[02-9]|7[126]|8[2379]?|9[1-36-8])|5(?:1|2[1245]|3[237]?|4[1-46-9]|6[2-4]|7[1-6]|8[2-5]?)|6[24]|7(?:[069]|1[1568]|2[15]|3[145]|4[13]|5[14-8]|7[2-57]|8[126])|8(?:[01]|2[15-7]|3[2578]?|4[13-6]|5[4-8]?|6[1-357-9]|7[36-8]?|8[5-8]?|9[124])))15)?\",\"9$1\"],AS:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|684|900)\\\\d{7}\",[10],0,\"1\",0,\"([267]\\\\d{6})$|1\",\"684$1\",0,\"684\"],AT:[\"43\",\"00\",\"1\\\\d{3,12}|2\\\\d{6,12}|43(?:(?:0\\\\d|5[02-9])\\\\d{3,9}|2\\\\d{4,5}|[3467]\\\\d{4}|8\\\\d{4,6}|9\\\\d{4,7})|5\\\\d{4,12}|8\\\\d{7,12}|9\\\\d{8,12}|(?:[367]\\\\d|4[0-24-9])\\\\d{4,11}\",[4,5,6,7,8,9,10,11,12,13],[[\"(\\\\d)(\\\\d{3,12})\",\"$1 $2\",[\"1(?:11|[2-9])\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})\",\"$1 $2\",[\"517\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3,5})\",\"$1 $2\",[\"5[079]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3,10})\",\"$1 $2\",[\"(?:31|4)6|51|6(?:48|5[0-3579]|[6-9])|7(?:20|32|8)|[89]\",\"(?:31|4)6|51|6(?:485|5[0-3579]|[6-9])|7(?:20|32|8)|[89]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3,9})\",\"$1 $2\",[\"[2-467]|5[2-6]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"5\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4,7})\",\"$1 $2 $3\",[\"5\"],\"0$1\"]],\"0\"],AU:[\"61\",\"001[14-689]|14(?:1[14]|34|4[17]|[56]6|7[47]|88)0011\",\"1(?:[0-79]\\\\d{7}(?:\\\\d(?:\\\\d{2})?)?|8[0-24-9]\\\\d{7})|[2-478]\\\\d{8}|1\\\\d{4,7}\",[5,6,7,8,9,10,12],[[\"(\\\\d{2})(\\\\d{3,4})\",\"$1 $2\",[\"16\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2,4})\",\"$1 $2 $3\",[\"16\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"14|4\"],\"0$1\"],[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"[2378]\"],\"(0$1)\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"1(?:30|[89])\"]]],\"0\",0,\"(183[12])|0\",0,0,0,[[\"(?:(?:2(?:(?:[0-26-9]\\\\d|3[0-8]|5[0135-9])\\\\d|4(?:[02-9]\\\\d|10))|3(?:(?:[0-3589]\\\\d|6[1-9]|7[0-35-9])\\\\d|4(?:[0-578]\\\\d|90))|7(?:[013-57-9]\\\\d|2[0-8])\\\\d)\\\\d\\\\d|8(?:51(?:0(?:0[03-9]|[12479]\\\\d|3[2-9]|5[0-8]|6[1-9]|8[0-7])|1(?:[0235689]\\\\d|1[0-69]|4[0-589]|7[0-47-9])|2(?:0[0-79]|[18][13579]|2[14-9]|3[0-46-9]|[4-6]\\\\d|7[89]|9[0-4])|[34]\\\\d\\\\d)|(?:6[0-8]|[78]\\\\d)\\\\d{3}|9(?:[02-9]\\\\d{3}|1(?:(?:[0-58]\\\\d|6[0135-9])\\\\d|7(?:0[0-24-9]|[1-9]\\\\d)|9(?:[0-46-9]\\\\d|5[0-79])))))\\\\d{3}\",[9]],[\"4(?:79[01]|83[0-389]|94[0-478])\\\\d{5}|4(?:[0-36]\\\\d|4[047-9]|[58][0-24-9]|7[02-8]|9[0-37-9])\\\\d{6}\",[9]],[\"180(?:0\\\\d{3}|2)\\\\d{3}\",[7,10]],[\"190[0-26]\\\\d{6}\",[10]],0,0,0,[\"163\\\\d{2,6}\",[5,6,7,8,9]],[\"14(?:5(?:1[0458]|[23][458])|71\\\\d)\\\\d{4}\",[9]],[\"13(?:00\\\\d{6}(?:\\\\d{2})?|45[0-4]\\\\d{3})|13\\\\d{4}\",[6,8,10,12]]],\"0011\"],AW:[\"297\",\"00\",\"(?:[25-79]\\\\d\\\\d|800)\\\\d{4}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[25-9]\"]]]],AX:[\"358\",\"00|99(?:[01469]|5(?:[14]1|3[23]|5[59]|77|88|9[09]))\",\"2\\\\d{4,9}|35\\\\d{4,5}|(?:60\\\\d\\\\d|800)\\\\d{4,6}|7\\\\d{5,11}|(?:[14]\\\\d|3[0-46-9]|50)\\\\d{4,8}\",[5,6,7,8,9,10,11,12],0,\"0\",0,0,0,0,\"18\",0,\"00\"],AZ:[\"994\",\"00\",\"365\\\\d{6}|(?:[124579]\\\\d|60|88)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"90\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"1[28]|2|365|46\",\"1[28]|2|365[45]|46\",\"1[28]|2|365(?:4|5[02])|46\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[13-9]\"],\"0$1\"]],\"0\"],BA:[\"387\",\"00\",\"6\\\\d{8}|(?:[35689]\\\\d|49|70)\\\\d{6}\",[8,9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"6[1-3]|[7-9]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2-$3\",[\"[3-5]|6[56]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"6\"],\"0$1\"]],\"0\"],BB:[\"1\",\"011\",\"(?:246|[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-9]\\\\d{6})$|1\",\"246$1\",0,\"246\"],BD:[\"880\",\"00\",\"[1-469]\\\\d{9}|8[0-79]\\\\d{7,8}|[2-79]\\\\d{8}|[2-9]\\\\d{7}|[3-9]\\\\d{6}|[57-9]\\\\d{5}\",[6,7,8,9,10],[[\"(\\\\d{2})(\\\\d{4,6})\",\"$1-$2\",[\"31[5-8]|[459]1\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3,7})\",\"$1-$2\",[\"3(?:[67]|8[013-9])|4(?:6[168]|7|[89][18])|5(?:6[128]|9)|6(?:[15]|28|4[14])|7[2-589]|8(?:0[014-9]|[12])|9[358]|(?:3[2-5]|4[235]|5[2-578]|6[0389]|76|8[3-7]|9[24])1|(?:44|66)[01346-9]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3,6})\",\"$1-$2\",[\"[13-9]|2[23]\"],\"0$1\"],[\"(\\\\d)(\\\\d{7,8})\",\"$1-$2\",[\"2\"],\"0$1\"]],\"0\"],BE:[\"32\",\"00\",\"4\\\\d{8}|[1-9]\\\\d{7}\",[8,9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"(?:80|9)0\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[239]|4[23]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[15-8]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"4\"],\"0$1\"]],\"0\"],BF:[\"226\",\"00\",\"(?:[025-7]\\\\d|44)\\\\d{6}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[024-7]\"]]]],BG:[\"359\",\"00\",\"00800\\\\d{7}|[2-7]\\\\d{6,7}|[89]\\\\d{6,8}|2\\\\d{5}\",[6,7,8,9,12],[[\"(\\\\d)(\\\\d)(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"2\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"43[1-6]|70[1-9]\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"2\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2,3})\",\"$1 $2 $3\",[\"[356]|4[124-7]|7[1-9]|8[1-6]|9[1-7]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"(?:70|8)0\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{2})\",\"$1 $2 $3\",[\"43[1-7]|7\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[48]|9[08]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"9\"],\"0$1\"]],\"0\"],BH:[\"973\",\"00\",\"[136-9]\\\\d{7}\",[8],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[13679]|8[02-4679]\"]]]],BI:[\"257\",\"00\",\"(?:[267]\\\\d|31)\\\\d{6}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[2367]\"]]]],BJ:[\"229\",\"00\",\"(?:01\\\\d|[24-689])\\\\d{7}\",[8,10],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[24-689]\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4 $5\",[\"0\"]]]],BL:[\"590\",\"00\",\"(?:590\\\\d|7090)\\\\d{5}|(?:69|80|9\\\\d)\\\\d{7}\",[9],0,\"0\",0,0,0,0,0,[[\"590(?:2[7-9]|3[3-7]|5[12]|87)\\\\d{4}\"],[\"(?:69(?:0\\\\d\\\\d|1(?:2[2-9]|3[0-5])|4(?:0[89]|1[2-6]|9\\\\d)|6(?:1[016-9]|5[0-4]|[67]\\\\d))|7090[0-4])\\\\d{4}\"],[\"80[0-5]\\\\d{6}\"],0,0,0,0,0,[\"9(?:(?:39[5-7]|76[018])\\\\d|475[0-6])\\\\d{4}\"]]],BM:[\"1\",\"011\",\"(?:441|[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-9]\\\\d{6})$|1\",\"441$1\",0,\"441\"],BN:[\"673\",\"00\",\"[2-578]\\\\d{6}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[2-578]\"]]]],BO:[\"591\",\"00(?:1\\\\d)?\",\"8001\\\\d{5}|(?:[2-467]\\\\d|50)\\\\d{6}\",[8,9],[[\"(\\\\d)(\\\\d{7})\",\"$1 $2\",[\"[235]|4[46]\"]],[\"(\\\\d{8})\",\"$1\",[\"[67]\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"8\"]]],\"0\",0,\"0(1\\\\d)?\"],BQ:[\"599\",\"00\",\"(?:[34]1|7\\\\d)\\\\d{5}\",[7],0,0,0,0,0,0,\"[347]\"],BR:[\"55\",\"00(?:1[245]|2[1-35]|31|4[13]|[56]5|99)\",\"[1-467]\\\\d{9,10}|55[0-46-9]\\\\d{8}|[34]\\\\d{7}|55\\\\d{7,8}|(?:5[0-46-9]|[89]\\\\d)\\\\d{7,9}\",[8,9,10,11],[[\"(\\\\d{4})(\\\\d{4})\",\"$1-$2\",[\"300|4(?:0[02]|37|86)\",\"300|4(?:0(?:0|20)|370|864)\"]],[\"(\\\\d{3})(\\\\d{2,3})(\\\\d{4})\",\"$1 $2 $3\",[\"(?:[358]|90)0\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2-$3\",[\"(?:[14689][1-9]|2[12478]|3[1-578]|5[13-5]|7[13-579])[2-57]\"],\"($1)\"],[\"(\\\\d{2})(\\\\d{5})(\\\\d{4})\",\"$1 $2-$3\",[\"[16][1-9]|[2-57-9]\"],\"($1)\"]],\"0\",0,\"(?:0|90)(?:(1[245]|2[1-35]|31|4[13]|[56]5|99)(\\\\d{10,11}))?\",\"$2\"],BS:[\"1\",\"011\",\"(?:242|[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([3-8]\\\\d{6})$|1\",\"242$1\",0,\"242\"],BT:[\"975\",\"00\",\"[178]\\\\d{7}|[2-8]\\\\d{6}\",[7,8],[[\"(\\\\d)(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[2-6]|7[246]|8[2-4]\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"1[67]|[78]\"]]]],BW:[\"267\",\"00\",\"(?:0800|(?:[37]|800)\\\\d)\\\\d{6}|(?:[2-6]\\\\d|90)\\\\d{5}\",[7,8,10],[[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"90\"]],[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[24-6]|3[15-9]\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[37]\"]],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"0\"]],[\"(\\\\d{3})(\\\\d{4})(\\\\d{3})\",\"$1 $2 $3\",[\"8\"]]]],BY:[\"375\",\"810\",\"(?:[12]\\\\d|33|44|902)\\\\d{7}|8(?:0[0-79]\\\\d{5,7}|[1-7]\\\\d{9})|8(?:1[0-489]|[5-79]\\\\d)\\\\d{7}|8[1-79]\\\\d{6,7}|8[0-79]\\\\d{5}|8\\\\d{5}\",[6,7,8,9,10,11],[[\"(\\\\d{3})(\\\\d{3})\",\"$1 $2\",[\"800\"],\"8 $1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2,4})\",\"$1 $2 $3\",[\"800\"],\"8 $1\"],[\"(\\\\d{4})(\\\\d{2})(\\\\d{3})\",\"$1 $2-$3\",[\"1(?:5[169]|6[3-5]|7[179])|2(?:1[35]|2[34]|3[3-5])\",\"1(?:5[169]|6(?:3[1-3]|4|5[125])|7(?:1[3-9]|7[0-24-6]|9[2-7]))|2(?:1[35]|2[34]|3[3-5])\"],\"8 0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2-$3-$4\",[\"1(?:[56]|7[467])|2[1-3]\"],\"8 0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2-$3-$4\",[\"[1-4]\"],\"8 0$1\"],[\"(\\\\d{3})(\\\\d{3,4})(\\\\d{4})\",\"$1 $2 $3\",[\"[89]\"],\"8 $1\"]],\"8\",0,\"0|80?\",0,0,0,0,\"8~10\"],BZ:[\"501\",\"00\",\"(?:0800\\\\d|[2-8])\\\\d{6}\",[7,11],[[\"(\\\\d{3})(\\\\d{4})\",\"$1-$2\",[\"[2-8]\"]],[\"(\\\\d)(\\\\d{3})(\\\\d{4})(\\\\d{3})\",\"$1-$2-$3-$4\",[\"0\"]]]],CA:[\"1\",\"011\",\"[2-9]\\\\d{9}|3\\\\d{6}\",[7,10],0,\"1\",0,0,0,0,0,[[\"(?:2(?:04|[23]6|[48]9|5[07]|63)|3(?:06|43|54|6[578]|82)|4(?:03|1[68]|[26]8|3[178]|50|74)|5(?:06|1[49]|48|79|8[147])|6(?:04|[18]3|39|47|72)|7(?:0[59]|42|53|78|8[02])|8(?:[06]7|19|25|7[39])|9(?:0[25]|42))[2-9]\\\\d{6}\",[10]],[\"\",[10]],[\"8(?:00|33|44|55|66|77|88)[2-9]\\\\d{6}\",[10]],[\"900[2-9]\\\\d{6}\",[10]],[\"52(?:3(?:[2-46-9][02-9]\\\\d|5(?:[02-46-9]\\\\d|5[0-46-9]))|4(?:[2-478][02-9]\\\\d|5(?:[034]\\\\d|2[024-9]|5[0-46-9])|6(?:0[1-9]|[2-9]\\\\d)|9(?:[05-9]\\\\d|2[0-5]|49)))\\\\d{4}|52[34][2-9]1[02-9]\\\\d{4}|(?:5(?:2[125-9]|33|44|66|77|88)|6(?:22|33))[2-9]\\\\d{6}\",[10]],0,[\"310\\\\d{4}\",[7]],0,[\"600[2-9]\\\\d{6}\",[10]]]],CC:[\"61\",\"001[14-689]|14(?:1[14]|34|4[17]|[56]6|7[47]|88)0011\",\"1(?:[0-79]\\\\d{8}(?:\\\\d{2})?|8[0-24-9]\\\\d{7})|[148]\\\\d{8}|1\\\\d{5,7}\",[6,7,8,9,10,12],0,\"0\",0,\"([59]\\\\d{7})$|0\",\"8$1\",0,0,[[\"8(?:51(?:0(?:02|31|60|89)|1(?:18|76)|223)|91(?:0(?:1[0-2]|29)|1(?:[28]2|50|79)|2(?:10|64)|3(?:[06]8|22)|4[29]8|62\\\\d|70[23]|959))\\\\d{3}\",[9]],[\"4(?:79[01]|83[0-389]|94[0-478])\\\\d{5}|4(?:[0-36]\\\\d|4[047-9]|[58][0-24-9]|7[02-8]|9[0-37-9])\\\\d{6}\",[9]],[\"180(?:0\\\\d{3}|2)\\\\d{3}\",[7,10]],[\"190[0-26]\\\\d{6}\",[10]],0,0,0,0,[\"14(?:5(?:1[0458]|[23][458])|71\\\\d)\\\\d{4}\",[9]],[\"13(?:00\\\\d{6}(?:\\\\d{2})?|45[0-4]\\\\d{3})|13\\\\d{4}\",[6,8,10,12]]],\"0011\"],CD:[\"243\",\"00\",\"(?:(?:[189]|5\\\\d)\\\\d|2)\\\\d{7}|[1-68]\\\\d{6}\",[7,8,9,10],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"88\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"[1-6]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"2\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[89]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"5\"],\"0$1\"]],\"0\"],CF:[\"236\",\"00\",\"(?:[27]\\\\d{3}|8776)\\\\d{4}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[278]\"]]]],CG:[\"242\",\"00\",\"222\\\\d{6}|(?:0\\\\d|80)\\\\d{7}\",[9],[[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"8\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[02]\"]]]],CH:[\"41\",\"00\",\"8\\\\d{11}|[2-9]\\\\d{8}\",[9,12],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"8[047]|90\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[2-79]|81\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4 $5\",[\"8\"],\"0$1\"]],\"0\"],CI:[\"225\",\"00\",\"[02]\\\\d{9}\",[10],[[\"(\\\\d{2})(\\\\d{2})(\\\\d)(\\\\d{5})\",\"$1 $2 $3 $4\",[\"2\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3 $4\",[\"0\"]]]],CK:[\"682\",\"00\",\"[2-578]\\\\d{4}\",[5],[[\"(\\\\d{2})(\\\\d{3})\",\"$1 $2\",[\"[2-578]\"]]]],CL:[\"56\",\"(?:0|1(?:1[0-69]|2[02-5]|5[13-58]|69|7[0167]|8[018]))0\",\"12300\\\\d{6}|6\\\\d{9,10}|[2-9]\\\\d{8}\",[9,10,11],[[\"(\\\\d{5})(\\\\d{4})\",\"$1 $2\",[\"219\",\"2196\"],\"($1)\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"60|809\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"44\"]],[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"2[1-36]\"],\"($1)\"],[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"9(?:10|[2-9])\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"3[2-5]|[47]|5[1-3578]|6[13-57]|8(?:0[1-8]|[1-9])\"],\"($1)\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"60|8\"]],[\"(\\\\d{4})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"60\"]]]],CM:[\"237\",\"00\",\"[26]\\\\d{8}|88\\\\d{6,7}\",[8,9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"88\"]],[\"(\\\\d)(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4 $5\",[\"[26]|88\"]]]],CN:[\"86\",\"00|1(?:[12]\\\\d|79)\\\\d\\\\d00\",\"(?:(?:1[03-689]|2\\\\d)\\\\d\\\\d|6)\\\\d{8}|1\\\\d{10}|[126]\\\\d{6}(?:\\\\d(?:\\\\d{2})?)?|86\\\\d{5,6}|(?:[3-579]\\\\d|8[0-57-9])\\\\d{5,9}\",[7,8,9,10,11,12],[[\"(\\\\d{2})(\\\\d{5,6})\",\"$1 $2\",[\"(?:10|2[0-57-9])[19]|3(?:[157]|35|49|9[1-68])|4(?:1[124-9]|2[179]|6[47-9]|7|8[23])|5(?:[1357]|2[37]|4[36]|6[1-46]|80)|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:07|1[236-8]|2[5-7]|[37]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3|4[13]|5[1-5]|7[0-79]|9[0-35-9])|(?:4[35]|59|85)[1-9]\",\"(?:10|2[0-57-9])(?:1[02]|9[56])|8078|(?:3(?:[157]\\\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\\\d|8[23])|5(?:[1357]\\\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))1\",\"10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|80781|(?:3(?:[157]\\\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\\\d|8[23])|5(?:[1357]\\\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))12\",\"10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|807812|(?:3(?:[157]\\\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\\\d|8[23])|5(?:[1357]\\\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))123\",\"10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|(?:3(?:[157]\\\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\\\d|8[23])|5(?:[1357]\\\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:078|1[236-8]|2[5-7]|[37]\\\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))123\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{5,6})\",\"$1 $2\",[\"3(?:[157]|35|49|9[1-68])|4(?:[17]|2[179]|6[47-9]|8[23])|5(?:[1357]|2[37]|4[36]|6[1-46]|80)|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]|4[13]|5[1-5])|(?:4[35]|59|85)[1-9]\",\"(?:3(?:[157]\\\\d|35|49|9[1-68])|4(?:[17]\\\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\\\d|4[13]|5[1-5]))[19]\",\"85[23](?:10|95)|(?:3(?:[157]\\\\d|35|49|9[1-68])|4(?:[17]\\\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\\\d|5[14-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\\\d|4[13]|5[1-5]))(?:10|9[56])\",\"85[23](?:100|95)|(?:3(?:[157]\\\\d|35|49|9[1-68])|4(?:[17]\\\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\\\d|5[14-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\\\d|4[13]|5[1-5]))(?:100|9[56])\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"(?:4|80)0\"]],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"10|2(?:[02-57-9]|1[1-9])\",\"10|2(?:[02-57-9]|1[1-9])\",\"10[0-79]|2(?:[02-57-9]|1[1-79])|(?:10|21)8(?:0[1-9]|[1-9])\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"3(?:[3-59]|7[02-68])|4(?:[26-8]|3[3-9]|5[2-9])|5(?:3[03-9]|[468]|7[028]|9[2-46-9])|6|7(?:[0-247]|3[04-9]|5[0-4689]|6[2368])|8(?:[1-358]|9[1-7])|9(?:[013479]|5[1-5])|(?:[34]1|55|79|87)[02-9]\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{7,8})\",\"$1 $2\",[\"9\"]],[\"(\\\\d{4})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"80\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"[3-578]\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"1[3-9]\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3 $4\",[\"[12]\"],\"0$1\",1]],\"0\",0,\"(1(?:[12]\\\\d|79)\\\\d\\\\d)|0\",0,0,0,0,\"00\"],CO:[\"57\",\"00(?:4(?:[14]4|56)|[579])\",\"(?:46|60\\\\d\\\\d)\\\\d{6}|(?:1\\\\d|[39])\\\\d{9}\",[8,10,11],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"46\"]],[\"(\\\\d{3})(\\\\d{7})\",\"$1 $2\",[\"6|90\"],\"($1)\"],[\"(\\\\d{3})(\\\\d{7})\",\"$1 $2\",[\"3[0-357]|9[14]\"]],[\"(\\\\d)(\\\\d{3})(\\\\d{7})\",\"$1-$2-$3\",[\"1\"],\"0$1\",0,\"$1 $2 $3\"]],\"0\",0,\"0([3579]|4(?:[14]4|56))?\"],CR:[\"506\",\"00\",\"(?:8\\\\d|90)\\\\d{8}|(?:[24-8]\\\\d{3}|3005)\\\\d{4}\",[8,10],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[2-7]|8[3-9]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1-$2-$3\",[\"[89]\"]]],0,0,\"(19(?:0[0-2468]|1[09]|20|66|77|99))\"],CU:[\"53\",\"119\",\"(?:[2-7]|8\\\\d\\\\d)\\\\d{7}|[2-47]\\\\d{6}|[34]\\\\d{5}\",[6,7,8,10],[[\"(\\\\d{2})(\\\\d{4,6})\",\"$1 $2\",[\"2[1-4]|[34]\"],\"(0$1)\"],[\"(\\\\d)(\\\\d{6,7})\",\"$1 $2\",[\"7\"],\"(0$1)\"],[\"(\\\\d)(\\\\d{7})\",\"$1 $2\",[\"[56]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{7})\",\"$1 $2\",[\"8\"],\"0$1\"]],\"0\"],CV:[\"238\",\"0\",\"(?:[2-59]\\\\d\\\\d|800)\\\\d{4}\",[7],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"[2-589]\"]]]],CW:[\"599\",\"00\",\"(?:[34]1|60|(?:7|9\\\\d)\\\\d)\\\\d{5}\",[7,8],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[3467]\"]],[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"9[4-8]\"]]],0,0,0,0,0,\"[69]\"],CX:[\"61\",\"001[14-689]|14(?:1[14]|34|4[17]|[56]6|7[47]|88)0011\",\"1(?:[0-79]\\\\d{8}(?:\\\\d{2})?|8[0-24-9]\\\\d{7})|[148]\\\\d{8}|1\\\\d{5,7}\",[6,7,8,9,10,12],0,\"0\",0,\"([59]\\\\d{7})$|0\",\"8$1\",0,0,[[\"8(?:51(?:0(?:01|30|59|88)|1(?:17|46|75)|2(?:22|35))|91(?:00[6-9]|1(?:[28]1|49|78)|2(?:09|63)|3(?:12|26|75)|4(?:56|97)|64\\\\d|7(?:0[01]|1[0-2])|958))\\\\d{3}\",[9]],[\"4(?:79[01]|83[0-389]|94[0-478])\\\\d{5}|4(?:[0-36]\\\\d|4[047-9]|[58][0-24-9]|7[02-8]|9[0-37-9])\\\\d{6}\",[9]],[\"180(?:0\\\\d{3}|2)\\\\d{3}\",[7,10]],[\"190[0-26]\\\\d{6}\",[10]],0,0,0,0,[\"14(?:5(?:1[0458]|[23][458])|71\\\\d)\\\\d{4}\",[9]],[\"13(?:00\\\\d{6}(?:\\\\d{2})?|45[0-4]\\\\d{3})|13\\\\d{4}\",[6,8,10,12]]],\"0011\"],CY:[\"357\",\"00\",\"(?:[279]\\\\d|[58]0)\\\\d{6}\",[8],[[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"[257-9]\"]]]],CZ:[\"420\",\"00\",\"(?:[2-578]\\\\d|60)\\\\d{7}|9\\\\d{8,11}\",[9,10,11,12],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[2-8]|9[015-7]\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"96\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"9\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"9\"]]]],DE:[\"49\",\"00\",\"[2579]\\\\d{5,14}|49(?:[34]0|69|8\\\\d)\\\\d\\\\d?|49(?:37|49|60|7[089]|9\\\\d)\\\\d{1,3}|49(?:2[024-9]|3[2-689]|7[1-7])\\\\d{1,8}|(?:1|[368]\\\\d|4[0-8])\\\\d{3,13}|49(?:[015]\\\\d|2[13]|31|[46][1-8])\\\\d{1,9}\",[4,5,6,7,8,9,10,11,12,13,14,15],[[\"(\\\\d{2})(\\\\d{3,13})\",\"$1 $2\",[\"3[02]|40|[68]9\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3,12})\",\"$1 $2\",[\"2(?:0[1-389]|1[124]|2[18]|3[14])|3(?:[35-9][15]|4[015])|906|(?:2[4-9]|4[2-9]|[579][1-9]|[68][1-8])1\",\"2(?:0[1-389]|12[0-8])|3(?:[35-9][15]|4[015])|906|2(?:[13][14]|2[18])|(?:2[4-9]|4[2-9]|[579][1-9]|[68][1-8])1\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{2,11})\",\"$1 $2\",[\"[24-6]|3(?:[3569][02-46-9]|4[2-4679]|7[2-467]|8[2-46-8])|70[2-8]|8(?:0[2-9]|[1-8])|90[7-9]|[79][1-9]\",\"[24-6]|3(?:3(?:0[1-467]|2[127-9]|3[124578]|7[1257-9]|8[1256]|9[145])|4(?:2[135]|4[13578]|9[1346])|5(?:0[14]|2[1-3589]|6[1-4]|7[13468]|8[13568])|6(?:2[1-489]|3[124-6]|6[13]|7[12579]|8[1-356]|9[135])|7(?:2[1-7]|4[145]|6[1-5]|7[1-4])|8(?:21|3[1468]|6|7[1467]|8[136])|9(?:0[12479]|2[1358]|4[134679]|6[1-9]|7[136]|8[147]|9[1468]))|70[2-8]|8(?:0[2-9]|[1-8])|90[7-9]|[79][1-9]|3[68]4[1347]|3(?:47|60)[1356]|3(?:3[46]|46|5[49])[1246]|3[4579]3[1357]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"138\"],\"0$1\"],[\"(\\\\d{5})(\\\\d{2,10})\",\"$1 $2\",[\"3\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{5,11})\",\"$1 $2\",[\"181\"],\"0$1\"],[\"(\\\\d{3})(\\\\d)(\\\\d{4,10})\",\"$1 $2 $3\",[\"1(?:3|80)|9\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{7,8})\",\"$1 $2\",[\"1[67]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{7,12})\",\"$1 $2\",[\"8\"],\"0$1\"],[\"(\\\\d{5})(\\\\d{6})\",\"$1 $2\",[\"185\",\"1850\",\"18500\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"7\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{7})\",\"$1 $2\",[\"18[68]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{7})\",\"$1 $2\",[\"15[1279]\"],\"0$1\"],[\"(\\\\d{5})(\\\\d{6})\",\"$1 $2\",[\"15[03568]\",\"15(?:[0568]|3[13])\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{8})\",\"$1 $2\",[\"18\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{7,8})\",\"$1 $2 $3\",[\"1(?:6[023]|7)\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{2})(\\\\d{7})\",\"$1 $2 $3\",[\"15[279]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{8})\",\"$1 $2 $3\",[\"15\"],\"0$1\"]],\"0\"],DJ:[\"253\",\"00\",\"(?:2\\\\d|77)\\\\d{6}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[27]\"]]]],DK:[\"45\",\"00\",\"[2-9]\\\\d{7}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[2-9]\"]]]],DM:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|767|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-7]\\\\d{6})$|1\",\"767$1\",0,\"767\"],DO:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,0,0,0,\"8001|8[024]9\"],DZ:[\"213\",\"00\",\"(?:[1-4]|[5-79]\\\\d|80)\\\\d{7}\",[8,9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[1-4]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"9\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[5-8]\"],\"0$1\"]],\"0\"],EC:[\"593\",\"00\",\"1\\\\d{9,10}|(?:[2-7]|9\\\\d)\\\\d{7}\",[8,9,10,11],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2-$3\",[\"[2-7]\"],\"(0$1)\",0,\"$1-$2-$3\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"9\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"1\"]]],\"0\"],EE:[\"372\",\"00\",\"8\\\\d{9}|[4578]\\\\d{7}|(?:[3-8]\\\\d|90)\\\\d{5}\",[7,8,10],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[369]|4[3-8]|5(?:[0-2]|5[0-478]|6[45])|7[1-9]|88\",\"[369]|4[3-8]|5(?:[02]|1(?:[0-8]|95)|5[0-478]|6(?:4[0-4]|5[1-589]))|7[1-9]|88\"]],[\"(\\\\d{4})(\\\\d{3,4})\",\"$1 $2\",[\"[45]|8(?:00|[1-49])\",\"[45]|8(?:00[1-9]|[1-49])\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"7\"]],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"8\"]]]],EG:[\"20\",\"00\",\"[189]\\\\d{8,9}|[24-6]\\\\d{8}|[135]\\\\d{7}\",[8,9,10],[[\"(\\\\d)(\\\\d{7,8})\",\"$1 $2\",[\"[23]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{6,7})\",\"$1 $2\",[\"1[35]|[4-6]|8[2468]|9[235-7]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[89]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{8})\",\"$1 $2\",[\"1\"],\"0$1\"]],\"0\"],EH:[\"212\",\"00\",\"[5-8]\\\\d{8}\",[9],0,\"0\",0,0,0,0,\"528[89]\"],ER:[\"291\",\"00\",\"[178]\\\\d{6}\",[7],[[\"(\\\\d)(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[178]\"],\"0$1\"]],\"0\"],ES:[\"34\",\"00\",\"[5-9]\\\\d{8}\",[9],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[89]00\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[5-9]\"]]]],ET:[\"251\",\"00\",\"(?:11|[2-579]\\\\d)\\\\d{7}\",[9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[1-579]\"],\"0$1\"]],\"0\"],FI:[\"358\",\"00|99(?:[01469]|5(?:[14]1|3[23]|5[59]|77|88|9[09]))\",\"[1-35689]\\\\d{4}|7\\\\d{10,11}|(?:[124-7]\\\\d|3[0-46-9])\\\\d{8}|[1-9]\\\\d{5,8}\",[5,6,7,8,9,10,11,12],[[\"(\\\\d{5})\",\"$1\",[\"20[2-59]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3,7})\",\"$1 $2\",[\"(?:[1-3]0|[68])0|70[07-9]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4,8})\",\"$1 $2\",[\"[14]|2[09]|50|7[135]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{6,10})\",\"$1 $2\",[\"7\"],\"0$1\"],[\"(\\\\d)(\\\\d{4,9})\",\"$1 $2\",[\"(?:19|[2568])[1-8]|3(?:0[1-9]|[1-9])|9\"],\"0$1\"]],\"0\",0,0,0,0,\"1[03-79]|[2-9]\",0,\"00\"],FJ:[\"679\",\"0(?:0|52)\",\"45\\\\d{5}|(?:0800\\\\d|[235-9])\\\\d{6}\",[7,11],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[235-9]|45\"]],[\"(\\\\d{4})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"0\"]]],0,0,0,0,0,0,0,\"00\"],FK:[\"500\",\"00\",\"[2-7]\\\\d{4}\",[5]],FM:[\"691\",\"00\",\"(?:[39]\\\\d\\\\d|820)\\\\d{4}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[389]\"]]]],FO:[\"298\",\"00\",\"[2-9]\\\\d{5}\",[6],[[\"(\\\\d{6})\",\"$1\",[\"[2-9]\"]]],0,0,\"(10(?:01|[12]0|88))\"],FR:[\"33\",\"00\",\"[1-9]\\\\d{8}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"8\"],\"0 $1\"],[\"(\\\\d)(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4 $5\",[\"[1-79]\"],\"0$1\"]],\"0\"],GA:[\"241\",\"00\",\"(?:[067]\\\\d|11)\\\\d{6}|[2-7]\\\\d{6}\",[7,8],[[\"(\\\\d)(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[2-7]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"0\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"11|[67]\"],\"0$1\"]],0,0,\"0(11\\\\d{6}|60\\\\d{6}|61\\\\d{6}|6[256]\\\\d{6}|7[467]\\\\d{6})\",\"$1\"],GB:[\"44\",\"00\",\"[1-357-9]\\\\d{9}|[18]\\\\d{8}|8\\\\d{6}\",[7,9,10],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"800\",\"8001\",\"80011\",\"800111\",\"8001111\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"845\",\"8454\",\"84546\",\"845464\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{6})\",\"$1 $2\",[\"800\"],\"0$1\"],[\"(\\\\d{5})(\\\\d{4,5})\",\"$1 $2\",[\"1(?:38|5[23]|69|76|94)\",\"1(?:(?:38|69)7|5(?:24|39)|768|946)\",\"1(?:3873|5(?:242|39[4-6])|(?:697|768)[347]|9467)\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{5,6})\",\"$1 $2\",[\"1(?:[2-69][02-9]|[78])\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"[25]|7(?:0|6[02-9])\",\"[25]|7(?:0|6(?:[03-9]|2[356]))\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{6})\",\"$1 $2\",[\"7\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[1389]\"],\"0$1\"]],\"0\",0,\"0|180020\",0,0,0,[[\"(?:1(?:1(?:3(?:[0-58]\\\\d\\\\d|73[0-35])|4(?:(?:[0-5]\\\\d|70)\\\\d|69[7-9])|(?:(?:5[0-26-9]|[78][0-49])\\\\d|6(?:[0-4]\\\\d|50))\\\\d)|(?:2(?:(?:0[024-9]|2[3-9]|3[3-79]|4[1-689]|[58][02-9]|6[0-47-9]|7[013-9]|9\\\\d)\\\\d|1(?:[0-7]\\\\d|8[0-3]))|(?:3(?:0\\\\d|1[0-8]|[25][02-9]|3[02-579]|[468][0-46-9]|7[1-35-79]|9[2-578])|4(?:0[03-9]|[137]\\\\d|[28][02-57-9]|4[02-69]|5[0-8]|[69][0-79])|5(?:0[1-35-9]|[16]\\\\d|2[024-9]|3[015689]|4[02-9]|5[03-9]|7[0-35-9]|8[0-468]|9[0-57-9])|6(?:0[034689]|1\\\\d|2[0-35689]|[38][013-9]|4[1-467]|5[0-69]|6[13-9]|7[0-8]|9[0-24578])|7(?:0[0246-9]|2\\\\d|3[0236-8]|4[03-9]|5[0-46-9]|6[013-9]|7[0-35-9]|8[024-9]|9[02-9])|8(?:0[35-9]|2[1-57-9]|3[02-578]|4[0-578]|5[124-9]|6[2-69]|7\\\\d|8[02-9]|9[02569])|9(?:0[02-589]|[18]\\\\d|2[02-689]|3[1-57-9]|4[2-9]|5[0-579]|6[2-47-9]|7[0-24578]|9[2-57]))\\\\d)\\\\d)|2(?:0[013478]|3[0189]|4[017]|8[0-46-9]|9[0-2])\\\\d{3})\\\\d{4}|1(?:2(?:0(?:46[1-4]|87[2-9])|545[1-79]|76(?:2\\\\d|3[1-8]|6[1-6])|9(?:7(?:2[0-4]|3[2-5])|8(?:2[2-8]|7[0-47-9]|8[3-5])))|3(?:6(?:38[2-5]|47[23])|8(?:47[04-9]|64[0157-9]))|4(?:044[1-7]|20(?:2[23]|8\\\\d)|6(?:0(?:30|5[2-57]|6[1-8]|7[2-8])|140)|8(?:052|87[1-3]))|5(?:2(?:4(?:3[2-79]|6\\\\d)|76\\\\d)|6(?:26[06-9]|686))|6(?:06(?:4\\\\d|7[4-79])|295[5-7]|35[34]\\\\d|47(?:24|61)|59(?:5[08]|6[67]|74)|9(?:55[0-4]|77[23]))|7(?:26(?:6[13-9]|7[0-7])|(?:442|688)\\\\d|50(?:2[0-3]|[3-68]2|76))|8(?:27[56]\\\\d|37(?:5[2-5]|8[239])|843[2-58])|9(?:0(?:0(?:6[1-8]|85)|52\\\\d)|3583|4(?:66[1-8]|9(?:2[01]|81))|63(?:23|3[1-4])|9561))\\\\d{3}\",[9,10]],[\"7(?:457[0-57-9]|700[01]|911[028])\\\\d{5}|7(?:[1-3]\\\\d\\\\d|4(?:[0-46-9]\\\\d|5[0-689])|5(?:0[0-8]|[13-9]\\\\d|2[0-35-9])|7(?:0[1-9]|[1-7]\\\\d|8[02-9]|9[0-689])|8(?:[014-9]\\\\d|[23][0-8])|9(?:[024-9]\\\\d|1[02-9]|3[0-689]))\\\\d{6}\",[10]],[\"80[08]\\\\d{7}|800\\\\d{6}|8001111\"],[\"(?:8(?:4[2-5]|7[0-3])|9(?:[01]\\\\d|8[2-49]))\\\\d{7}|845464\\\\d\",[7,10]],[\"70\\\\d{8}\",[10]],0,[\"(?:3[0347]|55)\\\\d{8}\",[10]],[\"76(?:464|652)\\\\d{5}|76(?:0[0-28]|2[356]|34|4[01347]|5[49]|6[0-369]|77|8[14]|9[139])\\\\d{6}\",[10]],[\"56\\\\d{8}\",[10]]],0,\" x\"],GD:[\"1\",\"011\",\"(?:473|[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-9]\\\\d{6})$|1\",\"473$1\",0,\"473\"],GE:[\"995\",\"00\",\"(?:[3-57]\\\\d\\\\d|800)\\\\d{6}\",[9],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"70\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"32\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[57]\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[348]\"],\"0$1\"]],\"0\"],GF:[\"594\",\"00\",\"(?:[56]94\\\\d|7093)\\\\d{5}|(?:80|9\\\\d)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[5-7]|9[47]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[89]\"],\"0$1\"]],\"0\"],GG:[\"44\",\"00\",\"(?:1481|[357-9]\\\\d{3})\\\\d{6}|8\\\\d{6}(?:\\\\d{2})?\",[7,9,10],0,\"0\",0,\"([25-9]\\\\d{5})$|0|180020\",\"1481$1\",0,0,[[\"1481[25-9]\\\\d{5}\",[10]],[\"7(?:(?:781|839)\\\\d|911[17])\\\\d{5}\",[10]],[\"80[08]\\\\d{7}|800\\\\d{6}|8001111\"],[\"(?:8(?:4[2-5]|7[0-3])|9(?:[01]\\\\d|8[0-3]))\\\\d{7}|845464\\\\d\",[7,10]],[\"70\\\\d{8}\",[10]],0,[\"(?:3[0347]|55)\\\\d{8}\",[10]],[\"76(?:464|652)\\\\d{5}|76(?:0[0-28]|2[356]|34|4[01347]|5[49]|6[0-369]|77|8[14]|9[139])\\\\d{6}\",[10]],[\"56\\\\d{8}\",[10]]]],GH:[\"233\",\"00\",\"(?:[235]\\\\d{3}|800)\\\\d{5}\",[8,9],[[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"8\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[235]\"],\"0$1\"]],\"0\"],GI:[\"350\",\"00\",\"(?:[25]\\\\d|60)\\\\d{6}\",[8],[[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"2\"]]]],GL:[\"299\",\"00\",\"(?:19|[2-689]\\\\d|70)\\\\d{4}\",[6],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"19|[2-9]\"]]]],GM:[\"220\",\"00\",\"[2-9]\\\\d{6}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[2-9]\"]]]],GN:[\"224\",\"00\",\"722\\\\d{6}|(?:3|6\\\\d)\\\\d{7}\",[8,9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"3\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[67]\"]]]],GP:[\"590\",\"00\",\"(?:590\\\\d|7090)\\\\d{5}|(?:69|80|9\\\\d)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[5-79]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"8\"],\"0$1\"]],\"0\",0,0,0,0,0,[[\"590(?:0[1-68]|[14][0-24-9]|2[0-68]|3[1-9]|5[3-579]|[68][0-689]|7[08]|9\\\\d)\\\\d{4}\"],[\"(?:69(?:0\\\\d\\\\d|1(?:2[2-9]|3[0-5])|4(?:0[89]|1[2-6]|9\\\\d)|6(?:1[016-9]|5[0-4]|[67]\\\\d))|7090[0-4])\\\\d{4}\"],[\"80[0-5]\\\\d{6}\"],0,0,0,0,0,[\"9(?:(?:39[5-7]|76[018])\\\\d|475[0-6])\\\\d{4}\"]]],GQ:[\"240\",\"00\",\"222\\\\d{6}|(?:3\\\\d|55|[89]0)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[235]\"]],[\"(\\\\d{3})(\\\\d{6})\",\"$1 $2\",[\"[89]\"]]]],GR:[\"30\",\"00\",\"5005000\\\\d{3}|8\\\\d{9,11}|(?:[269]\\\\d|70)\\\\d{8}\",[10,11,12],[[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"21|7\"]],[\"(\\\\d{4})(\\\\d{6})\",\"$1 $2\",[\"2(?:2|3[2-57-9]|4[2-469]|5[2-59]|6[2-9]|7[2-69]|8[2-49])|5\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[2689]\"]],[\"(\\\\d{3})(\\\\d{3,4})(\\\\d{5})\",\"$1 $2 $3\",[\"8\"]]]],GT:[\"502\",\"00\",\"80\\\\d{6}|(?:1\\\\d{3}|[2-7])\\\\d{7}\",[8,11],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[2-8]\"]],[\"(\\\\d{4})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"]]]],GU:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|671|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-9]\\\\d{6})$|1\",\"671$1\",0,\"671\"],GW:[\"245\",\"00\",\"[49]\\\\d{8}|4\\\\d{6}\",[7,9],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"40\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[49]\"]]]],GY:[\"592\",\"001\",\"(?:[2-8]\\\\d{3}|9008)\\\\d{3}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[2-9]\"]]]],HK:[\"852\",\"00(?:30|5[09]|[126-9]?)\",\"8[0-46-9]\\\\d{6,7}|9\\\\d{4,7}|(?:[2-7]|9\\\\d{3})\\\\d{7}\",[5,6,7,8,9,11],[[\"(\\\\d{3})(\\\\d{2,5})\",\"$1 $2\",[\"900\",\"9003\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[2-7]|8[1-4]|9(?:0[1-9]|[1-8])\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"8\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"9\"]]],0,0,0,0,0,0,0,\"00\"],HN:[\"504\",\"00\",\"8\\\\d{10}|[237-9]\\\\d{7}\",[8,11],[[\"(\\\\d{4})(\\\\d{4})\",\"$1-$2\",[\"[237-9]\"]]]],HR:[\"385\",\"00\",\"[2-69]\\\\d{8}|80\\\\d{5,7}|[1-79]\\\\d{7}|6\\\\d{6}\",[7,8,9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"6[01]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2,3})\",\"$1 $2 $3\",[\"8\"],\"0$1\"],[\"(\\\\d)(\\\\d{4})(\\\\d{3})\",\"$1 $2 $3\",[\"1\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"6|7[245]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"9\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[2-57]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"8\"],\"0$1\"]],\"0\"],HT:[\"509\",\"00\",\"[2-589]\\\\d{7}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"[2-589]\"]]]],HU:[\"36\",\"00\",\"[235-7]\\\\d{8}|[1-9]\\\\d{7}\",[8,9],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"],\"(06 $1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[27][2-9]|3[2-7]|4[24-9]|5[2-79]|6|8[2-57-9]|9[2-69]\"],\"(06 $1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[2-9]\"],\"06 $1\"]],\"06\"],ID:[\"62\",\"00[89]\",\"00[1-9]\\\\d{9,14}|(?:[1-36]|8\\\\d{5})\\\\d{6}|00\\\\d{9}|[1-9]\\\\d{8,10}|[2-9]\\\\d{7}\",[7,8,9,10,11,12,13,14,15,16,17],[[\"(\\\\d)(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"15\"]],[\"(\\\\d{2})(\\\\d{5,9})\",\"$1 $2\",[\"2[124]|[36]1\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{5,7})\",\"$1 $2\",[\"800\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{5,8})\",\"$1 $2\",[\"[2-79]\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{3,4})(\\\\d{3})\",\"$1-$2-$3\",[\"8[1-35-9]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{6,8})\",\"$1 $2\",[\"1\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"804\"],\"0$1\"],[\"(\\\\d{3})(\\\\d)(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"80\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{4})(\\\\d{4,5})\",\"$1-$2-$3\",[\"8\"],\"0$1\"]],\"0\"],IE:[\"353\",\"00\",\"(?:1\\\\d|[2569])\\\\d{6,8}|4\\\\d{6,9}|7\\\\d{8}|8\\\\d{8,9}\",[7,8,9,10],[[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"2[24-9]|47|58|6[237-9]|9[35-9]\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"[45]0\"],\"(0$1)\"],[\"(\\\\d)(\\\\d{3,4})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[2569]|4[1-69]|7[14]\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"70\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"81\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[78]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"1\"]],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"4\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3 $4\",[\"8\"],\"0$1\"]],\"0\"],IL:[\"972\",\"0(?:0|1[2-9])\",\"1\\\\d{6}(?:\\\\d{3,5})?|[57]\\\\d{8}|[1-489]\\\\d{7}\",[7,8,9,10,11,12],[[\"(\\\\d{4})(\\\\d{3})\",\"$1-$2\",[\"125\"]],[\"(\\\\d{4})(\\\\d{2})(\\\\d{2})\",\"$1-$2-$3\",[\"121\"]],[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1-$2-$3\",[\"[2-489]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1-$2-$3\",[\"[57]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1-$2-$3\",[\"12\"]],[\"(\\\\d{4})(\\\\d{6})\",\"$1-$2\",[\"159\"]],[\"(\\\\d)(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1-$2-$3-$4\",[\"1[7-9]\"]],[\"(\\\\d{3})(\\\\d{1,2})(\\\\d{3})(\\\\d{4})\",\"$1-$2 $3-$4\",[\"15\"]]],\"0\"],IM:[\"44\",\"00\",\"1624\\\\d{6}|(?:[3578]\\\\d|90)\\\\d{8}\",[10],0,\"0\",0,\"([25-8]\\\\d{5})$|0|180020\",\"1624$1\",0,\"74576|(?:16|7[56])24\"],IN:[\"91\",\"00\",\"(?:000800|[2-9]\\\\d\\\\d)\\\\d{7}|1\\\\d{7,12}\",[8,9,10,11,12,13],[[\"(\\\\d{8})\",\"$1\",[\"5(?:0|2[23]|3[03]|[67]1|88)\",\"5(?:0|2(?:21|3)|3(?:0|3[23])|616|717|888)\",\"5(?:0|2(?:21|3)|3(?:0|3[23])|616|717|8888)\"],0,1],[\"(\\\\d{4})(\\\\d{4,5})\",\"$1 $2\",[\"180\",\"1800\"],0,1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"140\"],0,1],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"11|2[02]|33|4[04]|79[1-7]|80[2-46]\",\"11|2[02]|33|4[04]|79(?:[1-6]|7[19])|80(?:[2-4]|6[0-589])\",\"11|2[02]|33|4[04]|79(?:[124-6]|3(?:[02-9]|1[0-24-9])|7(?:1|9[1-6]))|80(?:[2-4]|6[0-589])\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1(?:2[0-249]|3[0-25]|4[145]|[68]|7[1257])|2(?:1[257]|3[013]|4[01]|5[0137]|6[0158]|78|8[1568])|3(?:26|4[1-3]|5[34]|6[01489]|7[02-46]|8[159])|4(?:1[36]|2[1-47]|5[12]|6[0-26-9]|7[0-24-9]|8[013-57]|9[014-7])|5(?:1[025]|22|[36][25]|4[28]|5[12]|[78]1)|6(?:12|[2-4]1|5[17]|6[13]|80)|7(?:12|3[134]|4[47]|61|88)|8(?:16|2[014]|3[126]|6[136]|7[078]|8[34]|91)|(?:43|59|75)[15]|(?:1[59]|29|67|72)[14]\",\"1(?:2[0-24]|3[0-25]|4[145]|[59][14]|6[1-9]|7[1257]|8[1-57-9])|2(?:1[257]|3[013]|4[01]|5[0137]|6[058]|78|8[1568]|9[14])|3(?:26|4[1-3]|5[34]|6[01489]|7[02-46]|8[159])|4(?:1[36]|2[1-47]|3[15]|5[12]|6[0-26-9]|7[0-24-9]|8[013-57]|9[014-7])|5(?:1[025]|22|[36][25]|4[28]|[578]1|9[15])|674|7(?:(?:2[14]|3[34]|5[15])[2-6]|61[346]|88[0-8])|8(?:70[2-6]|84[235-7]|91[3-7])|(?:1(?:29|60|8[06])|261|552|6(?:12|[2-47]1|5[17]|6[13]|80)|7(?:12|31|4[47])|8(?:16|2[014]|3[126]|6[136]|7[78]|83))[2-7]\",\"1(?:2[0-24]|3[0-25]|4[145]|[59][14]|6[1-9]|7[1257]|8[1-57-9])|2(?:1[257]|3[013]|4[01]|5[0137]|6[058]|78|8[1568]|9[14])|3(?:26|4[1-3]|5[34]|6[01489]|7[02-46]|8[159])|4(?:1[36]|2[1-47]|3[15]|5[12]|6[0-26-9]|7[0-24-9]|8[013-57]|9[014-7])|5(?:1[025]|22|[36][25]|4[28]|[578]1|9[15])|6(?:12(?:[2-6]|7[0-8])|74[2-7])|7(?:(?:2[14]|5[15])[2-6]|3171|61[346]|88(?:[2-7]|82))|8(?:70[2-6]|84(?:[2356]|7[19])|91(?:[3-6]|7[19]))|73[134][2-6]|(?:74[47]|8(?:16|2[014]|3[126]|6[136]|7[78]|83))(?:[2-6]|7[19])|(?:1(?:29|60|8[06])|261|552|6(?:[2-4]1|5[17]|6[13]|7(?:1|4[0189])|80)|7(?:12|88[01]))[2-7]\"],\"0$1\",1],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"1(?:[2-479]|5[0235-9])|[2-5]|6(?:1[1358]|2[2457-9]|3[2-5]|4[235-7]|5[2-689]|6[24578]|7[235689]|8[1-6])|7(?:1[013-9]|28|3[129]|4[1-35689]|5[29]|6[02-5]|70)|807\",\"1(?:[2-479]|5[0235-9])|[2-5]|6(?:1[1358]|2(?:[2457]|84|95)|3(?:[2-4]|55)|4[235-7]|5[2-689]|6[24578]|7[235689]|8[1-6])|7(?:1(?:[013-8]|9[6-9])|28[6-8]|3(?:17|2[0-49]|9[2-57])|4(?:1[2-4]|[29][0-7]|3[0-8]|[56]|8[0-24-7])|5(?:2[1-3]|9[0-6])|6(?:0[5689]|2[5-9]|3[02-8]|4|5[0-367])|70[13-7])|807[19]\",\"1(?:[2-479]|5(?:[0236-9]|5[013-9]))|[2-5]|6(?:2(?:84|95)|355|83)|73179|807(?:1|9[1-3])|(?:1552|6(?:1[1358]|2[2457]|3[2-4]|4[235-7]|5[2-689]|6[24578]|7[235689]|8[124-6])\\\\d|7(?:1(?:[013-8]\\\\d|9[6-9])|28[6-8]|3(?:2[0-49]|9[2-57])|4(?:1[2-4]|[29][0-7]|3[0-8]|[56]\\\\d|8[0-24-7])|5(?:2[1-3]|9[0-6])|6(?:0[5689]|2[5-9]|3[02-8]|4\\\\d|5[0-367])|70[13-7]))[2-7]\"],\"0$1\",1],[\"(\\\\d{5})(\\\\d{5})\",\"$1 $2\",[\"[6-9]\"],\"0$1\",1],[\"(\\\\d{4})(\\\\d{2,4})(\\\\d{4})\",\"$1 $2 $3\",[\"1(?:6|8[06])\",\"1(?:6|8[06]0)\"],0,1],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"18\"],0,1]],\"0\"],IO:[\"246\",\"00\",\"3\\\\d{6}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"3\"]]]],IQ:[\"964\",\"00\",\"(?:1|7\\\\d\\\\d)\\\\d{7}|[2-6]\\\\d{7,8}\",[8,9,10],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[2-6]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"7\"],\"0$1\"]],\"0\"],IR:[\"98\",\"00\",\"[1-9]\\\\d{9}|(?:[1-8]\\\\d\\\\d|9)\\\\d{3,4}\",[4,5,6,7,10],[[\"(\\\\d{4,5})\",\"$1\",[\"96\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4,5})\",\"$1 $2\",[\"(?:1[137]|2[13-68]|3[1458]|4[145]|5[1468]|6[16]|7[1467]|8[13467])[12689]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"9\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"[1-8]\"],\"0$1\"]],\"0\"],IS:[\"354\",\"00|1(?:0(?:01|[12]0)|100)\",\"(?:38\\\\d|[4-9])\\\\d{6}\",[7,9],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[4-9]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"3\"]]],0,0,0,0,0,0,0,\"00\"],IT:[\"39\",\"00\",\"0\\\\d{5,11}|1\\\\d{8,10}|3(?:[0-8]\\\\d{7,10}|9\\\\d{7,8})|(?:43|55|70)\\\\d{8}|8\\\\d{5}(?:\\\\d{2,4})?\",[6,7,8,9,10,11,12],[[\"(\\\\d{2})(\\\\d{4,6})\",\"$1 $2\",[\"0[26]\"]],[\"(\\\\d{3})(\\\\d{3,6})\",\"$1 $2\",[\"0[13-57-9][0159]|8(?:03|4[17]|9[2-5])\",\"0[13-57-9][0159]|8(?:03|4[17]|9(?:2|3[04]|[45][0-4]))\"]],[\"(\\\\d{4})(\\\\d{2,6})\",\"$1 $2\",[\"0(?:[13-579][2-46-8]|8[236-8])\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"894\"]],[\"(\\\\d{2})(\\\\d{3,4})(\\\\d{4})\",\"$1 $2 $3\",[\"0[26]|5\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"1(?:44|[679])|[378]|43\"]],[\"(\\\\d{3})(\\\\d{3,4})(\\\\d{4})\",\"$1 $2 $3\",[\"0[13-57-9][0159]|14\"]],[\"(\\\\d{2})(\\\\d{4})(\\\\d{5})\",\"$1 $2 $3\",[\"0[26]\"]],[\"(\\\\d{4})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"0\"]],[\"(\\\\d{3})(\\\\d{4})(\\\\d{4,5})\",\"$1 $2 $3\",[\"[03]\"]]],0,0,0,0,0,0,[[\"0(?:669[0-79]\\\\d{1,6}|831\\\\d{2,8})|0(?:1(?:[0159]\\\\d|[27][1-5]|31|4[1-4]|6[1356]|8[2-57])|2\\\\d\\\\d|3(?:[0159]\\\\d|2[1-4]|3[12]|[48][1-6]|6[2-59]|7[1-7])|4(?:[0159]\\\\d|[23][1-9]|4[245]|6[1-5]|7[1-4]|81)|5(?:[0159]\\\\d|2[1-5]|3[2-6]|4[1-79]|6[4-6]|7[1-578]|8[3-8])|6(?:[0-57-9]\\\\d|6[0-8])|7(?:[0159]\\\\d|2[12]|3[1-7]|4[2-46]|6[13569]|7[13-6]|8[1-59])|8(?:[0159]\\\\d|2[3-578]|3[2356]|[6-8][1-5])|9(?:[0159]\\\\d|[238][1-5]|4[12]|6[1-8]|7[1-6]))\\\\d{2,7}\"],[\"3[2-9]\\\\d{7,8}|(?:31|43)\\\\d{8}\",[9,10]],[\"80(?:0\\\\d{3}|3)\\\\d{3}\",[6,9]],[\"(?:0878\\\\d{3}|89(?:2\\\\d|3[04]|4(?:[0-4]|[5-9]\\\\d\\\\d)|5[0-4]))\\\\d\\\\d|(?:1(?:44|6[346])|89(?:38|5[5-9]|9))\\\\d{6}\",[6,8,9,10]],[\"1(?:78\\\\d|99)\\\\d{6}\",[9,10]],[\"3[2-8]\\\\d{9,10}\",[11,12]],0,0,[\"55\\\\d{8}\",[10]],[\"84(?:[08]\\\\d{3}|[17])\\\\d{3}\",[6,9]]]],JE:[\"44\",\"00\",\"1534\\\\d{6}|(?:[3578]\\\\d|90)\\\\d{8}\",[10],0,\"0\",0,\"([0-24-8]\\\\d{5})$|0|180020\",\"1534$1\",0,0,[[\"1534[0-24-8]\\\\d{5}\"],[\"7(?:(?:(?:50|82)9|937)\\\\d|7(?:00[378]|97\\\\d))\\\\d{5}\"],[\"80(?:07(?:35|81)|8901)\\\\d{4}\"],[\"(?:8(?:4(?:4(?:4(?:05|42|69)|703)|5(?:041|800))|7(?:0002|1206))|90(?:066[59]|1810|71(?:07|55)))\\\\d{4}\"],[\"701511\\\\d{4}\"],0,[\"(?:3(?:0(?:07(?:35|81)|8901)|3\\\\d{4}|4(?:4(?:4(?:05|42|69)|703)|5(?:041|800))|7(?:0002|1206))|55\\\\d{4})\\\\d{4}\"],[\"76(?:464|652)\\\\d{5}|76(?:0[0-28]|2[356]|34|4[01347]|5[49]|6[0-369]|77|8[14]|9[139])\\\\d{6}\"],[\"56\\\\d{8}\"]]],JM:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|658|900)\\\\d{7}\",[10],0,\"1\",0,0,0,0,\"658|876\"],JO:[\"962\",\"00\",\"(?:(?:[2689]|7\\\\d)\\\\d|32|53)\\\\d{6}\",[8,9],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[2356]|87\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{5,6})\",\"$1 $2\",[\"[89]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{7})\",\"$1 $2\",[\"70\"],\"0$1\"],[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"7\"],\"0$1\"]],\"0\"],JP:[\"81\",\"010\",\"00[1-9]\\\\d{6,14}|[25-9]\\\\d{9}|(?:00|[1-9]\\\\d\\\\d)\\\\d{6}\",[8,9,10,11,12,13,14,15,16,17],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1-$2-$3\",[\"(?:12|57|99)0\"],\"0$1\"],[\"(\\\\d{4})(\\\\d)(\\\\d{4})\",\"$1-$2-$3\",[\"1(?:26|3[79]|4[56]|5[4-68]|6[3-5])|499|5(?:76|97)|746|8(?:3[89]|47|51)|9(?:80|9[16])\",\"1(?:267|3(?:7[247]|9[278])|466|5(?:47|58|64)|6(?:3[245]|48|5[4-68]))|499[2468]|5(?:76|97)9|7468|8(?:3(?:8[7-9]|96)|477|51[2-9])|9(?:802|9(?:1[23]|69))|1(?:45|58)[67]\",\"1(?:267|3(?:7[247]|9[278])|466|5(?:47|58|64)|6(?:3[245]|48|5[4-68]))|499[2468]|5(?:769|979[2-69])|7468|8(?:3(?:8[7-9]|96[2457-9])|477|51[2-9])|9(?:802|9(?:1[23]|69))|1(?:45|58)[67]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1-$2-$3\",[\"60\"],\"0$1\"],[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1-$2-$3\",[\"3|4(?:2[09]|7[01])|6[1-9]\",\"3|4(?:2(?:0|9[02-69])|7(?:0[019]|1))|6[1-9]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1-$2-$3\",[\"1(?:1|5[45]|77|88|9[69])|2(?:2[1-37]|3[0-269]|4[59]|5|6[24]|7[1-358]|8[1369]|9[0-38])|4(?:[28][1-9]|3[0-57]|[45]|6[248]|7[2-579]|9[29])|5(?:2|3[0459]|4[0-369]|5[29]|8[02389]|9[0-389])|7(?:2[02-46-9]|34|[58]|6[0249]|7[57]|9[2-6])|8(?:2[124589]|3[26-9]|49|51|6|7[0-468]|8[68]|9[019])|9(?:[23][1-9]|4[15]|5[138]|6[1-3]|7[156]|8[189]|9[1-489])\",\"1(?:1|5(?:4[018]|5[017])|77|88|9[69])|2(?:2(?:[127]|3[014-9])|3[0-269]|4[59]|5(?:[1-3]|5[0-69]|9[19])|62|7(?:[1-35]|8[0189])|8(?:[16]|3[0134]|9[0-5])|9(?:[028]|17))|4(?:2(?:[13-79]|8[014-6])|3[0-57]|[45]|6[248]|7[2-47]|8[1-9]|9[29])|5(?:2|3(?:[045]|9[0-8])|4[0-369]|5[29]|8[02389]|9[0-3])|7(?:2[02-46-9]|34|[58]|6[0249]|7[57]|9(?:[23]|4[0-59]|5[01569]|6[0167]))|8(?:2(?:[1258]|4[0-39]|9[0-2469])|3(?:[29]|60)|49|51|6(?:[0-24]|36|5[0-3589]|7[23]|9[01459])|7[0-468]|8[68])|9(?:[23][1-9]|4[15]|5[138]|6[1-3]|7[156]|8[189]|9(?:[1289]|3[34]|4[0178]))|(?:264|837)[016-9]|2(?:57|93)[015-9]|(?:25[0468]|422|838)[01]|(?:47[59]|59[89]|8(?:6[68]|9))[019]\",\"1(?:1|5(?:4[018]|5[017])|77|88|9[69])|2(?:2[127]|3[0-269]|4[59]|5(?:[1-3]|5[0-69]|9(?:17|99))|6(?:2|4[016-9])|7(?:[1-35]|8[0189])|8(?:[16]|3[0134]|9[0-5])|9(?:[028]|17))|4(?:2(?:[13-79]|8[014-6])|3[0-57]|[45]|6[248]|7[2-47]|9[29])|5(?:2|3(?:[045]|9(?:[0-58]|6[4-9]|7[0-35689]))|4[0-369]|5[29]|8[02389]|9[0-3])|7(?:2[02-46-9]|34|[58]|6[0249]|7[57]|9(?:[23]|4[0-59]|5[01569]|6[0167]))|8(?:2(?:[1258]|4[0-39]|9[0169])|3(?:[29]|60|7(?:[017-9]|6[6-8]))|49|51|6(?:[0-24]|36[2-57-9]|5(?:[0-389]|5[23])|6(?:[01]|9[178])|7(?:2[2-468]|3[78])|9[0145])|7[0-468]|8[68])|9(?:4[15]|5[138]|7[156]|8[189]|9(?:[1289]|3(?:31|4[357])|4[0178]))|(?:8294|96)[1-3]|2(?:57|93)[015-9]|(?:223|8699)[014-9]|(?:25[0468]|422|838)[01]|(?:48|8292|9[23])[1-9]|(?:47[59]|59[89]|8(?:68|9))[019]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{4})\",\"$1-$2-$3\",[\"[14]|[289][2-9]|5[3-9]|7[2-4679]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1-$2-$3\",[\"800\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1-$2-$3\",[\"[25-9]\"],\"0$1\"]],\"0\",0,\"(000[2569]\\\\d{4,6})$|(?:(?:003768)0?)|0\",\"$1\"],KE:[\"254\",\"000\",\"(?:[17]\\\\d\\\\d|900)\\\\d{6}|(?:2|80)0\\\\d{6,7}|[4-6]\\\\d{6,8}\",[7,8,9,10],[[\"(\\\\d{2})(\\\\d{5,7})\",\"$1 $2\",[\"[24-6]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{6})\",\"$1 $2\",[\"[17]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[89]\"],\"0$1\"]],\"0\"],KG:[\"996\",\"00\",\"8\\\\d{9}|[235-9]\\\\d{8}\",[9,10],[[\"(\\\\d{4})(\\\\d{5})\",\"$1 $2\",[\"3(?:1[346]|[24-79])\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[235-79]|88\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d)(\\\\d{2,3})\",\"$1 $2 $3 $4\",[\"8\"],\"0$1\"]],\"0\"],KH:[\"855\",\"00[14-9]\",\"1\\\\d{9}|[1-9]\\\\d{7,8}\",[8,9,10],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[1-9]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"1\"]]],\"0\"],KI:[\"686\",\"00\",\"(?:[37]\\\\d|6[0-79])\\\\d{6}|(?:[2-48]\\\\d|50)\\\\d{3}\",[5,8],0,\"0\"],KM:[\"269\",\"00\",\"[3478]\\\\d{6}\",[7],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"[3478]\"]]]],KN:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-7]\\\\d{6})$|1\",\"869$1\",0,\"869\"],KP:[\"850\",\"00|99\",\"85\\\\d{6}|(?:19\\\\d|[2-7])\\\\d{7}\",[8,10],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"8\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[2-7]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"],\"0$1\"]],\"0\"],KR:[\"82\",\"00(?:[125689]|3(?:[46]5|91)|7(?:00|27|3|55|6[126]))\",\"00[1-9]\\\\d{8,11}|(?:[12]|5\\\\d{3})\\\\d{7}|[13-6]\\\\d{9}|(?:[1-6]\\\\d|80)\\\\d{7}|[3-6]\\\\d{4,5}|(?:00|7)0\\\\d{8}\",[5,6,8,9,10,11,12,13,14],[[\"(\\\\d{2})(\\\\d{3,4})\",\"$1-$2\",[\"(?:3[1-3]|[46][1-4]|5[1-5])1\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{4})\",\"$1-$2\",[\"1\"]],[\"(\\\\d)(\\\\d{3,4})(\\\\d{4})\",\"$1-$2-$3\",[\"2\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1-$2-$3\",[\"[36]0|8\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3,4})(\\\\d{4})\",\"$1-$2-$3\",[\"[1346]|5[1-5]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1-$2-$3\",[\"[57]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{5})(\\\\d{4})\",\"$1-$2-$3\",[\"5\"],\"0$1\"]],\"0\",0,\"0(8(?:[1-46-8]|5\\\\d\\\\d))?\"],KW:[\"965\",\"00\",\"18\\\\d{5}|(?:[2569]\\\\d|41)\\\\d{6}\",[7,8],[[\"(\\\\d{4})(\\\\d{3,4})\",\"$1 $2\",[\"[169]|2(?:[235]|4[1-35-9])|52\"]],[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"[245]\"]]]],KY:[\"1\",\"011\",\"(?:345|[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-9]\\\\d{6})$|1\",\"345$1\",0,\"345\"],KZ:[\"7\",\"810\",\"(?:33622|8\\\\d{8})\\\\d{5}|[78]\\\\d{9}\",[10,14],0,\"8\",0,0,0,0,\"33622|7\",0,\"8~10\"],LA:[\"856\",\"00\",\"[23]\\\\d{9}|3\\\\d{8}|(?:[235-8]\\\\d|41)\\\\d{6}\",[8,9,10],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"2[13]|3[14]|[4-8]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"3\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"[23]\"],\"0$1\"]],\"0\"],LB:[\"961\",\"00\",\"[27-9]\\\\d{7}|[13-9]\\\\d{6}\",[7,8],[[\"(\\\\d)(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[13-69]|7(?:[2-57]|62|8[0-6]|9[04-9])|8[02-9]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[27-9]\"]]],\"0\"],LC:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|758|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-8]\\\\d{6})$|1\",\"758$1\",0,\"758\"],LI:[\"423\",\"00\",\"[68]\\\\d{8}|(?:[2378]\\\\d|90)\\\\d{5}\",[7,9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"[2379]|8(?:0[09]|7)\",\"[2379]|8(?:0(?:02|9)|7)\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"8\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"69\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"6\"]]],\"0\",0,\"(1001)|0\"],LK:[\"94\",\"00\",\"[1-9]\\\\d{8}\",[9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"7\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[1-689]\"],\"0$1\"]],\"0\"],LR:[\"231\",\"00\",\"(?:[2457]\\\\d|33|88)\\\\d{7}|(?:2\\\\d|[4-6])\\\\d{6}\",[7,8,9],[[\"(\\\\d)(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"4[67]|[56]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"2\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[2-578]\"],\"0$1\"]],\"0\"],LS:[\"266\",\"00\",\"(?:[256]\\\\d\\\\d|800)\\\\d{5}\",[8],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[2568]\"]]]],LT:[\"370\",\"00\",\"(?:[3469]\\\\d|52|[78]0)\\\\d{6}\",[8],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"52[0-7]\"],\"(0-$1)\",1],[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"[7-9]\"],\"0 $1\",1],[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"37|4(?:[15]|6[1-8])\"],\"(0-$1)\",1],[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"[3-6]\"],\"(0-$1)\",1]],\"0\",0,\"[08]\"],LU:[\"352\",\"00\",\"35[013-9]\\\\d{4,8}|6\\\\d{8}|35\\\\d{2,4}|(?:[2457-9]\\\\d|3[0-46-9])\\\\d{2,9}\",[4,5,6,7,8,9,10,11],[[\"(\\\\d{2})(\\\\d{3})\",\"$1 $2\",[\"2(?:0[2-689]|[2-9])|[3-57]|8(?:0[2-9]|[13-9])|9(?:0[89]|[2-579])\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"2(?:0[2-689]|[2-9])|[3-57]|8(?:0[2-9]|[13-9])|9(?:0[89]|[2-579])\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"20[2-689]\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{1,2})\",\"$1 $2 $3 $4\",[\"2(?:[0367]|4[3-8])\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"80[01]|90[015]\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"20\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"6\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{1,2})\",\"$1 $2 $3 $4 $5\",[\"2(?:[0367]|4[3-8])\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{1,5})\",\"$1 $2 $3 $4\",[\"[3-57]|8[13-9]|9(?:0[89]|[2-579])|(?:2|80)[2-9]\"]]],0,0,\"(15(?:0[06]|1[12]|[35]5|4[04]|6[26]|77|88|99)\\\\d)\"],LV:[\"371\",\"00\",\"(?:[268]\\\\d|78|90)\\\\d{6}\",[8],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[2679]|8[01]\"]]]],LY:[\"218\",\"00\",\"[2-9]\\\\d{8}\",[9],[[\"(\\\\d{2})(\\\\d{7})\",\"$1-$2\",[\"[2-9]\"],\"0$1\"]],\"0\"],MA:[\"212\",\"00\",\"[5-8]\\\\d{8}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"5[45]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{5})\",\"$1-$2\",[\"5(?:2[2-46-9]|3[3-9]|9)|8(?:0[89]|92)\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{7})\",\"$1-$2\",[\"8\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{6})\",\"$1-$2\",[\"[5-7]\"],\"0$1\"]],\"0\",0,0,0,0,0,[[\"5(?:2(?:[0-25-79]\\\\d|3[1-578]|4[02-46-8]|8[0235-7])|3(?:[0-47]\\\\d|5[02-9]|6[02-8]|8[014-9]|9[3-9])|(?:4[067]|5[03])\\\\d)\\\\d{5}\"],[\"(?:6(?:[0-79]\\\\d|8[0-247-9])|7(?:[0167]\\\\d|2[0-8]|5[0-5]|8[0-7]))\\\\d{6}\"],[\"80[0-7]\\\\d{6}\"],[\"89\\\\d{7}\"],0,0,0,0,[\"(?:592(?:4[0-2]|93)|80[89]\\\\d\\\\d)\\\\d{4}\"]]],MC:[\"377\",\"00\",\"(?:[3489]|6\\\\d)\\\\d{7}\",[8,9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"4\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[389]\"]],[\"(\\\\d)(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4 $5\",[\"6\"],\"0$1\"]],\"0\"],MD:[\"373\",\"00\",\"(?:[235-7]\\\\d|[89]0)\\\\d{6}\",[8],[[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"[89]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"22|3\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"[25-7]\"],\"0$1\"]],\"0\"],ME:[\"382\",\"00\",\"(?:20|[3-79]\\\\d)\\\\d{6}|80\\\\d{6,7}\",[8,9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[2-9]\"],\"0$1\"]],\"0\"],MF:[\"590\",\"00\",\"(?:590\\\\d|7090)\\\\d{5}|(?:69|80|9\\\\d)\\\\d{7}\",[9],0,\"0\",0,0,0,0,0,[[\"590(?:0[079]|[14]3|[27][79]|3[03-7]|5[0-268]|87)\\\\d{4}\"],[\"(?:69(?:0\\\\d\\\\d|1(?:2[2-9]|3[0-5])|4(?:0[89]|1[2-6]|9\\\\d)|6(?:1[016-9]|5[0-4]|[67]\\\\d))|7090[0-4])\\\\d{4}\"],[\"80[0-5]\\\\d{6}\"],0,0,0,0,0,[\"9(?:(?:39[5-7]|76[018])\\\\d|475[0-6])\\\\d{4}\"]]],MG:[\"261\",\"00\",\"[23]\\\\d{8}\",[9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{3})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[23]\"],\"0$1\"]],\"0\",0,\"([24-9]\\\\d{6})$|0\",\"20$1\"],MH:[\"692\",\"011\",\"329\\\\d{4}|(?:[256]\\\\d|45)\\\\d{5}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1-$2\",[\"[2-6]\"]]],\"1\"],MK:[\"389\",\"00\",\"[2-578]\\\\d{7}\",[8],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"2|34[47]|4(?:[37]7|5[47]|64)\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[347]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d)(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[58]\"],\"0$1\"]],\"0\"],ML:[\"223\",\"00\",\"[24-9]\\\\d{7}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[24-9]\"]]]],MM:[\"95\",\"00\",\"1\\\\d{5,7}|95\\\\d{6}|(?:[4-7]|9[0-46-9])\\\\d{6,8}|(?:2|8\\\\d)\\\\d{5,8}\",[6,7,8,9,10],[[\"(\\\\d)(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"16|2\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"4(?:[2-46]|5[3-5])|5|6(?:[1-689]|7[235-7])|7(?:[0-4]|5[2-7])|8[1-5]|(?:60|86)[23]\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[12]|452|678|86\",\"[12]|452|6788|86\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[4-7]|8[1-35]\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{4,6})\",\"$1 $2 $3\",[\"9(?:2[0-4]|[35-9]|4[137-9])\"],\"0$1\"],[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"2\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"8\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"92\"],\"0$1\"],[\"(\\\\d)(\\\\d{5})(\\\\d{4})\",\"$1 $2 $3\",[\"9\"],\"0$1\"]],\"0\"],MN:[\"976\",\"001\",\"[12]\\\\d{7,9}|[5-9]\\\\d{7}\",[8,9,10],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"[12]1\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[5-9]\"]],[\"(\\\\d{3})(\\\\d{5,6})\",\"$1 $2\",[\"[12]2[1-3]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{5,6})\",\"$1 $2\",[\"[12](?:27|3[2-8]|4[2-68]|5[1-4689])\",\"[12](?:27|3[2-8]|4[2-68]|5[1-4689])[0-3]\"],\"0$1\"],[\"(\\\\d{5})(\\\\d{4,5})\",\"$1 $2\",[\"[12]\"],\"0$1\"]],\"0\"],MO:[\"853\",\"00\",\"0800\\\\d{3}|(?:28|[68]\\\\d)\\\\d{6}\",[7,8],[[\"(\\\\d{4})(\\\\d{3})\",\"$1 $2\",[\"0\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[268]\"]]]],MP:[\"1\",\"011\",\"[58]\\\\d{9}|(?:67|90)0\\\\d{7}\",[10],0,\"1\",0,\"([2-9]\\\\d{6})$|1\",\"670$1\",0,\"670\"],MQ:[\"596\",\"00\",\"(?:596\\\\d|7091)\\\\d{5}|(?:69|[89]\\\\d)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[5-79]|8(?:0[6-9]|[36])\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"8\"],\"0$1\"]],\"0\"],MR:[\"222\",\"00\",\"(?:[2-4]\\\\d\\\\d|800)\\\\d{5}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[2-48]\"]]]],MS:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|664|900)\\\\d{7}\",[10],0,\"1\",0,\"([34]\\\\d{6})$|1\",\"664$1\",0,\"664\"],MT:[\"356\",\"00\",\"3550\\\\d{4}|(?:[2579]\\\\d\\\\d|800)\\\\d{5}\",[8],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[2357-9]\"]]]],MU:[\"230\",\"0(?:0|[24-7]0|3[03])\",\"(?:[57]|8\\\\d\\\\d)\\\\d{7}|[2-468]\\\\d{6}\",[7,8,10],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[2-46]|8[013]\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[57]\"]],[\"(\\\\d{5})(\\\\d{5})\",\"$1 $2\",[\"8\"]]],0,0,0,0,0,0,0,\"020\"],MV:[\"960\",\"0(?:0|19)\",\"(?:800|9[0-57-9]\\\\d)\\\\d{7}|[34679]\\\\d{6}\",[7,10],[[\"(\\\\d{3})(\\\\d{4})\",\"$1-$2\",[\"[34679]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[89]\"]]],0,0,0,0,0,0,0,\"00\"],MW:[\"265\",\"00\",\"(?:[1289]\\\\d|31|77)\\\\d{7}|1\\\\d{6}\",[7,9],[[\"(\\\\d)(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"1[2-9]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"2\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[137-9]\"],\"0$1\"]],\"0\"],MX:[\"52\",\"0[09]\",\"[2-9]\\\\d{9}\",[10],[[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"33|5[56]|81\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[2-9]\"]]],0,0,0,0,0,0,0,\"00\"],MY:[\"60\",\"00\",\"1\\\\d{8,9}|(?:3\\\\d|[4-9])\\\\d{7}\",[8,9,10],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1-$2 $3\",[\"[4-79]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1-$2 $3\",[\"1(?:[02469]|[378][1-9]|53)|8\",\"1(?:[02469]|[37][1-9]|53|8(?:[1-46-9]|5[7-9]))|8\"],\"0$1\"],[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1-$2 $3\",[\"3\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{2})(\\\\d{4})\",\"$1-$2-$3-$4\",[\"1(?:[367]|80)\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1-$2 $3\",[\"15\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1-$2 $3\",[\"1\"],\"0$1\"]],\"0\"],MZ:[\"258\",\"00\",\"(?:2|8\\\\d)\\\\d{7}\",[8,9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"2|8[2-79]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"8\"]]]],NA:[\"264\",\"00\",\"[68]\\\\d{7,8}\",[8,9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"88\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"6\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"87\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"8\"],\"0$1\"]],\"0\"],NC:[\"687\",\"00\",\"(?:050|[2-57-9]\\\\d\\\\d)\\\\d{3}\",[6],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1.$2.$3\",[\"[02-57-9]\"]]]],NE:[\"227\",\"00\",\"[027-9]\\\\d{7}\",[8],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"08\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[089]|2[013]|7[0467]\"]]]],NF:[\"672\",\"00\",\"[13]\\\\d{5}\",[6],[[\"(\\\\d{2})(\\\\d{4})\",\"$1 $2\",[\"1[0-3]\"]],[\"(\\\\d)(\\\\d{5})\",\"$1 $2\",[\"[13]\"]]],0,0,\"([0-258]\\\\d{4})$\",\"3$1\"],NG:[\"234\",\"009\",\"(?:20|9\\\\d)\\\\d{8}|[78]\\\\d{9,13}\",[10,11,12,13,14],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[7-9]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"20[129]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"2\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{4})(\\\\d{4,5})\",\"$1 $2 $3\",[\"[78]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{5})(\\\\d{5,6})\",\"$1 $2 $3\",[\"[78]\"],\"0$1\"]],\"0\"],NI:[\"505\",\"00\",\"(?:1800|[25-8]\\\\d{3})\\\\d{4}\",[8],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[125-8]\"]]]],NL:[\"31\",\"00\",\"(?:[124-7]\\\\d\\\\d|3(?:[02-9]\\\\d|1[0-8]))\\\\d{6}|8\\\\d{6,9}|9\\\\d{6,10}|1\\\\d{4,5}\",[5,6,7,8,9,10,11],[[\"(\\\\d{3})(\\\\d{4,7})\",\"$1 $2\",[\"[89]0\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{7})\",\"$1 $2\",[\"66\"],\"0$1\"],[\"(\\\\d)(\\\\d{8})\",\"$1 $2\",[\"6\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"1[16-8]|2[259]|3[124]|4[17-9]|5[124679]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[1-578]|91\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{5})\",\"$1 $2 $3\",[\"9\"],\"0$1\"]],\"0\"],NO:[\"47\",\"00\",\"(?:0|[2-9]\\\\d{3})\\\\d{4}\",[5,8],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"8\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[2-79]\"]]],0,0,0,0,0,\"[02-689]|7[0-8]\"],NP:[\"977\",\"00\",\"(?:1\\\\d|9)\\\\d{9}|[1-9]\\\\d{7}\",[8,10,11],[[\"(\\\\d)(\\\\d{7})\",\"$1-$2\",[\"1[2-6]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{6})\",\"$1-$2\",[\"1[01]|[2-8]|9(?:[1-59]|[67][2-6])\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{7})\",\"$1-$2\",[\"9\"]]],\"0\"],NR:[\"674\",\"00\",\"(?:222|444|(?:55|8\\\\d)\\\\d|666|777|999)\\\\d{4}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[24-9]\"]]]],NU:[\"683\",\"00\",\"(?:[4-7]|888\\\\d)\\\\d{3}\",[4,7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"8\"]]]],NZ:[\"64\",\"0(?:0|161)\",\"[1289]\\\\d{9}|50\\\\d{5}(?:\\\\d{2,3})?|[27-9]\\\\d{7,8}|(?:[34]\\\\d|6[0-35-9])\\\\d{6}|8\\\\d{4,6}\",[5,6,7,8,9,10],[[\"(\\\\d{2})(\\\\d{3,8})\",\"$1 $2\",[\"8[1-79]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2,3})\",\"$1 $2 $3\",[\"50[036-8]|8|90\",\"50(?:[0367]|88)|8|90\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"24|[346]|7[2-57-9]|9[2-9]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"2(?:10|74)|[589]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3,4})(\\\\d{4})\",\"$1 $2 $3\",[\"1|2[028]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,5})\",\"$1 $2 $3\",[\"2(?:[169]|7[0-35-9])|7\"],\"0$1\"]],\"0\",0,0,0,0,0,0,\"00\"],OM:[\"968\",\"00\",\"(?:1505|[279]\\\\d{3}|500)\\\\d{4}|800\\\\d{5,6}\",[7,8,9],[[\"(\\\\d{3})(\\\\d{4,6})\",\"$1 $2\",[\"[58]\"]],[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"2\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[179]\"]]]],PA:[\"507\",\"00\",\"(?:00800|8\\\\d{3})\\\\d{6}|[68]\\\\d{7}|[1-57-9]\\\\d{6}\",[7,8,10,11],[[\"(\\\\d{3})(\\\\d{4})\",\"$1-$2\",[\"[1-57-9]\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1-$2\",[\"[68]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"8\"]]]],PE:[\"51\",\"00|19(?:1[124]|77|90)00\",\"(?:[14-8]|9\\\\d)\\\\d{7}\",[8,9],[[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"80\"],\"(0$1)\"],[\"(\\\\d)(\\\\d{7})\",\"$1 $2\",[\"1\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"[4-8]\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"9\"]]],\"0\",0,0,0,0,0,0,\"00\",\" Anexo \"],PF:[\"689\",\"00\",\"4\\\\d{5}(?:\\\\d{2})?|8\\\\d{7,8}\",[6,8,9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"44\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"4|8[7-9]\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"8\"]]]],PG:[\"675\",\"00|140[1-3]\",\"(?:180|[78]\\\\d{3})\\\\d{4}|(?:[2-589]\\\\d|64)\\\\d{5}\",[7,8],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"18|[2-69]|85\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[78]\"]]],0,0,0,0,0,0,0,\"00\"],PH:[\"63\",\"00\",\"(?:[2-7]|9\\\\d)\\\\d{8}|2\\\\d{5}|(?:1800|8)\\\\d{7,9}\",[6,8,9,10,11,12,13],[[\"(\\\\d)(\\\\d{5})\",\"$1 $2\",[\"2\"],\"(0$1)\"],[\"(\\\\d{4})(\\\\d{4,6})\",\"$1 $2\",[\"3(?:23|39|46)|4(?:2[3-6]|[35]9|4[26]|76)|544|88[245]|(?:52|64|86)2\",\"3(?:230|397|461)|4(?:2(?:35|[46]4|51)|396|4(?:22|63)|59[347]|76[15])|5(?:221|446)|642[23]|8(?:622|8(?:[24]2|5[13]))\"],\"(0$1)\"],[\"(\\\\d{5})(\\\\d{4})\",\"$1 $2\",[\"346|4(?:27|9[35])|883\",\"3469|4(?:279|9(?:30|56))|8834\"],\"(0$1)\"],[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"2\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[3-7]|8[2-8]\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[89]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"]],[\"(\\\\d{4})(\\\\d{1,2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3 $4\",[\"1\"]]],\"0\"],PK:[\"92\",\"00\",\"122\\\\d{6}|[24-8]\\\\d{10,11}|9(?:[013-9]\\\\d{8,10}|2(?:[01]\\\\d\\\\d|2(?:[06-8]\\\\d|1[01]))\\\\d{7})|(?:[2-8]\\\\d{3}|92(?:[0-7]\\\\d|8[1-9]))\\\\d{6}|[24-9]\\\\d{8}|[89]\\\\d{7}\",[8,9,10,11,12],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{2,7})\",\"$1 $2 $3\",[\"[89]0\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{5})\",\"$1 $2\",[\"1\"]],[\"(\\\\d{3})(\\\\d{6,7})\",\"$1 $2\",[\"2(?:3[2358]|4[2-4]|9[2-8])|45[3479]|54[2-467]|60[468]|72[236]|8(?:2[2-689]|3[23578]|4[3478]|5[2356])|9(?:2[2-8]|3[27-9]|4[2-6]|6[3569]|9[25-8])\",\"9(?:2[3-8]|98)|(?:2(?:3[2358]|4[2-4]|9[2-8])|45[3479]|54[2-467]|60[468]|72[236]|8(?:2[2-689]|3[23578]|4[3478]|5[2356])|9(?:22|3[27-9]|4[2-6]|6[3569]|9[25-7]))[2-9]\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{7,8})\",\"$1 $2\",[\"(?:2[125]|4[0-246-9]|5[1-35-7]|6[1-8]|7[14]|8[16]|91)[2-9]\"],\"(0$1)\"],[\"(\\\\d{5})(\\\\d{5})\",\"$1 $2\",[\"58\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{7})\",\"$1 $2\",[\"3\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"2[125]|4[0-246-9]|5[1-35-7]|6[1-8]|7[14]|8[16]|91\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"[24-9]\"],\"(0$1)\"]],\"0\"],PL:[\"48\",\"00\",\"(?:6|8\\\\d\\\\d)\\\\d{7}|[1-9]\\\\d{6}(?:\\\\d{2})?|[26]\\\\d{5}\",[6,7,8,9,10],[[\"(\\\\d{5})\",\"$1\",[\"19\"]],[\"(\\\\d{3})(\\\\d{3})\",\"$1 $2\",[\"11|20|64\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1 $2 $3\",[\"(?:1[2-8]|2[2-69]|3[2-4]|4[1-468]|5[24-689]|6[1-3578]|7[14-7]|8[1-79]|9[145])1\",\"(?:1[2-8]|2[2-69]|3[2-4]|4[1-468]|5[24-689]|6[1-3578]|7[14-7]|8[1-79]|9[145])19\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2,3})\",\"$1 $2 $3\",[\"64\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"21|39|45|5[0137]|6[0469]|7[02389]|8(?:0[14]|8)\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"1[2-8]|[2-7]|8[1-79]|9[145]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"8\"]]]],PM:[\"508\",\"00\",\"[45]\\\\d{5}|(?:708|8\\\\d\\\\d)\\\\d{6}\",[6,9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"[45]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"7\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"8\"],\"0$1\"]],\"0\"],PR:[\"1\",\"011\",\"(?:[589]\\\\d\\\\d|787)\\\\d{7}\",[10],0,\"1\",0,0,0,0,\"787|939\"],PS:[\"970\",\"00\",\"[2489]2\\\\d{6}|(?:1\\\\d|5)\\\\d{8}\",[8,9,10],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[2489]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"5\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"1\"]]],\"0\"],PT:[\"351\",\"00\",\"1693\\\\d{5}|(?:[26-9]\\\\d|30)\\\\d{7}\",[9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"2[12]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"16|[236-9]\"]]]],PW:[\"680\",\"01[12]\",\"(?:[24-8]\\\\d\\\\d|345|900)\\\\d{4}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[2-9]\"]]]],PY:[\"595\",\"00\",\"59\\\\d{4,6}|9\\\\d{5,10}|(?:[2-46-8]\\\\d|5[0-8])\\\\d{4,7}\",[6,7,8,9,10,11],[[\"(\\\\d{3})(\\\\d{3,6})\",\"$1 $2\",[\"[2-9]0\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"[26]1|3[289]|4[1246-8]|7[1-3]|8[1-36]\"],\"(0$1)\"],[\"(\\\\d{3})(\\\\d{4,5})\",\"$1 $2\",[\"2[279]|3[13-5]|4[359]|5|6(?:[34]|7[1-46-8])|7[46-8]|85\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"2[14-68]|3[26-9]|4[1246-8]|6(?:1|75)|7[1-35]|8[1-36]\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"87\"]],[\"(\\\\d{3})(\\\\d{6})\",\"$1 $2\",[\"9(?:[5-79]|8[1-7])\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[2-8]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"9\"]]],\"0\"],QA:[\"974\",\"00\",\"800\\\\d{4}|(?:2|800)\\\\d{6}|(?:0080|[3-7])\\\\d{7}\",[7,8,9,11],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"2[136]|8\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[3-7]\"]]]],RE:[\"262\",\"00\",\"709\\\\d{6}|(?:26|[689]\\\\d)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[26-9]\"],\"0$1\"]],\"0\",0,0,0,0,0,[[\"26(?:2\\\\d\\\\d|3(?:0\\\\d|1[0-6]))\\\\d{4}\"],[\"(?:69(?:2\\\\d\\\\d|3(?:[06][0-6]|1[0-3]|2[0-2]|3[0-39]|4\\\\d|5[0-5]|7[0-37]|8[0-8]|9[0-479]))|7092[0-3])\\\\d{4}\"],[\"80\\\\d{7}\"],[\"89[1-37-9]\\\\d{6}\"],0,0,0,0,[\"9(?:399[0-3]|479[0-6]|76(?:2[278]|3[0-37]))\\\\d{4}\"],[\"8(?:1[019]|2[0156]|84|90)\\\\d{6}\"]]],RO:[\"40\",\"00\",\"(?:[236-8]\\\\d|90)\\\\d{7}|[23]\\\\d{5}\",[6,9],[[\"(\\\\d{3})(\\\\d{3})\",\"$1 $2\",[\"2[3-6]\",\"2[3-6]\\\\d9\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})\",\"$1 $2\",[\"219|31\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[23]1\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[236-9]\"],\"0$1\"]],\"0\",0,0,0,0,0,0,0,\" int \"],RS:[\"381\",\"00\",\"38[02-9]\\\\d{6,9}|6\\\\d{7,9}|90\\\\d{4,8}|38\\\\d{5,6}|(?:7\\\\d\\\\d|800)\\\\d{3,9}|(?:[12]\\\\d|3[0-79])\\\\d{5,10}\",[6,7,8,9,10,11,12],[[\"(\\\\d{3})(\\\\d{3,9})\",\"$1 $2\",[\"(?:2[389]|39)0|[7-9]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{5,10})\",\"$1 $2\",[\"[1-36]\"],\"0$1\"]],\"0\"],RU:[\"7\",\"810\",\"8\\\\d{13}|[347-9]\\\\d{9}\",[10,14],[[\"(\\\\d{4})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"7(?:1[0-8]|2[1-9])\",\"7(?:1(?:[0-356]2|4[29]|7|8[27])|2(?:1[23]|[2-9]2))\",\"7(?:1(?:[0-356]2|4[29]|7|8[27])|2(?:13[03-69]|62[013-9]))|72[1-57-9]2\"],\"8 ($1)\",1],[\"(\\\\d{5})(\\\\d)(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"7(?:1[0-68]|2[1-9])\",\"7(?:1(?:[06][3-6]|[18]|2[35]|[3-5][3-5])|2(?:[13][3-5]|[24-689]|7[457]))\",\"7(?:1(?:0(?:[356]|4[023])|[18]|2(?:3[013-9]|5)|3[45]|43[013-79]|5(?:3[1-8]|4[1-7]|5)|6(?:3[0-35-9]|[4-6]))|2(?:1(?:3[178]|[45])|[24-689]|3[35]|7[457]))|7(?:14|23)4[0-8]|71(?:33|45)[1-79]\"],\"8 ($1)\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"7\"],\"8 ($1)\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2-$3-$4\",[\"[349]|8(?:[02-7]|1[1-8])\"],\"8 ($1)\",1],[\"(\\\\d{4})(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"8\"],\"8 ($1)\"]],\"8\",0,0,0,0,0,[[\"336(?:[013-9]\\\\d|2[013-9])\\\\d{5}|(?:3(?:0[12]|4[1-35-79]|5[1-3]|65|8[1-58]|9[0145])|4(?:01|1[1356]|2[13467]|7[1-5]|8[1-7]|9[1-689])|8(?:1[1-8]|2[01]|3[13-6]|4[0-8]|5[15-7]|6[0-35-79]|7[1-37-9]))\\\\d{7}\",[10]],[\"9\\\\d{9}\",[10]],[\"8(?:0[04]|108\\\\d{3})\\\\d{7}\"],[\"80[39]\\\\d{7}\",[10]],[\"808\\\\d{7}\",[10]]],\"8~10\"],RW:[\"250\",\"00\",\"(?:06|[27]\\\\d\\\\d|[89]00)\\\\d{6}\",[8,9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"0\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"2\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[7-9]\"],\"0$1\"]],\"0\"],SA:[\"966\",\"00\",\"(?:[15]\\\\d|800|92)\\\\d{7}\",[9,10],[[\"(\\\\d{4})(\\\\d{5})\",\"$1 $2\",[\"9\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"5\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"8\"]]],\"0\"],SB:[\"677\",\"0[01]\",\"[6-9]\\\\d{6}|[1-6]\\\\d{4}\",[5,7],[[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"6[89]|7|8[4-9]|9(?:[1-8]|9[0-8])\"]]]],SC:[\"248\",\"010|0[0-2]\",\"(?:[2489]\\\\d|64)\\\\d{5}\",[7],[[\"(\\\\d)(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[246]|9[57]\"]]],0,0,0,0,0,0,0,\"00\"],SD:[\"249\",\"00\",\"[19]\\\\d{8}\",[9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[19]\"],\"0$1\"]],\"0\"],SE:[\"46\",\"00\",\"(?:[26]\\\\d\\\\d|9)\\\\d{9}|[1-9]\\\\d{8}|[1-689]\\\\d{7}|[1-4689]\\\\d{6}|2\\\\d{5}\",[6,7,8,9,10,12],[[\"(\\\\d{2})(\\\\d{2,3})(\\\\d{2})\",\"$1-$2 $3\",[\"20\"],\"0$1\",0,\"$1 $2 $3\"],[\"(\\\\d{3})(\\\\d{4})\",\"$1-$2\",[\"9(?:00|39|44|9)\"],\"0$1\",0,\"$1 $2\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})\",\"$1-$2 $3\",[\"[12][136]|3[356]|4[0246]|6[03]|90[1-9]\"],\"0$1\",0,\"$1 $2 $3\"],[\"(\\\\d)(\\\\d{2,3})(\\\\d{2})(\\\\d{2})\",\"$1-$2 $3 $4\",[\"8\"],\"0$1\",0,\"$1 $2 $3 $4\"],[\"(\\\\d{3})(\\\\d{2,3})(\\\\d{2})\",\"$1-$2 $3\",[\"1[2457]|2(?:[247-9]|5[0138])|3[0247-9]|4[1357-9]|5[0-35-9]|6(?:[125689]|4[02-57]|7[0-2])|9(?:[125-8]|3[02-5]|4[0-3])\"],\"0$1\",0,\"$1 $2 $3\"],[\"(\\\\d{3})(\\\\d{2,3})(\\\\d{3})\",\"$1-$2 $3\",[\"9(?:00|39|44)\"],\"0$1\",0,\"$1 $2 $3\"],[\"(\\\\d{2})(\\\\d{2,3})(\\\\d{2})(\\\\d{2})\",\"$1-$2 $3 $4\",[\"1[13689]|2[0136]|3[1356]|4[0246]|54|6[03]|90[1-9]\"],\"0$1\",0,\"$1 $2 $3 $4\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1-$2 $3 $4\",[\"10|7\"],\"0$1\",0,\"$1 $2 $3 $4\"],[\"(\\\\d)(\\\\d{3})(\\\\d{3})(\\\\d{2})\",\"$1-$2 $3 $4\",[\"8\"],\"0$1\",0,\"$1 $2 $3 $4\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1-$2 $3 $4\",[\"[13-5]|2(?:[247-9]|5[0138])|6(?:[124-689]|7[0-2])|9(?:[125-8]|3[02-5]|4[0-3])\"],\"0$1\",0,\"$1 $2 $3 $4\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{3})\",\"$1-$2 $3 $4\",[\"9\"],\"0$1\",0,\"$1 $2 $3 $4\"],[\"(\\\\d{3})(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1-$2 $3 $4 $5\",[\"[26]\"],\"0$1\",0,\"$1 $2 $3 $4 $5\"]],\"0\"],SG:[\"65\",\"0[0-3]\\\\d\",\"(?:(?:1\\\\d|8)\\\\d\\\\d|7000)\\\\d{7}|[3689]\\\\d{7}\",[8,10,11],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[369]|8(?:0[1-9]|[1-9])\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"8\"]],[\"(\\\\d{4})(\\\\d{4})(\\\\d{3})\",\"$1 $2 $3\",[\"7\"]],[\"(\\\\d{4})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"1\"]]]],SH:[\"290\",\"00\",\"(?:[256]\\\\d|8)\\\\d{3}\",[4,5],0,0,0,0,0,0,\"[256]\"],SI:[\"386\",\"00|10(?:22|66|88|99)\",\"[1-7]\\\\d{7}|8\\\\d{4,7}|90\\\\d{4,6}\",[5,6,7,8],[[\"(\\\\d{2})(\\\\d{3,6})\",\"$1 $2\",[\"8[09]|9\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"59|8\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[37][01]|4[0139]|51|6\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[1-57]\"],\"(0$1)\"]],\"0\",0,0,0,0,0,0,\"00\"],SJ:[\"47\",\"00\",\"0\\\\d{4}|(?:[489]\\\\d|79)\\\\d{6}\",[5,8],0,0,0,0,0,0,\"79\"],SK:[\"421\",\"00\",\"[2-689]\\\\d{8}|[2-59]\\\\d{6}|[2-5]\\\\d{5}\",[6,7,9],[[\"(\\\\d)(\\\\d{2})(\\\\d{3,4})\",\"$1 $2 $3\",[\"21\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{2})(\\\\d{2,3})\",\"$1 $2 $3\",[\"[3-5][1-8]1\",\"[3-5][1-8]1[67]\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{3})(\\\\d{2})\",\"$1/$2 $3 $4\",[\"2\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[689]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1/$2 $3 $4\",[\"[3-5]\"],\"0$1\"]],\"0\"],SL:[\"232\",\"00\",\"(?:[237-9]\\\\d|66)\\\\d{6}\",[8],[[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"[236-9]\"],\"(0$1)\"]],\"0\"],SM:[\"378\",\"00\",\"(?:0549|[5-7]\\\\d)\\\\d{6}\",[8,10],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[5-7]\"]],[\"(\\\\d{4})(\\\\d{6})\",\"$1 $2\",[\"0\"]]],0,0,\"([89]\\\\d{5})$\",\"0549$1\"],SN:[\"221\",\"00\",\"(?:[378]\\\\d|93)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"8\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[379]\"]]]],SO:[\"252\",\"00\",\"[346-9]\\\\d{8}|[12679]\\\\d{7}|[1-5]\\\\d{6}|[1348]\\\\d{5}\",[6,7,8,9],[[\"(\\\\d{2})(\\\\d{4})\",\"$1 $2\",[\"8[125]\"]],[\"(\\\\d{6})\",\"$1\",[\"[134]\"]],[\"(\\\\d)(\\\\d{6})\",\"$1 $2\",[\"[15]|2[0-79]|3[0-46-8]|4[0-7]\"]],[\"(\\\\d)(\\\\d{7})\",\"$1 $2\",[\"(?:2|90)4|[67]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[348]|64|79|90\"]],[\"(\\\\d{2})(\\\\d{5,7})\",\"$1 $2\",[\"1|28|6[0-35-9]|7[67]|9[2-9]\"]]],\"0\"],SR:[\"597\",\"00\",\"(?:[2-5]|[6-8]\\\\d|90)\\\\d{5}\",[6,7],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1-$2-$3\",[\"56\"]],[\"(\\\\d{3})(\\\\d{3})\",\"$1-$2\",[\"[2-5]\"]],[\"(\\\\d{3})(\\\\d{4})\",\"$1-$2\",[\"[6-9]\"]]]],SS:[\"211\",\"00\",\"[19]\\\\d{8}\",[9],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[19]\"],\"0$1\"]],\"0\"],ST:[\"239\",\"00\",\"(?:22|9\\\\d)\\\\d{5}\",[7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[29]\"]]]],SV:[\"503\",\"00\",\"[267]\\\\d{7}|(?:80\\\\d|900)\\\\d{4}(?:\\\\d{4})?\",[7,8,11],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[89]\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[267]\"]],[\"(\\\\d{3})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"[89]\"]]]],SX:[\"1\",\"011\",\"7215\\\\d{6}|(?:[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"(5\\\\d{6})$|1\",\"721$1\",0,\"721\"],SY:[\"963\",\"00\",\"[1-359]\\\\d{8}|[1-5]\\\\d{7}\",[8,9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[1-4]|5[1-3]\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[59]\"],\"0$1\",1]],\"0\"],SZ:[\"268\",\"00\",\"0800\\\\d{4}|(?:[237]\\\\d|900)\\\\d{6}\",[8,9],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[0237]\"]],[\"(\\\\d{5})(\\\\d{4})\",\"$1 $2\",[\"9\"]]]],TA:[\"290\",\"00\",\"8\\\\d{3}\",[4],0,0,0,0,0,0,\"8\"],TC:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|649|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-479]\\\\d{6})$|1\",\"649$1\",0,\"649\"],TD:[\"235\",\"00|16\",\"(?:22|30|[689]\\\\d|77)\\\\d{6}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[236-9]\"]]],0,0,0,0,0,0,0,\"00\"],TG:[\"228\",\"00\",\"[279]\\\\d{7}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[279]\"]]]],TH:[\"66\",\"00[1-9]\",\"(?:001800|[2-57]|[689]\\\\d)\\\\d{7}|1\\\\d{7,9}\",[8,9,10,13],[[\"(\\\\d)(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"2\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[13-9]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"1\"]]],\"0\"],TJ:[\"992\",\"810\",\"[0-57-9]\\\\d{8}\",[9],[[\"(\\\\d{6})(\\\\d)(\\\\d{2})\",\"$1 $2 $3\",[\"331\",\"3317\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"44[02-479]|[34]7\"]],[\"(\\\\d{4})(\\\\d)(\\\\d{4})\",\"$1 $2 $3\",[\"3(?:[1245]|3[12])\"]],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[0-57-9]\"]]],0,0,0,0,0,0,0,\"8~10\"],TK:[\"690\",\"00\",\"[2-47]\\\\d{3,6}\",[4,5,6,7]],TL:[\"670\",\"00\",\"7\\\\d{7}|(?:[2-47]\\\\d|[89]0)\\\\d{5}\",[7,8],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[2-489]|70\"]],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"7\"]]]],TM:[\"993\",\"810\",\"(?:[1-6]\\\\d|71)\\\\d{6}\",[8],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2-$3-$4\",[\"12\"],\"(8 $1)\"],[\"(\\\\d{3})(\\\\d)(\\\\d{2})(\\\\d{2})\",\"$1 $2-$3-$4\",[\"[1-5]\"],\"(8 $1)\"],[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"[67]\"],\"8 $1\"]],\"8\",0,0,0,0,0,0,\"8~10\"],TN:[\"216\",\"00\",\"[2-57-9]\\\\d{7}\",[8],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[2-57-9]\"]]]],TO:[\"676\",\"00\",\"(?:0800|(?:[5-8]\\\\d\\\\d|999)\\\\d)\\\\d{3}|[2-8]\\\\d{4}\",[5,7],[[\"(\\\\d{2})(\\\\d{3})\",\"$1-$2\",[\"[2-4]|50|6[09]|7[0-24-69]|8[05]\"]],[\"(\\\\d{4})(\\\\d{3})\",\"$1 $2\",[\"0\"]],[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[5-9]\"]]]],TR:[\"90\",\"00\",\"4\\\\d{6}|8\\\\d{11,12}|(?:[2-58]\\\\d\\\\d|900)\\\\d{7}\",[7,10,12,13],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"512|8[01589]|90\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"5(?:[0-59]|61)\",\"5(?:[0-59]|61[06])\",\"5(?:[0-59]|61[06]1)\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[24][1-8]|3[1-9]\"],\"(0$1)\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{6,7})\",\"$1 $2 $3\",[\"80\"],\"0$1\",1]],\"0\"],TT:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-46-8]\\\\d{6})$|1\",\"868$1\",0,\"868\"],TV:[\"688\",\"00\",\"(?:2|7\\\\d\\\\d|90)\\\\d{4}\",[5,6,7],[[\"(\\\\d{2})(\\\\d{3})\",\"$1 $2\",[\"2\"]],[\"(\\\\d{2})(\\\\d{4})\",\"$1 $2\",[\"90\"]],[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"7\"]]]],TW:[\"886\",\"0(?:0[25-79]|19)\",\"[2-689]\\\\d{8}|7\\\\d{9,10}|[2-8]\\\\d{7}|2\\\\d{6}\",[7,8,9,10,11],[[\"(\\\\d{2})(\\\\d)(\\\\d{4})\",\"$1 $2 $3\",[\"202\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[258]0\"],\"0$1\"],[\"(\\\\d)(\\\\d{3,4})(\\\\d{4})\",\"$1 $2 $3\",[\"[23568]|4(?:0[02-48]|[1-47-9])|7[1-9]\",\"[23568]|4(?:0[2-48]|[1-47-9])|(?:400|7)[1-9]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[49]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4,5})\",\"$1 $2 $3\",[\"7\"],\"0$1\"]],\"0\",0,0,0,0,0,0,0,\"#\"],TZ:[\"255\",\"00[056]\",\"(?:[25-8]\\\\d|41|90)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"[89]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[24]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{7})\",\"$1 $2\",[\"5\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[67]\"],\"0$1\"]],\"0\"],UA:[\"380\",\"00\",\"[89]\\\\d{9}|[3-9]\\\\d{8}\",[9,10],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"6[12][29]|(?:3[1-8]|4[136-8]|5[12457]|6[49])2|(?:56|65)[24]\",\"6[12][29]|(?:35|4[1378]|5[12457]|6[49])2|(?:56|65)[24]|(?:3[1-46-8]|46)2[013-9]\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{5})\",\"$1 $2\",[\"3[1-8]|4(?:[1367]|[45][6-9]|8[4-6])|5(?:[1-5]|6[0135689]|7[4-6])|6(?:[12][3-7]|[459])\",\"3[1-8]|4(?:[1367]|[45][6-9]|8[4-6])|5(?:[1-5]|6(?:[015689]|3[02389])|7[4-6])|6(?:[12][3-7]|[459])\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[3-7]|89|9[1-9]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[89]\"],\"0$1\"]],\"0\",0,0,0,0,0,0,\"0~0\"],UG:[\"256\",\"00[057]\",\"800\\\\d{6}|(?:[29]0|[347]\\\\d)\\\\d{7}\",[9],[[\"(\\\\d{4})(\\\\d{5})\",\"$1 $2\",[\"202\",\"2024\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{6})\",\"$1 $2\",[\"[27-9]|4(?:6[45]|[7-9])\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{7})\",\"$1 $2\",[\"[34]\"],\"0$1\"]],\"0\"],US:[\"1\",\"011\",\"[2-9]\\\\d{9}|3\\\\d{6}\",[10],[[\"(\\\\d{3})(\\\\d{4})\",\"$1-$2\",[\"310\"],0,1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"($1) $2-$3\",[\"[2-9]\"],0,1,\"$1-$2-$3\"]],\"1\",0,0,0,0,0,[[\"3052(?:0[0-8]|[1-9]\\\\d)\\\\d{4}|(?:2742|305[3-9])\\\\d{6}|(?:472|983)[2-47-9]\\\\d{6}|(?:2(?:0[1-35-9]|1[02-9]|2[03-57-9]|3[1459]|4[08]|5[1-46]|6[0279]|7[0269]|8[13])|3(?:0[1-47-9]|1[02-9]|2[0135-79]|3[0-24679]|4[167]|5[0-2]|6[01349]|8[056])|4(?:0[124-9]|1[02-579]|2[3-5]|3[0245]|4[023578]|58|6[349]|7[0589]|8[04])|5(?:0[1-57-9]|1[0235-8]|20|3[0149]|4[01]|5[179]|6[1-47]|7[0-5]|8[0256])|6(?:0[1-35-9]|1[024-9]|2[03689]|3[016]|4[0156]|5[01679]|6[0-279]|78|8[0-269])|7(?:0[1-46-8]|1[2-9]|2[04-8]|3[0-247]|4[0378]|5[47]|6[02359]|7[0-59]|8[156])|8(?:0[1-68]|1[02-8]|2[0168]|3[0-2589]|4[03578]|5[046-9]|6[02-5]|7[028])|9(?:0[1346-9]|1[02-9]|2[0589]|3[0146-8]|4[01357-9]|5[12469]|7[0-3589]|8[04-69]))[2-9]\\\\d{6}\"],[\"\"],[\"8(?:00|33|44|55|66|77|88)[2-9]\\\\d{6}\"],[\"900[2-9]\\\\d{6}\"],[\"52(?:3(?:[2-46-9][02-9]\\\\d|5(?:[02-46-9]\\\\d|5[0-46-9]))|4(?:[2-478][02-9]\\\\d|5(?:[034]\\\\d|2[024-9]|5[0-46-9])|6(?:0[1-9]|[2-9]\\\\d)|9(?:[05-9]\\\\d|2[0-5]|49)))\\\\d{4}|52[34][2-9]1[02-9]\\\\d{4}|5(?:00|2[125-9]|33|44|66|77|88)[2-9]\\\\d{6}\"],0,0,0,[\"305209\\\\d{4}\"]]],UY:[\"598\",\"0(?:0|1[3-9]\\\\d)\",\"0004\\\\d{2,9}|[1249]\\\\d{7}|2\\\\d{3,4}|(?:[49]\\\\d|80)\\\\d{5}\",[4,5,6,7,8,9,10,11,12,13],[[\"(\\\\d{4,5})\",\"$1\",[\"21\"]],[\"(\\\\d{3})(\\\\d{3,4})\",\"$1 $2\",[\"0\"]],[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[49]0|8\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"9\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[124]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{2,4})\",\"$1 $2 $3\",[\"0\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})(\\\\d{2,4})\",\"$1 $2 $3 $4\",[\"0\"]]],\"0\",0,0,0,0,0,0,\"00\",\" int. \"],UZ:[\"998\",\"00\",\"(?:20|33|[5-9]\\\\d)\\\\d{7}\",[9],[[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"[235-9]\"]]]],VA:[\"39\",\"00\",\"0\\\\d{5,10}|3[0-8]\\\\d{7,10}|55\\\\d{8}|8\\\\d{5}(?:\\\\d{2,4})?|(?:1\\\\d|39)\\\\d{7,8}\",[6,7,8,9,10,11,12],0,0,0,0,0,0,\"06698\"],VC:[\"1\",\"011\",\"(?:[58]\\\\d\\\\d|784|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-7]\\\\d{6})$|1\",\"784$1\",0,\"784\"],VE:[\"58\",\"00\",\"[68]00\\\\d{7}|(?:[24]\\\\d|[59]0)\\\\d{8}\",[10],[[\"(\\\\d{3})(\\\\d{7})\",\"$1-$2\",[\"[24-689]\"],\"0$1\"]],\"0\"],VG:[\"1\",\"011\",\"(?:284|[58]\\\\d\\\\d|900)\\\\d{7}\",[10],0,\"1\",0,\"([2-578]\\\\d{6})$|1\",\"284$1\",0,\"284\"],VI:[\"1\",\"011\",\"[58]\\\\d{9}|(?:34|90)0\\\\d{7}\",[10],0,\"1\",0,\"([2-9]\\\\d{6})$|1\",\"340$1\",0,\"340\"],VN:[\"84\",\"00\",\"[12]\\\\d{9}|[135-9]\\\\d{8}|[16]\\\\d{7}|[16-8]\\\\d{6}\",[7,8,9,10],[[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"80\"],\"0$1\",1],[\"(\\\\d{4})(\\\\d{4,6})\",\"$1 $2\",[\"1\"],0,1],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"6\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[357-9]\"],\"0$1\",1],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"2[48]\"],\"0$1\",1],[\"(\\\\d{3})(\\\\d{4})(\\\\d{3})\",\"$1 $2 $3\",[\"2\"],\"0$1\",1]],\"0\"],VU:[\"678\",\"00\",\"[57-9]\\\\d{6}|(?:[238]\\\\d|48)\\\\d{3}\",[5,7],[[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"[57-9]\"]]]],WF:[\"681\",\"00\",\"(?:40|72|8\\\\d{4})\\\\d{4}|[89]\\\\d{5}\",[6,9],[[\"(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3\",[\"[47-9]\"]],[\"(\\\\d{3})(\\\\d{2})(\\\\d{2})(\\\\d{2})\",\"$1 $2 $3 $4\",[\"8\"]]]],WS:[\"685\",\"0\",\"(?:[2-6]|8\\\\d{5})\\\\d{4}|[78]\\\\d{6}|[68]\\\\d{5}\",[5,6,7,10],[[\"(\\\\d{5})\",\"$1\",[\"[2-5]|6[1-9]\"]],[\"(\\\\d{3})(\\\\d{3,7})\",\"$1 $2\",[\"[68]\"]],[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"7\"]]]],XK:[\"383\",\"00\",\"2\\\\d{7,8}|3\\\\d{7,11}|(?:4\\\\d\\\\d|[89]00)\\\\d{5}\",[8,9,10,11,12],[[\"(\\\\d{3})(\\\\d{5})\",\"$1 $2\",[\"[89]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[2-4]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"2|39\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{7,10})\",\"$1 $2\",[\"3\"],\"0$1\"]],\"0\"],YE:[\"967\",\"00\",\"(?:1|7\\\\d)\\\\d{7}|[1-7]\\\\d{6}\",[7,8,9],[[\"(\\\\d)(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"[1-6]|7(?:[24-6]|8[0-7])\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"7\"],\"0$1\"]],\"0\"],YT:[\"262\",\"00\",\"7093\\\\d{5}|(?:80|9\\\\d)\\\\d{7}|(?:26|63)9\\\\d{6}\",[9],0,\"0\",0,0,0,0,0,[[\"269(?:0[0-467]|15|5[0-4]|6\\\\d|[78]0)\\\\d{4}\"],[\"(?:639(?:0[0-79]|1[019]|[267]\\\\d|3[09]|40|5[05-9]|9[04-79])|7093[5-7])\\\\d{4}\"],[\"80\\\\d{7}\"],0,0,0,0,0,[\"9(?:(?:39|47)8[01]|769\\\\d)\\\\d{4}\"]]],ZA:[\"27\",\"00\",\"[1-79]\\\\d{8}|8\\\\d{4,9}\",[5,6,7,8,9,10],[[\"(\\\\d{2})(\\\\d{3,4})\",\"$1 $2\",[\"8[1-4]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{2,3})\",\"$1 $2 $3\",[\"8[1-4]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"860\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"[1-9]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"8\"],\"0$1\"]],\"0\"],ZM:[\"260\",\"00\",\"800\\\\d{6}|(?:21|[579]\\\\d|63)\\\\d{7}\",[9],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[28]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{7})\",\"$1 $2\",[\"[579]\"],\"0$1\"]],\"0\"],ZW:[\"263\",\"00\",\"2(?:[0-57-9]\\\\d{6,8}|6[0-24-9]\\\\d{6,7})|[38]\\\\d{9}|[35-8]\\\\d{8}|[3-6]\\\\d{7}|[1-689]\\\\d{6}|[1-3569]\\\\d{5}|[1356]\\\\d{4}\",[5,6,7,8,9,10],[[\"(\\\\d{3})(\\\\d{3,5})\",\"$1 $2\",[\"2(?:0[45]|2[278]|[49]8)|3(?:[09]8|17)|6(?:[29]8|37|75)|[23][78]|(?:33|5[15]|6[68])[78]\"],\"0$1\"],[\"(\\\\d)(\\\\d{3})(\\\\d{2,4})\",\"$1 $2 $3\",[\"[49]\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{4})\",\"$1 $2\",[\"80\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{7})\",\"$1 $2\",[\"24|8[13-59]|(?:2[05-79]|39|5[45]|6[15-8])2\",\"2(?:02[014]|4|[56]20|[79]2)|392|5(?:42|525)|6(?:[16-8]21|52[013])|8[13-59]\"],\"(0$1)\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"7\"],\"0$1\"],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"2(?:1[39]|2[0157]|[378]|[56][14])|3(?:12|29)\",\"2(?:1[39]|2[0157]|[378]|[56][14])|3(?:123|29)\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{6})\",\"$1 $2\",[\"8\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3,5})\",\"$1 $2\",[\"1|2(?:0[0-36-9]|12|29|[56])|3(?:1[0-689]|[24-6])|5(?:[0236-9]|1[2-4])|6(?:[013-59]|7[0-46-9])|(?:33|55|6[68])[0-69]|(?:29|3[09]|62)[0-79]\"],\"0$1\"],[\"(\\\\d{2})(\\\\d{3})(\\\\d{3,4})\",\"$1 $2 $3\",[\"29[013-9]|39|54\"],\"0$1\"],[\"(\\\\d{4})(\\\\d{3,5})\",\"$1 $2\",[\"(?:25|54)8\",\"258|5483\"],\"0$1\"]],\"0\"]},nonGeographic:{800:[\"800\",0,\"(?:00|[1-9]\\\\d)\\\\d{6}\",[8],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"\\\\d\"]]],0,0,0,0,0,0,[0,0,[\"(?:00|[1-9]\\\\d)\\\\d{6}\"]]],808:[\"808\",0,\"[1-9]\\\\d{7}\",[8],[[\"(\\\\d{4})(\\\\d{4})\",\"$1 $2\",[\"[1-9]\"]]],0,0,0,0,0,0,[0,0,0,0,0,0,0,0,0,[\"[1-9]\\\\d{7}\"]]],870:[\"870\",0,\"7\\\\d{11}|[235-7]\\\\d{8}\",[9,12],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"[235-7]\"]]],0,0,0,0,0,0,[0,[\"(?:[356]|774[45])\\\\d{8}|7[6-8]\\\\d{7}\"],0,0,0,0,0,0,[\"2\\\\d{8}\",[9]]]],878:[\"878\",0,\"10\\\\d{10}\",[12],[[\"(\\\\d{2})(\\\\d{5})(\\\\d{5})\",\"$1 $2 $3\",[\"1\"]]],0,0,0,0,0,0,[0,0,0,0,0,0,0,0,[\"10\\\\d{10}\"]]],881:[\"881\",0,\"6\\\\d{9}|[0-36-9]\\\\d{8}\",[9,10],[[\"(\\\\d)(\\\\d{3})(\\\\d{5})\",\"$1 $2 $3\",[\"[0-37-9]\"]],[\"(\\\\d)(\\\\d{3})(\\\\d{5,6})\",\"$1 $2 $3\",[\"6\"]]],0,0,0,0,0,0,[0,[\"6\\\\d{9}|[0-36-9]\\\\d{8}\"]]],882:[\"882\",0,\"[13]\\\\d{6}(?:\\\\d{2,5})?|[19]\\\\d{7}|(?:[25]\\\\d\\\\d|4)\\\\d{7}(?:\\\\d{2})?\",[7,8,9,10,11,12],[[\"(\\\\d{2})(\\\\d{5})\",\"$1 $2\",[\"16|342\"]],[\"(\\\\d{2})(\\\\d{6})\",\"$1 $2\",[\"49\"]],[\"(\\\\d{2})(\\\\d{2})(\\\\d{4})\",\"$1 $2 $3\",[\"1[36]|9\"]],[\"(\\\\d{2})(\\\\d{4})(\\\\d{3})\",\"$1 $2 $3\",[\"3[23]\"]],[\"(\\\\d{2})(\\\\d{3,4})(\\\\d{4})\",\"$1 $2 $3\",[\"16\"]],[\"(\\\\d{2})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"10|23|3(?:[15]|4[57])|4|51\"]],[\"(\\\\d{3})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"34\"]],[\"(\\\\d{2})(\\\\d{4,5})(\\\\d{5})\",\"$1 $2 $3\",[\"[1-35]\"]]],0,0,0,0,0,0,[0,[\"342\\\\d{4}|(?:337|49)\\\\d{6}|(?:3(?:2|47|7\\\\d{3})|50\\\\d{3})\\\\d{7}\",[7,8,9,10,12]],0,0,0,[\"348[57]\\\\d{7}\",[11]],0,0,[\"1(?:3(?:0[0347]|[13][0139]|2[035]|4[013568]|6[0459]|7[06]|8[15-8]|9[0689])\\\\d{4}|6\\\\d{5,10})|(?:345\\\\d|9[89])\\\\d{6}|(?:10|2(?:3|85\\\\d)|3(?:[15]|[69]\\\\d\\\\d)|4[15-8]|51)\\\\d{8}\"]]],883:[\"883\",0,\"(?:[1-4]\\\\d|51)\\\\d{6,10}\",[8,9,10,11,12],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{2,8})\",\"$1 $2 $3\",[\"[14]|2[24-689]|3[02-689]|51[24-9]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3\",[\"510\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{4})\",\"$1 $2 $3\",[\"21\"]],[\"(\\\\d{4})(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"51[13]\"]],[\"(\\\\d{3})(\\\\d{3})(\\\\d{3})(\\\\d{3})\",\"$1 $2 $3 $4\",[\"[235]\"]]],0,0,0,0,0,0,[0,0,0,0,0,0,0,0,[\"(?:2(?:00\\\\d\\\\d|10)|(?:370[1-9]|51\\\\d0)\\\\d)\\\\d{7}|51(?:00\\\\d{5}|[24-9]0\\\\d{4,7})|(?:1[0-79]|2[24-689]|3[02-689]|4[0-4])0\\\\d{5,9}\"]]],888:[\"888\",0,\"\\\\d{11}\",[11],[[\"(\\\\d{3})(\\\\d{3})(\\\\d{5})\",\"$1 $2 $3\"]],0,0,0,0,0,0,[0,0,0,0,0,0,[\"\\\\d{11}\"]]],979:[\"979\",0,\"[1359]\\\\d{8}\",[9],[[\"(\\\\d)(\\\\d{4})(\\\\d{4})\",\"$1 $2 $3\",[\"[1359]\"]]],0,0,0,0,0,0,[0,0,0,[\"[1359]\\\\d{8}\"]]]}};function _(e,t){var r=Array.prototype.slice.call(t);return r.push(Ft),e.apply(this,r)}function Yt(e,t){e=e.split(\"-\"),t=t.split(\"-\");for(var r=e[0].split(\".\"),n=t[0].split(\".\"),i=0;i<3;i++){var o=Number(r[i]),a=Number(n[i]);if(o>a)return 1;if(a>o)return-1;if(!isNaN(o)&&isNaN(a))return 1;if(isNaN(o)&&!isNaN(a))return-1}return e[1]&&t[1]?e[1]>t[1]?1:e[1]<t[1]?-1:0:!e[1]&&t[1]?1:e[1]&&!t[1]?-1:0}var Xn={}.constructor;function A(e){return e!=null&&e.constructor===Xn}function k(e){\"@babel/helpers - typeof\";return k=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},k(e)}function xt(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function hr(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,Yn(n.key),n)}}function St(e,t,r){return t&&hr(e.prototype,t),r&&hr(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function Yn(e){var t=Zn(e,\"string\");return k(t)==\"symbol\"?t:t+\"\"}function Zn(e,t){if(k(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(k(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}var Jn=\"1.2.0\",zn=\"1.7.35\",gr=\" ext. \",qn=/^\\d+$/,f=function(){function e(t){xt(this,e),Zt(t),this.metadata=t,vr.call(this,t)}return St(e,[{key:\"getCountries\",value:function(){return Object.keys(this.metadata.countries).filter(function(r){return r!==\"001\"})}},{key:\"getCountryMetadata\",value:function(r){return this.metadata.countries[r]}},{key:\"nonGeographic\",value:function(){if(!(this.v1||this.v2||this.v3))return this.metadata.nonGeographic||this.metadata.nonGeographical}},{key:\"hasCountry\",value:function(r){return this.getCountryMetadata(r)!==void 0}},{key:\"hasCallingCode\",value:function(r){if(this.getCountryCodesForCallingCode(r))return!0;if(this.nonGeographic()){if(this.nonGeographic()[r])return!0}else{var n=this.countryCallingCodes()[r];if(n&&n.length===1&&n[0]===\"001\")return!0}}},{key:\"isNonGeographicCallingCode\",value:function(r){return this.nonGeographic()?!!this.nonGeographic()[r]:!this.getCountryCodesForCallingCode(r)}},{key:\"country\",value:function(r){return this.selectNumberingPlan(r)}},{key:\"selectNumberingPlan\",value:function(r,n){if(r&&qn.test(r)&&(n=r,r=null),r&&r!==\"001\"){if(!this.hasCountry(r))throw new Error(\"Unknown country: \".concat(r));this.numberingPlan=new yr(this.getCountryMetadata(r),this)}else if(n){if(!this.hasCallingCode(n))throw new Error(\"Unknown calling code: \".concat(n));this.numberingPlan=new yr(this.getNumberingPlanMetadata(n),this)}else this.numberingPlan=void 0;return this}},{key:\"getCountryCodesForCallingCode\",value:function(r){var n=this.countryCallingCodes()[r];if(n)return n.length===1&&n[0].length===3?void 0:n}},{key:\"getCountryCodeForCallingCode\",value:function(r){var n=this.getCountryCodesForCallingCode(r);if(n)return n[0]}},{key:\"getNumberingPlanMetadata\",value:function(r){var n=this.getCountryCodeForCallingCode(r);if(n)return this.getCountryMetadata(n);if(this.nonGeographic()){var i=this.nonGeographic()[r];if(i)return i}else{var o=this.countryCallingCodes()[r];if(o&&o.length===1&&o[0]===\"001\")return this.metadata.countries[\"001\"]}}},{key:\"countryCallingCode\",value:function(){return this.numberingPlan.callingCode()}},{key:\"IDDPrefix\",value:function(){return this.numberingPlan.IDDPrefix()}},{key:\"defaultIDDPrefix\",value:function(){return this.numberingPlan.defaultIDDPrefix()}},{key:\"nationalNumberPattern\",value:function(){return this.numberingPlan.nationalNumberPattern()}},{key:\"possibleLengths\",value:function(){return this.numberingPlan.possibleLengths()}},{key:\"formats\",value:function(){return this.numberingPlan.formats()}},{key:\"nationalPrefixForParsing\",value:function(){return this.numberingPlan.nationalPrefixForParsing()}},{key:\"nationalPrefixTransformRule\",value:function(){return this.numberingPlan.nationalPrefixTransformRule()}},{key:\"leadingDigits\",value:function(){return this.numberingPlan.leadingDigits()}},{key:\"hasTypes\",value:function(){return this.numberingPlan.hasTypes()}},{key:\"type\",value:function(r){return this.numberingPlan.type(r)}},{key:\"ext\",value:function(){return this.numberingPlan.ext()}},{key:\"countryCallingCodes\",value:function(){return this.v1?this.metadata.country_phone_code_to_countries:this.metadata.country_calling_codes}},{key:\"chooseCountryByCountryCallingCode\",value:function(r){return this.selectNumberingPlan(r)}},{key:\"hasSelectedNumberingPlan\",value:function(){return this.numberingPlan!==void 0}}])}();var yr=function(){function e(t,r){xt(this,e),this.globalMetadataObject=r,this.metadata=t,vr.call(this,r.metadata)}return St(e,[{key:\"callingCode\",value:function(){return this.metadata[0]}},{key:\"getDefaultCountryMetadataForRegion\",value:function(){return this.globalMetadataObject.getNumberingPlanMetadata(this.callingCode())}},{key:\"IDDPrefix\",value:function(){if(!(this.v1||this.v2))return this.metadata[1]}},{key:\"defaultIDDPrefix\",value:function(){if(!(this.v1||this.v2))return this.metadata[12]}},{key:\"nationalNumberPattern\",value:function(){return this.v1||this.v2?this.metadata[1]:this.metadata[2]}},{key:\"possibleLengths\",value:function(){if(!this.v1)return this.metadata[this.v2?2:3]}},{key:\"_getFormats\",value:function(r){return r[this.v1?2:this.v2?3:4]}},{key:\"formats\",value:function(){var r=this,n=this._getFormats(this.metadata)||this._getFormats(this.getDefaultCountryMetadataForRegion())||[];return n.map(function(i){return new Qn(i,r)})}},{key:\"nationalPrefix\",value:function(){return this.metadata[this.v1?3:this.v2?4:5]}},{key:\"_getNationalPrefixFormattingRule\",value:function(r){return r[this.v1?4:this.v2?5:6]}},{key:\"nationalPrefixFormattingRule\",value:function(){return this._getNationalPrefixFormattingRule(this.metadata)||this._getNationalPrefixFormattingRule(this.getDefaultCountryMetadataForRegion())}},{key:\"_nationalPrefixForParsing\",value:function(){return this.metadata[this.v1?5:this.v2?6:7]}},{key:\"nationalPrefixForParsing\",value:function(){return this._nationalPrefixForParsing()||this.nationalPrefix()}},{key:\"nationalPrefixTransformRule\",value:function(){return this.metadata[this.v1?6:this.v2?7:8]}},{key:\"_getNationalPrefixIsOptionalWhenFormatting\",value:function(){return!!this.metadata[this.v1?7:this.v2?8:9]}},{key:\"nationalPrefixIsOptionalWhenFormattingInNationalFormat\",value:function(){return this._getNationalPrefixIsOptionalWhenFormatting(this.metadata)||this._getNationalPrefixIsOptionalWhenFormatting(this.getDefaultCountryMetadataForRegion())}},{key:\"leadingDigits\",value:function(){return this.metadata[this.v1?8:this.v2?9:10]}},{key:\"types\",value:function(){return this.metadata[this.v1?9:this.v2?10:11]}},{key:\"hasTypes\",value:function(){return this.types()&&this.types().length===0?!1:!!this.types()}},{key:\"type\",value:function(r){if(this.hasTypes()&&Cr(this.types(),r))return new ei(Cr(this.types(),r),this)}},{key:\"ext\",value:function(){return this.v1||this.v2?gr:this.metadata[13]||gr}}])}(),Qn=function(){function e(t,r){xt(this,e),this._format=t,this.metadata=r}return St(e,[{key:\"pattern\",value:function(){return this._format[0]}},{key:\"format\",value:function(){return this._format[1]}},{key:\"leadingDigitsPatterns\",value:function(){return this._format[2]||[]}},{key:\"nationalPrefixFormattingRule\",value:function(){return this._format[3]||this.metadata.nationalPrefixFormattingRule()}},{key:\"nationalPrefixIsOptionalWhenFormattingInNationalFormat\",value:function(){return!!this._format[4]||this.metadata.nationalPrefixIsOptionalWhenFormattingInNationalFormat()}},{key:\"nationalPrefixIsMandatoryWhenFormattingInNationalFormat\",value:function(){return this.usesNationalPrefix()&&!this.nationalPrefixIsOptionalWhenFormattingInNationalFormat()}},{key:\"usesNationalPrefix\",value:function(){return!!(this.nationalPrefixFormattingRule()&&!ti.test(this.nationalPrefixFormattingRule()))}},{key:\"internationalFormat\",value:function(){return this._format[5]||this.format()}}])}(),ti=/^\\(?\\$1\\)?$/,ei=function(){function e(t,r){xt(this,e),this.type=t,this.metadata=r}return St(e,[{key:\"pattern\",value:function(){return this.metadata.v1?this.type:this.type[0]}},{key:\"possibleLengths\",value:function(){if(!this.metadata.v1)return this.type[1]||this.metadata.possibleLengths()}}])}();function Cr(e,t){switch(t){case\"FIXED_LINE\":return e[0];case\"MOBILE\":return e[1];case\"TOLL_FREE\":return e[2];case\"PREMIUM_RATE\":return e[3];case\"PERSONAL_NUMBER\":return e[4];case\"VOICEMAIL\":return e[5];case\"UAN\":return e[6];case\"PAGER\":return e[7];case\"VOIP\":return e[8];case\"SHARED_COST\":return e[9]}}function Zt(e){if(!e)throw new Error(\"[libphonenumber-js] `metadata` argument not passed. Check your arguments.\");if(!A(e)||!A(e.countries))throw new Error(\"[libphonenumber-js] `metadata` argument was passed but it's not a valid metadata. Must be an object having `.countries` child object property. Got \".concat(A(e)?\"an object of shape: { \"+Object.keys(e).join(\", \")+\" }\":\"a \"+ri(e)+\": \"+e,\".\"))}var ri=function(t){return k(t)};function F(e,t){if(t=new f(t),t.hasCountry(e))return t.selectNumberingPlan(e).countryCallingCode();throw new Error(\"Unknown country: \".concat(e))}function K(e,t){return t.countries.hasOwnProperty(e)}function vr(e){var t=e.version;typeof t==\"number\"?(this.v1=t===1,this.v2=t===2,this.v3=t===3,this.v4=t===4):t?Yt(t,Jn)===-1?this.v2=!0:Yt(t,zn)===-1?this.v3=!0:this.v4=!0:this.v1=!0}function ni(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=ii(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function ii(e,t){if(e){if(typeof e==\"string\")return br(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?br(e,t):void 0}}function br(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}function Jt(e,t){for(var r=e.slice(),n=ni(t),i;!(i=n()).done;){var o=i.value;e.indexOf(o)<0&&r.push(o)}return r.sort(function(a,u){return a-u})}function T(e,t,r){return Ar(e,t,void 0,r)}function Ar(e,t,r,n){t&&(n=new f(n.metadata),n.selectNumberingPlan(t));var i=n.type(r),o=i&&i.possibleLengths()||n.possibleLengths();if(!o)return\"IS_POSSIBLE\";if(r===\"FIXED_LINE_OR_MOBILE\"){if(!n.type(\"FIXED_LINE\"))return Ar(e,t,\"MOBILE\",n);var a=n.type(\"MOBILE\");a&&(o=Jt(o,a.possibleLengths()))}else if(r&&!i)return\"INVALID_LENGTH\";var u=e.length,d=o[0];return d===u?\"IS_POSSIBLE\":d>u?\"TOO_SHORT\":o[o.length-1]<u?\"TOO_LONG\":o.indexOf(u,1)>=0?\"IS_POSSIBLE\":\"INVALID_LENGTH\"}function zt(e,t,r){if(t===void 0&&(t={}),r=new f(r),t.v2){if(!e.countryCallingCode)throw new Error(\"Invalid phone number object passed\");r.selectNumberingPlan(e.countryCallingCode)}else{if(!e.phone)return!1;if(e.country){if(!r.hasCountry(e.country))throw new Error(\"Unknown country: \".concat(e.country));r.selectNumberingPlan(e.country)}else{if(!e.countryCallingCode)throw new Error(\"Invalid phone number object passed\");r.selectNumberingPlan(e.countryCallingCode)}}if(r.possibleLengths())return qt(e.phone||e.nationalNumber,e.country,r);if(e.countryCallingCode&&r.isNonGeographicCallingCode(e.countryCallingCode))return!0;throw new Error('Missing \"possibleLengths\" in metadata. Perhaps the metadata has been generated before v1.0.18.')}function qt(e,t,r){switch(T(e,t,r)){case\"IS_POSSIBLE\":return!0;default:return!1}}function g(e,t){return e=e||\"\",new RegExp(\"^(?:\"+t+\")$\").test(e)}function oi(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=ai(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function ai(e,t){if(e){if(typeof e==\"string\")return Nr(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?Nr(e,t):void 0}}function Nr(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}var ui=[\"MOBILE\",\"PREMIUM_RATE\",\"TOLL_FREE\",\"SHARED_COST\",\"VOIP\",\"PERSONAL_NUMBER\",\"PAGER\",\"UAN\",\"VOICEMAIL\"];function O(e,t,r){if(t=t||{},!(!e.country&&!e.countryCallingCode)){r=new f(r),r.selectNumberingPlan(e.country,e.countryCallingCode);var n=t.v2?e.nationalNumber:e.phone;if(g(n,r.nationalNumberPattern())){if(Qt(n,\"FIXED_LINE\",r))return r.type(\"MOBILE\")&&r.type(\"MOBILE\").pattern()===\"\"||!r.type(\"MOBILE\")||Qt(n,\"MOBILE\",r)?\"FIXED_LINE_OR_MOBILE\":\"FIXED_LINE\";for(var i=oi(ui),o;!(o=i()).done;){var a=o.value;if(Qt(n,a,r))return a}}}}function Qt(e,t,r){return t=r.type(t),!t||!t.pattern()||t.possibleLengths()&&t.possibleLengths().indexOf(e.length)<0?!1:g(e,t.pattern())}function te(e,t,r){if(t=t||{},r=new f(r),r.selectNumberingPlan(e.country,e.countryCallingCode),r.hasTypes())return O(e,t,r.metadata)!==void 0;var n=t.v2?e.nationalNumber:e.phone;return g(n,r.nationalNumberPattern())}function ee(e,t,r){var n=new f(r),i=n.getCountryCodesForCallingCode(e);return i?i.filter(function(o){return di(t,o,r)}):[]}function di(e,t,r){var n=new f(r);return n.selectNumberingPlan(t),n.numberingPlan.possibleLengths().indexOf(e.length)>=0}var X=2,_t=17,Tt=3,p=\"0-9\\uFF10-\\uFF19\\u0660-\\u0669\\u06F0-\\u06F9\",li=\"-\\u2010-\\u2015\\u2212\\u30FC\\uFF0D\",si=\"\\uFF0F/\",fi=\"\\uFF0E.\",$i=\" \\xA0\\xAD\\u200B\\u2060\\u3000\",ci=\"()\\uFF08\\uFF09\\uFF3B\\uFF3D\\\\[\\\\]\",mi=\"~\\u2053\\u223C\\uFF5E\",h=\"\".concat(li).concat(si).concat(fi).concat($i).concat(ci).concat(mi),I=\"+\\uFF0B\";var pi=new RegExp(\"([\"+p+\"])\");function Y(e,t,r,n){if(t){var i=new f(n);i.selectNumberingPlan(t,r);var o=new RegExp(i.IDDPrefix());if(e.search(o)===0){e=e.slice(e.match(o)[0].length);var a=e.match(pi);if(!(a&&a[1]!=null&&a[1].length>0&&a[1]===\"0\"))return e}}}function j(e,t){if(e&&t.numberingPlan.nationalPrefixForParsing()){var r=new RegExp(\"^(?:\"+t.numberingPlan.nationalPrefixForParsing()+\")\"),n=r.exec(e);if(n){var i,o,a=n.length-1,u=a>0&&n[a];if(t.nationalPrefixTransformRule()&&u)i=e.replace(r,t.nationalPrefixTransformRule()),a>1&&(o=n[1]);else{var d=n[0];i=e.slice(d.length),u&&(o=n[1])}var l;if(u){var s=e.indexOf(n[1]),c=e.slice(0,s);c===t.numberingPlan.nationalPrefix()&&(l=t.numberingPlan.nationalPrefix())}else l=n[0];return{nationalNumber:i,nationalPrefix:l,carrierCode:o}}}return{nationalNumber:e}}function hi(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=gi(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function gi(e,t){if(e){if(typeof e==\"string\")return Pr(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?Pr(e,t):void 0}}function Pr(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}function Z(e,t){var r=t.countries,n=t.metadata;n=new f(n);for(var i=hi(r),o;!(o=i()).done;){var a=o.value;if(n.selectNumberingPlan(a),n.leadingDigits()){if(e&&e.search(n.leadingDigits())===0)return a}else if(O({phone:e,country:a},void 0,n.metadata))return a}}var yi=!1;function D(e,t){var r=t.nationalNumber,n=t.metadata;if(yi&&n.isNonGeographicCallingCode(e))return\"001\";var i=n.getCountryCodesForCallingCode(e);if(i)return i.length===1?i[0]:Z(r,{countries:i,metadata:n.metadata})}function G(e,t,r){var n=j(e,r),i=n.carrierCode,o=n.nationalNumber;if(o!==e){if(!Ci(e,o,r))return{nationalNumber:e};if(r.numberingPlan.possibleLengths()&&(t||(t=D(r.numberingPlan.callingCode(),{nationalNumber:o,metadata:r})),!vi(o,t,r)))return{nationalNumber:e}}return{nationalNumber:o,carrierCode:i}}function Ci(e,t,r){return!(g(e,r.nationalNumberPattern())&&!g(t,r.nationalNumberPattern()))}function vi(e,t,r){switch(T(e,t,r)){case\"TOO_SHORT\":case\"INVALID_LENGTH\":return!1;default:return!0}}function J(e,t,r,n,i){var o=t||r?F(t||r,i):n;if(e.indexOf(o)===0){i=new f(i),i.selectNumberingPlan(t||r,o);var a=e.slice(o.length),u=G(a,t,i),d=u.nationalNumber,l=G(e,t,i),s=l.nationalNumber;if(!g(s,i.nationalNumberPattern())&&g(d,i.nationalNumberPattern())||T(s,t,i)===\"TOO_LONG\")return{countryCallingCode:o,number:a}}return{number:e}}function w(e,t,r,n,i){if(!e)return{};var o;if(e[0]!==\"+\"){var a=Y(e,t||r,n,i);if(a&&a!==e)o=!0,e=\"+\"+a;else{if(t||r||n){var u=J(e,t,r,n,i),d=u.countryCallingCode,l=u.number;if(d)return{countryCallingCodeSource:\"FROM_NUMBER_WITHOUT_PLUS_SIGN\",countryCallingCode:d,number:l}}return{number:e}}}if(e[1]===\"0\")return{};i=new f(i);for(var s=2;s-1<=Tt&&s<=e.length;){var c=e.slice(1,s);if(i.hasCallingCode(c))return i.selectNumberingPlan(c),{countryCallingCodeSource:o?\"FROM_NUMBER_WITH_IDD\":\"FROM_NUMBER_WITH_PLUS_SIGN\",countryCallingCode:c,number:e.slice(s)};s++}return{}}function z(e){return e.replace(new RegExp(\"[\".concat(h,\"]+\"),\"g\"),\" \").trim()}var re=/(\\$\\d)/;function q(e,t,r){var n=r.useInternationalFormat,i=r.withNationalPrefix,o=r.carrierCode,a=r.metadata,u=e.replace(new RegExp(t.pattern()),n?t.internationalFormat():i&&t.nationalPrefixFormattingRule()?t.format().replace(re,t.nationalPrefixFormattingRule()):t.format());return n?z(u):u}var bi=/^[\\d]+(?:[~\\u2053\\u223C\\uFF5E][\\d]+)?$/;function ne(e,t,r){var n=new f(r);if(n.selectNumberingPlan(e,t),n.defaultIDDPrefix())return n.defaultIDDPrefix();if(bi.test(n.IDDPrefix()))return n.IDDPrefix()}var Ai=\";ext=\",U=function(t){return\"([\".concat(p,\"]{1,\").concat(t,\"})\")};function B(e){var t=\"20\",r=\"15\",n=\"9\",i=\"6\",o=\"[ \\xA0\\\\t,]*\",a=\"[:\\\\.\\uFF0E]?[ \\xA0\\\\t,-]*\",u=\"#?\",d=\"(?:e?xt(?:ensi(?:o\\u0301?|\\xF3))?n?|\\uFF45?\\uFF58\\uFF54\\uFF4E?|\\u0434\\u043E\\u0431|anexo)\",l=\"(?:[x\\uFF58#\\uFF03~\\uFF5E]|int|\\uFF49\\uFF4E\\uFF54)\",s=\"[- ]+\",c=\"[ \\xA0\\\\t]*\",m=\"(?:,{2}|;)\",y=Ai+U(t),b=o+d+a+U(t)+u,E=o+l+a+U(n)+u,S=s+U(i)+\"#\",Un=c+m+a+U(r)+u,Hn=c+\"(?:,)+\"+a+U(n)+u;return y+\"|\"+b+\"|\"+E+\"|\"+S+\"|\"+Un+\"|\"+Hn}var Ni=\"[\"+p+\"]{\"+X+\"}\",Pi=\"[\"+I+\"]{0,1}(?:[\"+h+\"]*[\"+p+\"]){3,}[\"+h+p+\"]*\",Ei=new RegExp(\"^[\"+I+\"]{0,1}(?:[\"+h+\"]*[\"+p+\"]){1,2}$\",\"i\"),Fi=Pi+\"(?:\"+B()+\")?\",xi=new RegExp(\"^\"+Ni+\"$|^\"+Fi+\"$\",\"i\");function ie(e){return e.length>=X&&xi.test(e)}function Er(e){return Ei.test(e)}function Fr(e){var t=e.number,r=e.ext;if(!t)return\"\";if(t[0]!==\"+\")throw new Error('\"formatRFC3966()\" expects \"number\" to be in E.164 format.');return\"tel:\".concat(t).concat(r?\";ext=\"+r:\"\")}var xr={formatExtension:function(t,r,n){return\"\".concat(t).concat(n.ext()).concat(r)}};function ae(e,t,r,n){if(r?r=_i({},xr,r):r=xr,n=new f(n),e.country&&e.country!==\"001\"){if(!n.hasCountry(e.country))throw new Error(\"Unknown country: \".concat(e.country));n.selectNumberingPlan(e.country)}else if(e.countryCallingCode)n.selectNumberingPlan(e.countryCallingCode);else return e.phone||\"\";var i=n.countryCallingCode(),o=r.v2?e.nationalNumber:e.phone,a;switch(t){case\"NATIONAL\":return o?(a=It(o,e.carrierCode,\"NATIONAL\",n,r),oe(a,e.ext,n,r.formatExtension)):\"\";case\"INTERNATIONAL\":return o?(a=It(o,null,\"INTERNATIONAL\",n,r),a=\"+\".concat(i,\" \").concat(a),oe(a,e.ext,n,r.formatExtension)):\"+\".concat(i);case\"E.164\":return\"+\".concat(i).concat(o);case\"RFC3966\":return Fr({number:\"+\".concat(i).concat(o),ext:e.ext});case\"IDD\":if(!r.fromCountry)return;var u=Si(o,e.carrierCode,i,r.fromCountry,n);return oe(u,e.ext,n,r.formatExtension);default:throw new Error('Unknown \"format\" argument passed to \"formatNumber()\": \"'.concat(t,'\"'))}}function It(e,t,r,n,i){var o=ue(n.formats(),e);return o?q(e,o,{useInternationalFormat:r===\"INTERNATIONAL\",withNationalPrefix:!(o.nationalPrefixIsOptionalWhenFormattingInNationalFormat()&&i&&i.nationalPrefix===!1),carrierCode:t,metadata:n}):e}function ue(e,t){return Ti(e,function(r){if(r.leadingDigitsPatterns().length>0){var n=r.leadingDigitsPatterns()[r.leadingDigitsPatterns().length-1];if(t.search(n)!==0)return!1}return g(t,r.pattern())})}function oe(e,t,r,n){return t?n(e,t,r):e}function Si(e,t,r,n,i){var o=F(n,i.metadata);if(o===r){var a=It(e,t,\"NATIONAL\",i);return r===\"1\"?r+\" \"+a:a}var u=ne(n,void 0,i.metadata);if(u)return\"\".concat(u,\" \").concat(r,\" \").concat(It(e,null,\"INTERNATIONAL\",i))}function _i(){for(var e=1,t=arguments.length,r=new Array(t),n=0;n<t;n++)r[n]=arguments[n];for(;e<r.length;){if(r[e])for(var i in r[e])r[0][i]=r[e][i];e++}return r[0]}function Ti(e,t){for(var r=0;r<e.length;){if(t(e[r]))return e[r];r++}}function Q(e){\"@babel/helpers - typeof\";return Q=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},Q(e)}function Sr(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),r.push.apply(r,n)}return r}function _r(e){for(var t=1;t<arguments.length;t++){var r=arguments[t]!=null?arguments[t]:{};t%2?Sr(Object(r),!0).forEach(function(n){Ii(e,n,r[n])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):Sr(Object(r)).forEach(function(n){Object.defineProperty(e,n,Object.getOwnPropertyDescriptor(r,n))})}return e}function Ii(e,t,r){return(t=Ir(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function Di(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function Tr(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,Ir(n.key),n)}}function Oi(e,t,r){return t&&Tr(e.prototype,t),r&&Tr(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function Ir(e){var t=wi(e,\"string\");return Q(t)==\"symbol\"?t:t+\"\"}function wi(e,t){if(Q(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(Q(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}var Bi=!1,Dt=function(){function e(t,r,n){if(Di(this,e),!t)throw new TypeError(\"First argument is required\");if(typeof t!=\"string\")throw new TypeError(\"First argument must be a string\");if(t[0]===\"+\"&&!r)throw new TypeError(\"`metadata` argument not passed\");if(A(r)&&A(r.countries)){n=r;var i=t;if(!Mi.test(i))throw new Error('Invalid `number` argument passed: must consist of a \"+\" followed by digits');var o=w(i,void 0,void 0,void 0,n),a=o.countryCallingCode,u=o.number;if(r=u,t=a,!r)throw new Error(\"Invalid `number` argument passed: too short\")}if(!r)throw new TypeError(\"`nationalNumber` argument is required\");if(typeof r!=\"string\")throw new TypeError(\"`nationalNumber` argument must be a string\");Zt(n);var d=Li(t,n),l=d.country,s=d.countryCallingCode;this.country=l,this.countryCallingCode=s,this.nationalNumber=r,this.number=\"+\"+this.countryCallingCode+this.nationalNumber,this.getMetadata=function(){return n}}return Oi(e,[{key:\"setExt\",value:function(r){this.ext=r}},{key:\"getPossibleCountries\",value:function(){return this.country?[this.country]:ee(this.countryCallingCode,this.nationalNumber,this.getMetadata())}},{key:\"isPossible\",value:function(){return zt(this,{v2:!0},this.getMetadata())}},{key:\"isValid\",value:function(){return te(this,{v2:!0},this.getMetadata())}},{key:\"isNonGeographic\",value:function(){var r=new f(this.getMetadata());return r.isNonGeographicCallingCode(this.countryCallingCode)}},{key:\"isEqual\",value:function(r){return this.number===r.number&&this.ext===r.ext}},{key:\"getType\",value:function(){return O(this,{v2:!0},this.getMetadata())}},{key:\"format\",value:function(r,n){return ae(this,r,n?_r(_r({},n),{},{v2:!0}):{v2:!0},this.getMetadata())}},{key:\"formatNational\",value:function(r){return this.format(\"NATIONAL\",r)}},{key:\"formatInternational\",value:function(r){return this.format(\"INTERNATIONAL\",r)}},{key:\"getURI\",value:function(r){return this.format(\"RFC3966\",r)}}])}();var Ri=function(t){return/^[A-Z]{2}$/.test(t)};function Li(e,t){var r,n,i=new f(t);return Ri(e)?(r=e,i.selectNumberingPlan(r),n=i.countryCallingCode()):(n=e,Bi&&i.isNonGeographicCallingCode(n)&&(r=\"001\")),{country:r,countryCallingCode:n}}var Mi=/^\\+\\d+$/;function H(e){\"@babel/helpers - typeof\";return H=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},H(e)}function Dr(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,ji(n.key),n)}}function ki(e,t,r){return t&&Dr(e.prototype,t),r&&Dr(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function ji(e){var t=Gi(e,\"string\");return H(t)==\"symbol\"?t:t+\"\"}function Gi(e,t){if(H(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(H(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}function Ui(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function Hi(e,t,r){return t=et(t),Vi(e,le()?Reflect.construct(t,r||[],et(e).constructor):t.apply(e,r))}function Vi(e,t){if(t&&(H(t)==\"object\"||typeof t==\"function\"))return t;if(t!==void 0)throw new TypeError(\"Derived constructors may only return object or undefined\");return Wi(e)}function Wi(e){if(e===void 0)throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");return e}function Ki(e,t){if(typeof t!=\"function\"&&t!==null)throw new TypeError(\"Super expression must either be null or a function\");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),Object.defineProperty(e,\"prototype\",{writable:!1}),t&&tt(e,t)}function de(e){var t=typeof Map==\"function\"?new Map:void 0;return de=function(n){if(n===null||!Yi(n))return n;if(typeof n!=\"function\")throw new TypeError(\"Super expression must either be null or a function\");if(t!==void 0){if(t.has(n))return t.get(n);t.set(n,i)}function i(){return Xi(n,arguments,et(this).constructor)}return i.prototype=Object.create(n.prototype,{constructor:{value:i,enumerable:!1,writable:!0,configurable:!0}}),tt(i,n)},de(e)}function Xi(e,t,r){if(le())return Reflect.construct.apply(null,arguments);var n=[null];n.push.apply(n,t);var i=new(e.bind.apply(e,n));return r&&tt(i,r.prototype),i}function le(){try{var e=!Boolean.prototype.valueOf.call(Reflect.construct(Boolean,[],function(){}))}catch{}return(le=function(){return!!e})()}function Yi(e){try{return Function.toString.call(e).indexOf(\"[native code]\")!==-1}catch{return typeof e==\"function\"}}function tt(e,t){return tt=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(r,n){return r.__proto__=n,r},tt(e,t)}function et(e){return et=Object.setPrototypeOf?Object.getPrototypeOf.bind():function(t){return t.__proto__||Object.getPrototypeOf(t)},et(e)}var N=function(e){function t(r){var n;return Ui(this,t),n=Hi(this,t,[r]),Object.setPrototypeOf(n,t.prototype),n.name=n.constructor.name,n}return Ki(t,e),ki(t)}(de(Error));var Or=new RegExp(\"(?:\"+B()+\")$\",\"i\");function se(e){var t=e.search(Or);if(t<0)return{};for(var r=e.slice(0,t),n=e.match(Or),i=1;i<n.length;){if(n[i])return{number:r,ext:n[i]};i++}}function Zi(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=Ji(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function Ji(e,t){if(e){if(typeof e==\"string\")return wr(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?wr(e,t):void 0}}function wr(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}var zi={0:\"0\",1:\"1\",2:\"2\",3:\"3\",4:\"4\",5:\"5\",6:\"6\",7:\"7\",8:\"8\",9:\"9\",\"\\uFF10\":\"0\",\"\\uFF11\":\"1\",\"\\uFF12\":\"2\",\"\\uFF13\":\"3\",\"\\uFF14\":\"4\",\"\\uFF15\":\"5\",\"\\uFF16\":\"6\",\"\\uFF17\":\"7\",\"\\uFF18\":\"8\",\"\\uFF19\":\"9\",\"\\u0660\":\"0\",\"\\u0661\":\"1\",\"\\u0662\":\"2\",\"\\u0663\":\"3\",\"\\u0664\":\"4\",\"\\u0665\":\"5\",\"\\u0666\":\"6\",\"\\u0667\":\"7\",\"\\u0668\":\"8\",\"\\u0669\":\"9\",\"\\u06F0\":\"0\",\"\\u06F1\":\"1\",\"\\u06F2\":\"2\",\"\\u06F3\":\"3\",\"\\u06F4\":\"4\",\"\\u06F5\":\"5\",\"\\u06F6\":\"6\",\"\\u06F7\":\"7\",\"\\u06F8\":\"8\",\"\\u06F9\":\"9\"};function fe(e){return zi[e]}function P(e){for(var t=\"\",r=Zi(e.split(\"\")),n;!(n=r()).done;){var i=n.value,o=fe(i);o&&(t+=o)}return t}function qi(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=Qi(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function Qi(e,t){if(e){if(typeof e==\"string\")return Br(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?Br(e,t):void 0}}function Br(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}function Ot(e){for(var t=\"\",r=qi(e.split(\"\")),n;!(n=r()).done;){var i=n.value;t+=t0(i,t)||\"\"}return t}function t0(e,t,r){if(e===\"+\"){if(t){typeof r==\"function\"&&r(\"end\");return}return\"+\"}return fe(e)}var ce=\"+\",e0=\"[\\\\-\\\\.\\\\(\\\\)]?\",Rr=\"([\"+p+\"]|\"+e0+\")\",r0=\"^\\\\\"+ce+Rr+\"*[\"+p+\"]\"+Rr+\"*$\",n0=new RegExp(r0,\"g\"),$e=p,i0=\"[\"+$e+\"]+((\\\\-)*[\"+$e+\"])*\",o0=\"a-zA-Z\",a0=\"[\"+o0+\"]+((\\\\-)*[\"+$e+\"])*\",u0=\"^(\"+i0+\"\\\\.)*\"+a0+\"\\\\.?$\",d0=new RegExp(u0,\"g\"),me=\"tel:\",wt=\";phone-context=\",Lr=\";isub=\";function pe(e){var t=e.indexOf(wt);if(t<0)return null;var r=t+wt.length;if(r>=e.length)return\"\";var n=e.indexOf(\";\",r);return n>=0?e.substring(r,n):e.substring(r)}function Mr(e){return e===null?!0:e.length===0?!1:n0.test(e)||d0.test(e)}function he(e,t){var r=t.extractFormattedPhoneNumber,n=pe(e);if(!Mr(n))throw new N(\"NOT_A_NUMBER\");var i;if(n===null)i=r(e)||\"\";else{i=\"\",n.charAt(0)===ce&&(i+=n);var o=e.indexOf(me),a;o>=0?a=o+me.length:a=0;var u=e.indexOf(wt);i+=e.substring(a,u)}var d=i.indexOf(Lr);if(d>0&&(i=i.substring(0,d)),i!==\"\")return i}var l0=250,s0=new RegExp(\"[\"+I+p+\"]\"),f0=new RegExp(\"[^\"+p+\"#]+$\"),$0=!1;function ge(e,t,r){if(t=t||{},r=new f(r),t.defaultCountry&&!r.hasCountry(t.defaultCountry))throw t.v2?new N(\"INVALID_COUNTRY\"):new Error(\"Unknown country: \".concat(t.defaultCountry));var n=m0(e,t.v2,t.extract),i=n.number,o=n.ext,a=n.error;if(!i){if(t.v2)throw a===\"TOO_SHORT\"?new N(\"TOO_SHORT\"):new N(\"NOT_A_NUMBER\");return{}}var u=h0(i,t.defaultCountry,t.defaultCallingCode,r),d=u.country,l=u.nationalNumber,s=u.countryCallingCode,c=u.countryCallingCodeSource,m=u.carrierCode;if(!r.hasSelectedNumberingPlan()){if(t.v2)throw new N(\"INVALID_COUNTRY\");return{}}if(!l||l.length<X){if(t.v2)throw new N(\"TOO_SHORT\");return{}}if(l.length>_t){if(t.v2)throw new N(\"TOO_LONG\");return{}}if(t.v2){var y=new Dt(s,l,r.metadata);return d&&(y.country=d),m&&(y.carrierCode=m),o&&(y.ext=o),y.__countryCallingCodeSource=c,y}var b=(t.extended?r.hasSelectedNumberingPlan():d)?g(l,r.nationalNumberPattern()):!1;return t.extended?{country:d,countryCallingCode:s,carrierCode:m,valid:b,possible:b?!0:!!(t.extended===!0&&r.possibleLengths()&&qt(l,d,r)),phone:l,ext:o}:b?p0(d,l,o):{}}function c0(e,t,r){if(e){if(e.length>l0){if(r)throw new N(\"TOO_LONG\");return}if(t===!1)return e;var n=e.search(s0);if(!(n<0))return e.slice(n).replace(f0,\"\")}}function m0(e,t,r){var n=he(e,{extractFormattedPhoneNumber:function(a){return c0(a,r,t)}});if(!n)return{};if(!ie(n))return Er(n)?{error:\"TOO_SHORT\"}:{};var i=se(n);return i.ext?i:{number:n}}function p0(e,t,r){var n={country:e,phone:t};return r&&(n.ext=r),n}function h0(e,t,r,n){var i=w(Ot(e),void 0,t,r,n.metadata),o=i.countryCallingCodeSource,a=i.countryCallingCode,u=i.number,d;if(a)n.selectNumberingPlan(a);else if(u&&(t||r))n.selectNumberingPlan(t,r),t?d=t:$0&&n.isNonGeographicCallingCode(r)&&(d=\"001\"),a=r||F(t,n.metadata);else return{};if(!u)return{countryCallingCodeSource:o,countryCallingCode:a};var l=G(Ot(u),d,n),s=l.nationalNumber,c=l.carrierCode,m=D(a,{nationalNumber:s,metadata:n});return m&&(d=m,m===\"001\"||n.selectNumberingPlan(d)),{country:d,countryCallingCode:a,countryCallingCodeSource:o,nationalNumber:s,carrierCode:c}}function rt(e){\"@babel/helpers - typeof\";return rt=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},rt(e)}function kr(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),r.push.apply(r,n)}return r}function jr(e){for(var t=1;t<arguments.length;t++){var r=arguments[t]!=null?arguments[t]:{};t%2?kr(Object(r),!0).forEach(function(n){g0(e,n,r[n])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):kr(Object(r)).forEach(function(n){Object.defineProperty(e,n,Object.getOwnPropertyDescriptor(r,n))})}return e}function g0(e,t,r){return(t=y0(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function y0(e){var t=C0(e,\"string\");return rt(t)==\"symbol\"?t:t+\"\"}function C0(e,t){if(rt(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(rt(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}function ye(e,t,r){return ge(e,jr(jr({},t),{},{v2:!0}),r)}function nt(e){\"@babel/helpers - typeof\";return nt=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},nt(e)}function Gr(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),r.push.apply(r,n)}return r}function v0(e){for(var t=1;t<arguments.length;t++){var r=arguments[t]!=null?arguments[t]:{};t%2?Gr(Object(r),!0).forEach(function(n){b0(e,n,r[n])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):Gr(Object(r)).forEach(function(n){Object.defineProperty(e,n,Object.getOwnPropertyDescriptor(r,n))})}return e}function b0(e,t,r){return(t=A0(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function A0(e){var t=N0(e,\"string\");return nt(t)==\"symbol\"?t:t+\"\"}function N0(e,t){if(nt(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(nt(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}function P0(e,t){return S0(e)||x0(e,t)||F0(e,t)||E0()}function E0(){throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function F0(e,t){if(e){if(typeof e==\"string\")return Ur(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?Ur(e,t):void 0}}function Ur(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}function x0(e,t){var r=e==null?null:typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r!=null){var n,i,o,a,u=[],d=!0,l=!1;try{if(o=(r=r.call(e)).next,t===0){if(Object(r)!==r)return;d=!1}else for(;!(d=(n=o.call(r)).done)&&(u.push(n.value),u.length!==t);d=!0);}catch(s){l=!0,i=s}finally{try{if(!d&&r.return!=null&&(a=r.return(),Object(a)!==a))return}finally{if(l)throw i}}return u}}function S0(e){if(Array.isArray(e))return e}function it(e){var t=Array.prototype.slice.call(e),r=P0(t,4),n=r[0],i=r[1],o=r[2],a=r[3],u,d,l;if(typeof n==\"string\")u=n;else throw new TypeError(\"A text for parsing must be a string.\");if(!i||typeof i==\"string\")a?(d=o,l=a):(d=void 0,l=o),i&&(d=v0({defaultCountry:i},d));else if(A(i))o?(d=i,l=o):l=i;else throw new Error(\"Invalid second argument: \".concat(i));return{text:u,options:d,metadata:l}}function ot(e){\"@babel/helpers - typeof\";return ot=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},ot(e)}function Hr(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),r.push.apply(r,n)}return r}function Vr(e){for(var t=1;t<arguments.length;t++){var r=arguments[t]!=null?arguments[t]:{};t%2?Hr(Object(r),!0).forEach(function(n){_0(e,n,r[n])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):Hr(Object(r)).forEach(function(n){Object.defineProperty(e,n,Object.getOwnPropertyDescriptor(r,n))})}return e}function _0(e,t,r){return(t=T0(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function T0(e){var t=I0(e,\"string\");return ot(t)==\"symbol\"?t:t+\"\"}function I0(e,t){if(ot(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(ot(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}function Ce(e,t,r){t&&t.defaultCountry&&!K(t.defaultCountry,r)&&(t=Vr(Vr({},t),{},{defaultCountry:void 0}));try{return ye(e,t,r)}catch(n){if(!(n instanceof N))throw n}}function x(){var e=it(arguments),t=e.text,r=e.options,n=e.metadata;return Ce(t,r,n)}function at(e){\"@babel/helpers - typeof\";return at=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},at(e)}function Wr(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,D0(n.key),n)}}function Xr(e,t,r){return t&&Wr(e.prototype,t),r&&Wr(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function D0(e){var t=O0(e,\"string\");return at(t)==\"symbol\"?t:t+\"\"}function O0(e,t){if(at(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(at(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}function Yr(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}var Kr=Xr(function e(t,r){var n=arguments.length>2&&arguments[2]!==void 0?arguments[2]:null,i=arguments.length>3&&arguments[3]!==void 0?arguments[3]:null;Yr(this,e),this.key=t,this.value=r,this.next=n,this.prev=i}),Zr=function(){function e(){var t=arguments.length>0&&arguments[0]!==void 0?arguments[0]:10;Yr(this,e),this.size=0,this.limit=t,this.head=null,this.tail=null,this.cache={}}return Xr(e,[{key:\"put\",value:function(r,n){if(this.ensureLimit(),!this.head)this.head=this.tail=new Kr(r,n);else{var i=new Kr(r,n,this.head);this.head.prev=i,this.head=i}this.cache[r]=this.head,this.size++}},{key:\"get\",value:function(r){if(this.cache[r]){var n=this.cache[r].value;return this.remove(r),this.put(r,n),n}console.log(\"Item not available in cache for key \".concat(r))}},{key:\"ensureLimit\",value:function(){this.size===this.limit&&this.remove(this.tail.key)}},{key:\"remove\",value:function(r){var n=this.cache[r];n.prev!==null?n.prev.next=n.next:this.head=n.next,n.next!==null?n.next.prev=n.prev:this.tail=n.prev,delete this.cache[r],this.size--}},{key:\"clear\",value:function(){this.head=null,this.tail=null,this.size=0,this.cache={}}}])}();function ut(e){\"@babel/helpers - typeof\";return ut=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},ut(e)}function w0(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function Jr(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,R0(n.key),n)}}function B0(e,t,r){return t&&Jr(e.prototype,t),r&&Jr(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function R0(e){var t=L0(e,\"string\");return ut(t)==\"symbol\"?t:t+\"\"}function L0(e,t){if(ut(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(ut(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}var zr=function(){function e(t){w0(this,e),this.cache=new Zr(t)}return B0(e,[{key:\"getPatternForRegExp\",value:function(r){var n=this.cache.get(r);return n||(n=new RegExp(\"^\"+r),this.cache.put(r,n)),n}}])}();function R(e,t){if(e<0||t<=0||t<e)throw new TypeError;return\"{\".concat(e,\",\").concat(t,\"}\")}function dt(e,t){var r=t.search(e);return r>=0?t.slice(0,r):t}function qr(e,t){return e.indexOf(t)===0}function Qr(e,t){return e.indexOf(t,e.length-t.length)===e.length-t.length}var tn=\" \\xA0\\u1680\\u180E\\u2000-\\u200A\\u2028\\u2029\\u202F\\u205F\\u3000\",L=\"[\".concat(tn,\"]\"),en=\"[^\".concat(tn,\"]\"),rn=\"0-9\\xB2\\xB3\\xB9\\xBC-\\xBE\\u0660-\\u0669\\u06F0-\\u06F9\\u07C0-\\u07C9\\u0966-\\u096F\\u09E6-\\u09EF\\u09F4-\\u09F9\\u0A66-\\u0A6F\\u0AE6-\\u0AEF\\u0B66-\\u0B6F\\u0B72-\\u0B77\\u0BE6-\\u0BF2\\u0C66-\\u0C6F\\u0C78-\\u0C7E\\u0CE6-\\u0CEF\\u0D66-\\u0D75\\u0E50-\\u0E59\\u0ED0-\\u0ED9\\u0F20-\\u0F33\\u1040-\\u1049\\u1090-\\u1099\\u1369-\\u137C\\u16EE-\\u16F0\\u17E0-\\u17E9\\u17F0-\\u17F9\\u1810-\\u1819\\u1946-\\u194F\\u19D0-\\u19DA\\u1A80-\\u1A89\\u1A90-\\u1A99\\u1B50-\\u1B59\\u1BB0-\\u1BB9\\u1C40-\\u1C49\\u1C50-\\u1C59\\u2070\\u2074-\\u2079\\u2080-\\u2089\\u2150-\\u2182\\u2185-\\u2189\\u2460-\\u249B\\u24EA-\\u24FF\\u2776-\\u2793\\u2CFD\\u3007\\u3021-\\u3029\\u3038-\\u303A\\u3192-\\u3195\\u3220-\\u3229\\u3248-\\u324F\\u3251-\\u325F\\u3280-\\u3289\\u32B1-\\u32BF\\uA620-\\uA629\\uA6E6-\\uA6EF\\uA830-\\uA835\\uA8D0-\\uA8D9\\uA900-\\uA909\\uA9D0-\\uA9D9\\uAA50-\\uAA59\\uABF0-\\uABF9\\uFF10-\\uFF19\",M0=\"0-9\\u0660-\\u0669\\u06F0-\\u06F9\\u07C0-\\u07C9\\u0966-\\u096F\\u09E6-\\u09EF\\u0A66-\\u0A6F\\u0AE6-\\u0AEF\\u0B66-\\u0B6F\\u0BE6-\\u0BEF\\u0C66-\\u0C6F\\u0CE6-\\u0CEF\\u0D66-\\u0D6F\\u0E50-\\u0E59\\u0ED0-\\u0ED9\\u0F20-\\u0F29\\u1040-\\u1049\\u1090-\\u1099\\u17E0-\\u17E9\\u1810-\\u1819\\u1946-\\u194F\\u19D0-\\u19D9\\u1A80-\\u1A89\\u1A90-\\u1A99\\u1B50-\\u1B59\\u1BB0-\\u1BB9\\u1C40-\\u1C49\\u1C50-\\u1C59\\uA620-\\uA629\\uA8D0-\\uA8D9\\uA900-\\uA909\\uA9D0-\\uA9D9\\uAA50-\\uAA59\\uABF0-\\uABF9\\uFF10-\\uFF19\",nn=\"[\".concat(M0,\"]\"),ve=\"A-Za-z\\xAA\\xB5\\xBA\\xC0-\\xD6\\xD8-\\xF6\\xF8-\\u02C1\\u02C6-\\u02D1\\u02E0-\\u02E4\\u02EC\\u02EE\\u0370-\\u0374\\u0376\\u0377\\u037A-\\u037D\\u0386\\u0388-\\u038A\\u038C\\u038E-\\u03A1\\u03A3-\\u03F5\\u03F7-\\u0481\\u048A-\\u0527\\u0531-\\u0556\\u0559\\u0561-\\u0587\\u05D0-\\u05EA\\u05F0-\\u05F2\\u0620-\\u064A\\u066E\\u066F\\u0671-\\u06D3\\u06D5\\u06E5\\u06E6\\u06EE\\u06EF\\u06FA-\\u06FC\\u06FF\\u0710\\u0712-\\u072F\\u074D-\\u07A5\\u07B1\\u07CA-\\u07EA\\u07F4\\u07F5\\u07FA\\u0800-\\u0815\\u081A\\u0824\\u0828\\u0840-\\u0858\\u08A0\\u08A2-\\u08AC\\u0904-\\u0939\\u093D\\u0950\\u0958-\\u0961\\u0971-\\u0977\\u0979-\\u097F\\u0985-\\u098C\\u098F\\u0990\\u0993-\\u09A8\\u09AA-\\u09B0\\u09B2\\u09B6-\\u09B9\\u09BD\\u09CE\\u09DC\\u09DD\\u09DF-\\u09E1\\u09F0\\u09F1\\u0A05-\\u0A0A\\u0A0F\\u0A10\\u0A13-\\u0A28\\u0A2A-\\u0A30\\u0A32\\u0A33\\u0A35\\u0A36\\u0A38\\u0A39\\u0A59-\\u0A5C\\u0A5E\\u0A72-\\u0A74\\u0A85-\\u0A8D\\u0A8F-\\u0A91\\u0A93-\\u0AA8\\u0AAA-\\u0AB0\\u0AB2\\u0AB3\\u0AB5-\\u0AB9\\u0ABD\\u0AD0\\u0AE0\\u0AE1\\u0B05-\\u0B0C\\u0B0F\\u0B10\\u0B13-\\u0B28\\u0B2A-\\u0B30\\u0B32\\u0B33\\u0B35-\\u0B39\\u0B3D\\u0B5C\\u0B5D\\u0B5F-\\u0B61\\u0B71\\u0B83\\u0B85-\\u0B8A\\u0B8E-\\u0B90\\u0B92-\\u0B95\\u0B99\\u0B9A\\u0B9C\\u0B9E\\u0B9F\\u0BA3\\u0BA4\\u0BA8-\\u0BAA\\u0BAE-\\u0BB9\\u0BD0\\u0C05-\\u0C0C\\u0C0E-\\u0C10\\u0C12-\\u0C28\\u0C2A-\\u0C33\\u0C35-\\u0C39\\u0C3D\\u0C58\\u0C59\\u0C60\\u0C61\\u0C85-\\u0C8C\\u0C8E-\\u0C90\\u0C92-\\u0CA8\\u0CAA-\\u0CB3\\u0CB5-\\u0CB9\\u0CBD\\u0CDE\\u0CE0\\u0CE1\\u0CF1\\u0CF2\\u0D05-\\u0D0C\\u0D0E-\\u0D10\\u0D12-\\u0D3A\\u0D3D\\u0D4E\\u0D60\\u0D61\\u0D7A-\\u0D7F\\u0D85-\\u0D96\\u0D9A-\\u0DB1\\u0DB3-\\u0DBB\\u0DBD\\u0DC0-\\u0DC6\\u0E01-\\u0E30\\u0E32\\u0E33\\u0E40-\\u0E46\\u0E81\\u0E82\\u0E84\\u0E87\\u0E88\\u0E8A\\u0E8D\\u0E94-\\u0E97\\u0E99-\\u0E9F\\u0EA1-\\u0EA3\\u0EA5\\u0EA7\\u0EAA\\u0EAB\\u0EAD-\\u0EB0\\u0EB2\\u0EB3\\u0EBD\\u0EC0-\\u0EC4\\u0EC6\\u0EDC-\\u0EDF\\u0F00\\u0F40-\\u0F47\\u0F49-\\u0F6C\\u0F88-\\u0F8C\\u1000-\\u102A\\u103F\\u1050-\\u1055\\u105A-\\u105D\\u1061\\u1065\\u1066\\u106E-\\u1070\\u1075-\\u1081\\u108E\\u10A0-\\u10C5\\u10C7\\u10CD\\u10D0-\\u10FA\\u10FC-\\u1248\\u124A-\\u124D\\u1250-\\u1256\\u1258\\u125A-\\u125D\\u1260-\\u1288\\u128A-\\u128D\\u1290-\\u12B0\\u12B2-\\u12B5\\u12B8-\\u12BE\\u12C0\\u12C2-\\u12C5\\u12C8-\\u12D6\\u12D8-\\u1310\\u1312-\\u1315\\u1318-\\u135A\\u1380-\\u138F\\u13A0-\\u13F4\\u1401-\\u166C\\u166F-\\u167F\\u1681-\\u169A\\u16A0-\\u16EA\\u1700-\\u170C\\u170E-\\u1711\\u1720-\\u1731\\u1740-\\u1751\\u1760-\\u176C\\u176E-\\u1770\\u1780-\\u17B3\\u17D7\\u17DC\\u1820-\\u1877\\u1880-\\u18A8\\u18AA\\u18B0-\\u18F5\\u1900-\\u191C\\u1950-\\u196D\\u1970-\\u1974\\u1980-\\u19AB\\u19C1-\\u19C7\\u1A00-\\u1A16\\u1A20-\\u1A54\\u1AA7\\u1B05-\\u1B33\\u1B45-\\u1B4B\\u1B83-\\u1BA0\\u1BAE\\u1BAF\\u1BBA-\\u1BE5\\u1C00-\\u1C23\\u1C4D-\\u1C4F\\u1C5A-\\u1C7D\\u1CE9-\\u1CEC\\u1CEE-\\u1CF1\\u1CF5\\u1CF6\\u1D00-\\u1DBF\\u1E00-\\u1F15\\u1F18-\\u1F1D\\u1F20-\\u1F45\\u1F48-\\u1F4D\\u1F50-\\u1F57\\u1F59\\u1F5B\\u1F5D\\u1F5F-\\u1F7D\\u1F80-\\u1FB4\\u1FB6-\\u1FBC\\u1FBE\\u1FC2-\\u1FC4\\u1FC6-\\u1FCC\\u1FD0-\\u1FD3\\u1FD6-\\u1FDB\\u1FE0-\\u1FEC\\u1FF2-\\u1FF4\\u1FF6-\\u1FFC\\u2071\\u207F\\u2090-\\u209C\\u2102\\u2107\\u210A-\\u2113\\u2115\\u2119-\\u211D\\u2124\\u2126\\u2128\\u212A-\\u212D\\u212F-\\u2139\\u213C-\\u213F\\u2145-\\u2149\\u214E\\u2183\\u2184\\u2C00-\\u2C2E\\u2C30-\\u2C5E\\u2C60-\\u2CE4\\u2CEB-\\u2CEE\\u2CF2\\u2CF3\\u2D00-\\u2D25\\u2D27\\u2D2D\\u2D30-\\u2D67\\u2D6F\\u2D80-\\u2D96\\u2DA0-\\u2DA6\\u2DA8-\\u2DAE\\u2DB0-\\u2DB6\\u2DB8-\\u2DBE\\u2DC0-\\u2DC6\\u2DC8-\\u2DCE\\u2DD0-\\u2DD6\\u2DD8-\\u2DDE\\u2E2F\\u3005\\u3006\\u3031-\\u3035\\u303B\\u303C\\u3041-\\u3096\\u309D-\\u309F\\u30A1-\\u30FA\\u30FC-\\u30FF\\u3105-\\u312D\\u3131-\\u318E\\u31A0-\\u31BA\\u31F0-\\u31FF\\u3400-\\u4DB5\\u4E00-\\u9FCC\\uA000-\\uA48C\\uA4D0-\\uA4FD\\uA500-\\uA60C\\uA610-\\uA61F\\uA62A\\uA62B\\uA640-\\uA66E\\uA67F-\\uA697\\uA6A0-\\uA6E5\\uA717-\\uA71F\\uA722-\\uA788\\uA78B-\\uA78E\\uA790-\\uA793\\uA7A0-\\uA7AA\\uA7F8-\\uA801\\uA803-\\uA805\\uA807-\\uA80A\\uA80C-\\uA822\\uA840-\\uA873\\uA882-\\uA8B3\\uA8F2-\\uA8F7\\uA8FB\\uA90A-\\uA925\\uA930-\\uA946\\uA960-\\uA97C\\uA984-\\uA9B2\\uA9CF\\uAA00-\\uAA28\\uAA40-\\uAA42\\uAA44-\\uAA4B\\uAA60-\\uAA76\\uAA7A\\uAA80-\\uAAAF\\uAAB1\\uAAB5\\uAAB6\\uAAB9-\\uAABD\\uAAC0\\uAAC2\\uAADB-\\uAADD\\uAAE0-\\uAAEA\\uAAF2-\\uAAF4\\uAB01-\\uAB06\\uAB09-\\uAB0E\\uAB11-\\uAB16\\uAB20-\\uAB26\\uAB28-\\uAB2E\\uABC0-\\uABE2\\uAC00-\\uD7A3\\uD7B0-\\uD7C6\\uD7CB-\\uD7FB\\uF900-\\uFA6D\\uFA70-\\uFAD9\\uFB00-\\uFB06\\uFB13-\\uFB17\\uFB1D\\uFB1F-\\uFB28\\uFB2A-\\uFB36\\uFB38-\\uFB3C\\uFB3E\\uFB40\\uFB41\\uFB43\\uFB44\\uFB46-\\uFBB1\\uFBD3-\\uFD3D\\uFD50-\\uFD8F\\uFD92-\\uFDC7\\uFDF0-\\uFDFB\\uFE70-\\uFE74\\uFE76-\\uFEFC\\uFF21-\\uFF3A\\uFF41-\\uFF5A\\uFF66-\\uFFBE\\uFFC2-\\uFFC7\\uFFCA-\\uFFCF\\uFFD2-\\uFFD7\\uFFDA-\\uFFDC\",k0=\"[\".concat(ve,\"]\"),j0=new RegExp(k0),G0=\"$\\xA2-\\xA5\\u058F\\u060B\\u09F2\\u09F3\\u09FB\\u0AF1\\u0BF9\\u0E3F\\u17DB\\u20A0-\\u20B9\\uA838\\uFDFC\\uFE69\\uFF04\\uFFE0\\uFFE1\\uFFE5\\uFFE6\",U0=\"[\".concat(G0,\"]\"),H0=new RegExp(U0),V0=\"\\u0300-\\u036F\\u0483-\\u0487\\u0591-\\u05BD\\u05BF\\u05C1\\u05C2\\u05C4\\u05C5\\u05C7\\u0610-\\u061A\\u064B-\\u065F\\u0670\\u06D6-\\u06DC\\u06DF-\\u06E4\\u06E7\\u06E8\\u06EA-\\u06ED\\u0711\\u0730-\\u074A\\u07A6-\\u07B0\\u07EB-\\u07F3\\u0816-\\u0819\\u081B-\\u0823\\u0825-\\u0827\\u0829-\\u082D\\u0859-\\u085B\\u08E4-\\u08FE\\u0900-\\u0902\\u093A\\u093C\\u0941-\\u0948\\u094D\\u0951-\\u0957\\u0962\\u0963\\u0981\\u09BC\\u09C1-\\u09C4\\u09CD\\u09E2\\u09E3\\u0A01\\u0A02\\u0A3C\\u0A41\\u0A42\\u0A47\\u0A48\\u0A4B-\\u0A4D\\u0A51\\u0A70\\u0A71\\u0A75\\u0A81\\u0A82\\u0ABC\\u0AC1-\\u0AC5\\u0AC7\\u0AC8\\u0ACD\\u0AE2\\u0AE3\\u0B01\\u0B3C\\u0B3F\\u0B41-\\u0B44\\u0B4D\\u0B56\\u0B62\\u0B63\\u0B82\\u0BC0\\u0BCD\\u0C3E-\\u0C40\\u0C46-\\u0C48\\u0C4A-\\u0C4D\\u0C55\\u0C56\\u0C62\\u0C63\\u0CBC\\u0CBF\\u0CC6\\u0CCC\\u0CCD\\u0CE2\\u0CE3\\u0D41-\\u0D44\\u0D4D\\u0D62\\u0D63\\u0DCA\\u0DD2-\\u0DD4\\u0DD6\\u0E31\\u0E34-\\u0E3A\\u0E47-\\u0E4E\\u0EB1\\u0EB4-\\u0EB9\\u0EBB\\u0EBC\\u0EC8-\\u0ECD\\u0F18\\u0F19\\u0F35\\u0F37\\u0F39\\u0F71-\\u0F7E\\u0F80-\\u0F84\\u0F86\\u0F87\\u0F8D-\\u0F97\\u0F99-\\u0FBC\\u0FC6\\u102D-\\u1030\\u1032-\\u1037\\u1039\\u103A\\u103D\\u103E\\u1058\\u1059\\u105E-\\u1060\\u1071-\\u1074\\u1082\\u1085\\u1086\\u108D\\u109D\\u135D-\\u135F\\u1712-\\u1714\\u1732-\\u1734\\u1752\\u1753\\u1772\\u1773\\u17B4\\u17B5\\u17B7-\\u17BD\\u17C6\\u17C9-\\u17D3\\u17DD\\u180B-\\u180D\\u18A9\\u1920-\\u1922\\u1927\\u1928\\u1932\\u1939-\\u193B\\u1A17\\u1A18\\u1A56\\u1A58-\\u1A5E\\u1A60\\u1A62\\u1A65-\\u1A6C\\u1A73-\\u1A7C\\u1A7F\\u1B00-\\u1B03\\u1B34\\u1B36-\\u1B3A\\u1B3C\\u1B42\\u1B6B-\\u1B73\\u1B80\\u1B81\\u1BA2-\\u1BA5\\u1BA8\\u1BA9\\u1BAB\\u1BE6\\u1BE8\\u1BE9\\u1BED\\u1BEF-\\u1BF1\\u1C2C-\\u1C33\\u1C36\\u1C37\\u1CD0-\\u1CD2\\u1CD4-\\u1CE0\\u1CE2-\\u1CE8\\u1CED\\u1CF4\\u1DC0-\\u1DE6\\u1DFC-\\u1DFF\\u20D0-\\u20DC\\u20E1\\u20E5-\\u20F0\\u2CEF-\\u2CF1\\u2D7F\\u2DE0-\\u2DFF\\u302A-\\u302D\\u3099\\u309A\\uA66F\\uA674-\\uA67D\\uA69F\\uA6F0\\uA6F1\\uA802\\uA806\\uA80B\\uA825\\uA826\\uA8C4\\uA8E0-\\uA8F1\\uA926-\\uA92D\\uA947-\\uA951\\uA980-\\uA982\\uA9B3\\uA9B6-\\uA9B9\\uA9BC\\uAA29-\\uAA2E\\uAA31\\uAA32\\uAA35\\uAA36\\uAA43\\uAA4C\\uAAB0\\uAAB2-\\uAAB4\\uAAB7\\uAAB8\\uAABE\\uAABF\\uAAC1\\uAAEC\\uAAED\\uAAF6\\uABE5\\uABE8\\uABED\\uFB1E\\uFE00-\\uFE0F\\uFE20-\\uFE26\",W0=\"[\".concat(V0,\"]\"),K0=new RegExp(W0),X0=\"\\0-\\x7F\",Y0=\"\\x80-\\xFF\",Z0=\"\\u0100-\\u017F\",J0=\"\\u1E00-\\u1EFF\",z0=\"\\u0180-\\u024F\",q0=\"\\u0300-\\u036F\",Q0=new RegExp(\"[\"+X0+Y0+Z0+J0+z0+q0+\"]\");function be(e){return!j0.test(e)&&!K0.test(e)?!1:Q0.test(e)}function Ae(e){return e===\"%\"||H0.test(e)}function Ne(e,t,r){var n=!0,i=x(e,r);if(i||(n=!1,i=x(e,{defaultCallingCode:t.countryCallingCode},r)),!i)return\"INVALID_NUMBER\";if(t.ext){if(i.ext!==t.ext)return\"NO_MATCH\"}else if(i.ext)return\"NO_MATCH\";return n&&t.countryCallingCode!==i.countryCallingCode?\"NO_MATCH\":t.number===i.number?n?\"EXACT_MATCH\":\"NSN_MATCH\":t.nationalNumber.indexOf(i.nationalNumber)===0||i.nationalNumber.indexOf(t.nationalNumber)===0?\"SHORT_NSN_MATCH\":\"NO_MATCH\"}function to(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=eo(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function eo(e,t){if(e){if(typeof e==\"string\")return on(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?on(e,t):void 0}}function on(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}var Ee={POSSIBLE:function(t,r){var n=r.candidate,i=r.metadata;return!0},VALID:function(t,r){var n=r.candidate,i=r.defaultCountry,o=r.metadata;return!(!t.isValid()||!Pe(t,n,o))},STRICT_GROUPING:function(t,r){var n=r.candidate,i=r.defaultCountry,o=r.metadata,a=r.regExpCache;return!t.isValid()||!Pe(t,n,o)||un(t,n)||!an(t,{defaultCountry:i,metadata:o})?!1:dn(t,n,o,no,a)},EXACT_GROUPING:function(t,r){var n=r.candidate,i=r.defaultCountry,o=r.metadata,a=r.regExpCache;return!t.isValid()||!Pe(t,n,o)||un(t,n)||!an(t,{defaultCountry:i,metadata:o})?!1:dn(t,n,o,ro,a)}};function Pe(e,t,r){for(var n=0;n<t.length-1;n++){var i=t.charAt(n);if(i===\"x\"||i===\"X\"){var o=t.charAt(n+1);if(o===\"x\"||o===\"X\"){if(n++,Ne(t.substring(n),e,r)!==\"NSN_MATCH\")return!1}else{var a=P(t.substring(n));if(a){if(e.ext!==a)return!1}else if(e.ext)return!1}}}return!0}function an(e,t){var r=t.defaultCountry,n=t.metadata;if(e.__countryCallingCodeSource!==\"FROM_DEFAULT_COUNTRY\")return!0;var i=new f(n);i.selectNumberingPlan(e.countryCallingCode);var o=e.country||D(e.countryCallingCode,{nationalNumber:e.nationalNumber,metadata:i}),a=e.nationalNumber,u=ue(i.numberingPlan.formats(),a);return u.nationalPrefixFormattingRule()?i.numberingPlan.nationalPrefixIsOptionalWhenFormattingInNationalFormat()||!u.usesNationalPrefix()?!0:!!e.nationalPrefix:!0}function un(e,t){var r=t.indexOf(\"/\");if(r<0)return!1;var n=t.indexOf(\"/\",r+1);if(n<0)return!1;var i=e.__countryCallingCodeSource===\"FROM_NUMBER_WITH_PLUS_SIGN\"||e.__countryCallingCodeSource===\"FROM_NUMBER_WITHOUT_PLUS_SIGN\";return i&&P(t.substring(0,r))===e.countryCallingCode?t.slice(n+1).indexOf(\"/\")>=0:!0}function dn(e,t,r,n,i){throw new Error(\"This part of code hasn't been ported\");var o,a,u,d;if(u)for(var l,s;!(s=l()).done;){var c=s.value;if(c.leadingDigitsPatterns().length>0){var m=i.getPatternForRegExp(\"^\"+c.leadingDigitsPatterns()[0]);if(!m.test(d))continue}if(a=ln(r,e,c),n(r,e,o,a))return!0}}function ln(e,t,r){throw new Error(\"This part of code hasn't been ported\");if(r){var n;return util.formatNsnUsingPattern(n,r,\"RFC3966\",e).split(\"-\")}var i,o,a}function ro(e,t,r,n){throw new Error(\"This part of code hasn't been ported\");var i,o,a}function no(e,t,r,n){throw new Error(\"This part of code hasn't been ported\");var i;if(t.getCountryCodeSource()!==CountryCodeSource.FROM_DEFAULT_COUNTRY){var o;i=r.indexOf(o)+o.length()}for(var a;a<n.length;a++){if(i=r.indexOf(n[a],i),i<0)return!1;if(i+=n[a].length(),a==0&&i<r.length()){var u=util.getRegionCodeForCountryCode(t.getCountryCode());if(util.getNddPrefixForRegion(u,!0)!=null&&Character.isDigit(r.charAt(i))){var d=util.getNationalSignificantNumber(t);return qr(r.slice(i-n[a].length),d)}}}}var io=/[\\\\/] *x/;function Fe(e){return dt(io,e)}var oo=/(?:(?:[0-3]?\\d\\/[01]?\\d)|(?:[01]?\\d\\/[0-3]?\\d))\\/(?:[12]\\d)?\\d{2}/,ao=/[12]\\d{3}[-/]?[01]\\d[-/]?[0-3]\\d +[0-2]\\d$/,uo=/^:[0-5]\\d/;function xe(e,t,r){if(oo.test(e))return!1;if(ao.test(e)){var n=r.slice(t+e.length);if(uo.test(n))return!1}return!0}var Rt=\"(\\\\[\\uFF08\\uFF3B\",Se=\")\\\\]\\uFF09\\uFF3D\",Bt=\"[^\".concat(Rt).concat(Se,\"]\"),_e=\"[\".concat(Rt).concat(I,\"]\"),lo=new RegExp(\"^\"+_e),so=R(0,3),fo=new RegExp(\"^(?:[\"+Rt+\"])?(?:\"+Bt+\"+[\"+Se+\"])?\"+Bt+\"+(?:[\"+Rt+\"]\"+Bt+\"+[\"+Se+\"])\"+so+Bt+\"*$\"),$o=/\\d{1,5}-+\\d{1,5}\\s{0,4}\\(\\d{1,4}/;function Te(e,t,r,n){if(!(!fo.test(e)||$o.test(e))){if(n!==\"POSSIBLE\"){if(t>0&&!lo.test(e)){var i=r[t-1];if(Ae(i)||be(i))return!1}var o=t+e.length;if(o<r.length){var a=r[o];if(Ae(a)||be(a))return!1}}return!0}}function lt(e){\"@babel/helpers - typeof\";return lt=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},lt(e)}function co(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function sn(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,po(n.key),n)}}function mo(e,t,r){return t&&sn(e.prototype,t),r&&sn(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function po(e){var t=ho(e,\"string\");return lt(t)==\"symbol\"?t:t+\"\"}function ho(e,t){if(lt(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(lt(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}var go=!1,yo=B(\"matching\"),Co=[\"\\\\/+(.*)/\",\"(\\\\([^(]*)\",\"(?:\".concat(L,\"-|-\").concat(L,\")\").concat(L,\"*(.+)\"),\"[\\u2012-\\u2015\\uFF0D]\".concat(L,\"*(.+)\"),\"\\\\.+\".concat(L,\"*([^.]+)\"),\"\".concat(L,\"+(\").concat(en,\"+)\")],vo=R(0,2),bo=R(0,4),mn=_t+Tt,Ao=R(0,mn),fn=\"[\".concat(h,\"]\")+bo,$n=nn+R(1,mn),No=\"(?:\"+_e+fn+\")\"+vo+$n+\"(?:\"+fn+$n+\")\"+Ao+\"(?:\"+yo+\")?\",cn=new RegExp(\"[^\".concat(rn).concat(ve,\"#]+$\")),Po=Number.MAX_SAFE_INTEGER||Math.pow(2,53)-1,pn=function(){function e(){var t=arguments.length>0&&arguments[0]!==void 0?arguments[0]:\"\",r=arguments.length>1&&arguments[1]!==void 0?arguments[1]:{},n=arguments.length>2?arguments[2]:void 0;if(co(this,e),r={v2:r.v2,defaultCallingCode:r.defaultCallingCode,defaultCountry:r.defaultCountry&&K(r.defaultCountry,n)?r.defaultCountry:void 0,leniency:r.leniency||(r.extended?\"POSSIBLE\":\"VALID\"),maxTries:r.maxTries||Po},!Ee[r.leniency])throw new TypeError('Unknown leniency: \"'.concat(r.leniency,'\"'));if(r.leniency!==\"POSSIBLE\"&&r.leniency!==\"VALID\")throw new TypeError('Invalid `leniency`: \"'.concat(r.leniency,'\". Supported values: \"POSSIBLE\", \"VALID\".'));if(r.maxTries<0)throw new TypeError(\"`maxTries` must be `>= 0`\");this.text=t,this.options=r,this.metadata=n,this.leniency=Ee[r.leniency],this.maxTries=r.maxTries,this.PATTERN=new RegExp(No,\"ig\"),this.state=\"NOT_READY\",this.searchIndex=0,this.regExpCache=new zr(32)}return mo(e,[{key:\"find\",value:function(){for(var r;this.maxTries>0&&(r=this.PATTERN.exec(this.text))!==null;){var n=r[0],i=r.index;if(n=Fe(n),xe(n,i,this.text)){var o=this.parseAndVerify(n,i,this.text)||this.extractInnerMatch(n,i,this.text);if(o){if(this.options.v2)return{startsAt:o.startsAt,endsAt:o.endsAt,number:o.phoneNumber};var a=o.phoneNumber,u={startsAt:o.startsAt,endsAt:o.endsAt,phone:a.nationalNumber};return a.country?go&&country===\"001\"?u.countryCallingCode=a.countryCallingCode:u.country=a.country:u.countryCallingCode=a.countryCallingCode,a.ext&&(u.ext=a.ext),u}}this.maxTries--}}},{key:\"extractInnerMatch\",value:function(r,n,i){for(var o=0,a=Co;o<a.length;o++)for(var u=a[o],d=!0,l=void 0,s=new RegExp(u,\"g\");this.maxTries>0&&(l=s.exec(r))!==null;){if(d){var c=dt(cn,r.slice(0,l.index)),m=this.parseAndVerify(c,n,i);if(m)return m;this.maxTries--,d=!1}var y=dt(cn,l[1]),b=r.indexOf(y,l.index),E=this.parseAndVerify(y,n+b,i);if(E)return E;this.maxTries--}}},{key:\"parseAndVerify\",value:function(r,n,i){if(Te(r,n,i,this.options.leniency)){var o=x(r,{extended:!0,defaultCountry:this.options.defaultCountry,defaultCallingCode:this.options.defaultCallingCode},this.metadata);if(o&&o.isPossible()&&this.leniency(o,{candidate:r,defaultCountry:this.options.defaultCountry,metadata:this.metadata,regExpCache:this.regExpCache}))return{startsAt:n,endsAt:n+r.length,phoneNumber:o}}}},{key:\"hasNext\",value:function(){return this.state===\"NOT_READY\"&&(this.lastMatch=this.find(),this.lastMatch?this.state=\"READY\":this.state=\"DONE\"),this.state===\"READY\"}},{key:\"next\",value:function(){if(!this.hasNext())throw new Error(\"No next element\");var r=this.lastMatch;return this.lastMatch=null,this.state=\"NOT_READY\",r}}])}();function st(e){\"@babel/helpers - typeof\";return st=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},st(e)}function hn(e,t){var r=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter(function(i){return Object.getOwnPropertyDescriptor(e,i).enumerable})),r.push.apply(r,n)}return r}function gn(e){for(var t=1;t<arguments.length;t++){var r=arguments[t]!=null?arguments[t]:{};t%2?hn(Object(r),!0).forEach(function(n){Eo(e,n,r[n])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(r)):hn(Object(r)).forEach(function(n){Object.defineProperty(e,n,Object.getOwnPropertyDescriptor(r,n))})}return e}function Eo(e,t,r){return(t=Fo(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}function Fo(e){var t=xo(e,\"string\");return st(t)==\"symbol\"?t:t+\"\"}function xo(e,t){if(st(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(st(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}function Lt(){for(var e=it(arguments),t=e.text,r=e.options,n=e.metadata,i=new pn(t,gn(gn({},r),{},{v2:!0}),n),o=[];i.hasNext();)o.push(i.next());return o}function ft(e){\"@babel/helpers - typeof\";return ft=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},ft(e)}function So(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function yn(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,To(n.key),n)}}function _o(e,t,r){return t&&yn(e.prototype,t),r&&yn(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function To(e){var t=Io(e,\"string\");return ft(t)==\"symbol\"?t:t+\"\"}function Io(e,t){if(ft(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(ft(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}var Cn=function(){function e(t){var r=t.onCountryChange,n=t.onCallingCodeChange;So(this,e),this.onCountryChange=r,this.onCallingCodeChange=n}return _o(e,[{key:\"reset\",value:function(r){var n=r.country,i=r.callingCode;this.international=!1,this.missingPlus=!1,this.IDDPrefix=void 0,this.callingCode=void 0,this.digits=\"\",this.resetNationalSignificantNumber(),this.initCountryAndCallingCode(n,i)}},{key:\"resetNationalSignificantNumber\",value:function(){this.nationalSignificantNumber=this.getNationalDigits(),this.nationalSignificantNumberIsModified=!1,this.nationalPrefix=void 0,this.carrierCode=void 0,this.prefixBeforeNationalSignificantNumberThatIsNotNationalPrefix=void 0}},{key:\"update\",value:function(r){for(var n=0,i=Object.keys(r);n<i.length;n++){var o=i[n];this[o]=r[o]}}},{key:\"initCountryAndCallingCode\",value:function(r,n){this.setCountry(r),this.setCallingCode(n)}},{key:\"setCountry\",value:function(r){this.country=r,this.onCountryChange(r)}},{key:\"setCallingCode\",value:function(r){this.callingCode=r,this.onCallingCodeChange(r,this.country)}},{key:\"startInternationalNumber\",value:function(r,n){this.international=!0,this.initCountryAndCallingCode(r,n)}},{key:\"appendDigits\",value:function(r){this.digits+=r}},{key:\"appendNationalSignificantNumberDigits\",value:function(r){this.nationalSignificantNumber+=r}},{key:\"getNationalDigits\",value:function(){return this.international?this.digits.slice((this.IDDPrefix?this.IDDPrefix.length:0)+(this.callingCode?this.callingCode.length:0)):this.digits}},{key:\"getDigitsWithoutInternationalPrefix\",value:function(){return this.international&&this.IDDPrefix?this.digits.slice(this.IDDPrefix.length):this.digits}}])}();function Do(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=Oo(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function Oo(e,t){if(e){if(typeof e==\"string\")return vn(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?vn(e,t):void 0}}function vn(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}var C=\"x\",Ie=new RegExp(C);function $t(e,t){if(t<1)return\"\";for(var r=\"\";t>1;)t&1&&(r+=e),t>>=1,e+=e;return r+e}function De(e,t){return e[t]===\")\"&&t++,wo(e.slice(0,t))}function wo(e){for(var t=[],r=0;r<e.length;)e[r]===\"(\"?t.push(r):e[r]===\")\"&&t.pop(),r++;var n=0,i=\"\";t.push(e.length);for(var o=0,a=t;o<a.length;o++){var u=a[o];i+=e.slice(n,u),n=u+1}return i}function bn(e,t,r){for(var n=Do(r.split(\"\")),i;!(i=n()).done;){var o=i.value;if(e.slice(t+1).search(Ie)<0)return;t=e.search(Ie),e=e.replace(Ie,o)}return[e,t]}function Oe(e,t,r){var n=r.metadata,i=r.shouldTryNationalPrefixFormattingRule,o=r.getSeparatorAfterNationalPrefix,a=new RegExp(\"^(?:\".concat(t.pattern(),\")$\"));if(a.test(e.nationalSignificantNumber))return Bo(e,t,{metadata:n,shouldTryNationalPrefixFormattingRule:i,getSeparatorAfterNationalPrefix:o})}function Nn(e,t,r){return T(e,t,r)===\"IS_POSSIBLE\"}function Bo(e,t,r){var n=r.metadata,i=r.shouldTryNationalPrefixFormattingRule,o=r.getSeparatorAfterNationalPrefix,a=e.nationalSignificantNumber,u=e.international,d=e.nationalPrefix,l=e.carrierCode;if(i(t)){var s=An(e,t,{useNationalPrefixFormattingRule:!0,getSeparatorAfterNationalPrefix:o,metadata:n});if(s)return s}return An(e,t,{useNationalPrefixFormattingRule:!1,getSeparatorAfterNationalPrefix:o,metadata:n})}function An(e,t,r){var n=r.metadata,i=r.useNationalPrefixFormattingRule,o=r.getSeparatorAfterNationalPrefix,a=q(e.nationalSignificantNumber,t,{carrierCode:e.carrierCode,useInternationalFormat:e.international,withNationalPrefix:i,metadata:n});if(i||(e.nationalPrefix?a=e.nationalPrefix+o(t)+a:e.prefixBeforeNationalSignificantNumberThatIsNotNationalPrefix&&(a=e.prefixBeforeNationalSignificantNumberThatIsNotNationalPrefix+\" \"+a)),Ro(a,e))return a}function Ro(e,t){return P(e)===t.getNationalDigits()}function ct(e){\"@babel/helpers - typeof\";return ct=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},ct(e)}function Lo(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function Pn(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,ko(n.key),n)}}function Mo(e,t,r){return t&&Pn(e.prototype,t),r&&Pn(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function ko(e){var t=jo(e,\"string\");return ct(t)==\"symbol\"?t:t+\"\"}function jo(e,t){if(ct(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(ct(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}var En=function(){function e(){Lo(this,e)}return Mo(e,[{key:\"parse\",value:function(r){if(this.context=[{or:!0,instructions:[]}],this.parsePattern(r),this.context.length!==1)throw new Error(\"Non-finalized contexts left when pattern parse ended\");var n=this.context[0],i=n.branches,o=n.instructions;if(i)return{op:\"|\",args:i.concat([we(o)])};if(o.length===0)throw new Error(\"Pattern is required\");return o.length===1?o[0]:o}},{key:\"startContext\",value:function(r){this.context.push(r)}},{key:\"endContext\",value:function(){this.context.pop()}},{key:\"getContext\",value:function(){return this.context[this.context.length-1]}},{key:\"parsePattern\",value:function(r){if(!r)throw new Error(\"Pattern is required\");var n=r.match(Ho);if(!n){if(Uo.test(r))throw new Error(\"Illegal characters found in a pattern: \".concat(r));this.getContext().instructions=this.getContext().instructions.concat(r.split(\"\"));return}var i=n[1],o=r.slice(0,n.index),a=r.slice(n.index+i.length);switch(i){case\"(?:\":o&&this.parsePattern(o),this.startContext({or:!0,instructions:[],branches:[]});break;case\")\":if(!this.getContext().or)throw new Error('\")\" operator must be preceded by \"(?:\" operator');if(o&&this.parsePattern(o),this.getContext().instructions.length===0)throw new Error('No instructions found after \"|\" operator in an \"or\" group');var u=this.getContext(),d=u.branches;d.push(we(this.getContext().instructions)),this.endContext(),this.getContext().instructions.push({op:\"|\",args:d});break;case\"|\":if(!this.getContext().or)throw new Error('\"|\" operator can only be used inside \"or\" groups');if(o&&this.parsePattern(o),!this.getContext().branches)if(this.context.length===1)this.getContext().branches=[];else throw new Error('\"branches\" not found in an \"or\" group context');this.getContext().branches.push(we(this.getContext().instructions)),this.getContext().instructions=[];break;case\"[\":o&&this.parsePattern(o),this.startContext({oneOfSet:!0});break;case\"]\":if(!this.getContext().oneOfSet)throw new Error('\"]\" operator must be preceded by \"[\" operator');this.endContext(),this.getContext().instructions.push({op:\"[]\",args:Go(o)});break;default:throw new Error(\"Unknown operator: \".concat(i))}a&&this.parsePattern(a)}}])}();function Go(e){for(var t=[],r=0;r<e.length;){if(e[r]===\"-\"){if(r===0||r===e.length-1)throw new Error(\"Couldn't parse a one-of set pattern: \".concat(e));for(var n=e[r-1].charCodeAt(0)+1,i=e[r+1].charCodeAt(0)-1,o=n;o<=i;)t.push(String.fromCharCode(o)),o++}else t.push(e[r]);r++}return t}var Uo=/[\\(\\)\\[\\]\\?\\:\\|]/,Ho=new RegExp(\"(\\\\||\\\\(\\\\?\\\\:|\\\\)|\\\\[|\\\\])\");function we(e){return e.length===1?e[0]:e}function Fn(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=Vo(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function Vo(e,t){if(e){if(typeof e==\"string\")return xn(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?xn(e,t):void 0}}function xn(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}function mt(e){\"@babel/helpers - typeof\";return mt=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},mt(e)}function Wo(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a function\")}function Sn(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,\"value\"in n&&(n.writable=!0),Object.defineProperty(e,Xo(n.key),n)}}function Ko(e,t,r){return t&&Sn(e.prototype,t),r&&Sn(e,r),Object.defineProperty(e,\"prototype\",{writable:!1}),e}function Xo(e){var t=Yo(e,\"string\");return mt(t)==\"symbol\"?t:t+\"\"}function Yo(e,t){if(mt(e)!=\"object\"||!e)return e;var r=e[Symbol.toPrimitive];if(r!==void 0){var n=r.call(e,t||\"default\");if(mt(n)!=\"object\")return n;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(t===\"string\"?String:Number)(e)}var _n=function(){function e(t){Wo(this,e),this.matchTree=new En().parse(t)}return Ko(e,[{key:\"match\",value:function(r){var n=arguments.length>1&&arguments[1]!==void 0?arguments[1]:{},i=n.allowOverflow;if(!r)throw new Error(\"String is required\");var o=Be(r.split(\"\"),this.matchTree,!0);if(o&&o.match&&delete o.matchedChars,!(o&&o.overflow&&!i))return o}}])}();function Be(e,t,r){if(typeof t==\"string\"){var n=e.join(\"\");return t.indexOf(n)===0?e.length===t.length?{match:!0,matchedChars:e}:{partialMatch:!0}:n.indexOf(t)===0?r&&e.length>t.length?{overflow:!0}:{match:!0,matchedChars:e.slice(0,t.length)}:void 0}if(Array.isArray(t)){for(var i=e.slice(),o=0;o<t.length;){var a=t[o],u=Be(i,a,r&&o===t.length-1);if(u){if(u.overflow)return u;if(u.match){if(i=i.slice(u.matchedChars.length),i.length===0)return o===t.length-1?{match:!0,matchedChars:e}:{partialMatch:!0}}else{if(u.partialMatch)return{partialMatch:!0};throw new Error(\"Unsupported match result:\\n\".concat(JSON.stringify(u,null,2)))}}else return;o++}return r?{overflow:!0}:{match:!0,matchedChars:e.slice(0,e.length-i.length)}}switch(t.op){case\"|\":for(var d,l=Fn(t.args),s;!(s=l()).done;){var c=s.value,m=Be(e,c,r);if(m){if(m.overflow)return m;if(m.match)return{match:!0,matchedChars:m.matchedChars};if(m.partialMatch)d=!0;else throw new Error(\"Unsupported match result:\\n\".concat(JSON.stringify(m,null,2)))}}return d?{partialMatch:!0}:void 0;case\"[]\":for(var y=Fn(t.args),b;!(b=y()).done;){var E=b.value;if(e[0]===E)return e.length===1?{match:!0,matchedChars:e}:r?{overflow:!0}:{match:!0,matchedChars:[E]}}return;default:throw new Error(\"Unsupported instruction tree: \".concat(t))}}function pt(e){\"@babel/helpers - typeof\";return pt=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(t){return typeof t}:function(t){return t&&typeof Symbol==\"function\"&&t.constructor===Symbol&&t!==Symbol.prototype?\"symbol\":typeof t},pt(e)}function Tn(e,t){var r=typeof Symbol<\"u\"&&e[Symbol.iterator]||e[\"@@iterator\"];if(r)return(r=r.call(e)).next.bind(r);if(Array.isArray(e)||(r=Zo(e))||t&&e&&typeof e.length==\"number\"){r&&(e=r);var n=0;return function(){return n>=e.length?{done:!0}:{done:!1,value:e[n++]}}}throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}function Zo(e,t){if(e){if(typeof e==\"string\")return In(e,t);var r={}.toString.call(e).slice(8,-1);return r===\"Object\"&&e.constructor&&(r=e.constructor.name),r===\"Map\"||r===\"Set\"?Array.from(e):r===\"Arguments\"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?In(e,t):void 0}}function In(e,t){(t==null||t>e.length)&&(t=e.length);for(var r=0,n=Array(t);r<t;r++)n[r]=e[r];return n}function Jo(e,t){if(!(e instanceof t))throw new TypeError(\"Cannot call a class as a fu
+```

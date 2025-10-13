@@ -1,0 +1,7 @@
+### kb/previews_full/kb__previews_full__kb__previews_full__flows__master-first__master-and-slot@guest.har.part034.md.part001.md.part001.md (part 002)
+
+```md
+e\":true,\"bookable_status\":\"bookable\",\"duration\":900,\"price_min\":2500,\"price_max\":2500}},{\"type\":\"booking_search_r
+```
+
+```
