@@ -1,3 +1,4 @@
+
 name: Build full KB previews
 
 on:
@@ -10,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,6 +26,7 @@ jobs:
         run: |
           set -euo pipefail
 
+          # Какие файлы считаем текстовыми
           is_text () {
             case "${1,,}" in
               *.html|*.har|*.json|*.md|*.css|*.js|*.ts|*.tsx|*.svg|*.txt) return 0 ;;
@@ -31,35 +34,45 @@ jobs:
             esac
           }
 
-          sanitize () {
-            # заменяем / на __ чтобы получилось имя файла
-            echo "${1//\//__}"
+          # Безопасные символы в именах
+          safe_part () {
+            echo "$1" | sed 's#[^-A-Za-z0-9._/ ]#_#g; s# #_#g'
           }
 
+          # Короткий путь сохранения: hash + оригинальное имя; сохраняем подкаталоги
+          out_base () {
+            local path="$1"
+            local dir="$(dirname "$path")"
+            local file="$(basename "$path")"
+            local hash="$(printf "%s" "$path" | sha1sum | cut -c1-8)"
+            local safe_dir="$(safe_part "$dir")"
+            local safe_file="$(safe_part "$file")"
+            echo "kb/previews_full/${safe_dir}/${hash}__${safe_file}"
+          }
+
+          # Добавление записи в manifest.json
           add_manifest () {
             local path="$1" size="$2" sha="$3" parts_json="$4"
-            # аккуратно добавляем объект в массив files
             jq --arg p "$path" --arg s "$size" --arg h "$sha" \
                --argjson parts "$parts_json" \
                '.files += [{"path":$p,"size":($s|tonumber),"sha256":$h,"parts":$parts}]' \
                kb/manifest.json > kb/.manifest.tmp && mv kb/.manifest.tmp kb/manifest.json
           }
 
-          # размер части ~400KB (можно увеличить до 800000 при необходимости)
           PART_SIZE=400000
 
           while IFS= read -r path; do
-            if ! is_text "$path"; then
-              continue
-            fi
+            is_text "$path" || continue
 
             size=$(wc -c < "$path" | tr -d ' ')
             sha=$(sha256sum "$path" | awk '{print $1}')
-            base="kb/previews_full/$(sanitize "$path")"
+            base="$(out_base "$path")"           # без расширения превью
+            mkdir -p "$(dirname "$base")"
+
+            lang="${path##*.}"
 
             if [ "$size" -le "$PART_SIZE" ]; then
-              # пишем одним markdown-файлом
-              lang="${path##*.}"
+              out="${base}.md"
               {
                 echo "### $path"
                 echo
@@ -67,19 +80,18 @@ jobs:
                 cat "$path"
                 echo
                 echo '```'
-              } > "${base}.md"
-              parts='[{"file":"'"${base##kb/}/"'.md'\"'}]'
+              } > "$out"
+              parts='[{"file":"'"${out#kb/}"'"}]'
             else
-              # режем на части по размеру
               tmpdir=$(mktemp -d)
-              split -b "$PART_SIZE" --numeric-suffixes=1 --suffix-length=3 "$path" "$tmpdir/part_"
+              split -b "$PART_SIZE" -d -a 3 "$path" "$tmpdir/part_"
+
               parts="["
               n=0
               for p in "$tmpdir"/part_*; do
                 n=$((n+1))
                 idx=$(printf "%03d" "$n")
-                out="${base}.part${idx}.md"
-                lang="${path##*.}"
+                out="${base}.part${idx}.md"      # <hash>__file.ext.partNNN.md (ОДИН раз)
                 {
                   echo "### $path (part ${idx})"
                   echo
@@ -88,8 +100,7 @@ jobs:
                   echo
                   echo '```'
                 } > "$out"
-                rel="${out#kb/}"
-                parts="${parts}{\"file\":\"$rel\"},"
+                parts="${parts}{\"file\":\"${out#kb/}\"},"
               done
               parts="${parts%,}]"
               rm -rf "$tmpdir"
