@@ -1,9 +1,15 @@
-name: Build full KB previews (incremental)
+name: Build full KB previews
 
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - "kb/**"
   workflow_dispatch:
+
+concurrency:
+  group: kb-index
+  cancel-in-progress: false
 
 jobs:
   build-index:
@@ -15,9 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install jq (for manifest edits)
-        run: sudo apt-get update && sudo apt-get install -y jq
-
       - name: Prepare folders
         run: |
           mkdir -p kb/previews_full
@@ -28,7 +31,6 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Какие файлы считаем текстовыми
           is_text () {
             case "${1,,}" in
               *.html|*.har|*.json|*.md|*.css|*.js|*.ts|*.tsx|*.svg|*.txt) return 0 ;;
@@ -36,12 +38,10 @@ jobs:
             esac
           }
 
-          # Безопасные символы в именах
           safe_part () {
-            echo "$1" | sed 's#[^-A-Za-z0-9._/ ]#_#g; s# #_#g'
+            echo "$1" | sed 's#[^-A-Za-z0-9._/ /]#_#g; s# #_#g'
           }
 
-          # Короткий путь сохранения: hash + оригинальное имя; сохраняем подкаталоги
           out_base () {
             local path="$1"
             local dir="$(dirname "$path")"
@@ -52,7 +52,6 @@ jobs:
             echo "kb/previews_full/${safe_dir}/${hash}__${safe_file}"
           }
 
-          # Добавление записи в manifest.json
           add_manifest () {
             local path="$1" size="$2" sha="$3" parts_json="$4"
             jq --arg p "$path" --arg s "$size" --arg h "$sha" \
@@ -65,12 +64,10 @@ jobs:
 
           while IFS= read -r path; do
             is_text "$path" || continue
-
             size=$(wc -c < "$path" | tr -d ' ')
             sha=$(sha256sum "$path" | awk '{print $1}')
             base="$(out_base "$path")"
             mkdir -p "$(dirname "$base")"
-
             lang="${path##*.}"
 
             if [ "$size" -le "$PART_SIZE" ]; then
@@ -87,7 +84,6 @@ jobs:
             else
               tmpdir=$(mktemp -d)
               split -b "$PART_SIZE" -d -a 3 "$path" "$tmpdir/part_"
-
               parts="["
               n=0
               for p in "$tmpdir"/part_*; do
