@@ -1,59 +1,34 @@
-
 name: Build full KB previews (incremental)
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
-    inputs:
-      mode:
-        description: "Что собирать"
-        required: true
-        default: "changed"
-        type: choice
-        options:
-          - changed    # только изменённые файлы
-          - pages      # все из pages/**
-          - flows      # все из flows/**
-          - all        # всё (может не уложиться в 6 ч)
-      maxFiles:
-        description: "Максимум файлов за один прогон"
-        required: false
-        default: "2500"
-        type: string
 
 jobs:
   build-index:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
     permissions:
       contents: write
-    concurrency:
-      group: kb-previews-${{ github.ref }}
-      cancel-in-progress: false
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 2   # чтобы diff по push работал
+
+      - name: Install jq (for manifest edits)
+        run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Prepare folders
         run: |
           mkdir -p kb/previews_full
-          if [ ! -f kb/manifest.json ]; then
-            echo '{"files":[]}' > kb/manifest.json
-          fi
+          echo '{"files":[]}' > kb/manifest.json
 
-      - name: Write build script
+      - name: Generate full previews (+split big)
         shell: bash
         run: |
-          cat > build.sh <<'EOS'
           set -euo pipefail
 
-          MODE="${1:-changed}"
-          MAX="${2:-2500}"
-
+          # Какие файлы считаем текстовыми
           is_text () {
             case "${1,,}" in
               *.html|*.har|*.json|*.md|*.css|*.js|*.ts|*.tsx|*.svg|*.txt) return 0 ;;
@@ -61,64 +36,42 @@ jobs:
             esac
           }
 
+          # Безопасные символы в именах
           safe_part () {
             echo "$1" | sed 's#[^-A-Za-z0-9._/ ]#_#g; s# #_#g'
           }
 
+          # Короткий путь сохранения: hash + оригинальное имя; сохраняем подкаталоги
           out_base () {
             local path="$1"
             local dir="$(dirname "$path")"
             local file="$(basename "$path")"
-            local hash
-            hash="$(printf "%s" "$path" | sha1sum | cut -c1-8)"
-            echo "kb/previews_full/$(safe_part "$dir")/${hash}__$(safe_part "$file")"
+            local hash="$(printf "%s" "$path" | sha1sum | cut -c1-8)"
+            local safe_dir="$(safe_part "$dir")"
+            local safe_file="$(safe_part "$file")"
+            echo "kb/previews_full/${safe_dir}/${hash}__${safe_file}"
           }
 
-          # читаем старый manifest, чтобы пропускать не изменившиеся файлы
-          has_same_hash () {
-            local path="$1" sha="$2"
-            jq -e --arg p "$path" --arg h "$sha" \
-              '.files[] | select(.path==$p and .sha256==$h)' \
-              kb/manifest.json > /dev/null 2>&1
+          # Добавление записи в manifest.json
+          add_manifest () {
+            local path="$1" size="$2" sha="$3" parts_json="$4"
+            jq --arg p "$path" --arg s "$size" --arg h "$sha" \
+               --argjson parts "$parts_json" \
+               '.files += [{"path":$p,"size":($s|tonumber),"sha256":$h,"parts":$parts}]' \
+               kb/manifest.json > kb/.manifest.tmp && mv kb/.manifest.tmp kb/manifest.json
           }
 
           PART_SIZE=400000
-          LANG_DEFAULT="txt"
 
-          # формируем список файлов
-          if [ "$MODE" = "changed" ]; then
-            # только изменения текущего пуша (или HEAD^)
-            BASE="$(git rev-parse HEAD^ || echo '')"
-            if [ -n "$BASE" ]; then
-              LIST=$(git diff --name-only "$BASE" HEAD --)
-            else
-              LIST=$(git ls-files)
-            fi
-          elif [ "$MODE" = "pages" ]; then
-            LIST=$(git ls-files 'pages/**')
-          elif [ "$MODE" = "flows" ]; then
-            LIST=$(git ls-files 'flows/**')
-          else
-            LIST=$(git ls-files)
-          fi
-
-          COUNT=0
           while IFS= read -r path; do
-            [ -n "$path" ] || continue
             is_text "$path" || continue
 
             size=$(wc -c < "$path" | tr -d ' ')
             sha=$(sha256sum "$path" | awk '{print $1}')
-
-            # пропускаем, если в manifest уже есть такой же sha
-            if has_same_hash "$path" "$sha"; then
-              continue
-            fi
-
             base="$(out_base "$path")"
             mkdir -p "$(dirname "$base")"
+
             lang="${path##*.}"
-            [ -n "$lang" ] || lang="$LANG_DEFAULT"
 
             if [ "$size" -le "$PART_SIZE" ]; then
               out="${base}.md"
@@ -134,6 +87,7 @@ jobs:
             else
               tmpdir=$(mktemp -d)
               split -b "$PART_SIZE" -d -a 3 "$path" "$tmpdir/part_"
+
               parts="["
               n=0
               for p in "$tmpdir"/part_*; do
@@ -154,29 +108,13 @@ jobs:
               rm -rf "$tmpdir"
             fi
 
-            jq --arg p "$path" --arg s "$size" --arg h "$sha" \
-               --argjson parts "$parts" \
-               '.files += [{"path":$p,"size":($s|tonumber),"sha256":$h,"parts":$parts}]' \
-               kb/manifest.json > kb/.manifest.tmp && mv kb/.manifest.tmp kb/manifest.json
-
-            COUNT=$((COUNT+1))
-            if [ "$COUNT" -ge "$MAX" ]; then
-              echo "Reached MAX=$MAX files for this run. Stopping gracefully."
-              break
-            fi
-          done <<< "$LIST"
-
-          echo "Processed $COUNT files (mode=$MODE, max=$MAX)."
-          EOS
-          chmod +x build.sh
-
-      - name: Generate previews (incremental)
-        run: ./build.sh "${{ github.event.inputs.mode || 'changed' }}" "${{ github.event.inputs.maxFiles || '2500' }}"
+            add_manifest "$path" "$size" "$sha" "$parts"
+          done < <(git ls-files)
 
       - name: Commit previews & manifest
         run: |
           git config user.name "kb-bot"
           git config user.email "kb-bot@users.noreply.github.com"
           git add kb/manifest.json kb/previews_full/ || true
-          git commit -m "chore(kb): incremental previews (${{ github.event.inputs.mode || 'changed' }})" || echo "nothing to commit"
+          git commit -m "chore(kb): update full previews & manifest" || echo "nothing to commit"
           git push || true
