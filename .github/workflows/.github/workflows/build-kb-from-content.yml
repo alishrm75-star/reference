@@ -3,7 +3,13 @@ name: Build KB from content
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - "kb/**"
   workflow_dispatch:
+
+concurrency:
+  group: kb-from-content
+  cancel-in-progress: false
 
 jobs:
   build-kb:
@@ -34,8 +40,8 @@ jobs:
           import path from 'node:path';
 
           const ROOT = process.cwd();
-          const PAGES_DIR = path.join(ROOT, 'pages');
-          const FLOWS_DIR = path.join(ROOT, 'flows');
+          const PAGES_DIR = path.join(ROOT, 'reference', 'pages');
+          const FLOWS_DIR = path.join(ROOT, 'reference', 'flows');
           const KB_DIR = path.join(ROOT, 'kb');
 
           const isHtml = (p) => p.toLowerCase().endsWith('.html');
@@ -111,23 +117,22 @@ jobs:
             return p.replace(process.cwd() + path.sep, '').replace(/\\/g, '/');
           }
 
-          function inferGroupByContent(rel, meta) {
+          function inferGroupByContent(meta, rel) {
             const text = (meta.title + ' ' + meta.h1 + ' ' + meta.h2).toLowerCase();
             if (meta.markers.hasCalendar || meta.markers.hasSlots) return 'select-time';
-            if (text.includes('confirm') || /подтверж/i.test(text)) return 'confirm';
+            if (/подтверж|confirm/i.test(text)) return 'confirm';
             if (meta.markers.hasSuccess) return 'success';
-            if (meta.markers.hasSummary) return 'select-services';
-            if (/service|услуг/i.test(text)) return 'select-services';
-            if (/master|специалист/i.test(text)) return 'select-master';
+            if (/услуг|service/i.test(text) || meta.markers.hasSummary) return 'select-services';
+            if (/мастер|специалист|master/i.test(text)) return 'select-master';
             if (/personal|кабинет|личный/i.test(text)) return 'personal';
-            if (/auth|verify|код/i.test(text)) return 'auth';
+            if (/auth|verify|код|вход/i.test(text)) return 'auth';
             return 'misc';
           }
 
           function inferStateByContent(meta) {
             if (meta.markers.hasError) return 'error';
             if (meta.markers.hasSuccess) return 'success';
-            if (meta.markers.hasSidebar) return 'sidebar';
+            if (meta.markers.hasSidebar) return 'sidebar-open';
             if (meta.markers.hasCalendar && !meta.markers.hasSlots) return 'calendar-only';
             if (meta.markers.hasCalendar && meta.markers.hasSlots) return 'calendar-with-slots';
             if (meta.markers.hasSummary) return 'summary';
@@ -142,7 +147,7 @@ jobs:
             for (const abs of pageFiles) {
               const html = await readText(abs);
               const meta = extractHtmlMeta(html);
-              const group = inferGroupByContent(abs.replace(ROOT + '/', ''), meta);
+              const group = inferGroupByContent(meta, abs);
               const state = inferStateByContent(meta);
               pageRows.push({
                 file: niceRel(abs),
@@ -173,7 +178,7 @@ jobs:
             }
 
             let statesMd = `# States Index — построено по СОДЕРЖИМОМУ HTML\n\n`;
-            statesMd += `> Источник: \`pages/**\` (парсинг <title>, h1/h2 и маркеров календаря/слотов/сайдбара/успеха/ошибки)\n\n`;
+            statesMd += `> Источник: \`reference/pages/**\` (парсинг <title>, h1/h2 и маркеров: sidebar/calendar/slots/summary/error/success). Ориентируемся на КОНТЕНТ, не на имена.\n\n`;
             for (const [g, rows] of Object.entries(groups)) {
               statesMd += `## ${g}\n\n`;
               statesMd += `| Файл | Заголовок | Состояние |\n|------|-----------|-----------|\n`;
@@ -190,7 +195,7 @@ jobs:
             });
 
             let apiMd = `# API Contracts (извлечено из HAR, без догадок)\n\n`;
-            apiMd += `> Источник: \`flows/**.har\`\n\n`;
+            apiMd += `> Источник: \`reference/flows/**.har\`\n\n`;
             for (const e of endpoints) {
               apiMd += `### ${e.method} ${e.url}\n`;
               apiMd += `Встречается в:\n`;
@@ -213,5 +218,5 @@ jobs:
           git config user.name "kb-bot"
           git config user.email "kb-bot@users.noreply.github.com"
           git add kb/states-index.md kb/api-contracts.md || true
-          git commit -m "chore(kb): rebuild from content" || echo "nothing to commit"
+          git commit -m "chore(kb): rebuild from content (content-based)" || echo "nothing to commit"
           git push || true
