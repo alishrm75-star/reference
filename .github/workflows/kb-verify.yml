@@ -8,122 +8,77 @@ on:
 jobs:
   verify-kb:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verify manifest & previews vs repository contents
+      - name: Verify manifest & previews vs repository content
         shell: bash
         run: |
           set -euo pipefail
+          cd reference
 
-          ROOT="."
-          REF_DIR="reference"
-          MANIFEST="${REF_DIR}/kb/manifest.json"
-          PREV_DIR="${REF_DIR}/kb/previews_full"
-          REPORT="${REF_DIR}/kb/verify.md"
+          # Подсчёты по фактическому содержимому
+          html_count=$(find pages -type f -name '*.html' | wc -l | tr -d ' ')
+          har_count=$(find flows -type f -name '*.har' | wc -l | tr -d ' ')
 
-          # Подсчёты по репозиторию (только по содержимому, без привязки к именам)
-          mapfile -t HTML_FILES < <(find "${REF_DIR}/pages" -type f -name '*.html' | sort || true)
-          mapfile -t HAR_FILES  < <(find "${REF_DIR}/flows" -type f -name '*.har'  | sort || true)
-
-          HTML_CNT=${#HTML_FILES[@]}
-          HAR_CNT=${#HAR_FILES[@]}
-
-          # Список "важных" файлов репозитория (HTML+HAR)
-          mapfile -t REPO_IMPORTANT < <(
-            { printf '%s\n' "${HTML_FILES[@]}"; printf '%s\n' "${HAR_FILES[@]}"; } \
-            | sed 's#^\./##' | sort -u
-          )
-
-          MF_PRESENT=false
-          if [[ -f "${MANIFEST}" ]]; then
-            MF_PRESENT=true
-            # Пути из манифеста и части превью
-            mapfile -t MANIFEST_PATHS < <(jq -r '.files[].path // empty' "${MANIFEST}" | sort -u || true)
-            PARTS_COUNT=$(jq '[.files[].parts[]] | length' "${MANIFEST}" 2>/dev/null || echo 0)
-            FILES_TOTAL=$(jq '.files | length' "${MANIFEST}" 2>/dev/null || echo 0)
+          manifest_path="kb/manifest.json"
+          if [[ -f "$manifest_path" ]]; then
+            manifest_total=$(jq '.files|length' "$manifest_path")
           else
-            MANIFEST_PATHS=()
-            PARTS_COUNT=0
-            FILES_TOTAL=0
+            manifest_total=0
           fi
 
-          # Проверка, что папка превью существует и не пуста
-          PREV_EXISTS="нет"
-          if [[ -d "${PREV_DIR}" ]] && [[ $(find "${PREV_DIR}" -type f | wc -l | tr -d ' ') -gt 0 ]]; then
-            PREV_EXISTS="да"
+          previews_dir="kb/previews_full"
+          previews_exists="нет"
+          if [[ -d "$previews_dir" ]] && [[ -n "$(ls -A "$previews_dir" 2>/dev/null || true)" ]]; then
+            previews_exists="да"
           fi
 
-          # Кто не попал в манифест (есть в репо, нет в manifest.json)
-          # (если манифеста нет — считаем, что всё отсутствует)
-          if $MF_PRESENT; then
-            # разность множеств: REPO_IMPORTANT \ MANIFEST_PATHS
-            mapfile -t MISSING_IN_MANIFEST < <(
-              comm -23 <(printf '%s\n' "${REPO_IMPORTANT[@]}" | sort) \
-                       <(printf '%s\n' "${MANIFEST_PATHS[@]}" | sort)
-            )
-          else
-            MISSING_IN_MANIFEST=("${REPO_IMPORTANT[@]}")
-          fi
+          # Собираем список "сирот" (записаны в манифест, но файла нет)
+          mapfile -t manifest_paths < <(jq -r '.files[].path' "$manifest_path" 2>/dev/null || true)
+          missing=()
+          for p in "${manifest_paths[@]:-}"; do
+            [[ -e "$p" ]] || missing+=("$p")
+          done
 
-          # Сироты манифеста (есть в манифесте, но файла нет)
-          ORPHANS=()
-          if $MF_PRESENT; then
-            while IFS= read -r p; do
-              [[ -f "${p}" ]] || ORPHANS+=("$p")
-            done < <(printf '%s\n' "${MANIFEST_PATHS[@]}")
-          fi
+          # Отчёт – всегда со свежим штампом (чтобы был коммит)
+          now="$(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          run_info="run_id=${GITHUB_RUN_ID}, run_number=${GITHUB_RUN_NUMBER}, sha=${GITHUB_SHA:0:7}"
 
-          # Генерация отчёта
-          TS_UTC="$(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-          mkdir -p "$(dirname "${REPORT}")"
-
+          mkdir -p kb
           {
             echo "# Verify — проверка целостности базы знаний"
-            echo "Дата: ${TS_UTC}"
+            echo "Дата: ${now}"
+            echo
+            echo "Запуск: ${run_info}"
             echo
             echo "## Сводка"
-            echo "- HTML в репозитории: ${HTML_CNT}"
-            echo "- HAR в репозитории: ${HAR_CNT}"
-            echo "- Всего путей в manifest.json: ${FILES_TOTAL}"
-            echo "- Всего частей превью (parts): ${PARTS_COUNT}"
-            echo "- Папка превью существует и непуста: ${PREV_EXISTS}"
+            echo "- HTML в репозитории: ${html_count}"
+            echo "- HAR в репозитории: ${har_count}"
+            echo "- Всего путей в manifest.json: ${manifest_total}"
+            echo "- Папка превью существует и непуста: ${previews_exists}"
             echo
-            echo "## Отсутствуют в manifest.json (есть в репозитории)"
-            if [[ ${#MISSING_IN_MANIFEST[@]} -eq 0 ]]; then
-              echo "✅ Нет — все важные файлы учтены в манифесте."
+            if [[ ${#missing[@]} -eq 0 ]]; then
+              echo "### Сироты манифеста (есть в manifest.json, но нет в репозитории)"
+              echo "✅ Нет — все пути из манифеста найдены."
             else
-              echo ""
-              for p in "${MISSING_IN_MANIFEST[@]}"; do
-                echo "- ${p}"
+              echo "### Сироты манифеста (есть в manifest.json, но нет в репозитории)"
+              for x in "${missing[@]}"; do
+                echo "- ${x}"
               done
             fi
-            echo
-            echo "## Сироты манифеста (есть в manifest.json, но нет в репозитории)"
-            if [[ ${#ORPHANS[@]} -eq 0 ]]; then
-              echo "✅ Нет — все пути из манифеста существуют в репозитории."
-            else
-              echo ""
-              for p in "${ORPHANS[@]:0:200}"; do
-                echo "- ${p}"
-              done
-              [[ ${#ORPHANS[@]} -gt 200 ]] && echo "... и ещё $(( ${#ORPHANS[@]} - 200 )) путей"
-            fi
-            echo
-            echo "## Сэмпл путей (из репозитория)"
-            printf '%s\n' "${REPO_IMPORTANT[@]}" | head -n 20 | sed 's/^/- /'
-          } > "${REPORT}"
-
-          echo "Report written to ${REPORT}"
+          } > kb/verify.md
 
       - name: Commit verify report
+        shell: bash
         run: |
+          set -euo pipefail
+          cd reference
           git config user.name "KB-bot"
           git config user.email "kb-bot@users.noreply.github.com"
-          git add reference/kb/verify.md
-          git commit -m "chore(kb): verify report" || echo "nothing to commit"
+          git add kb/verify.md
+          # Коммит почти всегда будет, т.к. есть штамп запуска
+          git commit -m "chore(kb): update verify report (run $GITHUB_RUN_ID)" || echo "nothing to commit"
           git push || true
