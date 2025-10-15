@@ -1,0 +1,76 @@
+name: KB coverage report
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Build coverage report
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p kb
+          echo "Collecting important files (HTML + HAR)"
+          mapfile -t IMPORTANT < <(git ls-files ':!:kb/**' ':!:.github/**' | grep -Ei '\.(html|har)$' || true)
+
+          TOTAL=${#IMPORTANT[@]}
+          echo "Important files total: $TOTAL"
+
+          MANIFEST_PATH="kb/manifest.json"
+          if [ -f "$MANIFEST_PATH" ]; then
+            mapfile -t IN_MANIFEST < <(jq -r '.files[].path' "$MANIFEST_PATH" 2>/dev/null || true)
+          else
+            IN_MANIFEST=()
+          fi
+
+          # В set вычислим попадание
+          tmp_all=$(mktemp); tmp_man=$(mktemp)
+          printf '%s\n' "${IMPORTANT[@]}" | sort > "$tmp_all"
+          printf '%s\n' "${IN_MANIFEST[@]}" | sort > "$tmp_man" || true
+
+          mapfile -t MISSING < <(comm -23 "$tmp_all" "$tmp_man" || true)
+          rm -f "$tmp_all" "$tmp_man"
+
+          COVERED=$(( TOTAL - ${#MISSING[@]} ))
+          PCT=0
+          if [ "$TOTAL" -gt 0 ]; then
+            PCT=$(( 100 * COVERED / TOTAL ))
+          fi
+
+          {
+            echo "# Coverage — полнота индексации reference"
+            echo
+            echo "Всего важных файлов (HTML+HAR): **$TOTAL**"
+            echo
+            echo "Покрыто превью: **$COVERED**"
+            echo
+            echo "Покрытие: **$PCT%**"
+            echo
+            echo "## Не попали в манифест (${#MISSING[@]})"
+            for f in "${MISSING[@]}"; do
+              echo "- \`$f\`"
+            done
+          } > kb/coverage.md
+
+      - name: Commit coverage
+        run: |
+          git config user.name "kb-bot"
+          git config user.email "kb-bot@users.noreply.github.com"
+          git add kb/coverage.md || true
+          git commit -m "chore(kb): update coverage" || echo "nothing to commit"
+          git push || true
