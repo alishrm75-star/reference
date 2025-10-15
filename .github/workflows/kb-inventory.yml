@@ -1,0 +1,30 @@
+name: kb-inventory
+on:
+  push:
+    paths:
+      - 'html/**'
+      - 'har/**'
+      - 'img/**'
+      - 'css/**'
+      - 'scc/**'
+      - 'fonts/**'
+      - 'tokens/**'
+      - 'docs/reference/**'
+      - 'scripts/**'
+      - 'package.json'
+      - '.github/workflows/kb-inventory.yml'
+  workflow_dispatch: {}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci || true
+      - run: npm run kb:build --if-present
+      - name: Upload KB manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: kb
+          path: kb/manifest.json
