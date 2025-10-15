@@ -1,6 +1,7 @@
 {
   "name": "homi-reference",
   "private": true,
+  "type": "module",
   "scripts": {
     "kb:build": "node scripts/kb-build.js",
     "kb:coverage": "node scripts/kb-coverage.js"
