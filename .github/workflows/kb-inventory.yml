@@ -23,8 +23,13 @@ jobs:
         with: { node-version: '20' }
       - run: npm ci || true
       - run: npm run kb:build --if-present
-      - name: Upload KB manifest
+      - run: npm run kb:coverage --if-present
+      - run: npm run kb:anomalies --if-present
+      - name: Upload KB artifacts
         uses: actions/upload-artifact@v4
         with:
           name: kb
-          path: kb/manifest.json
+          path: |
+            kb/manifest.json
+            kb/coverage.json
+            kb/anomalies.json
