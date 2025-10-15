@@ -1,14 +1,9 @@
 name: Verify KB integrity (reference/)
 
 on:
-  workflow_dispatch:
   push:
     branches: [ main ]
-    paths:
-      - 'reference/kb/**'
-      - 'reference/flows/**'
-      - 'reference/pages/**'
-      - '.github/workflows/kb-verify.yml'
+  workflow_dispatch:
 
 jobs:
   verify-kb:
@@ -20,108 +15,115 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verify manifest & previews vs repository content (scoped to reference/)
+      - name: Verify manifest & previews vs repository contents
         shell: bash
-        working-directory: reference
         run: |
           set -euo pipefail
 
-          MANIFEST="kb/manifest.json"
-          PREV_DIR="kb/previews_full"
+          ROOT="."
+          REF_DIR="reference"
+          MANIFEST="${REF_DIR}/kb/manifest.json"
+          PREV_DIR="${REF_DIR}/kb/previews_full"
+          REPORT="${REF_DIR}/kb/verify.md"
 
-          # 1) Источники из репозитория (Только HTML/HAR)
-          mapfile -t HTMLS < <(git ls-files 'pages/**/*.html' 'pages/*.html' 2>/dev/null || true)
-          mapfile -t HARS  < <(git ls-files 'flows/**/*.har'  'flows/*.har'  2>/dev/null || true)
-          count_html=${#HTMLS[@]}
-          count_har=${#HARS[@]}
+          # Подсчёты по репозиторию (только по содержимому, без привязки к именам)
+          mapfile -t HTML_FILES < <(find "${REF_DIR}/pages" -type f -name '*.html' | sort || true)
+          mapfile -t HAR_FILES  < <(find "${REF_DIR}/flows" -type f -name '*.har'  | sort || true)
 
-          # Объединённый список для сравнения
-          tmp_repo_targets=$(mktemp)
-          printf "%s\n" "${HTMLS[@]}" "${HARS[@]}" | sort -u > "$tmp_repo_targets"
+          HTML_CNT=${#HTML_FILES[@]}
+          HAR_CNT=${#HAR_FILES[@]}
 
-          # 2) Манифест
-          if [[ ! -s "$MANIFEST" ]]; then
-            echo '{"files":[]}' > "$MANIFEST"
+          # Список "важных" файлов репозитория (HTML+HAR)
+          mapfile -t REPO_IMPORTANT < <(
+            { printf '%s\n' "${HTML_FILES[@]}"; printf '%s\n' "${HAR_FILES[@]}"; } \
+            | sed 's#^\./##' | sort -u
+          )
+
+          MF_PRESENT=false
+          if [[ -f "${MANIFEST}" ]]; then
+            MF_PRESENT=true
+            # Пути из манифеста и части превью
+            mapfile -t MANIFEST_PATHS < <(jq -r '.files[].path // empty' "${MANIFEST}" | sort -u || true)
+            PARTS_COUNT=$(jq '[.files[].parts[]] | length' "${MANIFEST}" 2>/dev/null || echo 0)
+            FILES_TOTAL=$(jq '.files | length' "${MANIFEST}" 2>/dev/null || echo 0)
+          else
+            MANIFEST_PATHS=()
+            PARTS_COUNT=0
+            FILES_TOTAL=0
           fi
 
-          # Берём из манифеста только HTML/HAR
-          mapfile -t MF_PATHS < <(jq -r '.files[].path | select(test("\\.(html|har)$"))' "$MANIFEST")
-          mf_files_count=$(printf "%s\n" "${MF_PATHS[@]}" | wc -l | tr -d ' ')
-          mf_parts_total=$(jq '[.files[].parts | length] | add // 0' "$MANIFEST")
-
-          tmp_mf_paths=$(mktemp)
-          printf "%s\n" "${MF_PATHS[@]}" | sort -u > "$tmp_mf_paths"
-
-          # 3) Сравнения
-          tmp_missing=$(mktemp) # есть в репо, нет в манифесте
-          comm -23 "$tmp_repo_targets" "$tmp_mf_paths" > "$tmp_missing"
-
-          tmp_orphans=$(mktemp) # есть в манифесте, нет в репо
-          comm -13 "$tmp_repo_targets" "$tmp_mf_paths" > "$tmp_orphans"
-
-          # 4) Наличие превью
-          previews_present="нет"
-          if [[ -d "$PREV_DIR" ]] && find "$PREV_DIR" -type f -name '*.md' -print -quit | grep -q .; then
-            previews_present="да"
+          # Проверка, что папка превью существует и не пуста
+          PREV_EXISTS="нет"
+          if [[ -d "${PREV_DIR}" ]] && [[ $(find "${PREV_DIR}" -type f | wc -l | tr -d ' ') -gt 0 ]]; then
+            PREV_EXISTS="да"
           fi
 
-          sample_repo=$(head -n 12 "$tmp_repo_targets" || true)
-          sample_miss=$(head -n 20 "$tmp_missing" || true)
-          sample_orph=$(head -n 20 "$tmp_orphans" || true)
+          # Кто не попал в манифест (есть в репо, нет в manifest.json)
+          # (если манифеста нет — считаем, что всё отсутствует)
+          if $MF_PRESENT; then
+            # разность множеств: REPO_IMPORTANT \ MANIFEST_PATHS
+            mapfile -t MISSING_IN_MANIFEST < <(
+              comm -23 <(printf '%s\n' "${REPO_IMPORTANT[@]}" | sort) \
+                       <(printf '%s\n' "${MANIFEST_PATHS[@]}" | sort)
+            )
+          else
+            MISSING_IN_MANIFEST=("${REPO_IMPORTANT[@]}")
+          fi
 
-          REPORT="kb/verify.md"
+          # Сироты манифеста (есть в манифесте, но файла нет)
+          ORPHANS=()
+          if $MF_PRESENT; then
+            while IFS= read -r p; do
+              [[ -f "${p}" ]] || ORPHANS+=("$p")
+            done < <(printf '%s\n' "${MANIFEST_PATHS[@]}")
+          fi
+
+          # Генерация отчёта
+          TS_UTC="$(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          mkdir -p "$(dirname "${REPORT}")"
+
           {
-            echo "# Verify — проверка целостности базы знаний (scoped to \`reference/\`)"
-            echo
-            echo "Дата: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            echo "# Verify — проверка целостности базы знаний"
+            echo "Дата: ${TS_UTC}"
             echo
             echo "## Сводка"
-            echo "- HTML в репозитории: **$count_html**"
-            echo "- HAR в репозитории: **$count_har**"
-            echo "- HTML/HAR в manifest.json: **$mf_files_count**"
-            echo "- Всего частей превью (parts) по всем типам: **$mf_parts_total**"
-            echo "- Папка превью существует и непуста: **$previews_present**"
+            echo "- HTML в репозитории: ${HTML_CNT}"
+            echo "- HAR в репозитории: ${HAR_CNT}"
+            echo "- Всего путей в manifest.json: ${FILES_TOTAL}"
+            echo "- Всего частей превью (parts): ${PARTS_COUNT}"
+            echo "- Папка превью существует и непуста: ${PREV_EXISTS}"
             echo
-            echo "## Отсутствуют в manifest.json (есть в репозитории, только *.html/*.har)"
-            if [[ -s "$tmp_missing" ]]; then
-              echo
-              echo '<details><summary>Первые 20</summary>'
-              echo
-              printf -- "- \`%s\`\n" $sample_miss
-              echo
-              echo '</details>'
+            echo "## Отсутствуют в manifest.json (есть в репозитории)"
+            if [[ ${#MISSING_IN_MANIFEST[@]} -eq 0 ]]; then
+              echo "✅ Нет — все важные файлы учтены в манифесте."
             else
-              echo
-              echo "✅ Нет — все HTML/HAR учтены в манифесте."
+              echo ""
+              for p in "${MISSING_IN_MANIFEST[@]}"; do
+                echo "- ${p}"
+              done
             fi
             echo
-            echo "## Сироты манифеста (есть в manifest.json, но нет в репозитории, только *.html/*.har)"
-            if [[ -s "$tmp_orphans" ]]; then
-              echo
-              echo '<details><summary>Первые 20</summary>'
-              echo
-              printf -- "- \`%s\`\n" $sample_orph
-              echo
-              echo '</details>'
+            echo "## Сироты манифеста (есть в manifest.json, но нет в репозитории)"
+            if [[ ${#ORPHANS[@]} -eq 0 ]]; then
+              echo "✅ Нет — все пути из манифеста существуют в репозитории."
             else
-              echo
-              echo "✅ Нет — лишних HTML/HAR в манифесте не обнаружено."
+              echo ""
+              for p in "${ORPHANS[@]:0:200}"; do
+                echo "- ${p}"
+              done
+              [[ ${#ORPHANS[@]} -gt 200 ]] && echo "... и ещё $(( ${#ORPHANS[@]} - 200 )) путей"
             fi
             echo
             echo "## Сэмпл путей (из репозитория)"
-            echo
-            printf -- "- \`%s\`\n" $sample_repo
-            echo
-            echo "> Если найдены «отсутствующие», перезапусти workflow **Build full KB previews (incremental)**; если есть «сироты», обнови манифест пересборкой."
-          } > "$REPORT"
+            printf '%s\n' "${REPO_IMPORTANT[@]}" | head -n 20 | sed 's/^/- /'
+          } > "${REPORT}"
 
-          echo "Отчёт записан: $REPORT"
+          echo "Report written to ${REPORT}"
 
       - name: Commit verify report
-        working-directory: .
         run: |
-          git config user.name "kb-bot"
+          git config user.name "KB-bot"
           git config user.email "kb-bot@users.noreply.github.com"
-          git add kb/verify.md || true
-          git commit -m "chore(kb): verify report (scoped to reference/)" || echo "nothing to commit"
+          git add reference/kb/verify.md
+          git commit -m "chore(kb): verify report" || echo "nothing to commit"
           git push || true
