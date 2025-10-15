@@ -118,7 +118,7 @@ jobs:
           echo "Отчёт записан: $REPORT"
 
       - name: Commit verify report
-        working-directory: reference
+        working-directory: .
         run: |
           git config user.name "kb-bot"
           git config user.email "kb-bot@users.noreply.github.com"
