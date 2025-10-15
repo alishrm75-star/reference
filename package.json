@@ -1,0 +1,8 @@
+{
+  "name": "homi-reference",
+  "private": true,
+  "scripts": {
+    "kb:build": "node scripts/kb-build.js",
+    "kb:coverage": "node scripts/kb-coverage.js"
+  }
+}
