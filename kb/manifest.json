@@ -15087,6 +15087,16 @@
           "file": "previews_full/pages/success-order/4f08102d__success-order.html.md"
         }
       ]
+    },
+    {
+      "path": "reference/kb/verify.md",
+      "size": 714,
+      "sha256": "29cf9f4de5f698526786e274be20029f7a9507e586b069421423d284b61d6035",
+      "parts": [
+        {
+          "file": "previews_full/reference/kb/f717cb09__verify.md.md"
+        }
+      ]
     }
   ]
 }
