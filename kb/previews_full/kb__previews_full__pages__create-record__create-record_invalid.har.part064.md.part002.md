@@ -1,7 +1,0 @@
-### kb/previews_full/pages__create-record__create-record_invalid.har.part064.md (part 002)
-
-```md
-p_type\":1},{\"id\":100,\"title\":\"Микронезия\",\"full_tit
-```
-
-```

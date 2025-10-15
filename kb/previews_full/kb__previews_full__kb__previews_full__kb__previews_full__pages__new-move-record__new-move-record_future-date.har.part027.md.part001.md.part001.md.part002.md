@@ -1,7 +1,0 @@
-### kb/previews_full/kb__previews_full__kb__previews_full__pages__new-move-record__new-move-record_future-date.har.part027.md.part001.md.part001.md (part 002)
-
-```md
-\\u20BA\",\"T\\xFCrk Liras\\u0131\",{AUD:[\"AU$\",\"$\"],BYN:[e,\"\\u0440.\"],PHP:[e,\"\\u20B1\"],RON:[e,\"L\"],RUR:[e,\"\\u0440.\"],THB
-```
-
-```

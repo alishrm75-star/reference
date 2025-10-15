@@ -1,7 +1,0 @@
-### kb/previews_full/kb__previews_full__pages__select-services__start-service-first__select-services__start_servise_bottom_menu.har.part032.md.part001.md (part 002)
-
-```md
-AAAAAAEBAAAA/wAAAAAAAAEBAAAA/wAAAAAAAAABAAAB/wAAAAAAAAAAAAAAAQAAAP8AAAEAAAAAAAAAAAAAAQABAP8AAAAAAQAAAAD/AAAAAQAAAP8AAAEAAAAAAAAAAAEAAAD/AAABAA
-```
-
-```

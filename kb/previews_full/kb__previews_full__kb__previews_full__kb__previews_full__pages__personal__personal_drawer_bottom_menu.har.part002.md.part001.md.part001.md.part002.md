@@ -1,7 +1,0 @@
-### kb/previews_full/kb__previews_full__kb__previews_full__pages__personal__personal_drawer_bottom_menu.har.part002.md.part001.md.part001.md (part 002)
-
-```md
-.classList.add(\"landscape\");try{document.activeElement.blur()}catch(t){console.error(t)}}else if(Pt().phone&&window.orientation
-```
-
-```

@@ -1,7 +1,0 @@
-### kb/previews_full/kb__previews_full__pages__select-master__select_master_drawer_bottom_menu.har.part018.md.part001.md (part 002)
-
-```md
-D/AP8AAP8AAAEBAQAA/wAA/wD/AAEAAQAAAAAAAP8AAP8A/wABAAEAAAAAAAD/AAABAQEA//8AAAD/AAAAAAAAAQEBAP//AAAA/wAAAQEBAAA
-```
-
-```

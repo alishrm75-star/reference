@@ -1,7 +1,0 @@
-### kb/previews_full/kb__previews_full__pages__select-master__select_master_drawer_bottom_menu.har.part002.md.part001.md (part 002)
-
-```md
-t-%COMP%]{font-style:normal;font-weight:700;font-size:20px;line-height:24px}.cross-icon[_ngcontent-%COMP%]{cu
-```
-
-```

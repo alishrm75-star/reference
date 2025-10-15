@@ -1,8 +1,0 @@
-### kb/previews_full/pages__new-move-record__new-move-record_future-date.har.part146.md (part 002)
-
-```md
-":{\"type\":null},\"business\":{\"type\":null,\"entity_id\":null}}]"
-        
-```
-
-```
