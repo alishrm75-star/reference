@@ -25,6 +25,7 @@ jobs:
       - run: npm run kb:build --if-present
       - run: npm run kb:coverage --if-present
       - run: npm run kb:anomalies --if-present
+      - run: npm run kb:map --if-present
       - name: Upload KB artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -33,3 +34,4 @@ jobs:
             kb/manifest.json
             kb/coverage.json
             kb/anomalies.json
+            kb/map.json
