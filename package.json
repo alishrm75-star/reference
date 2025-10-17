@@ -4,6 +4,17 @@
     "kb:build": "node scripts/kb-build.js",
     "kb:coverage": "node scripts/kb-coverage.js",
     "kb:anomalies": "node scripts/kb-anomalies.js",
-    "kb:map": "node scripts/kb-map.js"
+    "kb:map": "node scripts/kb-map.js",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3"
   }
 }
