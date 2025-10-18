@@ -1,4 +1,6 @@
-generator client { provider = "prisma-client-js" }
+generator client {
+  provider = "prisma-client-js"
+}
 
 datasource db {
   provider = "sqlite"
@@ -6,19 +8,20 @@ datasource db {
 }
 
 model Business {
-  id        String   @id @default(cuid())
+  id        String    @id @default(cuid())
   name      String
-  slug      String   @unique
+  slug      String    @unique
   branches  Branch[]
   services  Service[]
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  Master    Master[]
 }
 
 model Branch {
-  id         String   @id @default(cuid())
+  id         String    @id @default(cuid())
   businessId String
-  business   Business @relation(fields: [businessId], references: [id])
+  business   Business  @relation(fields: [businessId], references: [id])
   name       String
   slug       String
   address    String?
@@ -30,28 +33,32 @@ model Branch {
 }
 
 model Master {
-  id         String   @id @default(cuid())
+  id         String          @id @default(cuid())
   businessId String
-  business   Business @relation(fields: [businessId], references: [id])
+  business   Business        @relation(fields: [businessId], references: [id])
   name       String
   photoUrl   String?
   rating     Float?
   services   MasterService[]
   slots      Slot[]
   bookings   Booking[]
+  Branch     Branch?         @relation(fields: [branchId], references: [id])
+  branchId   String?
 
   @@index([businessId])
 }
 
 model Service {
-  id              String   @id @default(cuid())
+  id              String          @id @default(cuid())
   businessId      String
-  business        Business @relation(fields: [businessId], references: [id])
+  business        Business        @relation(fields: [businessId], references: [id])
   name            String
   description     String?
   baseDurationMin Int
   basePrice       Int
   masters         MasterService[]
+  Slot            Slot[]
+  Booking         Booking[]
 
   @@index([businessId])
 }
@@ -81,25 +88,25 @@ model Slot {
   endsAt    DateTime
   isBooked  Boolean  @default(false)
   createdAt DateTime @default(now())
+  Booking   Booking?
 
   @@index([branchId, startsAt])
   @@index([masterId, startsAt])
 }
 
-enum BookingStatus { PENDING CONFIRMED CANCELLED }
-
 model Booking {
-  id            String        @id @default(cuid())
-  slotId        String        @unique
-  slot          Slot          @relation(fields: [slotId], references: [id])
-  branchId      String
-  branch        Branch        @relation(fields: [branchId], references: [id])
-  masterId      String
-  master        Master        @relation(fields: [masterId], references: [id])
-  serviceId     String
-  service       Service       @relation(fields: [serviceId], references: [id])
+  id        String  @id @default(cuid())
+  slotId    String  @unique
+  slot      Slot    @relation(fields: [slotId], references: [id])
+  branchId  String
+  branch    Branch  @relation(fields: [branchId], references: [id])
+  masterId  String
+  master    Master  @relation(fields: [masterId], references: [id])
+  serviceId String
+  service   Service @relation(fields: [serviceId], references: [id])
+
   customerName  String?
   customerPhone String?
-  status        BookingStatus @default(CONFIRMED)
-  createdAt     DateTime      @default(now())
+  status        String   @default("CONFIRMED") // вместо enum
+  createdAt     DateTime @default(now())
 }

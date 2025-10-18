@@ -1,7 +1,9 @@
+// scripts/seed.ts
 import { addMinutes, isBefore, set } from "date-fns";
 import { prisma } from "../src/lib/prisma";
 
 async function main() {
+  // 1) Бизнес и филиал
   const biz = await prisma.business.upsert({
     where: { slug: "homi-demo" },
     update: {},
@@ -14,25 +16,36 @@ async function main() {
     create: { businessId: biz.id, name: "Центральный", slug: "central", address: "Main st. 1" }
   });
 
+  // 2) Мастера
   const [m1, m2] = await Promise.all([
     prisma.master.create({ data: { businessId: biz.id, name: "Анна", rating: 4.9 } }),
     prisma.master.create({ data: { businessId: biz.id, name: "Ильяс", rating: 4.7 } })
   ]);
 
+  // 3) Услуги
   const [sCut, sMani] = await Promise.all([
     prisma.service.create({ data: { businessId: biz.id, name: "Стрижка", baseDurationMin: 45, basePrice: 8000 } }),
     prisma.service.create({ data: { businessId: biz.id, name: "Маникюр", baseDurationMin: 60, basePrice: 12000 } })
   ]);
 
-  await prisma.masterService.createMany({
-    data: [
-      { masterId: m1.id, serviceId: sCut.id,  durationMin: 45, price: 9000 },
-      { masterId: m1.id, serviceId: sMani.id, durationMin: 60, price: 12000 },
-      { masterId: m2.id, serviceId: sCut.id,  durationMin: 30, price: 7000 }
-    ],
-    skipDuplicates: true
-  });
+  // 4) Связки мастер-услуга (upsert вместо createMany/skipDuplicates)
+  const msRows = [
+    { masterId: m1.id, serviceId: sCut.id,  durationMin: 45, price: 9000 },
+    { masterId: m1.id, serviceId: sMani.id, durationMin: 60, price: 12000 },
+    { masterId: m2.id, serviceId: sCut.id,  durationMin: 30, price: 7000 }
+  ];
 
+  await Promise.all(
+    msRows.map((row) =>
+      prisma.masterService.upsert({
+        where: { masterId_serviceId: { masterId: row.masterId, serviceId: row.serviceId } },
+        update: { durationMin: row.durationMin, price: row.price },
+        create: row
+      })
+    )
+  );
+
+  // 5) Генерация слотов (2 мастера, будни, 10:00–18:00, шаг 30 мин, на 4 недели)
   const today = new Date();
   const horizonDays = 28;
   const stepMin = 30;
@@ -41,7 +54,7 @@ async function main() {
   for (let d = 0; d < horizonDays; d++) {
     const date = new Date(today.getFullYear(), today.getMonth(), today.getDate() + d);
     const day = date.getDay(); // 0..6
-    if (day === 0 || day === 6) continue; // только будни
+    if (day === 0 || day === 6) continue; // пропускаем выходные
 
     for (const master of [m1, m2]) {
       const startDay = set(date, { hours: 10, minutes: 0, seconds: 0, milliseconds: 0 });
