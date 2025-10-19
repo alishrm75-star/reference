@@ -1,10 +1,9 @@
-// scripts/audit-hash.js
-import { createHash } from "node:crypto";
+﻿import { createHash } from "node:crypto";
 import { promises as fs } from "node:fs";
 import path from "path";
 
 const root = process.cwd();
-const skip = ["node_modules", ".next", ".git", "prisma/dev.db"];
+const skip = ["node_modules", ".next", ".git", "prisma/dev.db", "prisma/dev.db-journal"];
 
 async function walk(dir) {
   const out = [];
