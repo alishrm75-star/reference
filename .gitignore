@@ -1,2 +1,17 @@
+# deps & build
 node_modules
+.next
+out
+
+# env
+.env
+.env.local
+.env.*.local
+
+# local sqlite
 prisma/dev.db
+prisma/dev.db-journal
+
+# OS trash
+.DS_Store
+Thumbs.db

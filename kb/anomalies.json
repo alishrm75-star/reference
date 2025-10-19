@@ -1,0 +1,1623 @@
+{
+  "generatedAt": "2025-10-19T16:10:24.144Z",
+  "duplicates": {
+    "html": [],
+    "har": [],
+    "img": [],
+    "scc": [],
+    "fonts": [],
+    "tokens": []
+  },
+  "unpaired": {
+    "html_without_har": [
+      {
+        "key": "html_about_default",
+        "files": [
+          "html\\about_default.html"
+        ]
+      },
+      {
+        "key": "html_about_show_more_comments",
+        "files": [
+          "html\\about_show_more_comments.html"
+        ]
+      },
+      {
+        "key": "html_auth",
+        "files": [
+          "html\\auth.html"
+        ]
+      },
+      {
+        "key": "html_auth_code-verification",
+        "files": [
+          "html\\auth_code-verification.html"
+        ]
+      },
+      {
+        "key": "html_auth_password",
+        "files": [
+          "html\\auth_password.html"
+        ]
+      },
+      {
+        "key": "html_create-record_default",
+        "files": [
+          "html\\create-record_default.html"
+        ]
+      },
+      {
+        "key": "html_create-record_invalid",
+        "files": [
+          "html\\create-record_invalid.html"
+        ]
+      },
+      {
+        "key": "html_create-record_ready",
+        "files": [
+          "html\\create-record_ready.html"
+        ]
+      },
+      {
+        "key": "html_master-info_default",
+        "files": [
+          "html\\master-info_default.html"
+        ]
+      },
+      {
+        "key": "html_master-info_more_comments",
+        "files": [
+          "html\\master-info_more_comments.html"
+        ]
+      },
+      {
+        "key": "html_new-move-record_default",
+        "files": [
+          "html\\new-move-record_default.html"
+        ]
+      },
+      {
+        "key": "html_new-move-record_future-date",
+        "files": [
+          "html\\new-move-record_future-date.html"
+        ]
+      },
+      {
+        "key": "html_new-move-record_slot_selected",
+        "files": [
+          "html\\new-move-record_slot_selected.html"
+        ]
+      },
+      {
+        "key": "html_order-confirmation",
+        "files": [
+          "html\\order-confirmation.html"
+        ]
+      },
+      {
+        "key": "html_personal-account",
+        "files": [
+          "html\\personal-account.html"
+        ]
+      },
+      {
+        "key": "html_personal_account_exit",
+        "files": [
+          "html\\personal_account_exit.html"
+        ]
+      },
+      {
+        "key": "html_personal_drawer_bottom_menu",
+        "files": [
+          "html\\personal_drawer_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_personal_drawer_business_info",
+        "files": [
+          "html\\personal_drawer_business_info.html"
+        ]
+      },
+      {
+        "key": "html_personal_main_default",
+        "files": [
+          "html\\personal_main_default.html"
+        ]
+      },
+      {
+        "key": "html_profile_default",
+        "files": [
+          "html\\profile_default.html"
+        ]
+      },
+      {
+        "key": "html_record",
+        "files": [
+          "html\\record.html"
+        ]
+      },
+      {
+        "key": "html_record_status",
+        "files": [
+          "html\\record_status.html"
+        ]
+      },
+      {
+        "key": "html_select-branch",
+        "files": [
+          "html\\select-branch.html"
+        ]
+      },
+      {
+        "key": "html_select-branch_maps",
+        "files": [
+          "html\\select-branch_maps.html"
+        ]
+      },
+      {
+        "key": "html_select-master-time_default",
+        "files": [
+          "html\\select-master-time_default.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-any_time",
+        "files": [
+          "html\\select-master_start-time-any_time.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-any_time_selected",
+        "files": [
+          "html\\select-master_start-time-any_time_selected.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-first",
+        "files": [
+          "html\\select-master_start-time-first.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-first_specific_time",
+        "files": [
+          "html\\select-master_start-time-first_specific_time.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-mster",
+        "files": [
+          "html\\select-master_start-time-mster.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start-service-first",
+        "files": [
+          "html\\select-services__start-service-first.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_category_open",
+        "files": [
+          "html\\select-services__start_category_open.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_servise_bottom_menu",
+        "files": [
+          "html\\select-services__start_servise_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_servise_selected",
+        "files": [
+          "html\\select-services__start_servise_selected.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_servise_selected_error",
+        "files": [
+          "html\\select-services__start_servise_selected_error.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_servise_selected_error_info",
+        "files": [
+          "html\\select-services__start_servise_selected_error_info.html"
+        ]
+      },
+      {
+        "key": "html_select-time_all_masters",
+        "files": [
+          "html\\select-time_all_masters.html"
+        ]
+      },
+      {
+        "key": "html_select-time_calendar-collapsed",
+        "files": [
+          "html\\select-time_calendar-collapsed.html"
+        ]
+      },
+      {
+        "key": "html_select-time_default",
+        "files": [
+          "html\\select-time_default.html"
+        ]
+      },
+      {
+        "key": "html_select-time_drawer_bottom_menu",
+        "files": [
+          "html\\select-time_drawer_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_select-time_future-date",
+        "files": [
+          "html\\select-time_future-date.html"
+        ]
+      },
+      {
+        "key": "html_select-time_periods_collapsed",
+        "files": [
+          "html\\select-time_periods_collapsed.html"
+        ]
+      },
+      {
+        "key": "html_select-time__slot_selected",
+        "files": [
+          "html\\select-time__slot_selected.html"
+        ]
+      },
+      {
+        "key": "html_select-time__start-time-first",
+        "files": [
+          "html\\select-time__start-time-first.html"
+        ]
+      },
+      {
+        "key": "html_select-time__start-time-first_future-date",
+        "files": [
+          "html\\select-time__start-time-first_future-date.html"
+        ]
+      },
+      {
+        "key": "html_select-time__start-time-first_slot_selected",
+        "files": [
+          "html\\select-time__start-time-first_slot_selected.html"
+        ]
+      },
+      {
+        "key": "html_select_master_default",
+        "files": [
+          "html\\select_master_default.html"
+        ]
+      },
+      {
+        "key": "html_select_master_drawer_bottom_menu",
+        "files": [
+          "html\\select_master_drawer_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_select_master_indicator_any",
+        "files": [
+          "html\\select_master_indicator_any.html"
+        ]
+      },
+      {
+        "key": "html_select_master_indicator_specific_master",
+        "files": [
+          "html\\select_master_indicator_specific_master.html"
+        ]
+      },
+      {
+        "key": "html_select_master_master_and_time",
+        "files": [
+          "html\\select_master_master_and_time.html"
+        ]
+      },
+      {
+        "key": "html_select_services_category_open",
+        "files": [
+          "html\\select_services_category_open.html"
+        ]
+      },
+      {
+        "key": "html_select_services_default",
+        "files": [
+          "html\\select_services_default.html"
+        ]
+      },
+      {
+        "key": "html_select_services_drawer_bottom_menu",
+        "files": [
+          "html\\select_services_drawer_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_select_services_open_summary_edit",
+        "files": [
+          "html\\select_services_open_summary_edit.html"
+        ]
+      },
+      {
+        "key": "html_select_services_servise_selected",
+        "files": [
+          "html\\select_services_servise_selected.html"
+        ]
+      },
+      {
+        "key": "html_select_services_time_category_open",
+        "files": [
+          "html\\select_services_time_category_open.html"
+        ]
+      },
+      {
+        "key": "html_select_services_time_default",
+        "files": [
+          "html\\select_services_time_default.html"
+        ]
+      },
+      {
+        "key": "html_select_services_time__servise_selected",
+        "files": [
+          "html\\select_services_time__servise_selected.html"
+        ]
+      },
+      {
+        "key": "html_success-order",
+        "files": [
+          "html\\success-order.html"
+        ]
+      },
+      {
+        "key": "html_success-order_cancel",
+        "files": [
+          "html\\success-order_cancel.html"
+        ]
+      }
+    ],
+    "har_without_html": [
+      {
+        "key": "har_about_default",
+        "files": [
+          "har\\about_default.har"
+        ]
+      },
+      {
+        "key": "har_about_show_more_comments",
+        "files": [
+          "har\\about_show_more_comments.har"
+        ]
+      },
+      {
+        "key": "har_about_switching_from_other_pages",
+        "files": [
+          "har\\about_switching_from_other_pages.har"
+        ]
+      },
+      {
+        "key": "har_all_branches",
+        "files": [
+          "har\\all_branches.har"
+        ]
+      },
+      {
+        "key": "har_auth",
+        "files": [
+          "har\\auth.har"
+        ]
+      },
+      {
+        "key": "har_auth_code-verification",
+        "files": [
+          "har\\auth_code-verification.har"
+        ]
+      },
+      {
+        "key": "har_auth_password",
+        "files": [
+          "har\\auth_password.har"
+        ]
+      },
+      {
+        "key": "har_create-record_default",
+        "files": [
+          "har\\create-record_default.har"
+        ]
+      },
+      {
+        "key": "har_create-record_invalid",
+        "files": [
+          "har\\create-record_invalid.har"
+        ]
+      },
+      {
+        "key": "har_master-first__master-and-slot_auth",
+        "files": [
+          "har\\master-first__master-and-slot@auth.har"
+        ]
+      },
+      {
+        "key": "har_master-first__master-and-slot_guest",
+        "files": [
+          "har\\master-first__master-and-slot@guest.har"
+        ]
+      },
+      {
+        "key": "har_master-first__master-only_auth",
+        "files": [
+          "har\\master-first__master-only@auth.har"
+        ]
+      },
+      {
+        "key": "har_master-first__master-only_guest",
+        "files": [
+          "har\\master-first__master-only@guest.har"
+        ]
+      },
+      {
+        "key": "har_master-info_default",
+        "files": [
+          "har\\master-info_default.har"
+        ]
+      },
+      {
+        "key": "har_master-info_more_comments",
+        "files": [
+          "har\\master-info_more_comments.har"
+        ]
+      },
+      {
+        "key": "har_new-move-record_default",
+        "files": [
+          "har\\new-move-record_default.har"
+        ]
+      },
+      {
+        "key": "har_new-move-record_future-date",
+        "files": [
+          "har\\new-move-record_future-date.har"
+        ]
+      },
+      {
+        "key": "har_new-move-record_slot_selected",
+        "files": [
+          "har\\new-move-record_slot_selected.har"
+        ]
+      },
+      {
+        "key": "har_new_account_entry_from_your_personal_account_auth",
+        "files": [
+          "har\\new_account_entry_from_your_personal_account@auth.har"
+        ]
+      },
+      {
+        "key": "har_order-confirmation",
+        "files": [
+          "har\\order-confirmation.har"
+        ]
+      },
+      {
+        "key": "har_personal-account",
+        "files": [
+          "har\\personal-account.har"
+        ]
+      },
+      {
+        "key": "har_personal_account_auth",
+        "files": [
+          "har\\personal_account@auth.har"
+        ]
+      },
+      {
+        "key": "har_personal_account_guest",
+        "files": [
+          "har\\personal_account@guest.har"
+        ]
+      },
+      {
+        "key": "har_personal_account_exit",
+        "files": [
+          "har\\personal_account_exit.har"
+        ]
+      },
+      {
+        "key": "har_personal_drawer_bottom_menu",
+        "files": [
+          "har\\personal_drawer_bottom_menu.har"
+        ]
+      },
+      {
+        "key": "har_personal_drawer_business_info",
+        "files": [
+          "har\\personal_drawer_business_info.har"
+        ]
+      },
+      {
+        "key": "har_personal_main_default",
+        "files": [
+          "har\\personal_main_default.har"
+        ]
+      },
+      {
+        "key": "har_profile_default",
+        "files": [
+          "har\\profile_default.har"
+        ]
+      },
+      {
+        "key": "har_re-recording_from_your_personal_account_auth",
+        "files": [
+          "har\\re-recording from your personal account@auth.har"
+        ]
+      },
+      {
+        "key": "har_record",
+        "files": [
+          "har\\record.har"
+        ]
+      },
+      {
+        "key": "har_record_status",
+        "files": [
+          "har\\record_status.har"
+        ]
+      },
+      {
+        "key": "har_select-branch_maps",
+        "files": [
+          "har\\select-branch_maps.har"
+        ]
+      },
+      {
+        "key": "har_select-master-time_default",
+        "files": [
+          "har\\select-master-time_default.har"
+        ]
+      },
+      {
+        "key": "har_select-master_start-time-any_time",
+        "files": [
+          "har\\select-master_start-time-any_time.har"
+        ]
+      },
+      {
+        "key": "har_select-master_start-time-any_time_selected",
+        "files": [
+          "har\\select-master_start-time-any_time_selected.har"
+        ]
+      },
+      {
+        "key": "har_select-master_start-time-first",
+        "files": [
+          "har\\select-master_start-time-first.har"
+        ]
+      },
+      {
+        "key": "har_select-master_start-time-first_specific_time",
+        "files": [
+          "har\\select-master_start-time-first_specific_time.har"
+        ]
+      },
+      {
+        "key": "har_select-master_start-time-mster",
+        "files": [
+          "har\\select-master_start-time-mster.har"
+        ]
+      },
+      {
+        "key": "har_select-services__start-service-first",
+        "files": [
+          "har\\select-services__start-service-first.har"
+        ]
+      },
+      {
+        "key": "har_select-services__start_servise_bottom_menu",
+        "files": [
+          "har\\select-services__start_servise_bottom_menu.har"
+        ]
+      },
+      {
+        "key": "har_select-services__start_servise_selected",
+        "files": [
+          "har\\select-services__start_servise_selected.har"
+        ]
+      },
+      {
+        "key": "har_select-services__start_servise_selected_error",
+        "files": [
+          "har\\select-services__start_servise_selected_error.har"
+        ]
+      },
+      {
+        "key": "har_select-services__start_servise_selected_error_info",
+        "files": [
+          "har\\select-services__start_servise_selected_error_info.har"
+        ]
+      },
+      {
+        "key": "har_select-time_all_masters",
+        "files": [
+          "har\\select-time_all_masters.har"
+        ]
+      },
+      {
+        "key": "har_select-time_calendar-collapsed",
+        "files": [
+          "har\\select-time_calendar-collapsed.har"
+        ]
+      },
+      {
+        "key": "har_select-time_default",
+        "files": [
+          "har\\select-time_default.har"
+        ]
+      },
+      {
+        "key": "har_select-time_drawer_bottom_menu",
+        "files": [
+          "har\\select-time_drawer_bottom_menu.har"
+        ]
+      },
+      {
+        "key": "har_select-time_future-date",
+        "files": [
+          "har\\select-time_future-date.har"
+        ]
+      },
+      {
+        "key": "har_select-time_periods_collapsed",
+        "files": [
+          "har\\select-time_periods_collapsed.har"
+        ]
+      },
+      {
+        "key": "har_select-time__slot_selected",
+        "files": [
+          "har\\select-time__slot_selected.har"
+        ]
+      },
+      {
+        "key": "har_select-time__start-time-first",
+        "files": [
+          "har\\select-time__start-time-first.har"
+        ]
+      },
+      {
+        "key": "har_select-time__start-time-first_future-date",
+        "files": [
+          "har\\select-time__start-time-first_future-date.har"
+        ]
+      },
+      {
+        "key": "har_select-time__start-time-first_slot_selected",
+        "files": [
+          "har\\select-time__start-time-first_slot_selected.har"
+        ]
+      },
+      {
+        "key": "har_select_master_default",
+        "files": [
+          "har\\select_master_default.har"
+        ]
+      },
+      {
+        "key": "har_select_master_drawer_bottom_menu",
+        "files": [
+          "har\\select_master_drawer_bottom_menu.har"
+        ]
+      },
+      {
+        "key": "har_select_master_indicator_any",
+        "files": [
+          "har\\select_master_indicator_any.har"
+        ]
+      },
+      {
+        "key": "har_select_master_indicator_specific_master",
+        "files": [
+          "har\\select_master_indicator_specific_master.har"
+        ]
+      },
+      {
+        "key": "har_select_master_master_and_time",
+        "files": [
+          "har\\select_master_master_and_time.har"
+        ]
+      },
+      {
+        "key": "har_select_services_category_open",
+        "files": [
+          "har\\select_services_category_open.har"
+        ]
+      },
+      {
+        "key": "har_select_services_default",
+        "files": [
+          "har\\select_services_default.har"
+        ]
+      },
+      {
+        "key": "har_select_services_drawer_bottom_menu",
+        "files": [
+          "har\\select_services_drawer_bottom_menu.har"
+        ]
+      },
+      {
+        "key": "har_select_services_open_summary_edit",
+        "files": [
+          "har\\select_services_open_summary_edit.har"
+        ]
+      },
+      {
+        "key": "har_select_services_servise_selected",
+        "files": [
+          "har\\select_services_servise_selected.har"
+        ]
+      },
+      {
+        "key": "har_select_services_time_category_open",
+        "files": [
+          "har\\select_services_time_category_open.har"
+        ]
+      },
+      {
+        "key": "har_select_services_time_no_available_slots",
+        "files": [
+          "har\\select_services_time_no_available_slots.har"
+        ]
+      },
+      {
+        "key": "har_select_services_time__servise_selected",
+        "files": [
+          "har\\select_services_time__servise_selected.har"
+        ]
+      },
+      {
+        "key": "har_service-first__master-and-slot_auth",
+        "files": [
+          "har\\service-first__master-and-slot@auth.har"
+        ]
+      },
+      {
+        "key": "har_service-first__master-and-slot_guest",
+        "files": [
+          "har\\service-first__master-and-slot@guest.har"
+        ]
+      },
+      {
+        "key": "har_service-first__master-only_auth",
+        "files": [
+          "har\\service-first__master-only@auth.har"
+        ]
+      },
+      {
+        "key": "har_service-first__master-only_guest",
+        "files": [
+          "har\\service-first__master-only@guest.har"
+        ]
+      },
+      {
+        "key": "har_success-order",
+        "files": [
+          "har\\success-order.har"
+        ]
+      },
+      {
+        "key": "har_success-order_cancel",
+        "files": [
+          "har\\success-order_cancel.har"
+        ]
+      },
+      {
+        "key": "har_time-first__any_time_selected_guest",
+        "files": [
+          "har\\time-first__any_time_selected@guest.har"
+        ]
+      },
+      {
+        "key": "har_time-first__master-only_auth",
+        "files": [
+          "har\\time-first__master-only@auth.har"
+        ]
+      },
+      {
+        "key": "har_time-first__master-only_guest",
+        "files": [
+          "har\\time-first__master-only@guest.har"
+        ]
+      }
+    ],
+    "html_without_img": [
+      {
+        "key": "html_about_default",
+        "files": [
+          "html\\about_default.html"
+        ]
+      },
+      {
+        "key": "html_about_show_more_comments",
+        "files": [
+          "html\\about_show_more_comments.html"
+        ]
+      },
+      {
+        "key": "html_auth",
+        "files": [
+          "html\\auth.html"
+        ]
+      },
+      {
+        "key": "html_auth_code-verification",
+        "files": [
+          "html\\auth_code-verification.html"
+        ]
+      },
+      {
+        "key": "html_auth_password",
+        "files": [
+          "html\\auth_password.html"
+        ]
+      },
+      {
+        "key": "html_create-record_default",
+        "files": [
+          "html\\create-record_default.html"
+        ]
+      },
+      {
+        "key": "html_create-record_invalid",
+        "files": [
+          "html\\create-record_invalid.html"
+        ]
+      },
+      {
+        "key": "html_create-record_ready",
+        "files": [
+          "html\\create-record_ready.html"
+        ]
+      },
+      {
+        "key": "html_master-info_default",
+        "files": [
+          "html\\master-info_default.html"
+        ]
+      },
+      {
+        "key": "html_master-info_more_comments",
+        "files": [
+          "html\\master-info_more_comments.html"
+        ]
+      },
+      {
+        "key": "html_new-move-record_default",
+        "files": [
+          "html\\new-move-record_default.html"
+        ]
+      },
+      {
+        "key": "html_new-move-record_future-date",
+        "files": [
+          "html\\new-move-record_future-date.html"
+        ]
+      },
+      {
+        "key": "html_new-move-record_slot_selected",
+        "files": [
+          "html\\new-move-record_slot_selected.html"
+        ]
+      },
+      {
+        "key": "html_order-confirmation",
+        "files": [
+          "html\\order-confirmation.html"
+        ]
+      },
+      {
+        "key": "html_personal-account",
+        "files": [
+          "html\\personal-account.html"
+        ]
+      },
+      {
+        "key": "html_personal_account_exit",
+        "files": [
+          "html\\personal_account_exit.html"
+        ]
+      },
+      {
+        "key": "html_personal_drawer_bottom_menu",
+        "files": [
+          "html\\personal_drawer_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_personal_drawer_business_info",
+        "files": [
+          "html\\personal_drawer_business_info.html"
+        ]
+      },
+      {
+        "key": "html_personal_main_default",
+        "files": [
+          "html\\personal_main_default.html"
+        ]
+      },
+      {
+        "key": "html_profile_default",
+        "files": [
+          "html\\profile_default.html"
+        ]
+      },
+      {
+        "key": "html_record",
+        "files": [
+          "html\\record.html"
+        ]
+      },
+      {
+        "key": "html_record_status",
+        "files": [
+          "html\\record_status.html"
+        ]
+      },
+      {
+        "key": "html_select-branch",
+        "files": [
+          "html\\select-branch.html"
+        ]
+      },
+      {
+        "key": "html_select-branch_maps",
+        "files": [
+          "html\\select-branch_maps.html"
+        ]
+      },
+      {
+        "key": "html_select-master-time_default",
+        "files": [
+          "html\\select-master-time_default.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-any_time",
+        "files": [
+          "html\\select-master_start-time-any_time.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-any_time_selected",
+        "files": [
+          "html\\select-master_start-time-any_time_selected.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-first",
+        "files": [
+          "html\\select-master_start-time-first.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-first_specific_time",
+        "files": [
+          "html\\select-master_start-time-first_specific_time.html"
+        ]
+      },
+      {
+        "key": "html_select-master_start-time-mster",
+        "files": [
+          "html\\select-master_start-time-mster.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start-service-first",
+        "files": [
+          "html\\select-services__start-service-first.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_category_open",
+        "files": [
+          "html\\select-services__start_category_open.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_servise_bottom_menu",
+        "files": [
+          "html\\select-services__start_servise_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_servise_selected",
+        "files": [
+          "html\\select-services__start_servise_selected.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_servise_selected_error",
+        "files": [
+          "html\\select-services__start_servise_selected_error.html"
+        ]
+      },
+      {
+        "key": "html_select-services__start_servise_selected_error_info",
+        "files": [
+          "html\\select-services__start_servise_selected_error_info.html"
+        ]
+      },
+      {
+        "key": "html_select-time_all_masters",
+        "files": [
+          "html\\select-time_all_masters.html"
+        ]
+      },
+      {
+        "key": "html_select-time_calendar-collapsed",
+        "files": [
+          "html\\select-time_calendar-collapsed.html"
+        ]
+      },
+      {
+        "key": "html_select-time_default",
+        "files": [
+          "html\\select-time_default.html"
+        ]
+      },
+      {
+        "key": "html_select-time_drawer_bottom_menu",
+        "files": [
+          "html\\select-time_drawer_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_select-time_future-date",
+        "files": [
+          "html\\select-time_future-date.html"
+        ]
+      },
+      {
+        "key": "html_select-time_periods_collapsed",
+        "files": [
+          "html\\select-time_periods_collapsed.html"
+        ]
+      },
+      {
+        "key": "html_select-time__slot_selected",
+        "files": [
+          "html\\select-time__slot_selected.html"
+        ]
+      },
+      {
+        "key": "html_select-time__start-time-first",
+        "files": [
+          "html\\select-time__start-time-first.html"
+        ]
+      },
+      {
+        "key": "html_select-time__start-time-first_future-date",
+        "files": [
+          "html\\select-time__start-time-first_future-date.html"
+        ]
+      },
+      {
+        "key": "html_select-time__start-time-first_slot_selected",
+        "files": [
+          "html\\select-time__start-time-first_slot_selected.html"
+        ]
+      },
+      {
+        "key": "html_select_master_default",
+        "files": [
+          "html\\select_master_default.html"
+        ]
+      },
+      {
+        "key": "html_select_master_drawer_bottom_menu",
+        "files": [
+          "html\\select_master_drawer_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_select_master_indicator_any",
+        "files": [
+          "html\\select_master_indicator_any.html"
+        ]
+      },
+      {
+        "key": "html_select_master_indicator_specific_master",
+        "files": [
+          "html\\select_master_indicator_specific_master.html"
+        ]
+      },
+      {
+        "key": "html_select_master_master_and_time",
+        "files": [
+          "html\\select_master_master_and_time.html"
+        ]
+      },
+      {
+        "key": "html_select_services_category_open",
+        "files": [
+          "html\\select_services_category_open.html"
+        ]
+      },
+      {
+        "key": "html_select_services_default",
+        "files": [
+          "html\\select_services_default.html"
+        ]
+      },
+      {
+        "key": "html_select_services_drawer_bottom_menu",
+        "files": [
+          "html\\select_services_drawer_bottom_menu.html"
+        ]
+      },
+      {
+        "key": "html_select_services_open_summary_edit",
+        "files": [
+          "html\\select_services_open_summary_edit.html"
+        ]
+      },
+      {
+        "key": "html_select_services_servise_selected",
+        "files": [
+          "html\\select_services_servise_selected.html"
+        ]
+      },
+      {
+        "key": "html_select_services_time_category_open",
+        "files": [
+          "html\\select_services_time_category_open.html"
+        ]
+      },
+      {
+        "key": "html_select_services_time_default",
+        "files": [
+          "html\\select_services_time_default.html"
+        ]
+      },
+      {
+        "key": "html_select_services_time__servise_selected",
+        "files": [
+          "html\\select_services_time__servise_selected.html"
+        ]
+      },
+      {
+        "key": "html_success-order",
+        "files": [
+          "html\\success-order.html"
+        ]
+      },
+      {
+        "key": "html_success-order_cancel",
+        "files": [
+          "html\\success-order_cancel.html"
+        ]
+      }
+    ],
+    "img_without_html": [
+      {
+        "key": "img_about_default1",
+        "files": [
+          "img\\about_default1.png"
+        ]
+      },
+      {
+        "key": "img_about_default2",
+        "files": [
+          "img\\about_default2.png"
+        ]
+      },
+      {
+        "key": "img_about_default3",
+        "files": [
+          "img\\about_default3.png"
+        ]
+      },
+      {
+        "key": "img_about_default4",
+        "files": [
+          "img\\about_default4.png"
+        ]
+      },
+      {
+        "key": "img_about_show_more_comments",
+        "files": [
+          "img\\about_show_more_comments.png"
+        ]
+      },
+      {
+        "key": "img_auth",
+        "files": [
+          "img\\auth.png"
+        ]
+      },
+      {
+        "key": "img_auth_code-verification",
+        "files": [
+          "img\\auth_code-verification.png"
+        ]
+      },
+      {
+        "key": "img_auth_password",
+        "files": [
+          "img\\auth_password.png"
+        ]
+      },
+      {
+        "key": "img_create-record_default1",
+        "files": [
+          "img\\create-record_default1.png"
+        ]
+      },
+      {
+        "key": "img_create-record_default2",
+        "files": [
+          "img\\create-record_default2.png"
+        ]
+      },
+      {
+        "key": "img_create-record_invalid1",
+        "files": [
+          "img\\create-record_invalid1.png"
+        ]
+      },
+      {
+        "key": "img_create-record_invalid2",
+        "files": [
+          "img\\create-record_invalid2.png"
+        ]
+      },
+      {
+        "key": "img_create-record_ready1",
+        "files": [
+          "img\\create-record_ready1.png"
+        ]
+      },
+      {
+        "key": "img_create-record_ready2",
+        "files": [
+          "img\\create-record_ready2.png"
+        ]
+      },
+      {
+        "key": "img_master-info_default",
+        "files": [
+          "img\\master-info_default.png"
+        ]
+      },
+      {
+        "key": "img_master-info_default1",
+        "files": [
+          "img\\master-info_default1.png"
+        ]
+      },
+      {
+        "key": "img_master-info_default2",
+        "files": [
+          "img\\master-info_default2.png"
+        ]
+      },
+      {
+        "key": "img_master-info_more_comments",
+        "files": [
+          "img\\master-info_more_comments.png"
+        ]
+      },
+      {
+        "key": "img_new-move-record_default",
+        "files": [
+          "img\\new-move-record_default.png"
+        ]
+      },
+      {
+        "key": "img_new-move-record_future-date",
+        "files": [
+          "img\\new-move-record_future-date.png"
+        ]
+      },
+      {
+        "key": "img_new-move-record_slot_selected",
+        "files": [
+          "img\\new-move-record_slot_selected.png"
+        ]
+      },
+      {
+        "key": "img_order-confirmation",
+        "files": [
+          "img\\order-confirmation.png"
+        ]
+      },
+      {
+        "key": "img_personal-account",
+        "files": [
+          "img\\personal-account.png"
+        ]
+      },
+      {
+        "key": "img_personal_account_exit",
+        "files": [
+          "img\\personal_account_exit.png"
+        ]
+      },
+      {
+        "key": "img_personal_drawer_bottom_menu",
+        "files": [
+          "img\\personal_drawer_bottom_menu.png"
+        ]
+      },
+      {
+        "key": "img_personal_drawer_business_info",
+        "files": [
+          "img\\personal_drawer_business_info.png"
+        ]
+      },
+      {
+        "key": "img_personal_main_default",
+        "files": [
+          "img\\personal_main_default.png"
+        ]
+      },
+      {
+        "key": "img_profile_default",
+        "files": [
+          "img\\profile_default.png"
+        ]
+      },
+      {
+        "key": "img_record",
+        "files": [
+          "img\\record.png"
+        ]
+      },
+      {
+        "key": "img_record_status",
+        "files": [
+          "img\\record_status.png"
+        ]
+      },
+      {
+        "key": "img_select-branch",
+        "files": [
+          "img\\select-branch.png"
+        ]
+      },
+      {
+        "key": "img_select-branch_maps",
+        "files": [
+          "img\\select-branch_maps.png"
+        ]
+      },
+      {
+        "key": "img_select-master-time_default",
+        "files": [
+          "img\\select-master-time_default.png"
+        ]
+      },
+      {
+        "key": "img_select-master_start-time-any_time",
+        "files": [
+          "img\\select-master_start-time-any_time.png"
+        ]
+      },
+      {
+        "key": "img_select-master_start-time-any_time_selected",
+        "files": [
+          "img\\select-master_start-time-any_time_selected.png"
+        ]
+      },
+      {
+        "key": "img_select-master_start-time-first",
+        "files": [
+          "img\\select-master_start-time-first.png"
+        ]
+      },
+      {
+        "key": "img_select-master_start-time-first_specific_time",
+        "files": [
+          "img\\select-master_start-time-first_specific_time.png"
+        ]
+      },
+      {
+        "key": "img_select-master_start-time-mster",
+        "files": [
+          "img\\select-master_start-time-mster.png"
+        ]
+      },
+      {
+        "key": "img_select-services__start-service-first",
+        "files": [
+          "img\\select-services__start-service-first.png"
+        ]
+      },
+      {
+        "key": "img_select-services__start_category_open",
+        "files": [
+          "img\\select-services__start_category_open.png"
+        ]
+      },
+      {
+        "key": "img_select-services__start_servise_bottom_menu",
+        "files": [
+          "img\\select-services__start_servise_bottom_menu.png"
+        ]
+      },
+      {
+        "key": "img_select-services__start_servise_selected",
+        "files": [
+          "img\\select-services__start_servise_selected.png"
+        ]
+      },
+      {
+        "key": "img_select-services__start_servise_selected_error",
+        "files": [
+          "img\\select-services__start_servise_selected_error.png"
+        ]
+      },
+      {
+        "key": "img_select-services__start_servise_selected_error_info",
+        "files": [
+          "img\\select-services__start_servise_selected_error_info.png"
+        ]
+      },
+      {
+        "key": "img_select-time_all_masters",
+        "files": [
+          "img\\select-time_all_masters.png"
+        ]
+      },
+      {
+        "key": "img_select-time_calendar-collapsed",
+        "files": [
+          "img\\select-time_calendar-collapsed.png"
+        ]
+      },
+      {
+        "key": "img_select-time_default",
+        "files": [
+          "img\\select-time_default.png"
+        ]
+      },
+      {
+        "key": "img_select-time_drawer_bottom_menu",
+        "files": [
+          "img\\select-time_drawer_bottom_menu.png"
+        ]
+      },
+      {
+        "key": "img_select-time_future-date",
+        "files": [
+          "img\\select-time_future-date.png"
+        ]
+      },
+      {
+        "key": "img_select-time_periods_collapsed",
+        "files": [
+          "img\\select-time_periods_collapsed.png"
+        ]
+      },
+      {
+        "key": "img_select-time__slot_selected",
+        "files": [
+          "img\\select-time__slot_selected.png"
+        ]
+      },
+      {
+        "key": "img_select-time__start-time-first",
+        "files": [
+          "img\\select-time__start-time-first.png"
+        ]
+      },
+      {
+        "key": "img_select-time__start-time-first_future-date",
+        "files": [
+          "img\\select-time__start-time-first_future-date.png"
+        ]
+      },
+      {
+        "key": "img_select-time__start-time-first_slot_selected",
+        "files": [
+          "img\\select-time__start-time-first_slot_selected.png"
+        ]
+      },
+      {
+        "key": "img_select_master_default",
+        "files": [
+          "img\\select_master_default.png"
+        ]
+      },
+      {
+        "key": "img_select_master_drawer_bottom_menu",
+        "files": [
+          "img\\select_master_drawer_bottom_menu.png"
+        ]
+      },
+      {
+        "key": "img_select_master_indicator_any",
+        "files": [
+          "img\\select_master_indicator_any.png"
+        ]
+      },
+      {
+        "key": "img_select_master_indicator_specific_master",
+        "files": [
+          "img\\select_master_indicator_specific_master.png"
+        ]
+      },
+      {
+        "key": "img_select_master_master_and_time",
+        "files": [
+          "img\\select_master_master_and_time.png"
+        ]
+      },
+      {
+        "key": "img_select_services_category_open",
+        "files": [
+          "img\\select_services_category_open.png"
+        ]
+      },
+      {
+        "key": "img_select_services_default",
+        "files": [
+          "img\\select_services_default.png"
+        ]
+      },
+      {
+        "key": "img_select_services_drawer_bottom_menu",
+        "files": [
+          "img\\select_services_drawer_bottom_menu.png"
+        ]
+      },
+      {
+        "key": "img_select_services_open_summary_edit",
+        "files": [
+          "img\\select_services_open_summary_edit.png"
+        ]
+      },
+      {
+        "key": "img_select_services_servise_selected",
+        "files": [
+          "img\\select_services_servise_selected.png"
+        ]
+      },
+      {
+        "key": "img_select_services_time_category_open",
+        "files": [
+          "img\\select_services_time_category_open.png"
+        ]
+      },
+      {
+        "key": "img_select_services_time_default",
+        "files": [
+          "img\\select_services_time_default.png"
+        ]
+      },
+      {
+        "key": "img_select_services_time__servise_selected",
+        "files": [
+          "img\\select_services_time__servise_selected.png"
+        ]
+      },
+      {
+        "key": "img_success-order1",
+        "files": [
+          "img\\success-order1.png"
+        ]
+      },
+      {
+        "key": "img_success-order2",
+        "files": [
+          "img\\success-order2.png"
+        ]
+      },
+      {
+        "key": "img_success-order_cancel",
+        "files": [
+          "img\\success-order_cancel.png"
+        ]
+      }
+    ]
+  }
+}
