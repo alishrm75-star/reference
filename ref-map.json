@@ -1,0 +1,368 @@
+[
+  {
+    "slug": "about_default",
+    "title": "About Default",
+    "srcHtmlPath": "html\\about_default.html",
+    "file": "about_default.html"
+  },
+  {
+    "slug": "about_show_more_comments",
+    "title": "About Show More Comments",
+    "srcHtmlPath": "html\\about_show_more_comments.html",
+    "file": "about_show_more_comments.html"
+  },
+  {
+    "slug": "auth",
+    "title": "Auth",
+    "srcHtmlPath": "html\\auth.html",
+    "file": "auth.html"
+  },
+  {
+    "slug": "auth_code-verification",
+    "title": "Auth Code Verification",
+    "srcHtmlPath": "html\\auth_code-verification.html",
+    "file": "auth_code-verification.html"
+  },
+  {
+    "slug": "auth_password",
+    "title": "Auth Password",
+    "srcHtmlPath": "html\\auth_password.html",
+    "file": "auth_password.html"
+  },
+  {
+    "slug": "create-record_default",
+    "title": "Create Record Default",
+    "srcHtmlPath": "html\\create-record_default.html",
+    "file": "create-record_default.html"
+  },
+  {
+    "slug": "create-record_invalid",
+    "title": "Create Record Invalid",
+    "srcHtmlPath": "html\\create-record_invalid.html",
+    "file": "create-record_invalid.html"
+  },
+  {
+    "slug": "create-record_ready",
+    "title": "Create Record Ready",
+    "srcHtmlPath": "html\\create-record_ready.html",
+    "file": "create-record_ready.html"
+  },
+  {
+    "slug": "master-info_default",
+    "title": "Master Info Default",
+    "srcHtmlPath": "html\\master-info_default.html",
+    "file": "master-info_default.html"
+  },
+  {
+    "slug": "master-info_more_comments",
+    "title": "Master Info More Comments",
+    "srcHtmlPath": "html\\master-info_more_comments.html",
+    "file": "master-info_more_comments.html"
+  },
+  {
+    "slug": "new-move-record_default",
+    "title": "New Move Record Default",
+    "srcHtmlPath": "html\\new-move-record_default.html",
+    "file": "new-move-record_default.html"
+  },
+  {
+    "slug": "new-move-record_future-date",
+    "title": "New Move Record Future Date",
+    "srcHtmlPath": "html\\new-move-record_future-date.html",
+    "file": "new-move-record_future-date.html"
+  },
+  {
+    "slug": "new-move-record_slot_selected",
+    "title": "New Move Record Slot Selected",
+    "srcHtmlPath": "html\\new-move-record_slot_selected.html",
+    "file": "new-move-record_slot_selected.html"
+  },
+  {
+    "slug": "order-confirmation",
+    "title": "Order Confirmation",
+    "srcHtmlPath": "html\\order-confirmation.html",
+    "file": "order-confirmation.html"
+  },
+  {
+    "slug": "personal-account",
+    "title": "Personal Account",
+    "srcHtmlPath": "html\\personal-account.html",
+    "file": "personal-account.html"
+  },
+  {
+    "slug": "personal_account_exit",
+    "title": "Personal Account Exit",
+    "srcHtmlPath": "html\\personal_account_exit.html",
+    "file": "personal_account_exit.html"
+  },
+  {
+    "slug": "personal_drawer_bottom_menu",
+    "title": "Personal Drawer Bottom Menu",
+    "srcHtmlPath": "html\\personal_drawer_bottom_menu.html",
+    "file": "personal_drawer_bottom_menu.html"
+  },
+  {
+    "slug": "personal_drawer_business_info",
+    "title": "Personal Drawer Business Info",
+    "srcHtmlPath": "html\\personal_drawer_business_info.html",
+    "file": "personal_drawer_business_info.html"
+  },
+  {
+    "slug": "personal_main_default",
+    "title": "Personal Main Default",
+    "srcHtmlPath": "html\\personal_main_default.html",
+    "file": "personal_main_default.html"
+  },
+  {
+    "slug": "profile_default",
+    "title": "Profile Default",
+    "srcHtmlPath": "html\\profile_default.html",
+    "file": "profile_default.html"
+  },
+  {
+    "slug": "record",
+    "title": "Record",
+    "srcHtmlPath": "html\\record.html",
+    "file": "record.html"
+  },
+  {
+    "slug": "record_status",
+    "title": "Record Status",
+    "srcHtmlPath": "html\\record_status.html",
+    "file": "record_status.html"
+  },
+  {
+    "slug": "select-branch",
+    "title": "Select Branch",
+    "srcHtmlPath": "html\\select-branch.html",
+    "file": "select-branch.html"
+  },
+  {
+    "slug": "select-branch_maps",
+    "title": "Select Branch Maps",
+    "srcHtmlPath": "html\\select-branch_maps.html",
+    "file": "select-branch_maps.html"
+  },
+  {
+    "slug": "select-master-time_default",
+    "title": "Select Master Time Default",
+    "srcHtmlPath": "html\\select-master-time_default.html",
+    "file": "select-master-time_default.html"
+  },
+  {
+    "slug": "select-master_start-time-any_time",
+    "title": "Select Master Start Time Any Time",
+    "srcHtmlPath": "html\\select-master_start-time-any_time.html",
+    "file": "select-master_start-time-any_time.html"
+  },
+  {
+    "slug": "select-master_start-time-any_time_selected",
+    "title": "Select Master Start Time Any Time Selected",
+    "srcHtmlPath": "html\\select-master_start-time-any_time_selected.html",
+    "file": "select-master_start-time-any_time_selected.html"
+  },
+  {
+    "slug": "select-master_start-time-first",
+    "title": "Select Master Start Time First",
+    "srcHtmlPath": "html\\select-master_start-time-first.html",
+    "file": "select-master_start-time-first.html"
+  },
+  {
+    "slug": "select-master_start-time-first_specific_time",
+    "title": "Select Master Start Time First Specific Time",
+    "srcHtmlPath": "html\\select-master_start-time-first_specific_time.html",
+    "file": "select-master_start-time-first_specific_time.html"
+  },
+  {
+    "slug": "select-master_start-time-mster",
+    "title": "Select Master Start Time Mster",
+    "srcHtmlPath": "html\\select-master_start-time-mster.html",
+    "file": "select-master_start-time-mster.html"
+  },
+  {
+    "slug": "select-services__start-service-first",
+    "title": "Select Services  Start Service First",
+    "srcHtmlPath": "html\\select-services__start-service-first.html",
+    "file": "select-services__start-service-first.html"
+  },
+  {
+    "slug": "select-services__start_category_open",
+    "title": "Select Services  Start Category Open",
+    "srcHtmlPath": "html\\select-services__start_category_open.html",
+    "file": "select-services__start_category_open.html"
+  },
+  {
+    "slug": "select-services__start_servise_bottom_menu",
+    "title": "Select Services  Start Servise Bottom Menu",
+    "srcHtmlPath": "html\\select-services__start_servise_bottom_menu.html",
+    "file": "select-services__start_servise_bottom_menu.html"
+  },
+  {
+    "slug": "select-services__start_servise_selected",
+    "title": "Select Services  Start Servise Selected",
+    "srcHtmlPath": "html\\select-services__start_servise_selected.html",
+    "file": "select-services__start_servise_selected.html"
+  },
+  {
+    "slug": "select-services__start_servise_selected_error",
+    "title": "Select Services  Start Servise Selected Error",
+    "srcHtmlPath": "html\\select-services__start_servise_selected_error.html",
+    "file": "select-services__start_servise_selected_error.html"
+  },
+  {
+    "slug": "select-services__start_servise_selected_error_info",
+    "title": "Select Services  Start Servise Selected Error Info",
+    "srcHtmlPath": "html\\select-services__start_servise_selected_error_info.html",
+    "file": "select-services__start_servise_selected_error_info.html"
+  },
+  {
+    "slug": "select-time__slot_selected",
+    "title": "Select Time  Slot Selected",
+    "srcHtmlPath": "html\\select-time__slot_selected.html",
+    "file": "select-time__slot_selected.html"
+  },
+  {
+    "slug": "select-time__start-time-first",
+    "title": "Select Time  Start Time First",
+    "srcHtmlPath": "html\\select-time__start-time-first.html",
+    "file": "select-time__start-time-first.html"
+  },
+  {
+    "slug": "select-time__start-time-first_future-date",
+    "title": "Select Time  Start Time First Future Date",
+    "srcHtmlPath": "html\\select-time__start-time-first_future-date.html",
+    "file": "select-time__start-time-first_future-date.html"
+  },
+  {
+    "slug": "select-time__start-time-first_slot_selected",
+    "title": "Select Time  Start Time First Slot Selected",
+    "srcHtmlPath": "html\\select-time__start-time-first_slot_selected.html",
+    "file": "select-time__start-time-first_slot_selected.html"
+  },
+  {
+    "slug": "select-time_all_masters",
+    "title": "Select Time All Masters",
+    "srcHtmlPath": "html\\select-time_all_masters.html",
+    "file": "select-time_all_masters.html"
+  },
+  {
+    "slug": "select-time_calendar-collapsed",
+    "title": "Select Time Calendar Collapsed",
+    "srcHtmlPath": "html\\select-time_calendar-collapsed.html",
+    "file": "select-time_calendar-collapsed.html"
+  },
+  {
+    "slug": "select-time_default",
+    "title": "Select Time Default",
+    "srcHtmlPath": "html\\select-time_default.html",
+    "file": "select-time_default.html"
+  },
+  {
+    "slug": "select-time_drawer_bottom_menu",
+    "title": "Select Time Drawer Bottom Menu",
+    "srcHtmlPath": "html\\select-time_drawer_bottom_menu.html",
+    "file": "select-time_drawer_bottom_menu.html"
+  },
+  {
+    "slug": "select-time_future-date",
+    "title": "Select Time Future Date",
+    "srcHtmlPath": "html\\select-time_future-date.html",
+    "file": "select-time_future-date.html"
+  },
+  {
+    "slug": "select-time_periods_collapsed",
+    "title": "Select Time Periods Collapsed",
+    "srcHtmlPath": "html\\select-time_periods_collapsed.html",
+    "file": "select-time_periods_collapsed.html"
+  },
+  {
+    "slug": "select_master_default",
+    "title": "Select Master Default",
+    "srcHtmlPath": "html\\select_master_default.html",
+    "file": "select_master_default.html"
+  },
+  {
+    "slug": "select_master_drawer_bottom_menu",
+    "title": "Select Master Drawer Bottom Menu",
+    "srcHtmlPath": "html\\select_master_drawer_bottom_menu.html",
+    "file": "select_master_drawer_bottom_menu.html"
+  },
+  {
+    "slug": "select_master_indicator_any",
+    "title": "Select Master Indicator Any",
+    "srcHtmlPath": "html\\select_master_indicator_any.html",
+    "file": "select_master_indicator_any.html"
+  },
+  {
+    "slug": "select_master_indicator_specific_master",
+    "title": "Select Master Indicator Specific Master",
+    "srcHtmlPath": "html\\select_master_indicator_specific_master.html",
+    "file": "select_master_indicator_specific_master.html"
+  },
+  {
+    "slug": "select_master_master_and_time",
+    "title": "Select Master Master And Time",
+    "srcHtmlPath": "html\\select_master_master_and_time.html",
+    "file": "select_master_master_and_time.html"
+  },
+  {
+    "slug": "select_services_category_open",
+    "title": "Select Services Category Open",
+    "srcHtmlPath": "html\\select_services_category_open.html",
+    "file": "select_services_category_open.html"
+  },
+  {
+    "slug": "select_services_default",
+    "title": "Select Services Default",
+    "srcHtmlPath": "html\\select_services_default.html",
+    "file": "select_services_default.html"
+  },
+  {
+    "slug": "select_services_drawer_bottom_menu",
+    "title": "Select Services Drawer Bottom Menu",
+    "srcHtmlPath": "html\\select_services_drawer_bottom_menu.html",
+    "file": "select_services_drawer_bottom_menu.html"
+  },
+  {
+    "slug": "select_services_open_summary_edit",
+    "title": "Select Services Open Summary Edit",
+    "srcHtmlPath": "html\\select_services_open_summary_edit.html",
+    "file": "select_services_open_summary_edit.html"
+  },
+  {
+    "slug": "select_services_servise_selected",
+    "title": "Select Services Servise Selected",
+    "srcHtmlPath": "html\\select_services_servise_selected.html",
+    "file": "select_services_servise_selected.html"
+  },
+  {
+    "slug": "select_services_time__servise_selected",
+    "title": "Select Services Time  Servise Selected",
+    "srcHtmlPath": "html\\select_services_time__servise_selected.html",
+    "file": "select_services_time__servise_selected.html"
+  },
+  {
+    "slug": "select_services_time_category_open",
+    "title": "Select Services Time Category Open",
+    "srcHtmlPath": "html\\select_services_time_category_open.html",
+    "file": "select_services_time_category_open.html"
+  },
+  {
+    "slug": "select_services_time_default",
+    "title": "Select Services Time Default",
+    "srcHtmlPath": "html\\select_services_time_default.html",
+    "file": "select_services_time_default.html"
+  },
+  {
+    "slug": "success-order",
+    "title": "Success Order",
+    "srcHtmlPath": "html\\success-order.html",
+    "file": "success-order.html"
+  },
+  {
+    "slug": "success-order_cancel",
+    "title": "Success Order Cancel",
+    "srcHtmlPath": "html\\success-order_cancel.html",
+    "file": "success-order_cancel.html"
+  }
+]
