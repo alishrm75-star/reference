@@ -6,14 +6,15 @@ import { notFound } from "next/navigation";
 import {
   getRefMap,
   getRefPageBySlug,
-  getAdjacentPages,
   getRefPageUrl,
   getRefHtmlUrl,
 } from "@/lib/ref-map";
+import { getPrevNext, getFlowLabel, type FlowName } from "@/lib/ref-seq";
 import { CopyLinkButton } from "./copy-link-button";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ flow?: string }>;
 }
 
 // Генерируем статические пути для всех страниц
@@ -41,16 +42,28 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-export default async function RefViewPage({ params }: PageProps) {
+export default async function RefViewPage({ params, searchParams }: PageProps) {
   const { slug } = await params;
+  const { flow } = await searchParams;
+  
   const page = getRefPageBySlug(slug);
 
   if (!page) {
     notFound();
   }
 
-  const { prev, next } = getAdjacentPages(slug);
+  // Получаем flow из query параметра или используем default
+  const flowName = (flow as FlowName) || "default";
+  const { prev, next, flowName: currentFlow } = getPrevNext(slug, flowName);
   const htmlUrl = getRefHtmlUrl(slug);
+  
+  // Функция для построения URL с flow
+  const buildUrl = (targetSlug: string) => {
+    if (flowName === "default") {
+      return getRefPageUrl(targetSlug);
+    }
+    return `${getRefPageUrl(targetSlug)}?flow=${flowName}`;
+  };
 
   return (
     <div className="flex flex-col h-screen bg-gray-50">
@@ -84,7 +97,14 @@ export default async function RefViewPage({ params }: PageProps) {
           {/* Main row: title */}
           <div className="py-4">
             <h1 className="text-2xl font-bold text-gray-900">{page.title}</h1>
-            <p className="mt-1 text-sm text-gray-500 font-mono">{slug}</p>
+            <div className="mt-1 flex items-center gap-3">
+              <p className="text-sm text-gray-500 font-mono">{slug}</p>
+              {flowName !== "default" && (
+                <span className="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-700 rounded">
+                  {getFlowLabel(flowName)}
+                </span>
+              )}
+            </div>
           </div>
         </div>
       </header>
@@ -107,7 +127,7 @@ export default async function RefViewPage({ params }: PageProps) {
             <div className="flex items-center gap-3">
               {prev ? (
                 <Link
-                  href={getRefPageUrl(prev.slug)}
+                  href={buildUrl(prev.slug)}
                   className="inline-flex items-center px-4 py-2 border border-gray-300 
                            rounded-lg text-sm font-medium text-gray-700 bg-white 
                            hover:bg-gray-50 transition-colors"
@@ -153,7 +173,7 @@ export default async function RefViewPage({ params }: PageProps) {
 
               {next ? (
                 <Link
-                  href={getRefPageUrl(next.slug)}
+                  href={buildUrl(next.slug)}
                   className="inline-flex items-center px-4 py-2 border border-gray-300 
                            rounded-lg text-sm font-medium text-gray-700 bg-white 
                            hover:bg-gray-50 transition-colors"

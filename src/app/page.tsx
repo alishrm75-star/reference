@@ -21,6 +21,17 @@ export default function Home() {
           
           <div className="pt-4 border-t border-gray-200">
             <h2 className="text-sm font-semibold text-gray-700 mb-2">
+              📚 Документация:
+            </h2>
+            <ul className="text-sm text-gray-600 space-y-1">
+              <li>• <a href="/REFERENCE-UI-GUIDE.md" className="text-blue-600 hover:underline">Полное руководство Reference UI</a></li>
+              <li>• <a href="/QUICK-START.md" className="text-blue-600 hover:underline">Quick Start</a></li>
+              <li>• <a href="/README-REF.md" className="text-blue-600 hover:underline">README Reference</a></li>
+            </ul>
+          </div>
+          
+          <div className="pt-4 border-t border-gray-200">
+            <h2 className="text-sm font-semibold text-gray-700 mb-2">
               Другие разделы:
             </h2>
             <ul className="text-sm text-gray-600 space-y-1">

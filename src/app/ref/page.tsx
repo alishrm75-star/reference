@@ -6,9 +6,11 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { getRefMap, getRefPageUrl } from "@/lib/ref-map";
+import { getFlows, getFirstInFlow, getFlowLabel, type FlowName } from "@/lib/ref-seq";
 
 export default function RefIndexPage() {
   const refMap = getRefMap();
+  const flows = getFlows();
   const [searchQuery, setSearchQuery] = useState("");
 
   // Фильтрация по поисковому запросу
@@ -35,6 +37,54 @@ export default function RefIndexPage() {
           </p>
         </div>
       </header>
+
+      {/* Flows */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">
+            🚀 Запустить flow
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {flows.map((flowName) => {
+              const first = getFirstInFlow(flowName as FlowName);
+              if (!first) return null;
+              
+              return (
+                <Link
+                  key={flowName}
+                  href={`${getRefPageUrl(first.slug)}?flow=${flowName}`}
+                  className="flex flex-col p-4 border-2 border-gray-200 rounded-lg
+                           hover:border-blue-500 hover:shadow-md transition-all duration-200
+                           group"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-semibold text-gray-900 group-hover:text-blue-600">
+                      {getFlowLabel(flowName as FlowName)}
+                    </h3>
+                    <svg
+                      className="h-5 w-5 text-gray-400 group-hover:text-blue-600 
+                               group-hover:translate-x-1 transition-all"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </div>
+                  <p className="text-sm text-gray-500">
+                    Начать с: {first.title}
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </div>
 
       {/* Search and Filters */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">

@@ -8,6 +8,8 @@ const PAIRS = [
   { from: "scc",   to: "public/ref-assets/css" },
   { from: "fonts", to: "public/ref-assets/fonts" },
   { from: "img",   to: "public/ref-assets/img" },
+  // Дублируем шрифты в /public/scc/media (некоторые CSS их ждут там)
+  { from: "fonts", to: "public/scc/media" },
 ];
 
 /**

@@ -18,7 +18,8 @@
     "ref:gen": "node scripts/ref-gen-pages.js",
     "ref:assets": "node scripts/ref-copy-assets.js",
     "ref:html": "node scripts/ref-rewrite-html.js",
-    "ref:build": "npm run ref:gen && npm run ref:assets && npm run ref:html"
+    "ref:seq": "node scripts/ref-build-seq.js",
+    "ref:build": "npm run ref:gen && npm run ref:assets && npm run ref:html && npm run ref:seq"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
